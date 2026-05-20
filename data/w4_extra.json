@@ -1,0 +1,143 @@
+{
+ "collected_at": "2026-05-19T15:20:28",
+ "arxiv": {
+  "status": "ok:12",
+  "papers": [
+   {
+    "title": "DashAttention: Differentiable and Adaptive Sparse Hierarchical Attention",
+    "date": "2026-05-18",
+    "authors": "Yuxiang Huang, Nuno M. T. Gonçalves, Federico Alvetreti",
+    "summary": "Current hierarchical attention methods, such as NSA and InfLLMv2, select the top-k relevant key-value (KV) blocks based on coarse attention scores and subsequently apply fine-grained softmax attention",
+    "link": "https://arxiv.org/abs/2605.18753v1"
+   },
+   {
+    "title": "A Readiness-Driven Runtime for Pipeline-Parallel Training under Runtime Variability",
+    "date": "2026-05-18",
+    "authors": "Ruitao Liu, Xinyang Tian, Shuo Chen",
+    "summary": "Pipeline parallelism is a key technique for scaling large-model training, but modern workloads exhibit runtime variability in computation and communication. Existing pipeline systems typically consume",
+    "link": "https://arxiv.org/abs/2605.18750v1"
+   },
+   {
+    "title": "Code as Agent Harness",
+    "date": "2026-05-18",
+    "authors": "Xuying Ning, Katherine Tieu, Dongqi Fu",
+    "summary": "Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agent",
+    "link": "https://arxiv.org/abs/2605.18747v1"
+   },
+   {
+    "title": "ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop",
+    "date": "2026-05-18",
+    "authors": "Yining Hong, Jiageng Liu, Han Yin",
+    "summary": "Spatial intelligence unfolds through a perception-action loop: agents act to acquire observations, and reason about how observations vary as a function of action. Rather than passively processing what",
+    "link": "https://arxiv.org/abs/2605.18746v1"
+   },
+   {
+    "title": "SURGE: Approximation-free Training Free Particle Filter for Diffusion Surrogate",
+    "date": "2026-05-18",
+    "authors": "Lifu Wei, Yinuo Ren, Naichen Shi",
+    "summary": "Diffusion-based generative models increasingly rely on inference-time guidance, adding a drift term or reweighting mixture of experts, to improve sample quality on task-specific objectives. However, m",
+    "link": "https://arxiv.org/abs/2605.18745v1"
+   },
+   {
+    "title": "Actionable World Representation",
+    "date": "2026-05-18",
+    "authors": "Kunqi Xu, Jitao Li, Jianglong Ye",
+    "summary": "Inspired by the emergent behaviors in large language models that generalized human intelligence, the research community is pursuing similar emergent capabilities within world models, with a emphasis o",
+    "link": "https://arxiv.org/abs/2605.18743v1"
+   },
+   {
+    "title": "Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation",
+    "date": "2026-05-18",
+    "authors": "Qianhao Yuan, Jie Lou, Xing Yu",
+    "summary": "Multimodal Large Language Models (MLLMs) still struggle with fine-grained visual understanding, where answers often depend on small but decisive evidence in the full image. We observe a regional-to-gl",
+    "link": "https://arxiv.org/abs/2605.18740v1"
+   },
+   {
+    "title": "What Does the AI Doctor Value? Auditing Pluralism in the Clinical Ethics of Language Models",
+    "date": "2026-05-18",
+    "authors": "Payal Chandak, Victoria Alkin, David Wu",
+    "summary": "Medicine is inherently pluralistic. Principles such as autonomy, beneficence, nonmaleficence, and justice routinely conflict, and such ethical dilemmas often sharply divide reasonable physicians. Good",
+    "link": "https://arxiv.org/abs/2605.18738v1"
+   },
+   {
+    "title": "PIXLRelight: Controllable Relighting via Intrinsic Conditioning",
+    "date": "2026-05-18",
+    "authors": "Miguel Farinha, Ronald Clark",
+    "summary": "We present PIXLRelight, a feed-forward approach for physically controllable single-image relighting. Existing methods either provide limited lighting control (e.g. through text or environment maps), a",
+    "link": "https://arxiv.org/abs/2605.18735v1"
+   },
+   {
+    "title": "Predictable Confabulations: Factual Recall by LLMs Scales with Model Size and Topic Frequency",
+    "date": "2026-05-18",
+    "authors": "Matthew L. Smith, Jonathan P. Shock, Samuel T. Segun",
+    "summary": "While scaling laws govern aggregate large language model performance, no scaling law has linked factual recall to both model size and training-data composition. We evaluated 38 models on over 8,900 sc",
+    "link": "https://arxiv.org/abs/2605.18732v1"
+   },
+   {
+    "title": "DexHoldem: Playing Texas Hold'em with Dexterous Embodied System",
+    "date": "2026-05-18",
+    "authors": "Feng Chen, Tianzhe Chu, Li Sun",
+    "summary": "Evaluating embodied systems on real dexterous hardware requires more than isolated primitive skills: an agent must perceive a changing tabletop scene, choose a context-appropriate action, execute it w",
+    "link": "https://arxiv.org/abs/2605.18727v1"
+   },
+   {
+    "title": "General Preference Reinforcement Learning",
+    "date": "2026-05-18",
+    "authors": "Muhammad Umer, Muhammad Ahmed Mohsin, Ahsan Bilal",
+    "summary": "Post-training has split large language model (LLM) alignment into two largely disconnected tracks. Online reinforcement learning (RL) with verifiable rewards drives emergent reasoning on math and code",
+    "link": "https://arxiv.org/abs/2605.18721v1"
+   }
+  ]
+ },
+ "pypi": {
+  "status": "ok:6/10",
+  "libs": [
+   {
+    "pkg": "litellm",
+    "last_month": 446523749,
+    "last_week": 115288084
+   },
+   {
+    "pkg": "openai",
+    "last_month": 298562218,
+    "last_week": 71689393
+   },
+   {
+    "pkg": "huggingface-hub",
+    "last_month": 247731269,
+    "last_week": 55802770
+   },
+   {
+    "pkg": "langchain",
+    "last_month": 242265769,
+    "last_week": 58766161
+   },
+   {
+    "pkg": "transformers",
+    "last_month": 145484674,
+    "last_week": 31722867
+   },
+   {
+    "pkg": "llama-index",
+    "last_month": 11836492,
+    "last_week": 3265254
+   },
+   {
+    "pkg": "anthropic",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "vllm",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "langgraph",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "crewai",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   }
+  ]
+ }
+}

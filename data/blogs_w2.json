@@ -1,0 +1,315 @@
+{
+ "collected_at": "2026-05-19T14:18:37",
+ "source_status": {
+  "Simon Willison": "ok:8",
+  "Lilian Weng": "ok:0",
+  "Sebastian Raschka": "ok:5",
+  "HuggingFace Blog": "ok:8",
+  "Chip Huyen": "ok:0",
+  "Eugene Yan": "ok:1",
+  "Jay Alammar": "ok:0",
+  "Berkeley BAIR": "ok:3",
+  "The Gradient": "ok:1",
+  "DeepLearning.AI Batch": "empty (bozo:1)",
+  "OpenAI News": "ok:8",
+  "Google Research": "ok:8",
+  "Anthropic News": "empty (bozo:1)",
+  "Sebastian Ruder": "ok:0"
+ },
+ "items": [
+  {
+   "source": "Simon Willison",
+   "title": "The last six months in LLMs in five minutes",
+   "date": "2026-05-19",
+   "summary": "I put together these annotated slides from my five minute lightning talk at PyCon US 2026, using the latest iteration of my annotated presentation tool . # I presented this lightning talk at PyCon US 2026, attempting to summarize the last six months of developments in LLMs in five minutes. # Six months is a pretty convenient time period to cover, because it captures what I've been calling the November 2025 inflection point . November was a critical month in LLMs, especially for coding. # For one thing, the supposedly \"best\" model (depending mostly on vibes) changed hands five times between the",
+   "link": "https://simonwillison.net/2026/May/19/5-minute-llms/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goose",
+   "date": "2026-05-18",
+   "summary": "Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goose, in Los Angeles River, CA, US I'm heading home from PyCon US today so I went on a last morning walk to try and spot a pelican. I saw one! Didn't get a great photo of that, but I did see some goslings down by the swan boat lake.",
+   "link": "https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "GDS weighs in on the NHS's decision to retreat from Open Source",
+   "date": "2026-05-17",
+   "summary": "GDS weighs in on the NHS&#x27;s decision to retreat from Open Source Terence Eden continues his coverage of the NHS' poorly considered decision to close down access to their open source repositories in response to vulnerabilities reported to them as part of Project Glasswing . Now the Government Digital Service have joined the conversation with AI, open code and vulnerability risk in the public sector , published May 14th. Their key recommendation: Keep open by default. Making everything private adds additional delivery and policy costs, and can reduce reuse and scrutiny. Openness should remai",
+   "link": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Warelay -> OpenClaw",
+   "date": "2026-05-16",
+   "summary": "In preparation for a lightning talk I'm giving at PyCon US this afternoon I decided to figure out how many names OpenClaw has actually had since that first commit back in November. Thanks to this first_line_history.py tool ( code here ) the answer, according to the Git history of the OpenClaw README, is: Warelay → CLAWDIS → CLAWDBOT → Clawdbot → Moltbot →🦞 OpenClaw Or in detail (the output from the tool): 2025-11-24T11:23:15+01:00 16dfc1a # Warelay — WhatsApp Relay CLI (Twilio) 2025-11-24T11:41:37+01:00 d4153da # 📡 Warelay — WhatsApp Relay CLI (Twilio) 2025-11-24T17:47:57+01:00 343ef9b # 📡 war",
+   "link": "https://simonwillison.net/2026/May/16/openclaw-names/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Julia Evans",
+   "date": "2026-05-16",
+   "summary": "[...] in the last 10 years I’ve learned to really love and respect CSS as a technology. So I decided years ago that I wanted to react to “CSS is hard” by getting better at CSS and taking it seriously as a technology, instead of devaluing it. Doing that changed everything for me: I learned that so many of my frustrations (“centering is impossible”) had been addressed in CSS a long time ago, and that also what “centering” means is not always straightforward and it makes sense that there are many ways to do it. CSS is hard because it’s solving a hard problem! &mdash; Julia Evans , Moving away fro",
+   "link": "https://simonwillison.net/2026/May/16/julia-evans/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "inaturalist-clumper 0.1",
+   "date": "2026-05-15",
+   "summary": "Release: inaturalist-clumper 0.1 Part of the infrastructure I use for publishing my iNaturalist sightings on my blog . I've been running this in production for a few weeks now, inspiring some iterations on how it works, so I decided to ship a 0.1 release. You can see an example of the output in this JSON file . Tags: projects , inaturalist",
+   "link": "https://simonwillison.net/2026/May/15/inaturalist-clumper/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Western Gull, Rock Pigeon",
+   "date": "2026-05-15",
+   "summary": "Western Gull, Rock Pigeon, in Los Angeles Area (custom), CA, US I went for a bird walk in the morning before PyCon, and we spotted a local seagull enjoying a Starbucks.",
+   "link": "https://simonwillison.net/2026/May/15/sighting-361818285/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "QR code generator",
+   "date": "2026-05-15",
+   "summary": "Tool: QR code generator Claude helped me build this tool for creating QR codes, for both text/URLs and for connecting to WiFi networks. Tags: vibe-coding , tools , generative-ai , ai , llms",
+   "link": "https://simonwillison.net/2026/May/15/qr-code-generator/#atom-everything"
+  },
+  {
+   "source": "Sebastian Raschka",
+   "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
+   "date": "2026-05-16",
+   "summary": "From Gemma 4 to DeepSeek V4, How New Open-Weight LLMs Are Reducing Long-Context Costs",
+   "link": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures"
+  },
+  {
+   "source": "Sebastian Raschka",
+   "title": "My Workflow for Understanding LLM Architectures",
+   "date": "2026-04-18",
+   "summary": "A learning-oriented workflow for understanding new open-weight model releases",
+   "link": "https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms"
+  },
+  {
+   "source": "Sebastian Raschka",
+   "title": "Components of A Coding Agent",
+   "date": "2026-04-04",
+   "summary": "How coding agents use tools, memory, and repo context to make LLMs work better in practice",
+   "link": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent"
+  },
+  {
+   "source": "Sebastian Raschka",
+   "title": "A Visual Guide to Attention Variants in Modern LLMs",
+   "date": "2026-03-22",
+   "summary": "From MHA and GQA to MLA, sparse attention, and hybrid architectures",
+   "link": "https://magazine.sebastianraschka.com/p/visual-attention-variants"
+  },
+  {
+   "source": "Sebastian Raschka",
+   "title": "A Dream of Spring for Open-Weight LLMs: 10 Architectures from Jan-Feb 2026",
+   "date": "2026-02-25",
+   "summary": "A Round Up And Comparison of 10 Open-Weight LLM Releases in Spring 2026",
+   "link": "https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation",
+   "date": "2026-05-18",
+   "summary": "",
+   "link": "https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
+   "date": "2026-05-18",
+   "summary": "",
+   "link": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "The Open Agent Leaderboard",
+   "date": "2026-05-18",
+   "summary": "",
+   "link": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+   "date": "2026-05-14",
+   "summary": "",
+   "link": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Unlocking asynchronicity in continuous batching",
+   "date": "2026-05-14",
+   "summary": "",
+   "link": "https://huggingface.co/blog/continuous_async"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+   "date": "2026-05-11",
+   "summary": "",
+   "link": "https://huggingface.co/blog/amazon/foundation-model-building-blocks"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "EMO: Pretraining mixture of experts for emergent modularity",
+   "date": "2026-05-08",
+   "summary": "",
+   "link": "https://huggingface.co/blog/allenai/emo"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+   "date": "2026-05-06",
+   "summary": "",
+   "link": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"
+  },
+  {
+   "source": "Eugene Yan",
+   "title": "How to Work and Compound with AI",
+   "date": "2026-05-03",
+   "summary": "Context as infra, taste as config, verification for autonomy, scale via delegation, closing the loop.",
+   "link": "https://eugeneyan.com//writing/working-with-ai/"
+  },
+  {
+   "source": "Berkeley BAIR",
+   "title": "Adaptive Parallel Reasoning: The Next Paradigm in Efficient Inference Scaling",
+   "date": "2026-05-08",
+   "summary": "Overview of adaptive parallel reasoning. What if a reasoning model could decide for itself when to decompose and parallelize independent subtasks, how many concurrent threads to spawn, and how to coordinate them based on the problem at hand? We provide a detailed analysis of recent progress in the field of parallel reasoning, especially Adaptive Parallel Reasoning. Disclosure: this post is part landscape survey, part perspective on adaptive parallel reasoning. One of the authors (Tony Lian) co-led ThreadWeaver ( Lian et al., 2025 ), one of the methods discussed below. The authors aim to presen",
+   "link": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/"
+  },
+  {
+   "source": "Berkeley BAIR",
+   "title": "Gradient-based Planning for World Models at Longer Horizons",
+   "date": "2026-04-20",
+   "summary": "GRASP is a new gradient-based planner for learned dynamics (a “world model”) that makes long-horizon planning practical by (1) lifting the trajectory into virtual states so optimization is parallel across time, (2) adding stochasticity directly to the state iterates for exploration, and (3) reshaping gradients so actions get clean signals while we avoid brittle “state-input” gradients through high-dimensional vision models. Large, learned world models are becoming increasingly capable. They can predict long sequences of future observations in high-dimensional visual spaces and generalize acros",
+   "link": "http://bair.berkeley.edu/blog/2026/04/20/grasp/"
+  },
+  {
+   "source": "Berkeley BAIR",
+   "title": "Identifying Interactions at Scale for LLMs",
+   "date": "2026-03-13",
+   "summary": "--> Understanding the behavior of complex machine learning systems, particularly Large Language Models (LLMs), is a critical challenge in modern artificial intelligence. Interpretability research aims to make the decision-making process more transparent to model builders and impacted humans, a step toward safer and more trustworthy AI. To gain a comprehensive understanding, we can analyze these systems through different lenses: feature attribution , which isolates the specific input features driving a prediction ( Lundberg &amp; Lee, 2017 ; Ribeiro et al., 2022 ); data attribution , which link",
+   "link": "http://bair.berkeley.edu/blog/2026/03/13/spex/"
+  },
+  {
+   "source": "The Gradient",
+   "title": "After Orthogonality: Virtue-Ethical Agency and AI Alignment",
+   "date": "2026-02-18",
+   "summary": "Preface This essay argues that rational people don&#x2019;t have goals, and that rational AIs shouldn&#x2019;t have goals. Human actions are rational not because we direct them at some final &#x2018;goals,&#x2019; but because we align actions to practices [1] : networks of actions, action-dispositions, action-evaluation criteria,",
+   "link": "https://thegradient.pub/virtue-ethics-ai-alignment/"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+   "date": "2026-05-18",
+   "summary": "OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.",
+   "link": "https://openai.com/index/dell-codex-enterprise-partnership"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
+   "date": "2026-05-16",
+   "summary": "OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly.",
+   "link": "https://openai.com/index/malta-chatgpt-plus-partnership"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
+   "date": "2026-05-15",
+   "summary": "Databricks uses GPT-5.5 for enterprise agent workflows after the model set a new state of the art on the OfficeQA Pro benchmark.",
+   "link": "https://openai.com/index/databricks"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "How business operations teams use Codex",
+   "date": "2026-05-15",
+   "summary": "See how business operations teams can use Codex to create initiative briefs, strategy updates, leadership decision packets, progress updates, and more from real work inputs.",
+   "link": "https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "How sales teams use Codex",
+   "date": "2026-05-15",
+   "summary": "See how sales teams can use Codex to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs.",
+   "link": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "A new personal finance experience in ChatGPT",
+   "date": "2026-05-15",
+   "summary": "Preview a new personal finance experience in ChatGPT for Pro users in the U.S. Securely connect your financial accounts and get AI-powered insights and guidance grounded in your financial context, goals, and priorities.",
+   "link": "https://openai.com/index/personal-finance-chatgpt"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "How data science teams use Codex",
+   "date": "2026-05-15",
+   "summary": "See how data science teams can use Codex to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.",
+   "link": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Sea's View on the Future of Agentic Software Development with Codex",
+   "date": "2026-05-14",
+   "summary": "Sea Limited's CPO explains why the company is deploying Codex across engineering teams to accelerate AI-native software development in Asia.",
+   "link": "https://openai.com/index/sea-david-chen"
+  },
+  {
+   "source": "Google Research",
+   "title": "Catalyzing scientific impact through global partnerships and open resources",
+   "date": "2026-05-01",
+   "summary": "Data Mining & Modeling",
+   "link": "https://research.google/blog/catalyzing-scientific-impact-through-global-partnerships-and-open-resources/"
+  },
+  {
+   "source": "Google Research",
+   "title": "Four ways Google Research scientists have been using Empirical Research Assistance",
+   "date": "2026-04-29",
+   "summary": "Data Mining & Modeling",
+   "link": "https://research.google/blog/four-ways-google-research-scientists-have-been-using-empirical-research-assistance/"
+  },
+  {
+   "source": "Google Research",
+   "title": "It's all about the angle: Your photos, re-composed",
+   "date": "2026-04-22",
+   "summary": "Generative AI",
+   "link": "https://research.google/blog/its-all-about-the-angle-your-photos-re-composed/"
+  },
+  {
+   "source": "Google Research",
+   "title": "ReasoningBank: Enabling agents to learn from experience",
+   "date": "2026-04-21",
+   "summary": "Generative AI",
+   "link": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/"
+  },
+  {
+   "source": "Google Research",
+   "title": "Designing synthetic datasets for the real world: Mechanism design and reasoning from first principles",
+   "date": "2026-04-16",
+   "summary": "Generative AI",
+   "link": "https://research.google/blog/designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles/"
+  },
+  {
+   "source": "Google Research",
+   "title": "AI-generated synthetic neurons speed up brain mapping",
+   "date": "2026-04-16",
+   "summary": "General Science",
+   "link": "https://research.google/blog/ai-generated-synthetic-neurons-speed-up-brain-mapping/"
+  },
+  {
+   "source": "Google Research",
+   "title": "Towards developing future-ready skills with generative AI",
+   "date": "2026-04-13",
+   "summary": "Education Innovation",
+   "link": "https://research.google/blog/towards-developing-future-ready-skills-with-generative-ai/"
+  },
+  {
+   "source": "Google Research",
+   "title": "ConvApparel: Measuring and bridging the realism gap in user simulators",
+   "date": "2026-04-09",
+   "summary": "Generative AI",
+   "link": "https://research.google/blog/convapparel-measuring-and-bridging-the-realism-gap-in-user-simulators/"
+  }
+ ]
+}

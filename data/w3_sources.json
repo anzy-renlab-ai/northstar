@@ -1,0 +1,255 @@
+{
+ "collected_at": "2026-05-19T14:50:19",
+ "hf": {
+  "status": "ok:30 sort=trendingScore",
+  "tag_freq": {
+   "image-text-to-text": 9,
+   "text-generation": 5,
+   "text-to-speech": 4,
+   "unknown": 4,
+   "image-to-video": 2,
+   "text-to-video": 1,
+   "image-to-3d": 1,
+   "image-text-to-image": 1,
+   "text-to-image": 1,
+   "any-to-any": 1,
+   "question-answering": 1
+  },
+  "trending": [
+   {
+    "id": "openbmb/MiniCPM-V-4.6",
+    "pipeline": "image-text-to-text",
+    "downloads": 80586,
+    "likes": 782
+   },
+   {
+    "id": "SulphurAI/Sulphur-2-base",
+    "pipeline": "text-to-video",
+    "downloads": 1049229,
+    "likes": 1136
+   },
+   {
+    "id": "Supertone/supertonic-3",
+    "pipeline": "text-to-speech",
+    "downloads": 24031,
+    "likes": 429
+   },
+   {
+    "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 268305,
+    "likes": 294
+   },
+   {
+    "id": "unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 237613,
+    "likes": 251
+   },
+   {
+    "id": "circlestone-labs/Anima",
+    "pipeline": "unknown",
+    "downloads": 545205,
+    "likes": 1416
+   },
+   {
+    "id": "ResembleAI/Dramabox",
+    "pipeline": "text-to-speech",
+    "downloads": 1001,
+    "likes": 165
+   },
+   {
+    "id": "deepseek-ai/DeepSeek-V4-Pro",
+    "pipeline": "text-generation",
+    "downloads": 3435748,
+    "likes": 4047
+   },
+   {
+    "id": "froggeric/Qwen-Fixed-Chat-Templates",
+    "pipeline": "unknown",
+    "downloads": 0,
+    "likes": 299
+   },
+   {
+    "id": "TencentARC/Pixal3D",
+    "pipeline": "image-to-3d",
+    "downloads": 0,
+    "likes": 147
+   },
+   {
+    "id": "HiDream-ai/HiDream-O1-Image",
+    "pipeline": "image-text-to-image",
+    "downloads": 15024,
+    "likes": 393
+   },
+   {
+    "id": "Jackrong/Qwopus3.5-9B-Coder-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 6462,
+    "likes": 103
+   },
+   {
+    "id": "SeeSee21/Z-Anime",
+    "pipeline": "text-to-image",
+    "downloads": 15495,
+    "likes": 413
+   },
+   {
+    "id": "bytedance-research/Lance",
+    "pipeline": "any-to-any",
+    "downloads": 0,
+    "likes": 99
+   },
+   {
+    "id": "Zyphra/ZAYA1-8B",
+    "pipeline": "unknown",
+    "downloads": 145609,
+    "likes": 532
+   },
+   {
+    "id": "deepseek-ai/DeepSeek-V4-Flash",
+    "pipeline": "text-generation",
+    "downloads": 1904105,
+    "likes": 1149
+   },
+   {
+    "id": "Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+    "pipeline": "text-generation",
+    "downloads": 267449,
+    "likes": 627
+   },
+   {
+    "id": "ScenemaAI/scenema-audio",
+    "pipeline": "text-to-speech",
+    "downloads": 237,
+    "likes": 101
+   },
+   {
+    "id": "Cactus-Compute/needle",
+    "pipeline": "unknown",
+    "downloads": 241,
+    "likes": 85
+   },
+   {
+    "id": "microsoft/Fara-7B",
+    "pipeline": "image-text-to-text",
+    "downloads": 16011,
+    "likes": 578
+   },
+   {
+    "id": "Qwen/Qwen3.6-35B-A3B",
+    "pipeline": "image-text-to-text",
+    "downloads": 5613637,
+    "likes": 1818
+   },
+   {
+    "id": "inclusionAI/Ring-2.6-1T",
+    "pipeline": "text-generation",
+    "downloads": 2406,
+    "likes": 77
+   },
+   {
+    "id": "internlm/Intern-S2-Preview",
+    "pipeline": "image-text-to-text",
+    "downloads": 1168,
+    "likes": 76
+   },
+   {
+    "id": "Qwen/Qwen3.6-27B",
+    "pipeline": "image-text-to-text",
+    "downloads": 3550893,
+    "likes": 1330
+   },
+   {
+    "id": "google/gemma-4-31B-it",
+    "pipeline": "image-text-to-text",
+    "downloads": 9889356,
+    "likes": 2684
+   },
+   {
+    "id": "jackxinning/Leanly_AI",
+    "pipeline": "question-answering",
+    "downloads": 9432,
+    "likes": 119
+   },
+   {
+    "id": "RuneXX/LTX-2.3-Workflows",
+    "pipeline": "image-to-video",
+    "downloads": 0,
+    "likes": 587
+   },
+   {
+    "id": "FrontiersMind/Nandi-Mini-600M-Early-Checkpoint",
+    "pipeline": "text-generation",
+    "downloads": 18203,
+    "likes": 93
+   },
+   {
+    "id": "Aratako/Irodori-TTS-500M-v3",
+    "pipeline": "text-to-speech",
+    "downloads": 0,
+    "likes": 68
+   },
+   {
+    "id": "TenStrip/LTX2.3-10Eros",
+    "pipeline": "image-to-video",
+    "downloads": 140927,
+    "likes": 290
+   }
+  ]
+ },
+ "hn": {
+  "thread": {
+   "title": "Ask HN: Who is hiring right now?",
+   "objectID": "22665398",
+   "created": "2020-03-23T16:13:49Z"
+  },
+  "who_is_hiring_comments": 200,
+  "skill_freq_in_hiring": {
+   "Python": 24,
+   "TypeScript": 10,
+   "Kubernetes": 9,
+   "RAG": 6,
+   "Rust": 3,
+   "LLM": 1
+  },
+  "hot_ai_stories": [
+   {
+    "title": "Show HN: A Karpathy-style LLM wiki your agents maintain (Markdown and Git)",
+    "points": 260,
+    "url": "https://github.com/nex-crm/wuphf"
+   },
+   {
+    "title": "Show HN: Statewright – Visual state machines that make AI agents reliable",
+    "points": 126,
+    "url": "https://github.com/statewright/statewright"
+   },
+   {
+    "title": "Show HN: Agent-desktop – Native desktop automation CLI for AI agents",
+    "points": 99,
+    "url": "https://github.com/lahfir/agent-desktop"
+   },
+   {
+    "title": "Show HN: LangAlpha – what if Claude Code was built for Wall Street?",
+    "points": 148,
+    "url": "https://github.com/ginlix-ai/langalpha"
+   },
+   {
+    "title": "Launch HN: Kampala (YC W26) – Reverse-Engineer Apps into APIs",
+    "points": 100,
+    "url": "https://www.zatanna.ai/kampala"
+   },
+   {
+    "title": "Show HN: Mediator.ai – Using Nash bargaining and LLMs to systematize fairness",
+    "points": 160,
+    "url": "https://mediator.ai/"
+   },
+   {
+    "title": "Show HN: OpenGravity – A zero-install, BYOK vanilla JS clone of Antigravity",
+    "points": 106,
+    "url": "https://github.com/ab-613/opengravity"
+   }
+  ],
+  "status": "ok"
+ }
+}
