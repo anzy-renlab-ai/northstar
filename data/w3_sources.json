@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-20T08:12:23",
+ "collected_at": "2026-05-20T08:31:21",
  "hf": {
   "status": "ok:30 sort=trendingScore",
   "tag_freq": {
@@ -26,7 +26,7 @@
     "id": "bytedance-research/Lance",
     "pipeline": "any-to-any",
     "downloads": 438,
-    "likes": 362
+    "likes": 364
    },
    {
     "id": "openbmb/MiniCPM-V-4.6",
@@ -38,7 +38,7 @@
     "id": "Supertone/supertonic-3",
     "pipeline": "text-to-speech",
     "downloads": 31940,
-    "likes": 476
+    "likes": 477
    },
    {
     "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
@@ -74,13 +74,13 @@
     "id": "sapientinc/HRM-Text-1B",
     "pipeline": "text-generation",
     "downloads": 23532,
-    "likes": 139
+    "likes": 140
    },
    {
     "id": "deepseek-ai/DeepSeek-V4-Pro",
     "pipeline": "text-generation",
     "downloads": 3817887,
-    "likes": 4073
+    "likes": 4074
    },
    {
     "id": "Jackrong/Qwopus3.5-9B-Coder-GGUF",
@@ -116,7 +116,7 @@
     "id": "deepseek-ai/DeepSeek-V4-Flash",
     "pipeline": "text-generation",
     "downloads": 2289519,
-    "likes": 1161
+    "likes": 1162
    },
    {
     "id": "inclusionAI/Ring-2.6-1T",
@@ -146,7 +146,7 @@
     "id": "Qwen/Qwen3.6-35B-A3B",
     "pipeline": "image-text-to-text",
     "downloads": 5798579,
-    "likes": 1831
+    "likes": 1832
    },
    {
     "id": "Zyphra/ZAYA1-8B",
@@ -158,13 +158,13 @@
     "id": "Qwen/Qwen3.6-27B",
     "pipeline": "image-text-to-text",
     "downloads": 3810004,
-    "likes": 1351
+    "likes": 1352
    },
    {
     "id": "google/gemma-4-31B-it",
     "pipeline": "image-text-to-text",
     "downloads": 10170798,
-    "likes": 2699
+    "likes": 2700
    },
    {
     "id": "FrontiersMind/Nandi-Mini-600M-Early-Checkpoint",
@@ -188,7 +188,7 @@
     "id": "NemoStation/Marlin-2B",
     "pipeline": "video-text-to-text",
     "downloads": 125,
-    "likes": 62
+    "likes": 64
    },
    {
     "id": "Jiunsong/supergemma4-26b-uncensored-gguf-v2",
