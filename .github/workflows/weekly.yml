@@ -49,6 +49,9 @@ jobs:
           python3 add_llm_signals.py
           python3 theme_ontology.py
 
+      - name: Rebuild P2.1 personalize inputs (LLM 拿到最新真数据)
+        run: python3 build_personalize_inputs.py
+
       - name: Build site (zh + en × 直面就业 + 看新闻)
         run: |
           for L in zh en; do
