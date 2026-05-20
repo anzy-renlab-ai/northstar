@@ -107,15 +107,27 @@ for p in PERSONAS:
     plan=[(t("基线","Baseline"),b) for b in p["base_gap"][:3]]+[(t("前瞻","Foresight"),x) for x in p["fore_gap"][:5]]
     p["learn"]=[f'{k}：{v}' if ZH else f'{k}: {v}' for k,v in plan[:6]]
 
-# Cards
-persona_select_card={"soft":True,"custom":(
-   f'<div class="hl">{t("个性化差距分析","Personal Gap Analysis")}</div>'
-   f'<div class="mt"><span class="pip"></span>{t("选个用户身份看你与市场的缺口","Pick a persona to see your gap vs market")}</div>'
-   '<select id="persona-pick" style="margin-top:10px;padding:8px 10px;font-size:13.5px;background:var(--paper);border:1px solid var(--line-2);border-radius:6px;color:var(--ink);width:100%;font-family:var(--sans)">'
-   +"".join(f'<option value="{p["id"]}">{esc(p["name"])}</option>' for p in PERSONAS)+
-   '</select>'
-   '<div id="persona-out" style="margin-top:14px;font-size:13.5px;color:var(--body);line-height:1.6"></div>'),
-   "more":[[t("说明","Note"),t("选择身份后下方实时刷新差距","Select a persona; gap below refreshes live")]]}
+# P2.1 个性化表单卡片（真 LLM 后端 /api/personalize）
+target_role_opts="".join(f'<option>{esc(r)}</option>' for r in ["AI Engineer","ML Engineer","Machine Learning Engineer","Data Scientist","Applied Scientist","Research Scientist","Data Engineer","Forward Deployed AI Engineer","AI/ML Engineer","Applied AI Engineer","AI Native Engineer","Prompt Engineer","AI Solutions Architect","AI Product Manager","MLOps Engineer"])
+INP_STYLE="padding:9px 11px;font-size:13.5px;background:var(--paper);border:1px solid var(--line-2);border-radius:6px;color:var(--ink);font-family:var(--sans);width:100%;box-sizing:border-box;margin-top:6px"
+personalize_card={"soft":True,"custom":(
+   f'<div class="hl">{t("个性化学习路径","Personal Learning Path")}</div>'
+   f'<div class="mt"><span class="pip"></span>{t("LLM × 真实北美 JD 数据 → 你的差距 + 学习顺序","LLM × real NA JD data → your gap + learn order")}</div>'
+   f'<form id="p-form" onclick="event.stopPropagation()" onsubmit="return false" style="display:flex;flex-direction:column;gap:8px;margin-top:6px">'
+   f'<label style="font-size:11px;color:var(--mut);letter-spacing:.04em;text-transform:uppercase;margin-top:4px">{t("你的现技能 / 背景","Your current skills / background")}'
+   f'<textarea id="p-skills" rows="2" placeholder="{t("例: Python, AWS, Docker, FastAPI; 5 年后端经验","e.g.: Python, AWS, Docker, FastAPI; 5 yrs backend exp.")}" style="{INP_STYLE}"></textarea></label>'
+   f'<label style="font-size:11px;color:var(--mut);letter-spacing:.04em;text-transform:uppercase">{t("目标岗位","Target role")}'
+   f'<select id="p-target" style="{INP_STYLE}">{target_role_opts}</select></label>'
+   f'<label style="font-size:11px;color:var(--mut);letter-spacing:.04em;text-transform:uppercase">{t("经验年限","Years of experience")}'
+   f'<input id="p-years" type="number" min="0" max="40" placeholder="0" style="{INP_STYLE}"></label>'
+   f'<details style="margin-top:2px"><summary style="font-size:11px;color:var(--mut);cursor:pointer;letter-spacing:.04em;text-transform:uppercase">{t("（可选）贴简历正文","(optional) paste résumé text")}</summary>'
+   f'<textarea id="p-resume" rows="3" placeholder="{t("4000 字以内","up to 4000 chars")}" style="{INP_STYLE};margin-top:6px"></textarea></details>'
+   f'<button id="p-submit" type="button" style="margin-top:8px;padding:10px 16px;background:var(--acc);color:#fff;border:none;border-radius:6px;font-weight:600;font-size:13.5px;cursor:pointer;font-family:var(--sans);letter-spacing:.02em">{t("生成我的学习路径 →","Generate my path →")}</button>'
+   f'</form>'
+   f'<div id="p-out" style="margin-top:14px;font-size:13.5px;color:var(--body);line-height:1.55;display:none"></div>'),
+   "more":[[t("数据","Data"),t("北美 JD 真实抓取 + 前瞻交叉印证","real NA JDs + cross-confirmed foresight")],
+           [t("模型","Model"),"gpt-5.4-mini (uyilink)"],
+           [t("耗时","Latency"),t("约 5-15 秒","~5-15s")]]}
 fixed_p_cards=[]
 for p in PERSONAS:
     fixed_p_cards.append({"soft":True,"custom":(
@@ -204,7 +216,7 @@ val_card={"soft":True,"custom":(
            [t("判定","Decision"),t("Q1+Q2 双成立→进 P2 辅导端","Q1+Q2 both pass → ship P2 coaching layer")]]}
 
 BANDS=[
- {"id":"b1","n":"01","k":t("你的差距分析","Your Gap"),"pp":t("选个身份看你与市场的缺口","Pick a persona, see your gap"),"cnt":t(f"{len(PERSONAS)} 个样例 persona",f"{len(PERSONAS)} sample personas"),"cards":[persona_select_card]+fixed_p_cards},
+ {"id":"b1","n":"01","k":t("你的差距分析","Your Gap"),"pp":t("贴你的技能背景，LLM 算你的差距","Paste your skills, LLM computes your gap"),"cnt":t("个性化 · 真 LLM","Personalized · real LLM"),"cards":[personalize_card]+fixed_p_cards},
  {"id":"b2","n":"02","k":t("北美 AI 现状水位","NA AI Now"),"pp":t("市场在哪、你要追到哪","Where the market is — what to chase"),"cnt":t(f"{ai_jobs} AI 岗",f"{ai_jobs} AI roles"),"cards":status_cards},
  {"id":"b3","n":"03","k":t("该提前学什么","What to Learn Next"),"pp":t("≥2 源交叉印证的前瞻信号","Foresight signals cross-confirmed ≥2 sources"),"cnt":t(f"{len(fore)} 个信号",f"{len(fore)} signals"),"cards":fore_cards},
  {"id":"b4","n":"04","k":t("可证伪预测","Falsifiable Predictions"),"pp":t("留痕 + 2026-08 回看","Logged · Aug 2026 retro"),"cnt":t("F-3 首期","F-3 Issue 1"),"cards":pred_cards},
@@ -214,8 +226,14 @@ BANDS=[
 fore_top=", ".join(fen(c) for c,_ in fore[:4])
 DIGESTS={
  "b1": t(
-  f"3 个样例 persona 覆盖典型入行场景。<br><b>基线</b>=Python/SQL/Docker/云/调 LLM（默认必备）。<br><b>前瞻</b>={esc(fore_top)} 等 ≥2 源信号（要追的方向）。<br>顶部下拉切换 persona，实时看你的缺口。",
-  f"3 sample personas cover typical entry scenarios.<br><b>Baseline</b>=Python/SQL/Docker/Cloud/calling LLMs (default required).<br><b>Foresight</b>={esc(fore_top)} and other ≥2-source signals (what to chase).<br>Use the dropdown to switch persona; gap refreshes live."),
+  f"贴你的<em>现技能</em> + <em>目标岗</em> + <em>年限</em> → LLM (gpt-5.4-mini) 在真实北美 JD 数据上算：<br>"
+  f"<b>fit score</b>（0-100）、<b>基线缺口</b>、<b>前瞻缺口</b>（={esc(fore_top)} 等 ≥2 源信号）、<br>"
+  f"<b>建议学习顺序</b>（带免费资源）、<b>头 3 周具体行动</b>、<b>现实检查</b>。<br>"
+  f"耗时约 5-15 秒。下面 3 个样例 persona 是<em>静态展示</em>，让你看看输出长啥样。",
+  f"Paste your <em>current skills</em> + <em>target role</em> + <em>years</em> → LLM (gpt-5.4-mini) computes against real NA JD data:<br>"
+  f"<b>fit score</b> (0-100), <b>baseline gap</b>, <b>foresight gap</b> (={esc(fore_top)} ≥2-source signals),<br>"
+  f"<b>learn order</b> (with free resources), <b>concrete 3-week actions</b>, <b>reality check</b>.<br>"
+  f"~5-15s. The 3 sample personas below are <em>static examples</em> so you know what to expect."),
  "b2": t(
   f"<b>{ai_jobs}</b> 个 AI 相关岗（已滤噪声）。<br>年薪中位 <em>${sal_med//1000}k</em>，实测 <b>${int(min(sal)/1000) if sal else 90}–{int(max(sal)/1000) if sal else 300}k</b>。<br>远程占比 <b>{rem_pct}%</b>。<br>发岗大户：{ '、'.join(top_co) }。",
   f"<b>{ai_jobs}</b> AI-relevant roles (noise filtered).<br>Median salary <em>${sal_med//1000}k</em>; observed <b>${int(min(sal)/1000) if sal else 90}–{int(max(sal)/1000) if sal else 300}k</b>.<br>Remote share <b>{rem_pct}%</b>.<br>Top hirers: { ', '.join(top_co) }."),
@@ -332,24 +350,50 @@ foot=t(
  'Fonts via Google Fonts CDN with local-serif fallback.')
 html=sub1(r'<footer>.*?</footer>', f'<footer>{foot}</footer>', html)
 
-# persona JS（追加到 </body> 前；中英文标签也翻译）
-PERSONA_JSON=json.dumps([{"id":p["id"],"name":p["name"],"desc":p["desc"],"has":p["has"],
-                          "base_gap":p["base_gap"],"fore_gap":p["fore_gap"],"learn":p["learn"]} for p in PERSONAS], ensure_ascii=False)
-L_HAS=t("已有","Has"); L_BG=t("基线缺口","Baseline gap"); L_FG=t("前瞻缺口","Foresight gap"); L_PLAN=t("建议学习顺序","Suggested learning order"); L_NONE=t("无","none")
-persona_js=(f'<script>\n'
- f'const PERSONAS={PERSONA_JSON};\n'
- 'function renderP(id){\n'
- '  const p=PERSONAS.find(x=>x.id===id); if(!p)return;\n'
- '  const out=document.getElementById("persona-out"); if(!out)return;\n'
- f'  out.innerHTML=`<div style="color:var(--mut);font-size:12.5px;margin-bottom:8px">${{p.desc}} · {L_HAS}：${{p.has.join("、")||"—"}}</div>`\n'
- f'    +`<div style="margin:6px 0"><b style="color:var(--ink)">{L_BG}：</b>${{p.base_gap.map(x=>`<span class="tg" style="margin-right:4px">${{x}}</span>`).join("")||"{L_NONE}"}}</div>`\n'
- f'    +`<div style="margin:6px 0"><b style="color:var(--ink)">{L_FG}：</b>${{p.fore_gap.slice(0,5).map(x=>`<span class="tg" style="margin-right:4px">${{x}}</span>`).join("")||"{L_NONE}"}}</div>`\n'
- f'    +`<div style="margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)"><div style="font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--acc);margin-bottom:6px">{L_PLAN}</div><ol style="margin:0;padding-left:18px;color:var(--ink-2)">${{p.learn.map(x=>`<li style="margin:3px 0">${{x}}</li>`).join("")}}</ol></div>`;\n'
- '}\n'
- 'document.addEventListener("change",e=>{ if(e.target.id==="persona-pick")renderP(e.target.value); });\n'
- 'setTimeout(()=>{ const s=document.getElementById("persona-pick"); if(s) renderP(s.value); },50);\n'
- '</script>')
-html=html.replace("</body>", persona_js+"\n</body>")
+# P2.1 表单提交 JS（调 /api/personalize 真 LLM 后端）
+L_FIT=t("匹配度","Fit score"); L_BG=t("基线缺口","Baseline gap"); L_FG=t("前瞻缺口","Foresight gap")
+L_LEARN=t("建议学习顺序","Suggested learn order"); L_NEXT3=t("头 3 周具体行动","Next 3 weeks · concrete actions")
+L_REALITY=t("⚠️ 现实检查","⚠️ Reality check"); L_LOADING=t("生成中…（约 5-15 秒）","Generating… (~5-15s)")
+L_BTN=t("生成我的学习路径 →","Generate my path →"); L_ERR=t("出错了","Error")
+L_NONE=t("无","none"); L_RESOURCE=t("资源","Resource"); L_META=t("模型","Model")
+personalize_js=("<script>\n"
+ "document.addEventListener('click', async (ev) => {\n"
+ "  if (ev.target.id !== 'p-submit') return;\n"
+ "  ev.preventDefault(); ev.stopPropagation();\n"
+ "  const btn = ev.target;\n"
+ "  const skills = (document.getElementById('p-skills').value||'').trim();\n"
+ "  const target_role = document.getElementById('p-target').value;\n"
+ "  const years = parseInt(document.getElementById('p-years').value)||0;\n"
+ "  const resume = (document.getElementById('p-resume').value||'').trim();\n"
+ "  const out = document.getElementById('p-out');\n"
+ "  if (!skills && !resume) { out.style.display='block'; out.innerHTML='<span class=\"warn\">"+t('请至少填技能或贴简历','Please fill in skills or paste a resume')+"</span>'; return; }\n"
+ f"  const old = btn.textContent; btn.disabled = true; btn.textContent = '{L_LOADING}';\n"
+ "  out.style.display='block'; out.innerHTML='<span style=\"color:var(--mut)\">"+L_LOADING+"</span>';\n"
+ "  try {\n"
+ "    const r = await fetch('/api/personalize', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({skills, target_role, years, resume})});\n"
+ "    const data = await r.json();\n"
+ "    if (!r.ok || !data.result) throw new Error((data&&data.error)||('HTTP '+r.status));\n"
+ "    renderResult(data.result, data.meta);\n"
+ "  } catch (e) {\n"
+ f"    out.innerHTML = '<span class=\"warn\">{L_ERR}: '+e.message+'</span>';\n"
+ "  } finally { btn.disabled = false; btn.textContent = old; }\n"
+ "});\n"
+ "function renderResult(r, meta) {\n"
+ "  const out = document.getElementById('p-out');\n"
+ "  const tags = (a) => (a||[]).map(x=>`<span class=\"tg\" style=\"margin-right:3px\">${x}</span>`).join('')||'"+L_NONE+"';\n"
+ "  out.innerHTML = `\n"
+ f"    <div style=\"display:flex;align-items:baseline;gap:10px;margin-bottom:10px\"><span style=\"font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)\">{L_FIT}</span><span style=\"font-family:var(--serif);font-size:28px;font-weight:600;color:var(--ink)\">${{r.fit_score}}</span><span style=\"font-size:12px;color:var(--mut)\">/100</span></div>\n"
+ f"    <div style=\"margin:8px 0\"><b>{L_BG}:</b> ${{tags(r.baseline_gap)}}</div>\n"
+ f"    <div style=\"margin:8px 0\"><b>{L_FG}:</b> ${{tags(r.foresight_gap)}}</div>\n"
+ f"    <div style=\"margin-top:12px;padding-top:10px;border-top:1px dashed var(--line)\"><div style=\"font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:8px\">{L_LEARN}</div>\n"
+ "    <ol style=\"margin:0;padding-left:18px\">${(r.learn_order||[]).map(x=>`<li style=\"margin:6px 0\"><b>${x.skill}</b> — ${x.why}<br><span style=\"font-size:12px;color:var(--mut)\">"+L_RESOURCE+": ${x.resource_hint}</span></li>`).join('')}</ol></div>\n"
+ f"    <div style=\"margin-top:12px;padding-top:10px;border-top:1px dashed var(--line)\"><div style=\"font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:6px\">{L_NEXT3}</div>\n"
+ "    <ol style=\"margin:0;padding-left:18px\">${(r.next_3_actions||[]).map(x=>`<li style=\"margin:5px 0\">${x}</li>`).join('')}</ol></div>\n"
+ f"    <div style=\"margin-top:12px;padding:10px 12px;background:rgba(154,107,31,.08);border-left:2px solid var(--gold);font-size:12.5px;color:var(--ink-2);line-height:1.55\">{L_REALITY}: ${{r.reality_check}}</div>\n"
+ f"    <div style=\"margin-top:10px;font-family:var(--mono);font-size:10px;color:var(--mut-2);letter-spacing:.04em\">{L_META}: ${{meta.model}} · ${{meta.usage.total_tokens||'?'}}t · "+t('数据截至','data as of')+" ${{meta.data_as_of}}</div>`;\n"
+ "}\n"
+ "</script>")
+html=html.replace("</body>", personalize_js+"\n</body>")
 
 os.makedirs("site",exist_ok=True)
 open(OUT,"w",encoding="utf-8").write(html)
