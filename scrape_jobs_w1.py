@@ -51,7 +51,12 @@ payload = {
     "raw_count": before, "dedup_count": len(jobs),
     "jobs": recs,
 }
-json.dump(payload, open(OUT_JSON,"w"), ensure_ascii=False, indent=1)
+# 原子写：先写 .tmp 再 rename。避免半截写入污染下游（CI 上 scrape 失败也不破坏旧 json）
+# default=str：JobSpy 返回的 date 对象转字符串
+import os as _os
+_tmp = OUT_JSON + ".tmp"
+json.dump(payload, open(_tmp,"w"), ensure_ascii=False, indent=1, default=str)
+_os.replace(_tmp, OUT_JSON)
 print(json.dumps({"site_status": site_status, "raw": before, "dedup": len(jobs),
                   "with_desc": sum(1 for r in recs if r["description"].strip()),
                   "sample_titles": [r["title"] for r in recs[:8]]}, ensure_ascii=False, indent=1))
