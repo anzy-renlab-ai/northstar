@@ -1,141 +1,142 @@
 {
- "collected_at": "2026-05-19T15:20:28",
+ "collected_at": "2026-05-20T08:12:25",
  "arxiv": {
   "status": "ok:12",
   "papers": [
    {
-    "title": "DashAttention: Differentiable and Adaptive Sparse Hierarchical Attention",
-    "date": "2026-05-18",
-    "authors": "Yuxiang Huang, Nuno M. T. Gonçalves, Federico Alvetreti",
-    "summary": "Current hierarchical attention methods, such as NSA and InfLLMv2, select the top-k relevant key-value (KV) blocks based on coarse attention scores and subsequently apply fine-grained softmax attention",
-    "link": "https://arxiv.org/abs/2605.18753v1"
+    "title": "Atoms of Thought: Universal EEG Representation Learning with Microstates",
+    "date": "2026-05-19",
+    "authors": "Xinyang Tian, Ruitao Liu, Ziyi Ye",
+    "summary": "Learning universal representations from electroencephalogram (EEG) signals is a cutting-edge approach in the field of neuroinformatics and brain-computer interfaces (BCIs). Conventionally, EEG is trea",
+    "link": "https://arxiv.org/abs/2605.20182v1"
    },
    {
-    "title": "A Readiness-Driven Runtime for Pipeline-Parallel Training under Runtime Variability",
-    "date": "2026-05-18",
-    "authors": "Ruitao Liu, Xinyang Tian, Shuo Chen",
-    "summary": "Pipeline parallelism is a key technique for scaling large-model training, but modern workloads exhibit runtime variability in computation and communication. Existing pipeline systems typically consume",
-    "link": "https://arxiv.org/abs/2605.18750v1"
+    "title": "TIDE: Efficient and Lossless MoE Diffusion LLM Inference with I/O-aware Expert Offload",
+    "date": "2026-05-19",
+    "authors": "Zhiben Chen, Youpeng Zhao, Yang Sui",
+    "summary": "Diffusion Large Language Models (dLLMs) have emerged as a competitive alternative to autoregressive (AR) models, offering better hardware utilization and bidirectional context through parallel block-l",
+    "link": "https://arxiv.org/abs/2605.20179v1"
    },
    {
-    "title": "Code as Agent Harness",
-    "date": "2026-05-18",
-    "authors": "Xuying Ning, Katherine Tieu, Dongqi Fu",
-    "summary": "Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agent",
-    "link": "https://arxiv.org/abs/2605.18747v1"
+    "title": "From Seeing to Thinking: Decoupling Perception and Reasoning Improves Post-Training of Vision-Language Models",
+    "date": "2026-05-19",
+    "authors": "Juncheng Wu, Hardy Chen, Haoqin Tu",
+    "summary": "Recent advances in vision-language models (VLMs) emphasize long chain-of-thought reasoning; yet, we find that their performance on visual tasks is primarily limited by a lack of visual perception as o",
+    "link": "https://arxiv.org/abs/2605.20177v1"
    },
    {
-    "title": "ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop",
-    "date": "2026-05-18",
-    "authors": "Yining Hong, Jiageng Liu, Han Yin",
-    "summary": "Spatial intelligence unfolds through a perception-action loop: agents act to acquire observations, and reason about how observations vary as a function of action. Rather than passively processing what",
-    "link": "https://arxiv.org/abs/2605.18746v1"
+    "title": "ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning",
+    "date": "2026-05-19",
+    "authors": "Juncheng Wu, Letian Zhang, Yuhan Wang",
+    "summary": "Large language models (LLMs) and agentic systems have shown promise for clinical decision support, but existing works largely assume that evidence has already been curated and handed to the model. Rea",
+    "link": "https://arxiv.org/abs/2605.20176v1"
    },
    {
-    "title": "SURGE: Approximation-free Training Free Particle Filter for Diffusion Surrogate",
-    "date": "2026-05-18",
-    "authors": "Lifu Wei, Yinuo Ren, Naichen Shi",
-    "summary": "Diffusion-based generative models increasingly rely on inference-time guidance, adding a drift term or reweighting mixture of experts, to improve sample quality on task-specific objectives. However, m",
-    "link": "https://arxiv.org/abs/2605.18745v1"
+    "title": "Multi-axis Analysis of Image Manipulation Localization",
+    "date": "2026-05-19",
+    "authors": "Keanu Nichols, Divya Appapogu, Giscard Biamby",
+    "summary": "Advanced image editing software enables easy creation of highly convincing image manipulations, which has been made even more accessible in recent years due to advances in generative AI. Manipulated i",
+    "link": "https://arxiv.org/abs/2605.20174v1"
    },
    {
-    "title": "Actionable World Representation",
-    "date": "2026-05-18",
-    "authors": "Kunqi Xu, Jitao Li, Jianglong Ye",
-    "summary": "Inspired by the emergent behaviors in large language models that generalized human intelligence, the research community is pursuing similar emergent capabilities within world models, with a emphasis o",
-    "link": "https://arxiv.org/abs/2605.18743v1"
+    "title": "A Methodology for Selecting and Composing Runtime Architecture Patterns for Production LLM Agents",
+    "date": "2026-05-19",
+    "authors": "Vasundra Srinivasan",
+    "summary": "Production LLM agents combine stochastic model outputs with deterministic software systems, yet the boundary between the two is rarely treated as a first-class architectural object. This paper names t",
+    "link": "https://arxiv.org/abs/2605.20173v1"
    },
    {
-    "title": "Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation",
-    "date": "2026-05-18",
-    "authors": "Qianhao Yuan, Jie Lou, Xing Yu",
-    "summary": "Multimodal Large Language Models (MLLMs) still struggle with fine-grained visual understanding, where answers often depend on small but decisive evidence in the full image. We observe a regional-to-gl",
-    "link": "https://arxiv.org/abs/2605.18740v1"
+    "title": "Long-term Power Grid Planning via Answer Set Programming",
+    "date": "2026-05-19",
+    "authors": "Antonio Ielo, Francesco Doria, Sandra Castellanos-Paez",
+    "summary": "The Power grid is a critical infrastructure underpinning all aspects of modern society and its services. Maintaining its effectiveness requires continuous adaptations. In particular, addressing sustai",
+    "link": "https://arxiv.org/abs/2605.20172v1"
    },
    {
-    "title": "What Does the AI Doctor Value? Auditing Pluralism in the Clinical Ethics of Language Models",
-    "date": "2026-05-18",
-    "authors": "Payal Chandak, Victoria Alkin, David Wu",
-    "summary": "Medicine is inherently pluralistic. Principles such as autonomy, beneficence, nonmaleficence, and justice routinely conflict, and such ethical dilemmas often sharply divide reasonable physicians. Good",
-    "link": "https://arxiv.org/abs/2605.18738v1"
+    "title": "KoRe: Compact Knowledge Representations for Large Language Models",
+    "date": "2026-05-19",
+    "authors": "Davide Cavicchini, Fausto Giunchiglia, Jacopo Staiano",
+    "summary": "Modern Large Language Models (LLMs) have shown impressive performances in user-facing tasks such as question answering, as well as consistent improvements in reasoning capabilities. Still, the way the",
+    "link": "https://arxiv.org/abs/2605.20170v1"
    },
    {
-    "title": "PIXLRelight: Controllable Relighting via Intrinsic Conditioning",
-    "date": "2026-05-18",
-    "authors": "Miguel Farinha, Ronald Clark",
-    "summary": "We present PIXLRelight, a feed-forward approach for physically controllable single-image relighting. Existing methods either provide limited lighting control (e.g. through text or environment maps), a",
-    "link": "https://arxiv.org/abs/2605.18735v1"
+    "title": "HaorFloodAlert: Deseasonalized ML Ensemble for 72-Hour Flood Prediction in Bangladesh Haor Wetlands",
+    "date": "2026-05-19",
+    "authors": "Salma Hoque Talukdar Koli, Fahima Haque Talukder Jely, Md. Samiul Alim",
+    "summary": "Flash floods in Bangladesh's haor wetlands show up with almost no warning. They wreck the annual boro rice harvest. Current setups, built for riverine floods, miss backwater dynamics entirely. These b",
+    "link": "https://arxiv.org/abs/2605.20167v1"
    },
    {
-    "title": "Predictable Confabulations: Factual Recall by LLMs Scales with Model Size and Topic Frequency",
-    "date": "2026-05-18",
-    "authors": "Matthew L. Smith, Jonathan P. Shock, Samuel T. Segun",
-    "summary": "While scaling laws govern aggregate large language model performance, no scaling law has linked factual recall to both model size and training-data composition. We evaluated 38 models on over 8,900 sc",
-    "link": "https://arxiv.org/abs/2605.18732v1"
+    "title": "Not Every Rubric Teaches Equally: Policy-Aware Rubric Rewards for RLVR",
+    "date": "2026-05-19",
+    "authors": "Utkarsh Tyagi, Xingang Guo, MohammadHossein Rezaei",
+    "summary": "Reinforcement learning with verifiable rewards has made post-training highly effective when correctness can be checked automatically. However, many important model behaviors require satisfying several",
+    "link": "https://arxiv.org/abs/2605.20164v1"
    },
    {
-    "title": "DexHoldem: Playing Texas Hold'em with Dexterous Embodied System",
-    "date": "2026-05-18",
-    "authors": "Feng Chen, Tianzhe Chu, Li Sun",
-    "summary": "Evaluating embodied systems on real dexterous hardware requires more than isolated primitive skills: an agent must perceive a changing tabletop scene, choose a context-appropriate action, execute it w",
-    "link": "https://arxiv.org/abs/2605.18727v1"
+    "title": "Interpretable Computer Vision for Defect Detection in X-ray Tomography of Aerospace SiC/SiC Composites",
+    "date": "2026-05-19",
+    "authors": "Antonio Peña Corredor, Julien Lesseur, Romain Nunez",
+    "summary": "Non-destructive testing of aerospace SiC/SiC composites via X-ray computed tomography (XCT) relies on expert visual assessment, with current workflows offering limited traceability for accept/reject d",
+    "link": "https://arxiv.org/abs/2605.20159v1"
    },
    {
-    "title": "General Preference Reinforcement Learning",
-    "date": "2026-05-18",
-    "authors": "Muhammad Umer, Muhammad Ahmed Mohsin, Ahsan Bilal",
-    "summary": "Post-training has split large language model (LLM) alignment into two largely disconnected tracks. Online reinforcement learning (RL) with verifiable rewards drives emergent reasoning on math and code",
-    "link": "https://arxiv.org/abs/2605.18721v1"
+    "title": "Rethinking Visual Attribution for Chest X-ray Reasoning in Large Vision Language Models",
+    "date": "2026-05-19",
+    "authors": "Guangzhi Xiong, Qiao Jin, Sanchit Sinha",
+    "summary": "Large Vision Language Models (LVLMs) show promise in medical applications, but their inability to faithfully ground responses in visual evidence raises serious concerns about clinical trustworthiness.",
+    "link": "https://arxiv.org/abs/2605.20158v1"
    }
   ]
  },
  "pypi": {
-  "status": "ok:6/10",
+  "status": "ok:7/10",
   "libs": [
    {
     "pkg": "litellm",
-    "last_month": 446523749,
-    "last_week": 115288084
-   },
-   {
-    "pkg": "openai",
-    "last_month": 298562218,
-    "last_week": 71689393
+    "last_month": 452490178,
+    "last_week": 116914648
    },
    {
     "pkg": "huggingface-hub",
-    "last_month": 247731269,
-    "last_week": 55802770
+    "last_month": 251867092,
+    "last_week": 56408320
    },
    {
     "pkg": "langchain",
-    "last_month": 242265769,
-    "last_week": 58766161
-   },
-   {
-    "pkg": "transformers",
-    "last_month": 145484674,
-    "last_week": 31722867
-   },
-   {
-    "pkg": "llama-index",
-    "last_month": 11836492,
-    "last_week": 3265254
+    "last_month": 244479445,
+    "last_week": 59030048
    },
    {
     "pkg": "anthropic",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
-    "pkg": "vllm",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+    "last_month": 124581928,
+    "last_week": 30254109
    },
    {
     "pkg": "langgraph",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+    "last_month": 50993256,
+    "last_week": 12811248
    },
    {
     "pkg": "crewai",
+    "last_month": 10684199,
+    "last_week": 3997402
+   },
+   {
+    "pkg": "vllm",
+    "last_month": 6145889,
+    "last_week": 1512104
+   },
+   {
+    "pkg": "openai",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "transformers",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "llama-index",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    }
   ]
