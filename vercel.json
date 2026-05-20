@@ -4,5 +4,11 @@
   "outputDirectory": "site",
   "framework": null,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "functions": {
+    "api/personalize.py": {
+      "includeFiles": "data/personalize_inputs.json",
+      "maxDuration": 60
+    }
+  }
 }
