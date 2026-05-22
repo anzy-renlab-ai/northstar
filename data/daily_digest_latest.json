@@ -1,40 +1,40 @@
 {
  "as_of": "2026-05-22",
- "summary_one_line_zh": "基础设施在重构：分词、线性注意力、和可落地的代理工具链同时推进。",
- "summary_one_line_en": "Infra is shifting: tokenization, linear attention, and practical agent tooling all move.",
+ "summary_one_line_zh": "今天主线：让模型更适配搜索/代理闭环，并且开始被更严监管。",
+ "summary_one_line_en": "Models are being tuned for search loops, self-rewrite, and tighter regulation.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "arxiv#0",
-   "title_zh": "分词开始可优化而非贪心",
-   "title_en": "Tokenization becomes optimizable",
-   "why_zh": "若分词可端到端优化，embedding/RAG/长上下文成本与效果都可能重算，不再只是BPE调参。",
-   "why_en": "If tokenization is optimizable end-to-end, embedding, RAG, and long-context economics get re-priced.",
-   "so_what_zh": "把你们最高频语料跑一次分词覆盖率分析，评估是否值得重训 tokenizer。",
-   "so_what_en": "Run token coverage on your top corpora; decide whether a tokenizer retrain is justified.",
-   "url": "https://arxiv.org/abs/2605.22821v1"
+   "source_tag": "arxiv#1",
+   "title_zh": "训练多样性以配合测试时搜索",
+   "title_en": "Diversity helps test-time search",
+   "why_zh": "把“训练目标”对齐到推理时搜索器，影响 AlphaEvolve 类系统的候选质量与泛化。",
+   "why_en": "Aligns training with inference-time search, changing candidate quality for AlphaEvolve-like systems.",
+   "so_what_zh": "给你们的 search/rerank 体系加多样性指标，重跑一轮离线评测。",
+   "so_what_en": "Add diversity metrics to search/rerank and rerun offline evals.",
+   "url": "https://arxiv.org/abs/2605.22817v1"
   },
   {
    "rank": 2,
    "source_tag": "arxiv#5",
-   "title_zh": "线性注意力开始拆分读写",
-   "title_en": "Linear attention splits erase/write",
-   "why_zh": "把记忆读写解耦，直接影响流式推理、长会话状态管理和小缓存部署的上限。",
-   "why_en": "Decoupling memory read/write changes the ceiling for streaming inference, long sessions, and tiny-cache deployment.",
-   "so_what_zh": "对比你们的长上下文任务，做一次 softmax attention vs 线性状态模块的吞吐/质量 A/B。",
-   "so_what_en": "A/B softmax attention vs linear-state modules on long-context tasks for throughput and quality.",
-   "url": "https://arxiv.org/abs/2605.22791v1"
+   "title_zh": "代理系统开始自我改写",
+   "title_en": "Agents that rewrite their own source",
+   "why_zh": "把修复从“人类上线补丁”推进到“源码级自演化”，直接改写 agent 运维模型。",
+   "why_en": "Moves fixes from human patches to source-level self-evolution, changing agent operations.",
+   "so_what_zh": "给代理加“可回滚自修复”分支，先在沙箱里跑失败案例闭环。",
+   "so_what_en": "Prototype a rollback-safe self-fix branch in a sandboxed failure loop.",
+   "url": "https://arxiv.org/abs/2605.22794v1"
   },
   {
    "rank": 3,
    "source_tag": "blog#0",
-   "title_zh": "Datasette Agent 正式可扩展化",
-   "title_en": "Datasette Agent gets extensible",
-   "why_zh": "代理产品的关键不再是聊天，而是可插拔工具、沙箱和可审计的查询回放。",
-   "why_en": "Agent product value is shifting to pluggable tools, sandboxes, and auditable query replay.",
-   "so_what_zh": "把你们内部 agent 的一条高风险工具链改成“沙箱 + 可回放执行”架构。",
-   "so_what_en": "Refactor one high-risk agent tool path into sandboxed, replayable execution.",
-   "url": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything"
+   "title_zh": "FTC盯上“主动监听”AI营销",
+   "title_en": "FTC cracks down on 'active listening' AI ads",
+   "why_zh": "AI产品的合规边界从模型能力转向数据采集叙事，营销和隐私声明要同步重审。",
+   "why_en": "Compliance is shifting from model capability to data-collection claims; marketing and privacy need review.",
+   "so_what_zh": "立刻审一遍产品文案和隐私页，删掉任何“监听/收集语音”模糊表述。",
+   "so_what_en": "Audit product copy and privacy pages; remove ambiguous listening/collection claims.",
+   "url": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything"
   }
  ]
 }

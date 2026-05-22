@@ -1,80 +1,81 @@
 {
- "collected_at": "2026-05-22T06:31:15",
+ "collected_at": "2026-05-22T07:52:02",
  "hf": {
   "status": "ok:30 sort=trendingScore",
   "tag_freq": {
    "image-text-to-text": 11,
-   "text-generation": 4,
    "unknown": 4,
    "text-to-speech": 3,
+   "text-generation": 3,
    "translation": 2,
    "any-to-any": 1,
    "text-to-video": 1,
    "video-text-to-text": 1,
    "image-to-3d": 1,
    "image-text-to-image": 1,
-   "image-to-video": 1
+   "image-to-video": 1,
+   "image-to-text": 1
   },
   "trending": [
    {
     "id": "bytedance-research/Lance",
     "pipeline": "any-to-any",
-    "downloads": 739,
-    "likes": 590
+    "downloads": 1001,
+    "likes": 598
    },
    {
     "id": "openbmb/MiniCPM-V-4.6",
     "pipeline": "image-text-to-text",
-    "downloads": 196105,
+    "downloads": 221612,
     "likes": 891
    },
    {
     "id": "Supertone/supertonic-3",
     "pipeline": "text-to-speech",
-    "downloads": 34965,
-    "likes": 544
+    "downloads": 37545,
+    "likes": 545
    },
    {
     "id": "SulphurAI/Sulphur-2-base",
     "pipeline": "text-to-video",
-    "downloads": 1198471,
-    "likes": 1238
+    "downloads": 1249582,
+    "likes": 1239
    },
    {
     "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
     "pipeline": "image-text-to-text",
-    "downloads": 478488,
-    "likes": 380
+    "downloads": 532255,
+    "likes": 383
    },
    {
     "id": "NemoStation/Marlin-2B",
     "pipeline": "video-text-to-text",
-    "downloads": 2353,
-    "likes": 224
+    "downloads": 4002,
+    "likes": 227
    },
    {
     "id": "sapientinc/HRM-Text-1B",
     "pipeline": "text-generation",
-    "downloads": 58922,
-    "likes": 217
-   },
-   {
-    "id": "circlestone-labs/Anima",
-    "pipeline": "unknown",
-    "downloads": 591834,
-    "likes": 1475
-   },
-   {
-    "id": "unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
-    "pipeline": "image-text-to-text",
-    "downloads": 421542,
-    "likes": 318
+    "downloads": 72470,
+    "likes": 219
    },
    {
     "id": "tencent/Hy-MT2-1.8B",
     "pipeline": "translation",
-    "downloads": 17,
-    "likes": 181
+    "downloads": 564,
+    "likes": 223
+   },
+   {
+    "id": "circlestone-labs/Anima",
+    "pipeline": "unknown",
+    "downloads": 602483,
+    "likes": 1476
+   },
+   {
+    "id": "unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 466060,
+    "likes": 319
    },
    {
     "id": "froggeric/Qwen-Fixed-Chat-Templates",
@@ -83,76 +84,82 @@
     "likes": 358
    },
    {
-    "id": "ResembleAI/Dramabox",
-    "pipeline": "text-to-speech",
-    "downloads": 1287,
-    "likes": 219
-   },
-   {
     "id": "CohereLabs/command-a-plus-05-2026-w4a4",
     "pipeline": "image-text-to-text",
-    "downloads": 575,
-    "likes": 157
+    "downloads": 2127,
+    "likes": 158
+   },
+   {
+    "id": "ResembleAI/Dramabox",
+    "pipeline": "text-to-speech",
+    "downloads": 1354,
+    "likes": 219
    },
    {
     "id": "Jackrong/Qwopus3.5-9B-Coder-GGUF",
     "pipeline": "image-text-to-text",
-    "downloads": 24412,
-    "likes": 152
+    "downloads": 28599,
+    "likes": 153
    },
    {
     "id": "deepseek-ai/DeepSeek-V4-Pro",
     "pipeline": "text-generation",
-    "downloads": 4041458,
-    "likes": 4116
+    "downloads": 4287396,
+    "likes": 4122
    },
    {
     "id": "TencentARC/Pixal3D",
     "pipeline": "image-to-3d",
     "downloads": 0,
-    "likes": 184
+    "likes": 185
    },
    {
     "id": "CohereLabs/command-a-plus-05-2026-bf16",
     "pipeline": "image-text-to-text",
-    "downloads": 10046,
+    "downloads": 11950,
     "likes": 99
    },
    {
     "id": "HiDream-ai/HiDream-O1-Image",
     "pipeline": "image-text-to-image",
-    "downloads": 21558,
-    "likes": 419
-   },
-   {
-    "id": "deepseek-ai/DeepSeek-V4-Flash",
-    "pipeline": "text-generation",
-    "downloads": 2425002,
-    "likes": 1179
+    "downloads": 22783,
+    "likes": 420
    },
    {
     "id": "Qwen/Qwen3.6-27B",
     "pipeline": "image-text-to-text",
-    "downloads": 3928039,
-    "likes": 1375
+    "downloads": 4049995,
+    "likes": 1377
+   },
+   {
+    "id": "deepseek-ai/DeepSeek-V4-Flash",
+    "pipeline": "text-generation",
+    "downloads": 2556531,
+    "likes": 1180
    },
    {
     "id": "microsoft/Fara-7B",
     "pipeline": "image-text-to-text",
-    "downloads": 15175,
-    "likes": 593
+    "downloads": 15399,
+    "likes": 594
+   },
+   {
+    "id": "tencent/Hy-MT2-30B-A3B",
+    "pipeline": "translation",
+    "downloads": 224,
+    "likes": 80
    },
    {
     "id": "internlm/Intern-S2-Preview",
     "pipeline": "image-text-to-text",
-    "downloads": 2219,
+    "downloads": 2294,
     "likes": 93
    },
    {
     "id": "facebook/VGGT-Omega",
     "pipeline": "unknown",
     "downloads": 0,
-    "likes": 85
+    "likes": 86
    },
    {
     "id": "Efficient-Large-Model/SANA-WM_bidirectional",
@@ -163,38 +170,32 @@
    {
     "id": "Qwen/Qwen3.6-35B-A3B",
     "pipeline": "image-text-to-text",
-    "downloads": 5895569,
+    "downloads": 5978432,
     "likes": 1853
-   },
-   {
-    "id": "FrontiersMind/Nandi-Mini-600M-Early-Checkpoint",
-    "pipeline": "text-generation",
-    "downloads": 18846,
-    "likes": 108
    },
    {
     "id": "Cactus-Compute/needle",
     "pipeline": "unknown",
-    "downloads": 319,
-    "likes": 115
+    "downloads": 328,
+    "likes": 116
    },
    {
     "id": "google/gemma-4-31B-it",
     "pipeline": "image-text-to-text",
-    "downloads": 10230129,
-    "likes": 2720
+    "downloads": 10283716,
+    "likes": 2722
    },
    {
     "id": "ScenemaAI/scenema-audio",
     "pipeline": "text-to-speech",
-    "downloads": 418,
+    "downloads": 441,
     "likes": 119
    },
    {
-    "id": "tencent/Hy-MT2-30B-A3B",
-    "pipeline": "translation",
-    "downloads": 43,
-    "likes": 66
+    "id": "numind/NuExtract3",
+    "pipeline": "image-to-text",
+    "downloads": 7576,
+    "likes": 63
    }
   ]
  },
