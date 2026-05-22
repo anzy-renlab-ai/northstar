@@ -1,96 +1,11 @@
 {
- "collected_at": "2026-05-22T07:52:04",
+ "collected_at": "2026-05-22T08:01:01",
  "arxiv": {
-  "status": "ok:12",
-  "papers": [
-   {
-    "title": "Tokenisation via Convex Relaxations",
-    "date": "2026-05-21",
-    "authors": "Jan Tempus, Philip Whittington, Craig W. Schmidt",
-    "summary": "Tokenisation is an integral part of the current NLP pipeline. Current tokenisation algorithms such as BPE and Unigram are greedy algorithms -- they make locally optimal decisions without considering t",
-    "link": "https://arxiv.org/abs/2605.22821v1"
-   },
-   {
-    "title": "Integrable Elasticity via Neural Demand Potentials",
-    "date": "2026-05-21",
-    "authors": "Carlos Heredia, Daniel Roncel",
-    "summary": "We propose the Integrable Context-Dependent Demand Network (ICDN), a demand-first neural model for multiproduct retail demand. The model learns log-demand as a smooth, context-conditioned function of ",
-    "link": "https://arxiv.org/abs/2605.22820v1"
-   },
-   {
-    "title": "Vector Policy Optimization: Training for Diversity Improves Test-Time Search",
-    "date": "2026-05-21",
-    "authors": "Ryan Bahlous-Boldi, Isha Puri, Idan Shenfeld",
-    "summary": "Language models must now generalize out of the box to novel environments and work inside inference-scaling search procedures, such as AlphaEvolve, that select rollouts with a variety of task-specific ",
-    "link": "https://arxiv.org/abs/2605.22817v1"
-   },
-   {
-    "title": "Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration",
-    "date": "2026-05-21",
-    "authors": "Lily Goli, Justin Kerr, Daniele Reda",
-    "summary": "Exploration is a prerequisite for learning useful behaviors in sparse-reward, long-horizon tasks, particularly within 3D environments. Curiosity-driven reinforcement learning addresses this via intrin",
-    "link": "https://arxiv.org/abs/2605.22814v1"
-   },
-   {
-    "title": "The Matching Principle: A Geometric Theory of Loss Functions for Nuisance-Robust Representation Learning",
-    "date": "2026-05-21",
-    "authors": "Vishal Rajput",
-    "summary": "Robustness, domain adaptation, photometric and occlusion invariance, compositional generalisation, temporal robustness, alignment safety, and classical anisotropic regularisation are usually treated a",
-    "link": "https://arxiv.org/abs/2605.22800v1"
-   },
-   {
-    "title": "Finite-Particle Convergence Rates for Conservative and Non-Conservative Drifting Models",
-    "date": "2026-05-21",
-    "authors": "Krishnakumar Balasubramanian",
-    "summary": "We propose and analyze a conservative drifting method for one-step generative modeling. The method replaces the original displacement-based drifting velocity by a kernel density estimator (KDE)-gradie",
-    "link": "https://arxiv.org/abs/2605.22795v1"
-   },
-   {
-    "title": "MOSS: Self-Evolution through Source-Level Rewriting in Autonomous Agent Systems",
-    "date": "2026-05-21",
-    "authors": "Qianshu Cai, Yonggang Zhang, Xianzhang Jia",
-    "summary": "Autonomous agentic systems are largely static after deployment: they do not learn from user interactions, and recurring failures persist until the next human-driven update ships a fix. Self-evolving a",
-    "link": "https://arxiv.org/abs/2605.22794v1"
-   },
-   {
-    "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention",
-    "date": "2026-05-21",
-    "authors": "Ali Hatamizadeh, Yejin Choi, Jan Kautz",
-    "summary": "Linear attention replaces the unbounded cache of softmax attention with a fixed-size recurrent state, reducing sequence mixing to linear time and decoding to constant memory. The hard part is not just",
-    "link": "https://arxiv.org/abs/2605.22791v1"
-   },
-   {
-    "title": "LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems",
-    "date": "2026-05-21",
-    "authors": "Sadia Asif, Mohammad Mohammadi Amiri, Momin Abbas",
-    "summary": "Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, rece",
-    "link": "https://arxiv.org/abs/2605.22786v1"
-   },
-   {
-    "title": "Evaluating Commercial AI Chatbots as News Intermediaries",
-    "date": "2026-05-21",
-    "authors": "Mirac Suzgun, Emily Shen, Federico Bianchi",
-    "summary": "AI chatbots are rapidly shaping how people encounter the news, yet no prior study has systematically measured how accurately these systems, with their proprietary search integrations and retrieval-syn",
-    "link": "https://arxiv.org/abs/2605.22785v1"
-   },
-   {
-    "title": "DeltaBox: Scaling Stateful AI Agents with Millisecond-Level Sandbox Checkpoint/Rollback",
-    "date": "2026-05-21",
-    "authors": "Yunpeng Dong, Jingkai He, Yuze Hou",
-    "summary": "LLM-powered AI agents require high-frequency state exploration (e.g., test-time tree search and reinforcement learning), relying on rapid checkpoint and rollback (C/R) of the complete sandbox state, i",
-    "link": "https://arxiv.org/abs/2605.22781v1"
-   },
-   {
-    "title": "FAME: Failure-Aware Mixture-of-Experts for Message-Level Log Anomaly Detection",
-    "date": "2026-05-21",
-    "authors": "Huanchi Wang, Zihang Huang, Yifang Tian",
-    "summary": "Production systems generate millions of log lines daily, yet most anomaly detectors operate at the session or window-level, flagging groups of lines rather than identifying the specific message respon",
-    "link": "https://arxiv.org/abs/2605.22779v1"
-   }
-  ]
+  "status": "ok:0",
+  "papers": []
  },
  "pypi": {
-  "status": "ok:6/10",
+  "status": "ok:3/10",
   "libs": [
    {
     "pkg": "litellm",
@@ -98,24 +13,9 @@
     "last_week": 122278788
    },
    {
-    "pkg": "langchain",
-    "last_month": 251709484,
-    "last_week": 65281335
-   },
-   {
-    "pkg": "transformers",
-    "last_month": 148351284,
-    "last_week": 32011139
-   },
-   {
-    "pkg": "langgraph",
-    "last_month": 51941335,
-    "last_week": 13395619
-   },
-   {
-    "pkg": "crewai",
-    "last_month": 11336800,
-    "last_week": 4214258
+    "pkg": "anthropic",
+    "last_month": 127024180,
+    "last_week": 30578706
    },
    {
     "pkg": "vllm",
@@ -123,15 +23,27 @@
     "last_week": 1519220
    },
    {
+    "pkg": "langchain",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
     "pkg": "openai",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
-    "pkg": "anthropic",
+    "pkg": "transformers",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
     "pkg": "llama-index",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "langgraph",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "crewai",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {

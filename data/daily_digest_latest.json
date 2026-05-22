@@ -1,40 +1,40 @@
 {
  "as_of": "2026-05-22",
- "summary_one_line_zh": "今天主线：让模型更适配搜索/代理闭环，并且开始被更严监管。",
- "summary_one_line_en": "Models are being tuned for search loops, self-rewrite, and tighter regulation.",
+ "summary_one_line_zh": "多模态/视频模型继续下沉，产品化Agent和算力军备同步加速。",
+ "summary_one_line_en": "Multimodal/video models advance while agent products and compute bets accelerate.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "arxiv#1",
-   "title_zh": "训练多样性以配合测试时搜索",
-   "title_en": "Diversity helps test-time search",
-   "why_zh": "把“训练目标”对齐到推理时搜索器，影响 AlphaEvolve 类系统的候选质量与泛化。",
-   "why_en": "Aligns training with inference-time search, changing candidate quality for AlphaEvolve-like systems.",
-   "so_what_zh": "给你们的 search/rerank 体系加多样性指标，重跑一轮离线评测。",
-   "so_what_en": "Add diversity metrics to search/rerank and rerun offline evals.",
-   "url": "https://arxiv.org/abs/2605.22817v1"
+   "source_tag": "hf#1",
+   "title_zh": "MiniCPM-V-4.6 多模态升级",
+   "title_en": "MiniCPM-V-4.6 VLM update",
+   "why_zh": "VLM能力继续外扩，端侧/低成本多模态栈的可用上限又抬了一档。",
+   "why_en": "Another step up in practical multimodal capability for low-cost and edge-friendly stacks.",
+   "so_what_zh": "拿你们最难的图文任务做回归，比较它和现有VLM的失败模式。",
+   "so_what_en": "Run your hardest vision-language evals against it and compare failure modes.",
+   "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6"
   },
   {
    "rank": 2,
-   "source_tag": "arxiv#5",
-   "title_zh": "代理系统开始自我改写",
-   "title_en": "Agents that rewrite their own source",
-   "why_zh": "把修复从“人类上线补丁”推进到“源码级自演化”，直接改写 agent 运维模型。",
-   "why_en": "Moves fixes from human patches to source-level self-evolution, changing agent operations.",
-   "so_what_zh": "给代理加“可回滚自修复”分支，先在沙箱里跑失败案例闭环。",
-   "so_what_en": "Prototype a rollback-safe self-fix branch in a sandboxed failure loop.",
-   "url": "https://arxiv.org/abs/2605.22794v1"
+   "source_tag": "blog#0",
+   "title_zh": "Datasette Agent 开始产品化",
+   "title_en": "Datasette Agent ships",
+   "why_zh": "Agent不再只拼prompt，而是拼插件、沙箱和可审计工具链，架构重点变了。",
+   "why_en": "Agents are shifting from prompts to plugins, sandboxes, and auditability.",
+   "so_what_zh": "检查你们Agent的工具执行是否可隔离、可回放、可解释。",
+   "so_what_en": "Audit tool execution for isolation, replayability, and explainability.",
+   "url": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything"
   },
   {
    "rank": 3,
-   "source_tag": "blog#0",
-   "title_zh": "FTC盯上“主动监听”AI营销",
-   "title_en": "FTC cracks down on 'active listening' AI ads",
-   "why_zh": "AI产品的合规边界从模型能力转向数据采集叙事，营销和隐私声明要同步重审。",
-   "why_en": "Compliance is shifting from model capability to data-collection claims; marketing and privacy need review.",
-   "so_what_zh": "立刻审一遍产品文案和隐私页，删掉任何“监听/收集语音”模糊表述。",
-   "so_what_en": "Audit product copy and privacy pages; remove ambiguous listening/collection claims.",
-   "url": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything"
+   "source_tag": "blog#4",
+   "title_zh": "SpaceX 释放算力信号",
+   "title_en": "SpaceX signals heavy compute",
+   "why_zh": "大型公司把自有算力继续押注到专有AI应用，训练/推理供给侧仍在内卷。",
+   "why_en": "Big firms keep shifting proprietary AI onto their own compute; supply-side pressure remains high.",
+   "so_what_zh": "重新算一遍你们下季度推理成本，别默认GPU供给会变宽松。",
+   "so_what_en": "Reforecast next-quarter inference costs; don’t assume GPU supply will loosen.",
+   "url": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything"
   }
  ]
 }

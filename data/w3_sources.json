@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-22T07:52:02",
+ "collected_at": "2026-05-22T08:01:00",
  "hf": {
   "status": "ok:30 sort=trendingScore",
   "tag_freq": {
@@ -45,7 +45,7 @@
     "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
     "pipeline": "image-text-to-text",
     "downloads": 532255,
-    "likes": 383
+    "likes": 384
    },
    {
     "id": "NemoStation/Marlin-2B",
@@ -54,28 +54,28 @@
     "likes": 227
    },
    {
+    "id": "tencent/Hy-MT2-1.8B",
+    "pipeline": "translation",
+    "downloads": 564,
+    "likes": 225
+   },
+   {
     "id": "sapientinc/HRM-Text-1B",
     "pipeline": "text-generation",
     "downloads": 72470,
     "likes": 219
    },
    {
-    "id": "tencent/Hy-MT2-1.8B",
-    "pipeline": "translation",
-    "downloads": 564,
-    "likes": 223
-   },
-   {
     "id": "circlestone-labs/Anima",
     "pipeline": "unknown",
     "downloads": 602483,
-    "likes": 1476
+    "likes": 1477
    },
    {
     "id": "unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
     "pipeline": "image-text-to-text",
     "downloads": 466060,
-    "likes": 319
+    "likes": 320
    },
    {
     "id": "froggeric/Qwen-Fixed-Chat-Templates",
@@ -105,7 +105,7 @@
     "id": "deepseek-ai/DeepSeek-V4-Pro",
     "pipeline": "text-generation",
     "downloads": 4287396,
-    "likes": 4122
+    "likes": 4123
    },
    {
     "id": "TencentARC/Pixal3D",
@@ -129,7 +129,7 @@
     "id": "Qwen/Qwen3.6-27B",
     "pipeline": "image-text-to-text",
     "downloads": 4049995,
-    "likes": 1377
+    "likes": 1378
    },
    {
     "id": "deepseek-ai/DeepSeek-V4-Flash",
