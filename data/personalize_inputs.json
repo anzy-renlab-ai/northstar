@@ -1,20 +1,12 @@
 {
- "as_of": "2026-05-20",
+ "as_of": "2026-05-21",
  "foresight": [
   {
    "theme": "AI Agents/编排",
-   "sources": 4
-  },
-  {
-   "theme": "Eval 评测",
    "sources": 3
   },
   {
    "theme": "RAG",
-   "sources": 3
-  },
-  {
-   "theme": "Serving 推理",
    "sources": 3
   },
   {
@@ -26,7 +18,11 @@
    "sources": 2
   },
   {
-   "theme": "AI编码agent当硬技能",
+   "theme": "Eval 评测",
+   "sources": 2
+  },
+  {
+   "theme": "Serving 推理",
    "sources": 2
   }
  ],

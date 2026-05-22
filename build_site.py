@@ -11,7 +11,7 @@ OUT = "site/index.html" if ZH else "site/index-en.html"
 def L(fp,d=None):
     try: return json.load(open(fp))
     except: return d if d is not None else {}
-jw=L("data/jobs_w1.json",{}); blg=L("data/blogs_w2.json",{}); ex=L("data/w4_extra.json",{})
+jw=L("data/jobs_w1.json",{}); blg=L("data/blogs_w2.json",{}); ex=L("data/w4_extra.json",{}); h1b=L("data/h1b_ai.json",{})
 TPL="site/_news_design_template.html"
 def esc(s): return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
 
@@ -195,14 +195,27 @@ for c in CHK:
        "more":[[t("检验日","Check date"),"Aug 2026"],
                [t("反向","If reverse"),t("记 FAIL，不补丁掩盖","Log FAIL, no cover-up")]]})
 
-visa_card={"soft":True,"custom":(
-   f'<div class="hl">{t("北美签证 / H-1B","NA Visa / H-1B")}</div>'
-   f'<div class="mt"><span class="pip"></span>{t("诚实占位","Honest placeholder")}</div>'
-   '<div class="editors-note"><span class="tk">TK</span>'
-   f'<span class="body">{t("USCIS Hub 可达（公司+批准量），DOL 薪资 LCA","USCIS Hub reachable (companies + approval volume), DOL salary LCA")} <em>403 {t("被挡","blocked")}</em>。{t("列 W4 后专项","Deferred to a post-W4 focused effort.")}</span></div>'),
-   "more":[[t("状态","Status"),t("占位 · 待专项","Placeholder · pending")],
-           [t("可达","Reachable"),"USCIS H-1B Data Hub"],
-           [t("阻挡","Blocked"),"DOL salary 403"]]}
+if h1b and h1b.get("top_sponsors"):
+    tops=h1b["top_sponsors"][:6]
+    summ=h1b.get("summary",{})
+    top_list_html="".join(
+        f'<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--line);font-size:13px">'
+        f'<span style="color:var(--ink);font-weight:500">{esc(s["name"][:32])}</span>'
+        f'<span style="font-family:var(--serif);color:var(--acc);font-weight:600">{s["initial_3y"]}</span></div>'
+        for s in tops)
+    visa_card={"soft":True,"custom":(
+       f'<div class="hl">{t("H-1B Sponsor 榜","H-1B Sponsor Leaderboard")}</div>'
+       f'<div class="mt"><span class="pip"></span>{t("USCIS · 3 年新批合计","USCIS · 3-yr initial approvals")}</div>'
+       f'<div style="margin-top:8px">{top_list_html}</div>'
+       f'<div class="ft">{summ.get("n_ai_employers_3y","?")} {t("家 AI 雇主 · 想去北美的看这个谁能办","AI employers · check who sponsors")}</div>'),
+       "more":[[s["name"],f'{s["initial_3y"]} ({s["state_top"]})'] for s in tops[:5]]}
+else:
+    visa_card={"soft":True,"custom":(
+       f'<div class="hl">{t("北美签证 / H-1B","NA Visa / H-1B")}</div>'
+       f'<div class="mt"><span class="pip"></span>{t("数据待抓","data pending")}</div>'
+       '<div class="editors-note"><span class="tk">TK</span>'
+       f'<span class="body">{t("fetch_h1b.py 未跑","fetch_h1b.py not run")}</span></div>'),
+       "more":[[t("状态","Status"),t("数据未生成","data not generated")]]}
 val_card={"soft":True,"custom":(
    f'<div class="hl">{t("真人验证（W4 决策门，需用户自跑）","Real-user validation (W4 gate, requires you to run)")}</div>'
    f'<div class="mt"><span class="pip"></span>{t("5 真人 × 3 问","5 humans × 3 questions")}</div>'

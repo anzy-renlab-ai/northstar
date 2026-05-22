@@ -14,7 +14,7 @@ def L(fp, d=None):
 
 jw=L("data/jobs_w1.json",{}); blg=L("data/blogs_w2.json",{}); oss=L("data/foresight_oss.json",[])
 ossv2=L("data/foresight_oss_v2.json",[]); w3=L("data/w3_sources.json",{}); edg=L("data/edgar_w2.json",{})
-sd=L("data/site_data.json",{}); ex=L("data/w4_extra.json",{})
+sd=L("data/site_data.json",{}); ex=L("data/w4_extra.json",{}); h1b=L("data/h1b_ai.json",{})
 TPL="site/_news_design_template.html"
 
 def clean(s,n=180):
@@ -256,15 +256,53 @@ REPORTS_EN=[("Stanford HAI · AI Index Report","Annual · not real-time",
  ("State of AI Report","Annual · not real-time",
   "Annual synthesis on research / industry / capital / safety — track inflection points.")]
 reports=REPORTS_ZH if ZH else REPORTS_EN
-visa_card={"soft":True,"custom":(
-   f'<div class="hl">{t("北美签证 / H-1B","NA Visa / H-1B")}</div>'
-   f'<div class="mt"><span class="pip"></span>{t("诚实占位","Honest placeholder")}</div>'
-   '<div class="editors-note"><span class="tk">TK</span>'
-   f'<span class="body">{t("可先出","Could start with")}<em>{t("“哪些 AI 公司 sponsor + 批准量趋势”","which AI companies sponsor + approval trends")}</em>{t("，薪资维度待 DOL 专项",". Salary dimension deferred to DOL focused effort.")}</span></div>'
-   f'<div class="ft">{t("USCIS Hub 可达 / DOL 薪资 403 被挡","USCIS Hub reachable / DOL salary 403 blocked")}</div>'),
-   "more":[[t("状态","Status"),t("占位 · 待专项","Placeholder · pending focused work")],
-           [t("可做","Doable"),t("Sponsor 公司 + 批准量趋势","Sponsor companies + approval trends")],
-           [t("阻挡","Blocked"),"DOL salary 403"]]}
+# H-1B 实数据卡（W3 占位 → 真实 USCIS Data Hub 3 年聚合）
+if h1b and h1b.get("top_sponsors"):
+    tops=h1b["top_sponsors"][:7]
+    trend=h1b.get("trend_ai_initial_by_fy",{})
+    summ=h1b.get("summary",{})
+    completeness=h1b.get("data_completeness",{})
+    fy23_pct=completeness.get("FY2023",{}).get("pct_of_max",100)
+    fy23_partial = fy23_pct < 80
+    # 卡 1: Top sponsors 精简榜
+    top_list_html="".join(
+        f'<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--line);font-size:13px">'
+        f'<span style="color:var(--ink);font-weight:500">{esc(s["name"][:38])}</span>'
+        f'<span style="font-family:var(--serif);color:var(--acc);font-weight:600">{s["initial_3y"]}</span></div>'
+        for s in tops)
+    visa_card={"soft":True,"custom":(
+        f'<div class="hl">{t("H-1B Top Sponsors","Top H-1B Sponsors")}</div>'
+        f'<div class="mt"><span class="pip"></span>{t("近 3 年新批准合计 · USCIS Data Hub","3-yr initial approvals · USCIS")}</div>'
+        f'<div style="margin-top:8px">{top_list_html}</div>'
+        f'<div class="ft">{t("数据","Data")}: USCIS · FY{",FY".join(str(y) for y in [2021,2022,2023])} · {summ.get("n_ai_employers_3y",0)} {t("家 AI 雇主","AI employers")}</div>'),
+        "more":[[s["name"],f'{s["initial_3y"]} ({s["state_top"]} {s["city"][:18]})'] for s in tops[:5]]}
+    # 卡 2: 趋势 + 诚实留白
+    yr_max=max(trend.values()) if trend else 1
+    bar_rows="".join(
+        f'<div style="display:flex;align-items:center;gap:8px;font-size:12.5px;margin:5px 0">'
+        f'<span style="flex:0 0 50px;font-family:var(--mono);color:var(--ink-2)">FY{y}</span>'
+        f'<span style="flex:1;background:var(--soft);height:10px;border-radius:3px;overflow:hidden"><i style="display:block;height:100%;background:var(--acc);width:{int(trend.get(f"FY{y}",0)/yr_max*100)}%"></i></span>'
+        f'<span style="flex:0 0 60px;text-align:right;font-family:var(--mono);color:var(--mut)">{trend.get(f"FY{y}",0)}</span>'
+        f'</div>' for y in [2021,2022,2023] if f"FY{y}" in trend)
+    trend_card={"soft":True,"custom":(
+        f'<div class="hl">{t("3 年趋势 · AI 公司新批 H-1B","3-yr trend · AI-company new H-1B")}</div>'
+        f'<div class="mt"><span class="pip"></span>{t("Initial Approvals only","Initial approvals only")}</div>'
+        f'<div style="margin-top:10px">{bar_rows}</div>'
+        + (f'<div class="editors-note" style="margin-top:10px"><span class="tk">{t("诚实","HONEST")}</span>'
+           f'<span class="body">FY2023 {t("数据 USCIS 仅发布约","USCIS only released ~")}<em>{fy23_pct}%</em> ({completeness.get("FY2023",{}).get("rows",0)} {t("行 vs FY2021/22 各 ~60k 行","rows vs ~60k in FY2021/22")}); {t("看似下降实为部分数据","apparent drop is partial data, not real trend")}.</span></div>'
+           if fy23_partial else '')),
+        "more":[[t("FY 2021","FY 2021"),str(trend.get("FY2021","-"))],
+                [t("FY 2022","FY 2022"),str(trend.get("FY2022","-"))],
+                [t("FY 2023 (部分)","FY 2023 (partial)"),f'{trend.get("FY2023","-")} (rows={completeness.get("FY2023",{}).get("rows",0)})']]}
+else:
+    # 数据缺失诚实占位
+    visa_card={"soft":True,"custom":(
+        f'<div class="hl">{t("北美签证 / H-1B","NA Visa / H-1B")}</div>'
+        f'<div class="mt"><span class="pip"></span>{t("数据待抓","data pending")}</div>'
+        '<div class="editors-note"><span class="tk">TK</span>'
+        f'<span class="body">{t("fetch_h1b.py 未跑或失败。USCIS Hub 可达，下次 CI 重试。","fetch_h1b.py not run or failed. USCIS Hub reachable; CI will retry.")}</span></div>'),
+        "more":[[t("状态","Status"),t("数据未生成","data not generated")]]}
+    trend_card=None
 rep_cards=[{"soft":True,"hl":esc(rt),"mt":esc(rm),"dg":esc(rd),
    "more":[[t("类型","Type"),esc(rm)],[t("覆盖","Covers"),esc(rd)]]} for rt,rm,rd in reports]
 
@@ -350,11 +388,14 @@ DIGESTS = {
   "<b>META</b>→<em>Multimodal</em> (AI glasses)<br>"
   "All four quadrants funded = AI deployment's four main lines all have real money on them."),
 
- "b9": t(
-  f"<b>签证视图</b>占位：USCIS Hub 可达，DOL 薪资 403 被挡。<br>"
-  f"<b>权威年报</b>是季度回看用的<em>方向校准</em>，非新闻速读源。",
+ "b9": (t(
+  f"<b>H-1B</b>: USCIS Data Hub 3 年聚合 · <b>{h1b.get('summary',{}).get('n_ai_employers_3y','?')}</b> 家 AI 雇主 · <em>{h1b.get('summary',{}).get('total_initial_3y','?')}</em> 新批合计。<br>Top: Amazon / Google / Microsoft / Apple。<br>诚实留白：FY2023 USCIS 只发布部分数据。<br><b>年报</b>是季度方向校准源。",
+  f"<b>H-1B</b>: USCIS Data Hub 3-yr aggregate · <b>{h1b.get('summary',{}).get('n_ai_employers_3y','?')}</b> AI employers · <em>{h1b.get('summary',{}).get('total_initial_3y','?')}</em> new approvals total.<br>Top: Amazon / Google / Microsoft / Apple.<br>Honest: FY2023 USCIS only published partial data.<br><b>Annual reports</b> for quarterly direction calibration."
+ ) if h1b else t(
+  "<b>签证视图</b>占位：USCIS Hub 可达，DOL 薪资 403 被挡。<br>"
+  "<b>权威年报</b>是季度回看用的<em>方向校准</em>，非新闻速读源。",
   "<b>Visa view</b>: placeholder — USCIS Hub reachable, DOL salary 403 blocked.<br>"
-  "<b>Authoritative annual reports</b> are <em>direction calibration</em> for quarterly review, not real-time news."),
+  "<b>Authoritative annual reports</b> are <em>direction calibration</em> for quarterly review, not real-time news.")),
 }
 
 BANDS=[
@@ -366,7 +407,7 @@ BANDS=[
  {"id":"b6","n":"06","k":t("开源项目 & 模型","OSS & Models"),"pp":t("哪些框架/模型在火","Hot frameworks / models"),"cnt":"","cards":proj_cards},
  {"id":"b7","n":"07","k":t("库采纳曲线","Library Adoption"),"pp":t("PyPI 月下载＝真实采纳（单期快照）","PyPI monthly DL = real adoption (snapshot)"),"cnt":"","cards":pypi_cards},
  {"id":"b8","n":"08","k":t("大公司状况","Big-Tech Bets"),"pp":t("大厂真金白银押什么","Where the big money goes"),"cnt":"SEC 10-K","cards":ent_cards},
- {"id":"b9","n":"09","k":t("签证 & 权威年报","Visa & Annuals"),"pp":t("北美落地参照","NA landing reference"),"cnt":"","cards":[visa_card]+rep_cards},
+ {"id":"b9","n":"09","k":t("H-1B 签证 & 权威年报","H-1B Visa & Annuals"),"pp":t("北美落地参照 · USCIS 真实数据","NA landing reference · real USCIS data"),"cnt":(t(f'{h1b.get("summary",{}).get("n_ai_employers_3y",0)} AI 雇主',f'{h1b.get("summary",{}).get("n_ai_employers_3y",0)} AI employers') if h1b else ""),"cards":[c for c in [visa_card,trend_card] if c]+rep_cards},
 ]
 for b in BANDS: b["digest"]=DIGESTS.get(b["id"],"")
 

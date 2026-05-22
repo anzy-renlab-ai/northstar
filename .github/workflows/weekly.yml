@@ -43,11 +43,24 @@ jobs:
           python3 scrape_jobs_w1.py
           python3 build_jobs_json.py
 
-      - name: Rebuild signals.db + canonical ontology
+      - name: Refresh H-1B sponsors (USCIS Data Hub, 3 FY 聚合) — 允许部分失败
+        continue-on-error: true
+        run: python3 fetch_h1b.py
+
+      - name: Rebuild signals.db base (jobs + OSS signals + W1 hardcoded enterprise/blog fallback)
         run: |
           python3 build_db.py
           python3 add_llm_signals.py
-          python3 theme_ontology.py
+
+      - name: LLM extract (覆盖 enterprise/blog signals + 写 alias_map 表) — 无 LLM key 时 graceful skip
+        continue-on-error: true
+        env:
+          UYILINK_API_KEY: ${{ secrets.UYILINK_API_KEY }}
+          UYILINK_BASE_URL: ${{ secrets.UYILINK_BASE_URL }}
+        run: python3 llm_extract.py
+
+      - name: Build canonical ontology (uses LLM alias_map if present, else hardcoded fallback)
+        run: python3 theme_ontology.py
 
       - name: Rebuild P2.1 personalize inputs (LLM 拿到最新真数据)
         run: python3 build_personalize_inputs.py

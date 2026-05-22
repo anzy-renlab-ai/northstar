@@ -6,7 +6,9 @@
 import sqlite3, json, datetime
 
 # alias(原始 theme 串) -> canonical
-ALIAS = {
+# 硬编码 ALIAS = fallback; LLM 生成的 alias_map (signals.db) 优先。
+# 这条手工映射 W2 时建的；llm_extract.py 跑过后会写一份更全的进 signals.db.alias_map
+HARDCODED_ALIAS = {
  "AI编码agent(Claude Code/Cursor)当必备技能":"AI编码agent当硬技能",
  "AI编码agent(Codex/Claude Code/Cursor)当技能":"AI编码agent当硬技能",
  "AI编码agent当硬技能":"AI编码agent当硬技能",
@@ -19,6 +21,20 @@ ALIAS = {
  "AI系统可观测性/成本":"AI系统可观测性/成本",
  "LLM/生成式AI应用":"LLM/生成式AI应用",
 }
+# 优先从 signals.db.alias_map 读 LLM 生成的；缺则 fallback 硬编码
+def _load_alias():
+    try:
+        c=sqlite3.connect("data/signals.db")
+        rows=c.execute("SELECT raw,canonical FROM alias_map").fetchall()
+        c.close()
+        if rows:
+            print(f"[ontology] using LLM-generated alias_map: {len(rows)} entries")
+            return dict(rows)
+    except Exception:
+        pass
+    print(f"[ontology] LLM alias_map empty/missing → fallback to hardcoded ({len(HARDCODED_ALIAS)} entries)")
+    return HARDCODED_ALIAS
+ALIAS = _load_alias()
 # canonical -> layer
 LAYER = {
  # 基础技能：普遍必备，只在 jobs 出现是"太基础没被前瞻源单列"，非弱信号
