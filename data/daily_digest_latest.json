@@ -1,40 +1,40 @@
 {
  "as_of": "2026-05-22",
- "summary_one_line_zh": "推理时搜索、代理自我改写、合规风控三条线同时在重塑产品栈",
- "summary_one_line_en": "Inference-time search, self-editing agents, and compliance pressure are reshaping the stack.",
+ "summary_one_line_zh": "基础设施在重构：分词、线性注意力、和可落地的代理工具链同时推进。",
+ "summary_one_line_en": "Infra is shifting: tokenization, linear attention, and practical agent tooling all move.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "arxiv#2",
-   "title_zh": "多样性训练提升搜索表现",
-   "title_en": "Diversity Training Improves Search",
-   "url": "",
-   "why_zh": "直接影响推理时搜索/采样管线：训练目标开始为 test-time search 服务，而非只追单点困惑度。",
-   "why_en": "Training is being optimized for inference-time search, not just standalone perplexity.",
-   "so_what_zh": "把你的 reranker/beam/树搜流程加一组“多样性训练”对照实验。",
-   "so_what_en": "Add a diversity-training ablation to your reranker/beam search stack."
+   "source_tag": "arxiv#0",
+   "title_zh": "分词开始可优化而非贪心",
+   "title_en": "Tokenization becomes optimizable",
+   "why_zh": "若分词可端到端优化，embedding/RAG/长上下文成本与效果都可能重算，不再只是BPE调参。",
+   "why_en": "If tokenization is optimizable end-to-end, embedding, RAG, and long-context economics get re-priced.",
+   "so_what_zh": "把你们最高频语料跑一次分词覆盖率分析，评估是否值得重训 tokenizer。",
+   "so_what_en": "Run token coverage on your top corpora; decide whether a tokenizer retrain is justified.",
+   "url": "https://arxiv.org/abs/2605.22821v1"
   },
   {
    "rank": 2,
-   "source_tag": "arxiv#6",
-   "title_zh": "代理可自我改写以修复失败",
-   "title_en": "Agents That Rewrite Themselves",
-   "url": "",
-   "why_zh": "它把“上线后修复”前移到模型/代理闭环内，意味着 agent 系统需要把源码重写、回归验证纳入运行时。",
-   "why_en": "Post-deploy fixes move into the agent loop itself: source rewriting plus regression checks become runtime concerns.",
-   "so_what_zh": "给你的 agent 加一个只读补丁沙箱，先让它改代码再跑回归。",
-   "so_what_en": "Put your agent in a patch sandbox and require regression runs before merge."
+   "source_tag": "arxiv#5",
+   "title_zh": "线性注意力开始拆分读写",
+   "title_en": "Linear attention splits erase/write",
+   "why_zh": "把记忆读写解耦，直接影响流式推理、长会话状态管理和小缓存部署的上限。",
+   "why_en": "Decoupling memory read/write changes the ceiling for streaming inference, long sessions, and tiny-cache deployment.",
+   "so_what_zh": "对比你们的长上下文任务，做一次 softmax attention vs 线性状态模块的吞吐/质量 A/B。",
+   "so_what_en": "A/B softmax attention vs linear-state modules on long-context tasks for throughput and quality.",
+   "url": "https://arxiv.org/abs/2605.22791v1"
   },
   {
    "rank": 3,
    "source_tag": "blog#0",
-   "title_zh": "FTC 正在打击“AI 听音”营销",
-   "title_en": "FTC Targets AI 'Active Listening' Claims",
-   "url": "",
-   "why_zh": "这不是公关新闻，是产品合规边界：凡涉及语音/行为推断的 AI 营销主张，审计和措辞风险正在实质上升。",
-   "why_en": "This is a product-compliance boundary shift: voice and behavioral inference claims now carry real audit and wording risk.",
-   "so_what_zh": "立刻审查你们的语音/洞察/个性化文案，删掉不可证实的推断表述。",
-   "so_what_en": "Audit voice/insight/personalization copy and remove any unverifiable inference claims."
+   "title_zh": "Datasette Agent 正式可扩展化",
+   "title_en": "Datasette Agent gets extensible",
+   "why_zh": "代理产品的关键不再是聊天，而是可插拔工具、沙箱和可审计的查询回放。",
+   "why_en": "Agent product value is shifting to pluggable tools, sandboxes, and auditable query replay.",
+   "so_what_zh": "把你们内部 agent 的一条高风险工具链改成“沙箱 + 可回放执行”架构。",
+   "so_what_en": "Refactor one high-risk agent tool path into sandboxed, replayable execution.",
+   "url": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything"
   }
  ]
 }

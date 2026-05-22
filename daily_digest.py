@@ -9,6 +9,10 @@
 - 每件事附 why_important + so_what_for_you 两句
 - 双语（中英），用户可在前端切语言
 - 失败时输出空 digest（不假装），前端显示「无新事」
+
+两层 dedup（v2 加, 2026-05-22）：
+- 硬: 近 DEDUP_DAYS 天的 item URL 集合, raw items 里 exact URL match 直接 drop
+- 软: 把近 DEDUP_DAYS 天的 titles 列在 LLM prompt, 让它避开同角度
 """
 import json, os, sys, sqlite3, datetime, subprocess, time, urllib.request, urllib.parse, re
 from collections import defaultdict
@@ -16,6 +20,7 @@ from collections import defaultdict
 MODEL = "gpt-5.4-mini"
 TIMEOUT = 60
 LOOKBACK_HOURS = 36   # 留富裕 — RSS/HF 不一定每日都有新增
+DEDUP_DAYS = 7        # 不重复前 7 天讲过的 URL / 主题
 
 def get_key_base():
     key = os.environ.get("UYILINK_API_KEY")
@@ -102,6 +107,30 @@ def fetch_blogs():
                           "summary":(it.get("summary","") or "")[:250]})
     return items[:6]
 
+def load_recent_history():
+    """读 signals.db.daily_digest 表近 DEDUP_DAYS 天的 URL 集合 + 标题列表"""
+    if not os.path.exists("data/signals.db"): return set(), []
+    try:
+        con = sqlite3.connect("data/signals.db")
+        cur = con.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='daily_digest'")
+        if not cur.fetchone(): con.close(); return set(), []
+        rows = con.execute("SELECT payload_json FROM daily_digest WHERE date >= date('now', ?)",
+                           (f"-{DEDUP_DAYS} days",)).fetchall()
+        con.close()
+    except Exception as e:
+        print(f"  ⚠ 读历史 digest 失败: {e}"); return set(), []
+    urls, titles = set(), []
+    for (p,) in rows:
+        try: d = json.loads(p)
+        except: continue
+        for it in d.get("items", []):
+            u = (it.get("url") or "").strip()
+            if u: urls.add(u)
+            for k in ("title_zh", "title_en"):
+                t = (it.get(k) or "").strip()
+                if t: titles.append(t)
+    return urls, titles
+
 def build_digest():
     print("═══ 抓最新源 ═══")
     arx = fetch_arxiv_recent();  print(f"  arXiv 近 {LOOKBACK_HOURS}h: {len(arx)} 篇")
@@ -109,15 +138,30 @@ def build_digest():
     hf  = fetch_hf_trending();   print(f"  HF trending: {len(hf)} 个模型")
     bg  = fetch_blogs();         print(f"  blogs 近 {LOOKBACK_HOURS}h: {len(bg)} 篇")
 
+    # 硬去重：拉近 DEDUP_DAYS 天讲过的 URL，过滤掉
+    past_urls, past_titles = load_recent_history()
+    print(f"\n═══ 近 {DEDUP_DAYS} 天历史 digest: {len(past_urls)} 个 URL / {len(past_titles)} 个标题 ═══")
+
+    def keep(x):
+        u = (x.get("url") or "").strip()
+        return not u or u not in past_urls
+
+    arx2 = [x for x in arx if keep(x)]; bg2 = [x for x in bg if keep(x)]
+    hn2  = [x for x in hn  if keep(x)]; hf2 = [x for x in hf  if keep(x)]
+    dropped = (len(arx)-len(arx2)) + (len(hn)-len(hn2)) + (len(hf)-len(hf2)) + (len(bg)-len(bg2))
+    if dropped: print(f"  硬去重过滤掉 {dropped} 个旧 URL")
+
     all_items = []
-    for i,x in enumerate(arx): all_items.append(("arxiv",i,x))
-    for i,x in enumerate(hn):  all_items.append(("hn",i,x))
-    for i,x in enumerate(hf):  all_items.append(("hf",i,x))
-    for i,x in enumerate(bg):  all_items.append(("blog",i,x))
+    for i,x in enumerate(arx2): all_items.append(("arxiv",i,x))
+    for i,x in enumerate(hn2):  all_items.append(("hn",i,x))
+    for i,x in enumerate(hf2):  all_items.append(("hf",i,x))
+    for i,x in enumerate(bg2):  all_items.append(("blog",i,x))
 
     if not all_items:
-        print("⚠ 无可用素材")
+        print("⚠ 硬去重后无可用素材")
         return None
+    if len(all_items) < 3:
+        print(f"⚠ 去重后仅 {len(all_items)} 条候选, digest 可能不足 3 件")
 
     # 喂给 LLM
     lines = []
@@ -132,12 +176,23 @@ def build_digest():
         lines.append(head)
     blob = "\n".join(lines)[:9500]
 
+    # 软去重 prompt 段
+    recent_block = ""
+    if past_titles:
+        sample = past_titles[:30]
+        recent_block = f"""
+RECENTLY COVERED (past {DEDUP_DAYS} days — AVOID same angle / restatement):
+{json.dumps(sample, ensure_ascii=False)}
+
+If today's candidates would just rehash one of these, DROP it and pick a fresher angle. Picking a related-but-genuinely-new development is fine; restating yesterday's news is not.
+"""
+
     prompt = f"""You are NorthStar's editor. Your audience: engineers AT AN AI-NATIVE COMPANY (already shipping LLM products, sophisticated). They DO NOT need "learn AI basics" — they need "what does today change for me" signal.
 
 Raw items collected in the past {LOOKBACK_HOURS}h:
 
 {blob}
-
+{recent_block}
 TASK: Pick exactly 3 items that an AI-native engineer should NOT miss today. Output strict JSON:
 
 {{
@@ -150,7 +205,6 @@ TASK: Pick exactly 3 items that an AI-native engineer should NOT miss today. Out
       "source_tag": "<arxiv#N | hn#N | hf#N | blog#N>",
       "title_zh": "<≤30字 中文标题, 可改写原标题让它更准>",
       "title_en": "<≤12 word English>",
-      "url": "<原 URL>",
       "why_zh": "<≤60字 为什么对 AI native 工程师重要 — 别说大白话>",
       "why_en": "<≤25 word English>",
       "so_what_zh": "<≤50字 你今天/本周可以做的具体一件事>",
@@ -167,7 +221,19 @@ Rules:
 
     print(f"\n═══ LLM ranking + 编辑 ({MODEL}) ═══")
     result, usage = llm(prompt)
-    print(f"  ✓ tokens: {usage.get('total_tokens')} · items: {len(result.get('items',[]))}")
+
+    # 用 source_tag 反查原 URL（LLM 不抄 URL 更可靠）
+    src_map = {}
+    for src, idx, x in all_items:
+        src_map[f"{src}#{idx}"] = x.get("url","")
+    for item in result.get("items", []):
+        tag = (item.get("source_tag") or "").strip()
+        if tag in src_map:
+            item["url"] = src_map[tag]
+        else:
+            item["url"] = ""
+
+    print(f"  ✓ tokens: {usage.get('total_tokens')} · items: {len(result.get('items',[]))} · urls 回填 {sum(1 for x in result.get('items',[]) if x.get('url'))}")
     return result, all_items
 
 def write_db(digest):
