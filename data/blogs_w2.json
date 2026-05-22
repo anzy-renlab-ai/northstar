@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-22T03:47:36",
+ "collected_at": "2026-05-22T06:31:05",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,13 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service",
+   "date": "2026-05-22",
+   "summary": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service Back in 2024 Cox Media Group were caught trying to sell advertisers packages based on \"active listening\", with this deck which claimed: Smart devices capture real-time intent data by listening to our conversations Advertisers can pair this voice-data with behavioral data to target in-market consumers I wrote about this in September 2024 . My theory: I think active listening is the term that the team came up with for “something ",
+   "link": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "Datasette Agent",
@@ -65,13 +72,6 @@
    "date": "2026-05-20",
    "summary": "It's hard to find much to write about Google I/O this year because I have a policy of not writing about anything that I can't try out myself, and a lot of the big announcements are \"coming soon\". I actually prefer to write about things that are in general availability, because I've had instances in the past where the previews didn't match what was released to the general public later on. Aside from Gemini 3.5 Flash the most interesting announcement looks to be Google's upcoming OpenClaw competitor Gemini Spark , described as \"your personal AI agent\" which can \"connect natively with your favori",
    "link": "https://simonwillison.net/2026/May/20/google-io/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette-agent-charts 0.1a1",
-   "date": "2026-05-20",
-   "summary": "Release: datasette-agent-charts 0.1a1 More color! Bar and waffle charts without a color column are shaded by magnitude with a sequential color scheme; color columns holding text values use the observable10 categorical scheme. #2 Now checks execute-sql permission before running the query to find the column names. Charts now display interactive tooltips. Fixed a bug where waffleY charts were not described to the agent. Tags: datasette , datasette-agent",
-   "link": "https://simonwillison.net/2026/May/20/datasette-agent-charts/#atom-everything"
   },
   {
    "source": "Sebastian Raschka",
