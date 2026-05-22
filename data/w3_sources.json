@@ -1,200 +1,200 @@
 {
- "collected_at": "2026-05-20T08:31:21",
+ "collected_at": "2026-05-22T03:47:43",
  "hf": {
   "status": "ok:30 sort=trendingScore",
   "tag_freq": {
-   "image-text-to-text": 9,
-   "text-generation": 6,
-   "unknown": 5,
+   "image-text-to-text": 11,
+   "text-generation": 5,
+   "unknown": 4,
    "text-to-speech": 3,
-   "text-to-video": 1,
    "any-to-any": 1,
-   "image-text-to-image": 1,
+   "text-to-video": 1,
+   "video-text-to-text": 1,
    "image-to-3d": 1,
-   "text-to-image": 1,
+   "image-text-to-image": 1,
    "image-to-video": 1,
-   "video-text-to-text": 1
+   "image-to-text": 1
   },
   "trending": [
    {
-    "id": "SulphurAI/Sulphur-2-base",
-    "pipeline": "text-to-video",
-    "downloads": 1157497,
-    "likes": 1185
-   },
-   {
     "id": "bytedance-research/Lance",
     "pipeline": "any-to-any",
-    "downloads": 438,
-    "likes": 364
-   },
-   {
-    "id": "openbmb/MiniCPM-V-4.6",
-    "pipeline": "image-text-to-text",
-    "downloads": 166049,
-    "likes": 811
+    "downloads": 739,
+    "likes": 581
    },
    {
     "id": "Supertone/supertonic-3",
     "pipeline": "text-to-speech",
-    "downloads": 31940,
-    "likes": 477
+    "downloads": 34965,
+    "likes": 541
+   },
+   {
+    "id": "openbmb/MiniCPM-V-4.6",
+    "pipeline": "image-text-to-text",
+    "downloads": 196105,
+    "likes": 876
+   },
+   {
+    "id": "SulphurAI/Sulphur-2-base",
+    "pipeline": "text-to-video",
+    "downloads": 1198471,
+    "likes": 1234
    },
    {
     "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
     "pipeline": "image-text-to-text",
-    "downloads": 411598,
-    "likes": 333
+    "downloads": 478488,
+    "likes": 379
    },
    {
-    "id": "unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
-    "pipeline": "image-text-to-text",
-    "downloads": 363131,
-    "likes": 275
+    "id": "NemoStation/Marlin-2B",
+    "pipeline": "video-text-to-text",
+    "downloads": 2353,
+    "likes": 221
+   },
+   {
+    "id": "sapientinc/HRM-Text-1B",
+    "pipeline": "text-generation",
+    "downloads": 58922,
+    "likes": 216
    },
    {
     "id": "circlestone-labs/Anima",
     "pipeline": "unknown",
-    "downloads": 571087,
-    "likes": 1431
+    "downloads": 591834,
+    "likes": 1472
    },
    {
-    "id": "ResembleAI/Dramabox",
-    "pipeline": "text-to-speech",
-    "downloads": 1229,
-    "likes": 188
+    "id": "unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 421542,
+    "likes": 315
    },
    {
     "id": "froggeric/Qwen-Fixed-Chat-Templates",
     "pipeline": "unknown",
     "downloads": 0,
-    "likes": 320
+    "likes": 357
    },
    {
-    "id": "sapientinc/HRM-Text-1B",
-    "pipeline": "text-generation",
-    "downloads": 23532,
-    "likes": 140
+    "id": "ResembleAI/Dramabox",
+    "pipeline": "text-to-speech",
+    "downloads": 1287,
+    "likes": 216
    },
    {
-    "id": "deepseek-ai/DeepSeek-V4-Pro",
-    "pipeline": "text-generation",
-    "downloads": 3817887,
-    "likes": 4074
+    "id": "CohereLabs/command-a-plus-05-2026-w4a4",
+    "pipeline": "image-text-to-text",
+    "downloads": 575,
+    "likes": 157
    },
    {
     "id": "Jackrong/Qwopus3.5-9B-Coder-GGUF",
     "pipeline": "image-text-to-text",
-    "downloads": 17539,
-    "likes": 126
+    "downloads": 24412,
+    "likes": 150
    },
    {
-    "id": "HiDream-ai/HiDream-O1-Image",
-    "pipeline": "image-text-to-image",
-    "downloads": 17645,
-    "likes": 403
+    "id": "deepseek-ai/DeepSeek-V4-Pro",
+    "pipeline": "text-generation",
+    "downloads": 4041458,
+    "likes": 4114
    },
    {
     "id": "TencentARC/Pixal3D",
     "pipeline": "image-to-3d",
     "downloads": 0,
-    "likes": 156
+    "likes": 184
    },
    {
-    "id": "microsoft/Fara-7B",
+    "id": "CohereLabs/command-a-plus-05-2026-bf16",
     "pipeline": "image-text-to-text",
-    "downloads": 15167,
-    "likes": 584
-   },
-   {
-    "id": "SeeSee21/Z-Anime",
-    "pipeline": "text-to-image",
-    "downloads": 16159,
-    "likes": 419
-   },
-   {
-    "id": "deepseek-ai/DeepSeek-V4-Flash",
-    "pipeline": "text-generation",
-    "downloads": 2289519,
-    "likes": 1162
-   },
-   {
-    "id": "inclusionAI/Ring-2.6-1T",
-    "pipeline": "text-generation",
-    "downloads": 3454,
-    "likes": 85
-   },
-   {
-    "id": "Cactus-Compute/needle",
-    "pipeline": "unknown",
-    "downloads": 292,
-    "likes": 100
-   },
-   {
-    "id": "ScenemaAI/scenema-audio",
-    "pipeline": "text-to-speech",
-    "downloads": 377,
-    "likes": 110
+    "downloads": 10046,
+    "likes": 97
    },
    {
     "id": "internlm/Intern-S2-Preview",
     "pipeline": "image-text-to-text",
-    "downloads": 2050,
-    "likes": 81
+    "downloads": 2219,
+    "likes": 93
    },
    {
-    "id": "Qwen/Qwen3.6-35B-A3B",
+    "id": "HiDream-ai/HiDream-O1-Image",
+    "pipeline": "image-text-to-image",
+    "downloads": 21558,
+    "likes": 417
+   },
+   {
+    "id": "microsoft/Fara-7B",
     "pipeline": "image-text-to-text",
-    "downloads": 5798579,
-    "likes": 1832
+    "downloads": 15175,
+    "likes": 593
    },
    {
-    "id": "Zyphra/ZAYA1-8B",
-    "pipeline": "unknown",
-    "downloads": 146770,
-    "likes": 541
+    "id": "deepseek-ai/DeepSeek-V4-Flash",
+    "pipeline": "text-generation",
+    "downloads": 2425002,
+    "likes": 1177
    },
    {
     "id": "Qwen/Qwen3.6-27B",
     "pipeline": "image-text-to-text",
-    "downloads": 3810004,
-    "likes": 1352
-   },
-   {
-    "id": "google/gemma-4-31B-it",
-    "pipeline": "image-text-to-text",
-    "downloads": 10170798,
-    "likes": 2700
-   },
-   {
-    "id": "FrontiersMind/Nandi-Mini-600M-Early-Checkpoint",
-    "pipeline": "text-generation",
-    "downloads": 18626,
-    "likes": 101
-   },
-   {
-    "id": "RuneXX/LTX-2.3-Workflows",
-    "pipeline": "image-to-video",
-    "downloads": 0,
-    "likes": 591
+    "downloads": 3928039,
+    "likes": 1373
    },
    {
     "id": "facebook/VGGT-Omega",
     "pipeline": "unknown",
     "downloads": 0,
-    "likes": 66
+    "likes": 85
    },
    {
-    "id": "NemoStation/Marlin-2B",
-    "pipeline": "video-text-to-text",
-    "downloads": 125,
-    "likes": 64
+    "id": "Qwen/Qwen3.6-35B-A3B",
+    "pipeline": "image-text-to-text",
+    "downloads": 5895569,
+    "likes": 1852
    },
    {
-    "id": "Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+    "id": "Efficient-Large-Model/SANA-WM_bidirectional",
+    "pipeline": "image-to-video",
+    "downloads": 0,
+    "likes": 76
+   },
+   {
+    "id": "FrontiersMind/Nandi-Mini-600M-Early-Checkpoint",
     "pipeline": "text-generation",
-    "downloads": 255430,
-    "likes": 631
+    "downloads": 18846,
+    "likes": 108
+   },
+   {
+    "id": "Cactus-Compute/needle",
+    "pipeline": "unknown",
+    "downloads": 319,
+    "likes": 114
+   },
+   {
+    "id": "google/gemma-4-31B-it",
+    "pipeline": "image-text-to-text",
+    "downloads": 10230129,
+    "likes": 2718
+   },
+   {
+    "id": "ScenemaAI/scenema-audio",
+    "pipeline": "text-to-speech",
+    "downloads": 418,
+    "likes": 119
+   },
+   {
+    "id": "inclusionAI/Ring-2.6-1T",
+    "pipeline": "text-generation",
+    "downloads": 3752,
+    "likes": 91
+   },
+   {
+    "id": "numind/NuExtract3",
+    "pipeline": "image-to-text",
+    "downloads": 3322,
+    "likes": 60
    }
   ]
  },
@@ -228,11 +228,6 @@
     "title": "Show HN: Agent-desktop – Native desktop automation CLI for AI agents",
     "points": 99,
     "url": "https://github.com/lahfir/agent-desktop"
-   },
-   {
-    "title": "Launch HN: Kampala (YC W26) – Reverse-Engineer Apps into APIs",
-    "points": 100,
-    "url": "https://www.zatanna.ai/kampala"
    },
    {
     "title": "Show HN: Mediator.ai – Using Nash bargaining and LLMs to systematize fairness",

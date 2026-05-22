@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-20T08:31:29",
+ "collected_at": "2026-05-22T03:48:06",
  "by_url": {
   "https://github.com/nex-crm/wuphf": {
    "sum": "WUPHF is a collaborative office of AI employees who build and maintain their own knowledge base to never lose context for the tasks you give them. Supports Claude Code, Codex, OpenClaw and local LL...",
@@ -11,10 +11,6 @@
   },
   "https://github.com/lahfir/agent-desktop": {
    "sum": "Native desktop automation CLI for AI agents. Control any application through OS accessibility trees with structured JSON output and deterministic element refs. - lahfir/agent-desktop",
-   "status": "ok"
-  },
-  "https://www.zatanna.ai/kampala": {
-   "sum": "Zatanna maps human-only software workflows and exposes them as reliable APIs your AI agents and internal tools can call in production. No browser automation scripts to maintain.",
    "status": "ok"
   },
   "https://mediator.ai/": {

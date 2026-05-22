@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-20T08:31:11",
+ "collected_at": "2026-05-22T03:47:36",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -19,59 +19,59 @@
  "items": [
   {
    "source": "Simon Willison",
-   "title": "llm-gemini 0.32",
-   "date": "2026-05-19",
-   "summary": "Release: llm-gemini 0.32 New model gemini-3.5-flash for Gemini 3.5 Flash . See also my notes on Gemini 3.5 Flash , and the pelican I drew using this upgrade to the plugin. Tags: gemini , llm",
-   "link": "https://simonwillison.net/2026/May/19/llm-gemini-2/#atom-everything"
+   "title": "Datasette Agent",
+   "date": "2026-05-21",
+   "summary": "We just announced the first release of Datasette Agent , a new extensible AI assistant for Datasette. I've been working on my LLM Python library for just over three years now, and Datasette Agent represents the moment that LLM and Datasette finally come together. I'm really excited about it! Datasette Agent provides a conversational interface for asking questions of the data you have stored in Datasette. Add the datasette-agent-charts plugin and it can generate charts of your data as well. The demo The announcement post (on the new Datasette project blog) includes this demo video : I recorded ",
+   "link": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything"
   },
   {
    "source": "Simon Willison",
-   "title": "Gemini 3.5 Flash: more expensive, but Google plan to use it for everything",
-   "date": "2026-05-19",
-   "summary": "Today at Google I/O, Google released Gemini 3.5 Flash . This one skipped the -preview modifier and went straight to general availability, and Google appear to be using it for a whole lot of their key products: 3.5 Flash is available today to billions of people globally: For everyone via the Gemini app and AI Mode in Google Search For developers in our agent-first development platform Google Antigravity and Gemini API in Google AI Studio and Android Studio For enterprises in Gemini Enterprise Agent Platform and Gemini Enterprise. As usual with Gemini, the most interesting details are tucked awa",
-   "link": "https://simonwillison.net/2026/May/19/gemini-35-flash/#atom-everything"
+   "title": "datasette-agent-sprites 0.1a0",
+   "date": "2026-05-21",
+   "summary": "Release: datasette-agent-sprites 0.1a0 A Datasette Agent plugin for running commands in a Fly Sprites sandbox. Tags: sandboxing , datasette , fly , datasette-agent",
+   "link": "https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything"
   },
   {
    "source": "Simon Willison",
-   "title": "datasette-llm-accountant 0.1a4",
-   "date": "2026-05-19",
-   "summary": "Release: datasette-llm-accountant 0.1a4 Fixed bug tracking chains of responses. Refs datasette-llm#7 Tags: llm , datasette",
-   "link": "https://simonwillison.net/2026/May/19/datasette-llm-accountant/#atom-everything"
+   "title": "datasette-agent-charts 0.1a2",
+   "date": "2026-05-21",
+   "summary": "Release: datasette-agent-charts 0.1a2 \"View SQL query\" buttons below rendered charts. Tags: datasette , datasette-agent",
+   "link": "https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything"
   },
   {
    "source": "Simon Willison",
-   "title": "llm-gemini 0.32a0",
-   "date": "2026-05-19",
-   "summary": "Release: llm-gemini 0.32a0 Compatible with llm&gt;=0.32a0 alpha - adds the ability to stream reasoning tokens. Tags: gemini , llm",
-   "link": "https://simonwillison.net/2026/May/19/llm-gemini/#atom-everything"
+   "title": "datasette-agent 0.1a3",
+   "date": "2026-05-21",
+   "summary": "Release: datasette-agent 0.1a3 \"View SQL query\" buttons for both visible tables and collapsed SQL result tool calls. Don't display empty reasoning chunks Improved handling of truncated responses - table still displays to the user even if the SQL results were truncated when showing the agent. See Datasette Agent, an extensible AI assistant for Datasette . Tags: datasette , datasette-agent",
+   "link": "https://simonwillison.net/2026/May/21/datasette-agent-2/#atom-everything"
   },
   {
    "source": "Simon Willison",
-   "title": "datasette-llm 0.1a8",
-   "date": "2026-05-19",
-   "summary": "Release: datasette-llm 0.1a8 Fix for bug where llm_prompt_context() hook did not fully collect chains of responses. #7",
-   "link": "https://simonwillison.net/2026/May/19/datasette-llm/#atom-everything"
+   "title": "Quoting SpaceX S-1",
+   "date": "2026-05-20",
+   "summary": "We have the ability to use compute resources to support our proprietary AI applications (such as Grok 5, which is currently being trained at COLOSSUS II), while also providing access to select compute capacity to third-party customers. For example, in May 2026, we entered into Cloud Services Agreements with Anthropic PBC (“Anthropic”), an AI research and development public benefit corporation, with respect to access to compute capacity across COLOSSUS and COLOSSUS II . Pursuant to these agreements, the customer has agreed to pay us $1.25 billion per month through May 2029, with capacity rampin",
+   "link": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything"
   },
   {
    "source": "Simon Willison",
-   "title": "The last six months in LLMs in five minutes",
-   "date": "2026-05-19",
-   "summary": "I put together these annotated slides from my five minute lightning talk at PyCon US 2026, using the latest iteration of my annotated presentation tool . # I presented this lightning talk at PyCon US 2026, attempting to summarize the last six months of developments in LLMs in five minutes. # Six months is a pretty convenient time period to cover, because it captures what I've been calling the November 2025 inflection point . November was a critical month in LLMs, especially for coding. # For one thing, the supposedly \"best\" model (depending mostly on vibes) changed hands five times between the",
-   "link": "https://simonwillison.net/2026/May/19/5-minute-llms/#atom-everything"
+   "title": "How fast is 10 tokens per second really?",
+   "date": "2026-05-20",
+   "summary": "How fast is 10 tokens per second really? Neat little HTML app by Mike Veerman ( source code here ) which simulates LLM token output speeds from 5/second to 800/second. Useful if you see a model advertised as \"30 tokens/second\" and want to get a feel for what that actually looks like. Via Hacker News Tags: ai , generative-ai , llms",
+   "link": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything"
   },
   {
    "source": "Simon Willison",
-   "title": "Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goose",
-   "date": "2026-05-18",
-   "summary": "Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goose, in Los Angeles River, CA, US I'm heading home from PyCon US today so I went on a last morning walk to try and spot a pelican. I saw one! Didn't get a great photo of that, but I did see some goslings down by the swan boat lake.",
-   "link": "https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything"
+   "title": "Google I/O, Gemini Spark, Antigravity",
+   "date": "2026-05-20",
+   "summary": "It's hard to find much to write about Google I/O this year because I have a policy of not writing about anything that I can't try out myself, and a lot of the big announcements are \"coming soon\". I actually prefer to write about things that are in general availability, because I've had instances in the past where the previews didn't match what was released to the general public later on. Aside from Gemini 3.5 Flash the most interesting announcement looks to be Google's upcoming OpenClaw competitor Gemini Spark , described as \"your personal AI agent\" which can \"connect natively with your favori",
+   "link": "https://simonwillison.net/2026/May/20/google-io/#atom-everything"
   },
   {
    "source": "Simon Willison",
-   "title": "GDS weighs in on the NHS's decision to retreat from Open Source",
-   "date": "2026-05-17",
-   "summary": "GDS weighs in on the NHS&#x27;s decision to retreat from Open Source Terence Eden continues his coverage of the NHS' poorly considered decision to close down access to their open source repositories in response to vulnerabilities reported to them as part of Project Glasswing . Now the Government Digital Service have joined the conversation with AI, open code and vulnerability risk in the public sector , published May 14th. Their key recommendation: Keep open by default. Making everything private adds additional delivery and policy costs, and can reduce reuse and scrutiny. Openness should remai",
-   "link": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything"
+   "title": "datasette-agent-charts 0.1a1",
+   "date": "2026-05-20",
+   "summary": "Release: datasette-agent-charts 0.1a1 More color! Bar and waffle charts without a color column are shaded by magnitude with a sequential color scheme; color columns holding text values use the observable10 categorical scheme. #2 Now checks execute-sql permission before running the query to find the column names. Charts now display interactive tooltips. Fixed a bug where waffleY charts were not described to the agent. Tags: datasette , datasette-agent",
+   "link": "https://simonwillison.net/2026/May/20/datasette-agent-charts/#atom-everything"
   },
   {
    "source": "Sebastian Raschka",
@@ -110,7 +110,7 @@
   },
   {
    "source": "HuggingFace Blog",
-   "title": "OlmoEarth v1.1: A more efficient family of models",
+   "title": "OlmoEarth v1.1: A more efficient family of Earth observation models",
    "date": "2026-05-19",
    "summary": "",
    "link": "https://huggingface.co/blog/allenai/olmoearth-v1-1"
@@ -194,6 +194,34 @@
   },
   {
    "source": "OpenAI News",
+   "title": "AdventHealth advances whole-person care with OpenAI",
+   "date": "2026-05-21",
+   "summary": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care.",
+   "link": "https://openai.com/index/adventhealth"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "How Ramp engineers accelerate code review with Codex",
+   "date": "2026-05-20",
+   "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
+   "link": "https://openai.com/index/ramp"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "The next phase of OpenAI’s Education for Countries",
+   "date": "2026-05-20",
+   "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
+   "link": "https://openai.com/index/the-next-phase-of-education-for-countries"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+   "date": "2026-05-20",
+   "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
+   "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture"
+  },
+  {
+   "source": "OpenAI News",
    "title": "Introducing OpenAI for Singapore",
    "date": "2026-05-19",
    "summary": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
@@ -219,34 +247,6 @@
    "date": "2026-05-16",
    "summary": "OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly.",
    "link": "https://openai.com/index/malta-chatgpt-plus-partnership"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
-   "date": "2026-05-15",
-   "summary": "Databricks uses GPT-5.5 for enterprise agent workflows after the model set a new state of the art on the OfficeQA Pro benchmark.",
-   "link": "https://openai.com/index/databricks"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "How business operations teams use Codex",
-   "date": "2026-05-15",
-   "summary": "See how business operations teams can use Codex to create initiative briefs, strategy updates, leadership decision packets, progress updates, and more from real work inputs.",
-   "link": "https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "How sales teams use Codex",
-   "date": "2026-05-15",
-   "summary": "See how sales teams can use Codex to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs.",
-   "link": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "A new personal finance experience in ChatGPT",
-   "date": "2026-05-15",
-   "summary": "Preview a new personal finance experience in ChatGPT for Pro users in the U.S. Securely connect your financial accounts and get AI-powered insights and guidance grounded in your financial context, goals, and priorities.",
-   "link": "https://openai.com/index/personal-finance-chatgpt"
   },
   {
    "source": "Google Research",
