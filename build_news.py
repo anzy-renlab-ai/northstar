@@ -15,6 +15,7 @@ def L(fp, d=None):
 jw=L("data/jobs_w1.json",{}); blg=L("data/blogs_w2.json",{}); oss=L("data/foresight_oss.json",[])
 ossv2=L("data/foresight_oss_v2.json",[]); w3=L("data/w3_sources.json",{}); edg=L("data/edgar_w2.json",{})
 sd=L("data/site_data.json",{}); ex=L("data/w4_extra.json",{}); h1b=L("data/h1b_ai.json",{})
+digest=L("data/daily_digest_latest.json",{})
 TPL="site/_news_design_template.html"
 
 def clean(s,n=180):
@@ -439,23 +440,35 @@ iss=('<div class="issueline-inner">'+
  '</div>')
 html=sub1(r'<div class="issueline-inner">.*?</div>', iss, html)
 
-# TLDR
-tldr=t(
- '<ol class="tldr">'
- '<li>北美 AI 岗门槛正从“会调 LLM API”上移到“会编排 <em>Agent</em> + 会做 <em>Eval</em> + 会用 <em>AI 编码 agent</em> 干活”</li>'
- '<li><em>多模态</em>采纳最猛（HF trending 第一热）</li>'
- '<li><em>Serving</em> 是领先招聘 6–12 月的卡位点</li></ol>',
- '<ol class="tldr">'
- '<li>The NA AI hiring bar is moving from "calling an LLM API" to "orchestrating <em>Agents</em> + doing <em>Evals</em> + working with <em>AI coding agents</em>"</li>'
- '<li><em>Multimodal</em> adoption leads (HF trending #1)</li>'
- '<li><em>Serving</em> infra is the 6–12 month leading-indicator role</li></ol>')
-html=sub1(r'<ol class="tldr">.*?</ol>', tldr, html)
+# Hero kicker + lede + tldr —— 优先用 daily_digest 的当日 3 件事；缺则 fallback 到 W2-W3 静态 TLDR
+if digest and digest.get("items") and len(digest["items"]) >= 3:
+    items = digest["items"][:3]
+    sm = digest.get(f"summary_one_line_{LANG}") or digest.get("summary_one_line_zh") or "今日 AI 圈三件事"
+    def _ttl(x): return x.get(f"title_{LANG}") or x.get("title_zh","")
+    def _why(x): return x.get(f"so_what_{LANG}") or x.get("so_what_zh","")
+    tldr_html='<ol class="tldr">'+"".join(
+        f'<li><a href="{esc(x.get("url","#"))}" target="_blank" onclick="event.stopPropagation()" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--mut-2)">{esc(_ttl(x))}</a>'
+        f' — <em>{esc(_why(x))}</em></li>'
+        for x in items)+'</ol>'
+    hk = t(f"今日简报 · {digest.get('as_of','')}", f"Today's Digest · {digest.get('as_of','')}")
+    lede = esc(sm)
+else:
+    # Fallback 静态 hero（无 LLM key 或 daily_digest 文件缺失时）
+    tldr_html=t(
+     '<ol class="tldr">'
+     '<li>北美 AI 岗门槛正从"会调 LLM API"上移到"会编排 <em>Agent</em> + 会做 <em>Eval</em> + 会用 <em>AI 编码 agent</em> 干活"</li>'
+     '<li><em>多模态</em>采纳最猛（HF trending 第一热）</li>'
+     '<li><em>Serving</em> 是领先招聘 6–12 月的卡位点</li></ol>',
+     '<ol class="tldr">'
+     '<li>The NA AI hiring bar is moving from "calling an LLM API" to "orchestrating <em>Agents</em> + doing <em>Evals</em> + working with <em>AI coding agents</em>"</li>'
+     '<li><em>Multimodal</em> adoption leads (HF trending #1)</li>'
+     '<li><em>Serving</em> infra is the 6–12 month leading-indicator role</li></ol>')
+    hk = t("本周判断 / TL;DR","This Week's Take / TL;DR")
+    lede = t("本周共扫描北美在招 JD、社区文章、arXiv 论文与大厂 10-K 四类来源，提炼出 4 条交叉印证的信号；以下是 30 秒可读的核心判断。",
+             "This issue scans four sources — NA job listings, community articles, arXiv papers, and big-tech 10-Ks — and distills four cross-corroborated signals. A 30-second take below.")
 
-# Hero kicker + lede + byline (一次性 patch)
-hk=t("本周判断 / TL;DR","This Week's Take / TL;DR")
+html=sub1(r'<ol class="tldr">.*?</ol>', tldr_html, html)
 html=html.replace('<div class="hk">本周判断 / TL;DR</div>', f'<div class="hk">{hk}</div>')
-lede=t("本周共扫描北美在招 JD、社区文章、arXiv 论文与大厂 10-K 四类来源，提炼出 4 条交叉印证的信号；以下是 30 秒可读的核心判断。",
-       "This issue scans four sources — NA job listings, community articles, arXiv papers, and big-tech 10-Ks — and distills four cross-corroborated signals. A 30-second take below.")
 html=sub1(r'<p class="lede">.*?</p>', f'<p class="lede">{lede}</p>', html)
 html=html.replace('<b>By NorthStar 编辑部</b>', f'<b>{t("By NorthStar 编辑部","By NorthStar Editors")}</b>')
 

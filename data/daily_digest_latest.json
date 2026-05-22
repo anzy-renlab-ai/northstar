@@ -1,0 +1,40 @@
+{
+ "as_of": "2026-05-22",
+ "summary_one_line_zh": "推理时搜索、代理自我修复和产品化数据工具链同时在前进",
+ "summary_one_line_en": "Inference-time search, self-healing agents, and data tooling are all moving.",
+ "items": [
+  {
+   "rank": 1,
+   "source_tag": "arxiv#2",
+   "title_zh": "为测试时搜索训练多样性",
+   "title_en": "Train for diversity, search better",
+   "url": "https://arxiv.org/abs/search?query=Vector%20Policy%20Optimization%3A%20Training%20for%20Diversity%20Improves%20Test-Time%20Search",
+   "why_zh": "直接针对推理期搜索/规划器：训练分布更宽，能提升搜索器选出的轨迹质量。",
+   "why_en": "Targets inference-time search directly: broader training improves trajectory quality under test-time selectors.",
+   "so_what_zh": "把你们的候选采样/beam策略加一组“多样性优先”对照实验。",
+   "so_what_en": "Add a diversity-first ablation to your sampling or beam search stack."
+  },
+  {
+   "rank": 2,
+   "source_tag": "blog#0",
+   "title_zh": "Datasette Agent 正式首发",
+   "title_en": "Datasette Agent launches",
+   "url": "https://datasette.io/blog/datasette-agent",
+   "why_zh": "把代理能力、插件和查询可解释性做成可扩展产品，而不是一次性 demo。",
+   "why_en": "Turns agent capabilities, plugins, and query explainability into a productizable surface, not a demo.",
+   "so_what_zh": "检查你的 agent 是否能把“看结果”与“看执行计划/SQL”同屏暴露。",
+   "so_what_en": "Expose result views and execution traces side by side in your agent UI."
+  },
+  {
+   "rank": 3,
+   "source_tag": "arxiv#6",
+   "title_zh": "源码级自我改写让代理持续进化",
+   "title_en": "Agents that rewrite their own source",
+   "url": "https://arxiv.org/abs/search?query=MOSS%3A%20Self-Evolution%20through%20Source-Level%20Rewriting%20in%20Autonomous%20Agent%20Systems",
+   "why_zh": "把“上线后不再学习”的代理缺陷前移为可控的自改写/回归机制，影响 agent 运维范式。",
+   "why_en": "Turns post-deploy stasis into controlled self-rewrite and regression loops, changing agent ops.",
+   "so_what_zh": "为高频失败路径加自动补丁候选与回归测试，不要只靠人工热修。",
+   "so_what_en": "Add auto-patch candidates and regression tests for recurring failures."
+  }
+ ]
+}
