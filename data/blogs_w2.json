@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-22T08:00:50",
+ "collected_at": "2026-05-23T02:26:24",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,13 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "The memory shortage is causing a repricing of consumer electronics",
+   "date": "2026-05-22",
+   "summary": "The memory shortage is causing a repricing of consumer electronics David Oks provides the clearest explanation I've seen yet of why consumer products that use memory are likely to get significantly more expensive over the next few years. The short version is that memory manufacturers - of which there are just three remaining large companies - have a fixed capacity in terms of how many wafers they can process at any one time. This fixed wafer capacity is then split between DDR - used in desktops and servers, LPDDR - used in mobile phones and low-energy devices, and HBM - used with GPUs. Until r",
+   "link": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service",
@@ -67,13 +74,6 @@
    "link": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything"
   },
   {
-   "source": "Simon Willison",
-   "title": "Google I/O, Gemini Spark, Antigravity",
-   "date": "2026-05-20",
-   "summary": "It's hard to find much to write about Google I/O this year because I have a policy of not writing about anything that I can't try out myself, and a lot of the big announcements are \"coming soon\". I actually prefer to write about things that are in general availability, because I've had instances in the past where the previews didn't match what was released to the general public later on. Aside from Gemini 3.5 Flash the most interesting announcement looks to be Google's upcoming OpenClaw competitor Gemini Spark , described as \"your personal AI agent\" which can \"connect natively with your favori",
-   "link": "https://simonwillison.net/2026/May/20/google-io/#atom-everything"
-  },
-  {
    "source": "Sebastian Raschka",
    "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
    "date": "2026-05-16",
@@ -110,6 +110,20 @@
   },
   {
    "source": "HuggingFace Blog",
+   "title": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
+   "date": "2026-05-23",
+   "summary": "",
+   "link": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook",
+   "date": "2026-05-22",
+   "summary": "",
+   "link": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale"
+  },
+  {
+   "source": "HuggingFace Blog",
    "title": "OlmoEarth v1.1: A more efficient family of Earth observation models",
    "date": "2026-05-19",
    "summary": "",
@@ -121,13 +135,6 @@
    "date": "2026-05-19",
    "summary": "",
    "link": "https://huggingface.co/blog/ettin-reranker"
-  },
-  {
-   "source": "HuggingFace Blog",
-   "title": "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation",
-   "date": "2026-05-18",
-   "summary": "",
-   "link": "https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation"
   },
   {
    "source": "HuggingFace Blog",
@@ -156,13 +163,6 @@
    "date": "2026-05-14",
    "summary": "",
    "link": "https://huggingface.co/blog/continuous_async"
-  },
-  {
-   "source": "HuggingFace Blog",
-   "title": "Building Blocks for Foundation Model Training and Inference on AWS",
-   "date": "2026-05-11",
-   "summary": "",
-   "link": "https://huggingface.co/blog/amazon/foundation-model-building-blocks"
   },
   {
    "source": "Eugene Yan",
@@ -194,6 +194,20 @@
   },
   {
    "source": "OpenAI News",
+   "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+   "date": "2026-05-22",
+   "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
+   "link": "https://openai.com/index/gartner-2026-agentic-coding-leader"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "How Virgin Atlantic ships faster with Codex",
+   "date": "2026-05-22",
+   "summary": "How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.",
+   "link": "https://openai.com/index/virgin-atlantic"
+  },
+  {
+   "source": "OpenAI News",
    "title": "AdventHealth advances whole-person care with OpenAI",
    "date": "2026-05-21",
    "summary": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care.",
@@ -201,10 +215,10 @@
   },
   {
    "source": "OpenAI News",
-   "title": "How Ramp engineers accelerate code review with Codex",
+   "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
    "date": "2026-05-20",
-   "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
-   "link": "https://openai.com/index/ramp"
+   "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
+   "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture"
   },
   {
    "source": "OpenAI News",
@@ -215,10 +229,10 @@
   },
   {
    "source": "OpenAI News",
-   "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+   "title": "How Ramp engineers accelerate code review with Codex",
    "date": "2026-05-20",
-   "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
-   "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture"
+   "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
+   "link": "https://openai.com/index/ramp"
   },
   {
    "source": "OpenAI News",
@@ -233,20 +247,6 @@
    "date": "2026-05-19",
    "summary": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media.",
    "link": "https://openai.com/index/advancing-content-provenance"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
-   "date": "2026-05-18",
-   "summary": "OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.",
-   "link": "https://openai.com/index/dell-codex-enterprise-partnership"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
-   "date": "2026-05-16",
-   "summary": "OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly.",
-   "link": "https://openai.com/index/malta-chatgpt-plus-partnership"
   },
   {
    "source": "Google Research",

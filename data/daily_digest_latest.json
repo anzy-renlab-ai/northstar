@@ -1,40 +1,40 @@
 {
- "as_of": "2026-05-22",
- "summary_one_line_zh": "多模态/视频模型继续下沉，产品化Agent和算力军备同步加速。",
- "summary_one_line_en": "Multimodal/video models advance while agent products and compute bets accelerate.",
+ "as_of": "2026-05-23",
+ "summary_one_line_zh": "训练正从“答对”转向“为搜索和自改写服务”，同时硬件成本开始反向塑形产品。",
+ "summary_one_line_en": "Training shifts toward search-ready and self-modifying models, while hardware costs start reshaping products.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "hf#1",
-   "title_zh": "MiniCPM-V-4.6 多模态升级",
-   "title_en": "MiniCPM-V-4.6 VLM update",
-   "why_zh": "VLM能力继续外扩，端侧/低成本多模态栈的可用上限又抬了一档。",
-   "why_en": "Another step up in practical multimodal capability for low-cost and edge-friendly stacks.",
-   "so_what_zh": "拿你们最难的图文任务做回归，比较它和现有VLM的失败模式。",
-   "so_what_en": "Run your hardest vision-language evals against it and compare failure modes.",
-   "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6"
+   "source_tag": "arxiv#2",
+   "title_zh": "为测试时搜索训练多样性",
+   "title_en": "Diversity-aware training for test-time search",
+   "why_zh": "不是单次推理更强，而是让模型在AlphaEvolve式搜索里更可被筛选，直接影响训练目标设计。",
+   "why_en": "Not just better single-shot answers: it makes models more searchable under AlphaEvolve-style inference search.",
+   "so_what_zh": "把评测加上search budget，看你的模型是否越搜越强而非越搜越同质。",
+   "so_what_en": "Add search-budget evals; check whether more search improves quality or just homogenizes outputs.",
+   "url": "https://arxiv.org/abs/2605.22817v1"
   },
   {
    "rank": 2,
-   "source_tag": "blog#0",
-   "title_zh": "Datasette Agent 开始产品化",
-   "title_en": "Datasette Agent ships",
-   "why_zh": "Agent不再只拼prompt，而是拼插件、沙箱和可审计工具链，架构重点变了。",
-   "why_en": "Agents are shifting from prompts to plugins, sandboxes, and auditability.",
-   "so_what_zh": "检查你们Agent的工具执行是否可隔离、可回放、可解释。",
-   "so_what_en": "Audit tool execution for isolation, replayability, and explainability.",
-   "url": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything"
+   "source_tag": "arxiv#6",
+   "title_zh": "代理系统开始自我改写",
+   "title_en": "Agents that rewrite their own source",
+   "why_zh": "把线上失败闭环从“人改代码”推进到“系统自修复候选”，会重塑agent运维和安全边界。",
+   "why_en": "Moves failure recovery from human patching toward self-repair candidates, changing agent ops and safety boundaries.",
+   "so_what_zh": "给你的agent加一条只读回放+自动补丁草案链路，先在人审下跑自修复闭环。",
+   "so_what_en": "Add a replay-to-patch-draft loop under human review before enabling any autonomous fixes.",
+   "url": "https://arxiv.org/abs/2605.22794v1"
   },
   {
    "rank": 3,
-   "source_tag": "blog#4",
-   "title_zh": "SpaceX 释放算力信号",
-   "title_en": "SpaceX signals heavy compute",
-   "why_zh": "大型公司把自有算力继续押注到专有AI应用，训练/推理供给侧仍在内卷。",
-   "why_en": "Big firms keep shifting proprietary AI onto their own compute; supply-side pressure remains high.",
-   "so_what_zh": "重新算一遍你们下季度推理成本，别默认GPU供给会变宽松。",
-   "so_what_en": "Reforecast next-quarter inference costs; don’t assume GPU supply will loosen.",
-   "url": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything"
+   "source_tag": "blog#0",
+   "title_zh": "内存短缺开始抬高终端成本",
+   "title_en": "Memory shortage is repricing consumer hardware",
+   "why_zh": "算力不再只看GPU，内存供给开始影响端侧与本地部署的BOM、毛利和出货节奏。",
+   "why_en": "Compute economics now include memory supply, affecting BOM, margins, and shipping for on-device/local deployments.",
+   "so_what_zh": "重新核一遍本季度设备方案：RAM/显存采购、缓存策略、量化方案是否还成立。",
+   "so_what_en": "Recheck this quarter’s device plan: RAM/VRAM procurement, caching strategy, and quantization assumptions.",
+   "url": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything"
   }
  ]
 }
