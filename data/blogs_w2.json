@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-23T02:26:24",
+ "collected_at": "2026-05-24T02:36:14",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,13 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "On the",
+   "date": "2026-05-23",
+   "summary": "On the &lt;dl&gt; I learned a few new-to-me things about the &lt;dl&gt; element from this article by Ben Meyer: A &lt;dt&gt; can be followed by multiple &lt;dd&gt; You can optionally group the &lt;dt&gt; and &lt;dd&gt; elements in a &lt;div&gt; for styling - but only a &lt;div&gt; . You can label them using ARIA. They've been called \"description lists\", not \"definition lists\", since an HTML5 draft in 2008 . So this is valid: &lt; h2 id =\" credits \" &gt; Credits &lt;/ h2 &gt; &lt; dl aria-labelledby =\" credits \" &gt; &lt; div &gt; &lt; dt &gt; Author &lt;/ dt &gt; &lt; dd &gt; Jeffrey Zeldman &",
+   "link": "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "The memory shortage is causing a repricing of consumer electronics",
@@ -65,13 +72,6 @@
    "date": "2026-05-20",
    "summary": "We have the ability to use compute resources to support our proprietary AI applications (such as Grok 5, which is currently being trained at COLOSSUS II), while also providing access to select compute capacity to third-party customers. For example, in May 2026, we entered into Cloud Services Agreements with Anthropic PBC (“Anthropic”), an AI research and development public benefit corporation, with respect to access to compute capacity across COLOSSUS and COLOSSUS II . Pursuant to these agreements, the customer has agreed to pay us $1.25 billion per month through May 2029, with capacity rampin",
    "link": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "How fast is 10 tokens per second really?",
-   "date": "2026-05-20",
-   "summary": "How fast is 10 tokens per second really? Neat little HTML app by Mike Veerman ( source code here ) which simulates LLM token output speeds from 5/second to 800/second. Useful if you see a model advertised as \"30 tokens/second\" and want to get a feel for what that actually looks like. Via Hacker News Tags: ai , generative-ai , llms",
-   "link": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything"
   },
   {
    "source": "Sebastian Raschka",

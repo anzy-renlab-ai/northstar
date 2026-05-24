@@ -1,40 +1,40 @@
 {
- "as_of": "2026-05-23",
- "summary_one_line_zh": "训练正从“答对”转向“为搜索和自改写服务”，同时硬件成本开始反向塑形产品。",
- "summary_one_line_en": "Training shifts toward search-ready and self-modifying models, while hardware costs start reshaping products.",
+ "as_of": "2026-05-24",
+ "summary_one_line_zh": "专用模型、低延迟生成与隐私监管同时收紧",
+ "summary_one_line_en": "Specialized models, faster generation, and privacy enforcement all shifted.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "arxiv#2",
-   "title_zh": "为测试时搜索训练多样性",
-   "title_en": "Diversity-aware training for test-time search",
-   "why_zh": "不是单次推理更强，而是让模型在AlphaEvolve式搜索里更可被筛选，直接影响训练目标设计。",
-   "why_en": "Not just better single-shot answers: it makes models more searchable under AlphaEvolve-style inference search.",
-   "so_what_zh": "把评测加上search budget，看你的模型是否越搜越强而非越搜越同质。",
-   "so_what_en": "Add search-budget evals; check whether more search improves quality or just homogenizes outputs.",
-   "url": "https://arxiv.org/abs/2605.22817v1"
+   "source_tag": "hf#3",
+   "title_zh": "腾讯30B稀疏翻译模型",
+   "title_en": "Tencent 30B sparse translator",
+   "why_zh": "翻译模型开始逼近可替换生产API的质量/成本点，适合域内术语与长尾语言场景。",
+   "why_en": "Translation quality-cost is nearing API-replacement territory, especially for domain terminology and long-tail languages.",
+   "so_what_zh": "用你们的术语集和回译集跑一轮 A/B，测一致性、延迟和单价。",
+   "so_what_en": "A/B it on your terminology set and back-translations; measure consistency, latency, and cost.",
+   "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B"
   },
   {
    "rank": 2,
-   "source_tag": "arxiv#6",
-   "title_zh": "代理系统开始自我改写",
-   "title_en": "Agents that rewrite their own source",
-   "why_zh": "把线上失败闭环从“人改代码”推进到“系统自修复候选”，会重塑agent运维和安全边界。",
-   "why_en": "Moves failure recovery from human patching toward self-repair candidates, changing agent ops and safety boundaries.",
-   "so_what_zh": "给你的agent加一条只读回放+自动补丁草案链路，先在人审下跑自修复闭环。",
-   "so_what_en": "Add a replay-to-patch-draft loop under human review before enabling any autonomous fixes.",
-   "url": "https://arxiv.org/abs/2605.22794v1"
+   "source_tag": "blog#2",
+   "title_zh": "扩散式语言模型提速",
+   "title_en": "Diffusion LMs for faster generation",
+   "why_zh": "如果文本生成走向并行/扩散范式，现有解码、缓存和吞吐优化假设都要重算。",
+   "why_en": "A parallel/diffusion generation path would reset assumptions behind decoding, caching, and throughput tuning.",
+   "so_what_zh": "把你们最低延迟路径的瓶颈拆开，评估是否值得试验非自回归解码。",
+   "so_what_en": "Break down your low-latency path and test whether non-autoregressive decoding is worth piloting.",
+   "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion"
   },
   {
    "rank": 3,
-   "source_tag": "blog#0",
-   "title_zh": "内存短缺开始抬高终端成本",
-   "title_en": "Memory shortage is repricing consumer hardware",
-   "why_zh": "算力不再只看GPU，内存供给开始影响端侧与本地部署的BOM、毛利和出货节奏。",
-   "why_en": "Compute economics now include memory supply, affecting BOM, margins, and shipping for on-device/local deployments.",
-   "so_what_zh": "重新核一遍本季度设备方案：RAM/显存采购、缓存策略、量化方案是否还成立。",
-   "so_what_en": "Recheck this quarter’s device plan: RAM/VRAM procurement, caching strategy, and quantization assumptions.",
-   "url": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything"
+   "source_tag": "blog#1",
+   "title_zh": "“主动监听”营销遭FTC追罚",
+   "title_en": "FTC fines 'active listening' claims",
+   "why_zh": "语音/客服/广告链路里的采集与推断声明，已从合规边角变成直接执法风险。",
+   "why_en": "Claims around voice capture and inference are now direct enforcement risk, not just compliance paperwork.",
+   "so_what_zh": "审一遍语音数据流、同意文案和供应商条款，删掉任何模糊的监听表述。",
+   "so_what_en": "Audit voice flows, consent copy, and vendor terms; remove any vague listening claims.",
+   "url": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything"
   }
  ]
 }
