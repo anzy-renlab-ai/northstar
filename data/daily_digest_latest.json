@@ -1,40 +1,40 @@
 {
- "as_of": "2026-05-24",
- "summary_one_line_zh": "专用模型、低延迟生成与隐私监管同时收紧",
- "summary_one_line_en": "Specialized models, faster generation, and privacy enforcement all shifted.",
+ "as_of": "2026-05-25",
+ "summary_one_line_zh": "端到端多模态与语音模型继续下探到可部署形态",
+ "summary_one_line_en": "Multimodal and speech models keep shrinking toward deployment-ready form",
  "items": [
   {
    "rank": 1,
-   "source_tag": "hf#3",
-   "title_zh": "腾讯30B稀疏翻译模型",
-   "title_en": "Tencent 30B sparse translator",
-   "why_zh": "翻译模型开始逼近可替换生产API的质量/成本点，适合域内术语与长尾语言场景。",
-   "why_en": "Translation quality-cost is nearing API-replacement territory, especially for domain terminology and long-tail languages.",
-   "so_what_zh": "用你们的术语集和回译集跑一轮 A/B，测一致性、延迟和单价。",
-   "so_what_en": "A/B it on your terminology set and back-translations; measure consistency, latency, and cost.",
-   "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B"
+   "source_tag": "hf#0",
+   "title_zh": "Lance：真正的任意输入输出模型",
+   "title_en": "Lance any-to-any model",
+   "why_zh": "把多模态从“单向理解”推向统一接口，直接影响你的模型路由、工具调用和评测设计。",
+   "why_en": "Moves multimodality from one-way understanding to a unified interface for routing, tools, and evals.",
+   "so_what_zh": "把现有多模态链路拆成统一I/O接口，测一次是否能替换掉专用转写/描述模块。",
+   "so_what_en": "Unify multimodal I/O and test whether it can replace point solutions.",
+   "url": "https://huggingface.co/bytedance-research/Lance"
   },
   {
    "rank": 2,
-   "source_tag": "blog#2",
-   "title_zh": "扩散式语言模型提速",
-   "title_en": "Diffusion LMs for faster generation",
-   "why_zh": "如果文本生成走向并行/扩散范式，现有解码、缓存和吞吐优化假设都要重算。",
-   "why_en": "A parallel/diffusion generation path would reset assumptions behind decoding, caching, and throughput tuning.",
-   "so_what_zh": "把你们最低延迟路径的瓶颈拆开，评估是否值得试验非自回归解码。",
-   "so_what_en": "Break down your low-latency path and test whether non-autoregressive decoding is worth piloting.",
-   "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion"
+   "source_tag": "hf#2",
+   "title_zh": "Marlin-2B：视频到文本到动作",
+   "title_en": "Marlin-2B video-text-to-text",
+   "why_zh": "视频理解正从离线标注走向可交互推理，适合做视频代理、审核和检索增强。",
+   "why_en": "Video understanding is shifting toward interactive reasoning, useful for agents, moderation, and retrieval.",
+   "so_what_zh": "拿你们的视频场景做一版端到端评测，看看能否删掉中间 OCR/ASR 拼接步骤。",
+   "so_what_en": "Benchmark one video workflow and see if OCR/ASR glue can be removed.",
+   "url": "https://huggingface.co/NemoStation/Marlin-2B"
   },
   {
    "rank": 3,
-   "source_tag": "blog#1",
-   "title_zh": "“主动监听”营销遭FTC追罚",
-   "title_en": "FTC fines 'active listening' claims",
-   "why_zh": "语音/客服/广告链路里的采集与推断声明，已从合规边角变成直接执法风险。",
-   "why_en": "Claims around voice capture and inference are now direct enforcement risk, not just compliance paperwork.",
-   "so_what_zh": "审一遍语音数据流、同意文案和供应商条款，删掉任何模糊的监听表述。",
-   "so_what_en": "Audit voice flows, consent copy, and vendor terms; remove any vague listening claims.",
-   "url": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything"
+   "source_tag": "hf#3",
+   "title_zh": "supertonic-3：更可用的TTS底座",
+   "title_en": "supertonic-3 TTS base",
+   "why_zh": "语音输出正在变成产品默认能力，关键不再是能不能说，而是延迟、可控性和一致性。",
+   "why_en": "Speech output is becoming a default product capability; the key is latency, controllability, and consistency.",
+   "so_what_zh": "把你们的播报/陪伴/客服语音流切到新TTS做A/B，重点量延迟和稳定性。",
+   "so_what_en": "A/B your spoken UX on the new TTS, focusing on latency and stability.",
+   "url": "https://huggingface.co/Supertone/supertonic-3"
   }
  ]
 }

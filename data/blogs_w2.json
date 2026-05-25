@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-24T02:36:14",
+ "collected_at": "2026-05-25T02:44:54",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,41 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "datasette 1.0a30",
+   "date": "2026-05-24",
+   "summary": "Release: datasette 1.0a30 The big new feature in this alpha is a new customizable \"Jump to...\" menu, described in detail in The extensible \"Jump to\" menu in Datasette 1.0a30 on the Datasette blog. You can try it out by hitting / on latest.datasette.io - it looks like this: The new jump_items_sql() plugin hook allows plugins to add their own items to the set that's searched by the plugin. Tags: projects , datasette , annotated-release-notes",
+   "link": "https://simonwillison.net/2026/May/24/datasette/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "datasette-agent 0.1a4",
+   "date": "2026-05-24",
+   "summary": "Release: datasette-agent 0.1a4 Taking advantage of the new makeJumpSections() JavaScript plugin hook added in Datasette 1.0a30 , datasette-agent now presents this \"Start a new agent chat\" interface as part of the Jump to menu, any time you hit / : You can try this out by signing into agent.datasette.io using your GitHub account. Tags: datasette , datasette-agent",
+   "link": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "datasette-fixtures 0.1a0",
+   "date": "2026-05-24",
+   "summary": "Release: datasette-fixtures 0.1a0 One of the smaller features in Datasette 1.0a30 is this: New documented datasette.fixtures.populate_fixture_database(conn) helper for creating the fixture database tables used by Datasette's own tests, intended for plugin test suites. This new plugin takes advantage of that API. You can try it out using uvx without even installing Datasette like this: uvx --prerelease=allow \\ --with datasette-fixtures datasette \\ --get /fixtures/roadside_attractions.json Which outputs: { \"ok\" : true , \"next\" : null , \"rows\" : [ { \"pk\" : 1 , \"name\" : \" The Mystery Spot \" , \"add",
+   "link": "https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Armin Ronacher",
+   "date": "2026-05-24",
+   "summary": "The most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into a clanker and the clanker reworded it and made a huge mess of it. Typically, it was prompted so badly that the conclusions produced are more often than not inaccurate but always full of confidence. The result is complete guesswork on root causes, fake-minimal repros, suggested implementation strategies, analogies to adjacent but often the wrong code, and long lists of error classes that might or might not matter. [...]",
+   "link": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Mad House — Usborne Creepy Computer Games",
+   "date": "2026-05-24",
+   "summary": "Tool: Mad House — Usborne Creepy Computer Games Via Hacker News I learned that UK publisher Usborne published free PDFs of their 1980s Computer Books , some of which I remember working through on my Commodore 64 as a child. These were so great! Beautifully illustrated books with fun projects made up of code you could type into your own machine. I remember playing \"Mad House\" typed in from the 1983 book \"Creepy Computer Games\", so I fed that PDF into Claude and had it build an interactive version of that game in JavaScript and HTML: Build a vanilla JS artifact that exactly recreates the game Ma",
+   "link": "https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "On the",
@@ -37,41 +72,6 @@
    "date": "2026-05-22",
    "summary": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service Back in 2024 Cox Media Group were caught trying to sell advertisers packages based on \"active listening\", with this deck which claimed: Smart devices capture real-time intent data by listening to our conversations Advertisers can pair this voice-data with behavioral data to target in-market consumers I wrote about this in September 2024 . My theory: I think active listening is the term that the team came up with for “something ",
    "link": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Datasette Agent",
-   "date": "2026-05-21",
-   "summary": "We just announced the first release of Datasette Agent , a new extensible AI assistant for Datasette. I've been working on my LLM Python library for just over three years now, and Datasette Agent represents the moment that LLM and Datasette finally come together. I'm really excited about it! Datasette Agent provides a conversational interface for asking questions of the data you have stored in Datasette. Add the datasette-agent-charts plugin and it can generate charts of your data as well. The demo The announcement post (on the new Datasette project blog) includes this demo video : I recorded ",
-   "link": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette-agent-sprites 0.1a0",
-   "date": "2026-05-21",
-   "summary": "Release: datasette-agent-sprites 0.1a0 A Datasette Agent plugin for running commands in a Fly Sprites sandbox. Tags: sandboxing , datasette , fly , datasette-agent",
-   "link": "https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette-agent-charts 0.1a2",
-   "date": "2026-05-21",
-   "summary": "Release: datasette-agent-charts 0.1a2 \"View SQL query\" buttons below rendered charts. Tags: datasette , datasette-agent",
-   "link": "https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette-agent 0.1a3",
-   "date": "2026-05-21",
-   "summary": "Release: datasette-agent 0.1a3 \"View SQL query\" buttons for both visible tables and collapsed SQL result tool calls. Don't display empty reasoning chunks Improved handling of truncated responses - table still displays to the user even if the SQL results were truncated when showing the agent. See Datasette Agent, an extensible AI assistant for Datasette . Tags: datasette , datasette-agent",
-   "link": "https://simonwillison.net/2026/May/21/datasette-agent-2/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting SpaceX S-1",
-   "date": "2026-05-20",
-   "summary": "We have the ability to use compute resources to support our proprietary AI applications (such as Grok 5, which is currently being trained at COLOSSUS II), while also providing access to select compute capacity to third-party customers. For example, in May 2026, we entered into Cloud Services Agreements with Anthropic PBC (“Anthropic”), an AI research and development public benefit corporation, with respect to access to compute capacity across COLOSSUS and COLOSSUS II . Pursuant to these agreements, the customer has agreed to pay us $1.25 billion per month through May 2029, with capacity rampin",
-   "link": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything"
   },
   {
    "source": "Sebastian Raschka",
