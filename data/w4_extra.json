@@ -1,39 +1,107 @@
 {
- "collected_at": "2026-05-25T02:45:05",
+ "collected_at": "2026-05-25T04:11:07",
  "arxiv": {
-  "status": "ok:0",
-  "papers": []
- },
- "pypi": {
-  "status": "ok:5/10",
-  "libs": [
+  "status": "ok:12",
+  "papers": [
    {
-    "pkg": "openai",
-    "last_month": 307499504,
-    "last_week": 77862177
+    "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+    "date": "2026-05-22",
+    "authors": "Yifan Yang, Ziyang Gong, Weiquan Huang",
+    "summary": "Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-revision, none of which behaves like a deep-learning optimizer for the skill, and none of which reli",
+    "link": "https://arxiv.org/abs/2605.23904v1"
    },
    {
-    "pkg": "huggingface-hub",
-    "last_month": 252142058,
-    "last_week": 63701189
+    "title": "LLMs as Noisy Channels: A Shannon Perspective on Model Capacity and Scaling Laws",
+    "date": "2026-05-22",
+    "authors": "Xu Ouyang, Deyi Liu, Yuhang Cai",
+    "summary": "Existing scaling laws for Large Language Models (LLMs), predominantly monotonic power laws, fail to explain emerging non-monotonic phenomena such as catastrophic overtraining and quantization-induced ",
+    "link": "https://arxiv.org/abs/2605.23901v1"
+   },
+   {
+    "title": "From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills",
+    "date": "2026-05-22",
+    "authors": "Zisu Huang, Jingwen Xu, Yifan Yang",
+    "summary": "Language agents increasingly improve by reusing \\emph{skills} -- structured procedural artifacts distilled from past experience. In particular, \\emph{domain-level} and \\emph{model-generated} skills ar",
+    "link": "https://arxiv.org/abs/2605.23899v1"
+   },
+   {
+    "title": "SPACENUM: Revisiting Spatial Numerical Understanding in VLMs",
+    "date": "2026-05-22",
+    "authors": "Jianshu Zhang, Yijiang Li, Huifeixin Chen",
+    "summary": "Vision-Language Models (VLMs) are increasingly deployed in embodied environments, where they need produce numerical outputs such as action magnitudes and spatial coordinates. Although these numbers ap",
+    "link": "https://arxiv.org/abs/2605.23898v1"
+   },
+   {
+    "title": "ETCHR: Editing To Clarify and Harness Reasoning",
+    "date": "2026-05-22",
+    "authors": "Beichen Zhang, Yuhong Liu, Jinsong Li",
+    "summary": "Multimodal Large Language Models have advanced visual reasoning, yet a purely textual chain of thought remains a bottleneck for questions that require fine-grained focus or view transformations. The '",
+    "link": "https://arxiv.org/abs/2605.23897v1"
+   },
+   {
+    "title": "Complete-muE: Optimal Hyperparameter Transfer and Scaling for MoE Models",
+    "date": "2026-05-22",
+    "authors": "Hongwu Peng, Ohiremen Dibua, Yuanjun Xiong",
+    "summary": "We propose Complete-muE, a framework which targets hyperparameter transfer across dense FFN and any Mixture-of-Experts (MoE) setups in transformer blocks. Existing tools such as $μ$P (requires fixed a",
+    "link": "https://arxiv.org/abs/2605.23893v1"
+   },
+   {
+    "title": "Good Token Hunting: A Hitchhiker's Guide to Token Selection for Visual Geometry Transformers",
+    "date": "2026-05-22",
+    "authors": "Shuhong Zheng, Michael Oechsle, Erik Sandström",
+    "summary": "Visual geometry transformers have become powerful architectures for multi-view 3D reconstruction, enabling joint prediction of multiple 3D attributes in a feed-forward manner. However, their computati",
+    "link": "https://arxiv.org/abs/2605.23892v1"
+   },
+   {
+    "title": "CHRONOS: Temporally-Aware Multi-Agent Coordination for Evolving Data Marketplaces",
+    "date": "2026-05-22",
+    "authors": "Joydeep Chandra",
+    "summary": "Temporal knowledge-graph data marketplaces face three coupled failures in static designs: stale hybrid index shortcuts reduce recall as edges evolve, stationary Shapley pricing misattributes value aft",
+    "link": "https://arxiv.org/abs/2605.23887v1"
+   },
+   {
+    "title": "Multilingual Knowledge Transfer under Data Constraints via Lexical Interventions",
+    "date": "2026-05-22",
+    "authors": "Anastasiia Sedova, Natalie Schluter, Skyler Seto",
+    "summary": "Cross-lingual knowledge transfer is critical for building high-performing multilingual language models for languages with insufficient training data. When target language data is scarce, the knowledge",
+    "link": "https://arxiv.org/abs/2605.23885v1"
+   },
+   {
+    "title": "PGT: Procedurally Generated Tasks for improving visual grounding in MLLMs",
+    "date": "2026-05-22",
+    "authors": "Rim Assouel, Amir Bar, Michal Drozdzal",
+    "summary": "Despite remarkable progress in Multimodal Large Language Models (MLLMs), these models still struggle with fine-grained understanding tasks. In this work, we propose Procedurally Generated Tasks (PGT),",
+    "link": "https://arxiv.org/abs/2605.23883v1"
+   },
+   {
+    "title": "On the Stability of Spherical Hellinger-Kantorovich Flows and Their Implications for Differential Privacy",
+    "date": "2026-05-22",
+    "authors": "Aratrika Mustafi, Soumya Mukherjee",
+    "summary": "Gradient-flow sampling interprets a Gibbs distribution as the minimizer of an energy functional over probability measures and generates dynamics converging to this target. Under spherical Hellinger-Ka",
+    "link": "https://arxiv.org/abs/2605.23879v1"
+   },
+   {
+    "title": "Training-Free Looped Transformers",
+    "date": "2026-05-22",
+    "authors": "Lizhang Chen, Jonathan Li, Chen Liang",
+    "summary": "We introduce training-free looped transformers, in which a lightweight inference-time wrapper loops a contiguous mid-stack block of layers of a frozen checkpoint without additional fine-tuning, contin",
+    "link": "https://arxiv.org/abs/2605.23872v1"
+   }
+  ]
+ },
+ "pypi": {
+  "status": "ok:0/10",
+  "libs": [
+   {
+    "pkg": "langchain",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "openai",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
     "pkg": "anthropic",
-    "last_month": 124788703,
-    "last_week": 31236098
-   },
-   {
-    "pkg": "langgraph",
-    "last_month": 51040708,
-    "last_week": 13906573
-   },
-   {
-    "pkg": "crewai",
-    "last_month": 12103336,
-    "last_week": 3914629
-   },
-   {
-    "pkg": "langchain",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
@@ -46,6 +114,18 @@
    },
    {
     "pkg": "llama-index",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "langgraph",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "crewai",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "huggingface-hub",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {

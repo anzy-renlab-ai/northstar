@@ -1,14 +1,6 @@
 {
- "as_of": "2026-05-22",
+ "as_of": "2026-05-25",
  "foresight": [
-  {
-   "theme": "AI Agents/编排",
-   "sources": 4
-  },
-  {
-   "theme": "AI安全/Responsible AI",
-   "sources": 3
-  },
   {
    "theme": "Eval 评测",
    "sources": 3
@@ -18,15 +10,19 @@
    "sources": 3
   },
   {
-   "theme": "Serving 推理",
-   "sources": 3
-  },
-  {
    "theme": "多模态",
    "sources": 3
   },
   {
+   "theme": "AI Agents/编排",
+   "sources": 2
+  },
+  {
    "theme": "AI编码agent当硬技能",
+   "sources": 2
+  },
+  {
+   "theme": "Serving 推理",
    "sources": 2
   }
  ],
@@ -60,23 +56,23 @@
   "source": "W1 (2026-05-19, 63 岗样本中 22 个有 yearly salary)"
  },
  "salary_this_week_snapshot": {
-  "median_k": 135,
-  "n": 6,
+  "median_k": 105,
+  "n": 4,
   "note": "本周样本量不稳，仅辅助参考；以 salary baseline 为准"
  },
  "top_employers": [
   "Prolific",
-  "Relativity Space",
-  "Lyra Technology Group",
-  "Netflix",
-  "MeridianLink"
+  "Sarasota Electrical",
+  "FRIDAY",
+  "Pear VC",
+  "Pronto Networks, Inc"
  ],
  "target_roles": [
   "AI Engineer",
+  "Applied Scientist",
   "Data Engineer",
-  "Data Scientist",
   "ML Engineer",
   "Machine Learning Engineer"
  ],
- "ai_jobs_total": 38
+ "ai_jobs_total": 37
 }
