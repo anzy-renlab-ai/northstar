@@ -1,40 +1,40 @@
 {
- "as_of": "2026-05-25",
- "summary_one_line_zh": "端到端多模态与语音模型继续下探到可部署形态",
- "summary_one_line_en": "Multimodal and speech models keep shrinking toward deployment-ready form",
+ "as_of": "2026-05-26",
+ "summary_one_line_zh": "工具接口、反馈语气与AI治理同时变重要",
+ "summary_one_line_en": "Tool surfaces, user voice, and AI governance all shifted.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "hf#0",
-   "title_zh": "Lance：真正的任意输入输出模型",
-   "title_en": "Lance any-to-any model",
-   "why_zh": "把多模态从“单向理解”推向统一接口，直接影响你的模型路由、工具调用和评测设计。",
-   "why_en": "Moves multimodality from one-way understanding to a unified interface for routing, tools, and evals.",
-   "so_what_zh": "把现有多模态链路拆成统一I/O接口，测一次是否能替换掉专用转写/描述模块。",
-   "so_what_en": "Unify multimodal I/O and test whether it can replace point solutions.",
-   "url": "https://huggingface.co/bytedance-research/Lance"
+   "source_tag": "blog#2",
+   "title_zh": "Datasette 1.0a30：可插拔跳转菜单",
+   "title_en": "Datasette 1.0a30 jump menu",
+   "why_zh": "把信息架构暴露成插件点，说明 agent 产品的“可导航性”本身已是平台能力。",
+   "why_en": "Exposes information architecture as a plugin surface; navigability is now platform capability.",
+   "so_what_zh": "检查你们的 agent UI：把高频动作抽成可插拔菜单/入口。",
+   "so_what_en": "Audit your agent UI and extract high-frequency actions into pluggable entry points.",
+   "url": "https://simonwillison.net/2026/May/24/datasette/#atom-everything"
   },
   {
    "rank": 2,
-   "source_tag": "hf#2",
-   "title_zh": "Marlin-2B：视频到文本到动作",
-   "title_en": "Marlin-2B video-text-to-text",
-   "why_zh": "视频理解正从离线标注走向可交互推理，适合做视频代理、审核和检索增强。",
-   "why_en": "Video understanding is shifting toward interactive reasoning, useful for agents, moderation, and retrieval.",
-   "so_what_zh": "拿你们的视频场景做一版端到端评测，看看能否删掉中间 OCR/ASR 拼接步骤。",
-   "so_what_en": "Benchmark one video workflow and see if OCR/ASR glue can be removed.",
-   "url": "https://huggingface.co/NemoStation/Marlin-2B"
+   "source_tag": "blog#5",
+   "title_zh": "问题单必须用自己的话写",
+   "title_en": "Bug reports need your own voice",
+   "why_zh": "这在提醒：AI 产品的反馈闭环要抗“代写”，否则诊断信号会被模型腔污染。",
+   "why_en": "Feedback loops must resist AI-written reports or your diagnostics get polluted.",
+   "so_what_zh": "在报障表单加“原始观察/复现步骤/环境”三段分栏，禁止整段复制模型输出。",
+   "so_what_en": "Split bug forms into raw observation, repro steps, and environment; disallow pasted model prose.",
+   "url": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything"
   },
   {
    "rank": 3,
-   "source_tag": "hf#3",
-   "title_zh": "supertonic-3：更可用的TTS底座",
-   "title_en": "supertonic-3 TTS base",
-   "why_zh": "语音输出正在变成产品默认能力，关键不再是能不能说，而是延迟、可控性和一致性。",
-   "why_en": "Speech output is becoming a default product capability; the key is latency, controllability, and consistency.",
-   "so_what_zh": "把你们的播报/陪伴/客服语音流切到新TTS做A/B，重点量延迟和稳定性。",
-   "so_what_en": "A/B your spoken UX on the new TTS, focusing on latency and stability.",
-   "url": "https://huggingface.co/Supertone/supertonic-3"
+   "source_tag": "blog#1",
+   "title_zh": "教廷把 AI 变成治理议题",
+   "title_en": "The Vatican on AI governance",
+   "why_zh": "这不是伦理鸡汤，而是高层叙事开始要求可解释、可控、以人优先的产品边界。",
+   "why_en": "Not ethics fluff: executive narratives are demanding explainable, controllable, human-first product boundaries.",
+   "so_what_zh": "把你们的 AI 风险分级、人工兜底和拒答策略写进对外文档。",
+   "so_what_en": "Document risk tiers, human override, and refusal policy in your external-facing docs.",
+   "url": "https://simonwillison.net/2026/May/25/encyclical-on-ai/#atom-everything"
   }
  ]
 }

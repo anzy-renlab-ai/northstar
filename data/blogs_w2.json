@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-25T04:10:56",
+ "collected_at": "2026-05-26T02:34:04",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,20 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Corey Quinn",
+   "date": "2026-05-26",
+   "summary": "I cannot believe I'm saying this, but getting the literal Pope to canonize your product's specific technical limitations as a spiritual treatise is the single greatest act of vendor lobbying I have ever seen. &mdash; Corey Quinn , on Anthropic co-founder Christopher Olah's influence on Magnifica Humanitas Tags: ai-ethics , corey-quinn , anthropic , ai",
+   "link": "https://simonwillison.net/2026/May/26/corey-quinn/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Notes on Pope Leo XIV's encyclical on AI",
+   "date": "2026-05-25",
+   "summary": "Dropped this morning by the Vatican: Magnifica Humanitas of His Holiness Pope Leo XIV on Safeguarding the Human Person in the Time of Artificial Intelligence . This is a very interesting document. It's some of the clearest writing I've seen on the ethics of integrating AI into modern society. Pope Leo XIV chose the name Leo in honor of Pope Leo XIII, who is known for his 1891 Rerum novarum encyclical on \"Rights and Duties of Capital and Labor\". This story on Vatican News further clarifies the significance of that decision: Meeting with the College of Cardinals for their first formal encounter ",
+   "link": "https://simonwillison.net/2026/May/25/encyclical-on-ai/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "datasette 1.0a30",
@@ -60,20 +74,6 @@
    "link": "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything"
   },
   {
-   "source": "Simon Willison",
-   "title": "The memory shortage is causing a repricing of consumer electronics",
-   "date": "2026-05-22",
-   "summary": "The memory shortage is causing a repricing of consumer electronics David Oks provides the clearest explanation I've seen yet of why consumer products that use memory are likely to get significantly more expensive over the next few years. The short version is that memory manufacturers - of which there are just three remaining large companies - have a fixed capacity in terms of how many wafers they can process at any one time. This fixed wafer capacity is then split between DDR - used in desktops and servers, LPDDR - used in mobile phones and low-energy devices, and HBM - used with GPUs. Until r",
-   "link": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service",
-   "date": "2026-05-22",
-   "summary": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service Back in 2024 Cox Media Group were caught trying to sell advertisers packages based on \"active listening\", with this deck which claimed: Smart devices capture real-time intent data by listening to our conversations Advertisers can pair this voice-data with behavioral data to target in-market consumers I wrote about this in September 2024 . My theory: I think active listening is the term that the team came up with for “something ",
-   "link": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything"
-  },
-  {
    "source": "Sebastian Raschka",
    "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
    "date": "2026-05-16",
@@ -107,6 +107,13 @@
    "date": "2026-02-25",
    "summary": "A Round Up And Comparison of 10 Open-Weight LLM Releases in Spring 2026",
    "link": "https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+   "date": "2026-05-25",
+   "summary": "",
+   "link": "https://huggingface.co/blog/agent-glossary"
   },
   {
    "source": "HuggingFace Blog",
@@ -158,13 +165,6 @@
    "link": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
   },
   {
-   "source": "HuggingFace Blog",
-   "title": "Unlocking asynchronicity in continuous batching",
-   "date": "2026-05-14",
-   "summary": "",
-   "link": "https://huggingface.co/blog/continuous_async"
-  },
-  {
    "source": "Eugene Yan",
    "title": "How to Work and Compound with AI",
    "date": "2026-05-03",
@@ -194,10 +194,10 @@
   },
   {
    "source": "OpenAI News",
-   "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
-   "date": "2026-05-22",
-   "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
-   "link": "https://openai.com/index/gartner-2026-agentic-coding-leader"
+   "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+   "date": "2026-05-25",
+   "summary": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
+   "link": "https://openai.com/index/grupo-folha-grupo-uol-partnership"
   },
   {
    "source": "OpenAI News",
@@ -205,6 +205,13 @@
    "date": "2026-05-22",
    "summary": "How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.",
    "link": "https://openai.com/index/virgin-atlantic"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+   "date": "2026-05-22",
+   "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
+   "link": "https://openai.com/index/gartner-2026-agentic-coding-leader"
   },
   {
    "source": "OpenAI News",
@@ -222,13 +229,6 @@
   },
   {
    "source": "OpenAI News",
-   "title": "The next phase of OpenAI’s Education for Countries",
-   "date": "2026-05-20",
-   "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
-   "link": "https://openai.com/index/the-next-phase-of-education-for-countries"
-  },
-  {
-   "source": "OpenAI News",
    "title": "How Ramp engineers accelerate code review with Codex",
    "date": "2026-05-20",
    "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
@@ -236,17 +236,17 @@
   },
   {
    "source": "OpenAI News",
+   "title": "The next phase of OpenAI’s Education for Countries",
+   "date": "2026-05-20",
+   "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
+   "link": "https://openai.com/index/the-next-phase-of-education-for-countries"
+  },
+  {
+   "source": "OpenAI News",
    "title": "Introducing OpenAI for Singapore",
    "date": "2026-05-19",
    "summary": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
    "link": "https://openai.com/index/introducing-openai-for-singapore"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
-   "date": "2026-05-19",
-   "summary": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media.",
-   "link": "https://openai.com/index/advancing-content-provenance"
   },
   {
    "source": "Google Research",
