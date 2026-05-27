@@ -1,40 +1,40 @@
 {
- "as_of": "2026-05-26",
- "summary_one_line_zh": "工具接口、反馈语气与AI治理同时变重要",
- "summary_one_line_en": "Tool surfaces, user voice, and AI governance all shifted.",
+ "as_of": "2026-05-27",
+ "summary_one_line_zh": "代理配置、技能自进化与安全外泄，今天都在重写生产门槛",
+ "summary_one_line_en": "Agent tuning, self-evolving skills, and exfiltration risks are shifting production defaults.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "blog#2",
-   "title_zh": "Datasette 1.0a30：可插拔跳转菜单",
-   "title_en": "Datasette 1.0a30 jump menu",
-   "why_zh": "把信息架构暴露成插件点，说明 agent 产品的“可导航性”本身已是平台能力。",
-   "why_en": "Exposes information architecture as a plugin surface; navigability is now platform capability.",
-   "so_what_zh": "检查你们的 agent UI：把高频动作抽成可插拔菜单/入口。",
-   "so_what_en": "Audit your agent UI and extract high-frequency actions into pluggable entry points.",
-   "url": "https://simonwillison.net/2026/May/24/datasette/#atom-everything"
+   "source_tag": "arxiv#3",
+   "title_zh": "自然语言直调检索代理配置",
+   "title_en": "NL to retrieval-agent config",
+   "why_zh": "把LLM/检索器/跳数/合成策略暴露成可控配置，意味着RAG性能不再只靠prompt微调。",
+   "why_en": "Turns agent behavior into a tunable surface, not just prompt engineering, shifting how RAG is optimized.",
+   "so_what_zh": "把你们的检索链路参数化，做一次自然语言到配置的A/B测试。",
+   "so_what_en": "Parameterize your retrieval stack and A/B test natural-language config generation.",
+   "url": "https://arxiv.org/abs/2605.27361v1"
   },
   {
    "rank": 2,
-   "source_tag": "blog#5",
-   "title_zh": "问题单必须用自己的话写",
-   "title_en": "Bug reports need your own voice",
-   "why_zh": "这在提醒：AI 产品的反馈闭环要抗“代写”，否则诊断信号会被模型腔污染。",
-   "why_en": "Feedback loops must resist AI-written reports or your diagnostics get polluted.",
-   "so_what_zh": "在报障表单加“原始观察/复现步骤/环境”三段分栏，禁止整段复制模型输出。",
-   "so_what_en": "Split bug forms into raw observation, repro steps, and environment; disallow pasted model prose.",
-   "url": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything"
+   "source_tag": "arxiv#1",
+   "title_zh": "会自造技能的代理框架",
+   "title_en": "Agents that create their own skills",
+   "why_zh": "技能从静态资产变成可演化对象，直接影响长期任务代理的记忆、复用和评估架构。",
+   "why_en": "Makes skills evolvable objects, changing memory, reuse, and evaluation architecture for long-horizon agents.",
+   "so_what_zh": "给代理加技能注册表和离线评测集，先验证“新技能”是否真提升成功率。",
+   "so_what_en": "Add a skill registry plus offline evals to verify whether new skills actually improve success rates.",
+   "url": "https://arxiv.org/abs/2605.27366v1"
   },
   {
    "rank": 3,
    "source_tag": "blog#1",
-   "title_zh": "教廷把 AI 变成治理议题",
-   "title_en": "The Vatican on AI governance",
-   "why_zh": "这不是伦理鸡汤，而是高层叙事开始要求可解释、可控、以人优先的产品边界。",
-   "why_en": "Not ethics fluff: executive narratives are demanding explainable, controllable, human-first product boundaries.",
-   "so_what_zh": "把你们的 AI 风险分级、人工兜底和拒答策略写进对外文档。",
-   "so_what_en": "Document risk tiers, human override, and refusal policy in your external-facing docs.",
-   "url": "https://simonwillison.net/2026/May/25/encyclical-on-ai/#atom-everything"
+   "title_zh": "Copilot式代理可外泄文件",
+   "title_en": "Copilot coworker leaks files",
+   "why_zh": "这不是提示注入老新闻，而是代理权限边界失守后，工具调用可直接变成数据外流通道。",
+   "why_en": "Not old prompt injection news: it shows tool permissions can turn agent actions into a direct exfiltration channel.",
+   "so_what_zh": "审计你们代理的文件/邮箱/聊天工具权限，默认改成最小授权并加出网告警。",
+   "so_what_en": "Audit agent file/email/chat permissions, switch to least privilege, and add egress alerts.",
+   "url": "https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything"
   }
  ]
 }

@@ -1,9 +1,9 @@
 {
- "collected_at": "2026-05-26T02:34:04",
+ "collected_at": "2026-05-27T02:43:57",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
-  "Sebastian Raschka": "ok:5",
+  "Sebastian Raschka": "ok:4",
   "HuggingFace Blog": "ok:8",
   "Chip Huyen": "ok:0",
   "Eugene Yan": "ok:1",
@@ -17,6 +17,27 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "The pressure",
+   "date": "2026-05-26",
+   "summary": "The pressure Daniel Stenberg on the unprecedented level of pressure the curl team are facing right now thanks to the deluge of (credible) AI-assisted security issues being reported. The rate of incoming security reports is 4-5 times higher than it was in 2024 and double the speed of 2025 -- meaning that on average we now get more than one report per day . The quality is way higher than ever before. The reports are typically very detailed and long. [...] For the first time in my life, my wife voiced concerns about my work hours and my imbalanced work/life situation. I work more than I’ve done b",
+   "link": "https://simonwillison.net/2026/May/26/the-pressure/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Microsoft Copilot Cowork Exfiltrates Files",
+   "date": "2026-05-26",
+   "summary": "Microsoft Copilot Cowork Exfiltrates Files The biggest challenge in designing agentic systems continues to be preventing them from enabling attackers to exfiltrate data. In this case Microsoft Copilot Cowork (yes, that's a real product name ) was allowing agents to send emails to the user's own inbox without approval... but those messages were then displayed in a way that could leak data to an attacker via rendered images: Because these messages can contain external images that trigger network requests to external websites, data can be exfiltrated when a user opens a compromised message sent b",
+   "link": "https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Paul Graham",
+   "date": "2026-05-26",
+   "summary": "A lot of the emails I get from founders are now written in a hard-hitting journalistic style. I know they're written by AI, because no founder ever wrote this way before. And once you realize something is written by AI, it's hard not to ignore it. I have never knowingly finished reading an email signed by a human but written by AI. It feels like being lied to, and who would stand for that? [ ... ] It makes me think less of the author. It means they can't write well unaided (or feel they can't), and that they're trying to trick me. It's not impressive to use AI to write stuff for you; any teena",
+   "link": "https://simonwillison.net/2026/May/26/paul-graham/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "Quoting Corey Quinn",
@@ -33,6 +54,13 @@
   },
   {
    "source": "Simon Willison",
+   "title": "California Brown Pelican, Snowy Egret, California Sea Lion, Harbor Seal",
+   "date": "2026-05-25",
+   "summary": "California Brown Pelican, Snowy Egret, California Sea Lion, Harbor Seal, in San Mateo County, CA, US We took our new folding kayak out in the harbor and saw sea lions and harbor seals chilling on the docks.",
+   "link": "https://simonwillison.net/2026/May/25/sighting-365297287/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
    "title": "datasette 1.0a30",
    "date": "2026-05-24",
    "summary": "Release: datasette 1.0a30 The big new feature in this alpha is a new customizable \"Jump to...\" menu, described in detail in The extensible \"Jump to\" menu in Datasette 1.0a30 on the Datasette blog. You can try it out by hitting / on latest.datasette.io - it looks like this: The new jump_items_sql() plugin hook allows plugins to add their own items to the set that's searched by the plugin. Tags: projects , datasette , annotated-release-notes",
@@ -44,34 +72,6 @@
    "date": "2026-05-24",
    "summary": "Release: datasette-agent 0.1a4 Taking advantage of the new makeJumpSections() JavaScript plugin hook added in Datasette 1.0a30 , datasette-agent now presents this \"Start a new agent chat\" interface as part of the Jump to menu, any time you hit / : You can try this out by signing into agent.datasette.io using your GitHub account. Tags: datasette , datasette-agent",
    "link": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette-fixtures 0.1a0",
-   "date": "2026-05-24",
-   "summary": "Release: datasette-fixtures 0.1a0 One of the smaller features in Datasette 1.0a30 is this: New documented datasette.fixtures.populate_fixture_database(conn) helper for creating the fixture database tables used by Datasette's own tests, intended for plugin test suites. This new plugin takes advantage of that API. You can try it out using uvx without even installing Datasette like this: uvx --prerelease=allow \\ --with datasette-fixtures datasette \\ --get /fixtures/roadside_attractions.json Which outputs: { \"ok\" : true , \"next\" : null , \"rows\" : [ { \"pk\" : 1 , \"name\" : \" The Mystery Spot \" , \"add",
-   "link": "https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Armin Ronacher",
-   "date": "2026-05-24",
-   "summary": "The most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into a clanker and the clanker reworded it and made a huge mess of it. Typically, it was prompted so badly that the conclusions produced are more often than not inaccurate but always full of confidence. The result is complete guesswork on root causes, fake-minimal repros, suggested implementation strategies, analogies to adjacent but often the wrong code, and long lists of error classes that might or might not matter. [...]",
-   "link": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Mad House — Usborne Creepy Computer Games",
-   "date": "2026-05-24",
-   "summary": "Tool: Mad House — Usborne Creepy Computer Games Via Hacker News I learned that UK publisher Usborne published free PDFs of their 1980s Computer Books , some of which I remember working through on my Commodore 64 as a child. These were so great! Beautifully illustrated books with fun projects made up of code you could type into your own machine. I remember playing \"Mad House\" typed in from the 1983 book \"Creepy Computer Games\", so I fed that PDF into Claude and had it build an interactive version of that game in JavaScript and HTML: Build a vanilla JS artifact that exactly recreates the game Ma",
-   "link": "https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "On the",
-   "date": "2026-05-23",
-   "summary": "On the &lt;dl&gt; I learned a few new-to-me things about the &lt;dl&gt; element from this article by Ben Meyer: A &lt;dt&gt; can be followed by multiple &lt;dd&gt; You can optionally group the &lt;dt&gt; and &lt;dd&gt; elements in a &lt;div&gt; for styling - but only a &lt;div&gt; . You can label them using ARIA. They've been called \"description lists\", not \"definition lists\", since an HTML5 draft in 2008 . So this is valid: &lt; h2 id =\" credits \" &gt; Credits &lt;/ h2 &gt; &lt; dl aria-labelledby =\" credits \" &gt; &lt; div &gt; &lt; dt &gt; Author &lt;/ dt &gt; &lt; dd &gt; Jeffrey Zeldman &",
-   "link": "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything"
   },
   {
    "source": "Sebastian Raschka",
@@ -100,13 +100,6 @@
    "date": "2026-03-22",
    "summary": "From MHA and GQA to MLA, sparse attention, and hybrid architectures",
    "link": "https://magazine.sebastianraschka.com/p/visual-attention-variants"
-  },
-  {
-   "source": "Sebastian Raschka",
-   "title": "A Dream of Spring for Open-Weight LLMs: 10 Architectures from Jan-Feb 2026",
-   "date": "2026-02-25",
-   "summary": "A Round Up And Comparison of 10 Open-Weight LLM Releases in Spring 2026",
-   "link": "https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight"
   },
   {
    "source": "HuggingFace Blog",
@@ -222,6 +215,13 @@
   },
   {
    "source": "OpenAI News",
+   "title": "The next phase of OpenAI’s Education for Countries",
+   "date": "2026-05-20",
+   "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
+   "link": "https://openai.com/index/the-next-phase-of-education-for-countries"
+  },
+  {
+   "source": "OpenAI News",
    "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
    "date": "2026-05-20",
    "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
@@ -233,13 +233,6 @@
    "date": "2026-05-20",
    "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
    "link": "https://openai.com/index/ramp"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "The next phase of OpenAI’s Education for Countries",
-   "date": "2026-05-20",
-   "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
-   "link": "https://openai.com/index/the-next-phase-of-education-for-countries"
   },
   {
    "source": "OpenAI News",

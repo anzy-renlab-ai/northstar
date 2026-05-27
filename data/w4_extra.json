@@ -1,43 +1,121 @@
 {
- "collected_at": "2026-05-26T02:34:11",
+ "collected_at": "2026-05-27T02:44:11",
  "arxiv": {
-  "status": "ok:0",
-  "papers": []
+  "status": "ok:12",
+  "papers": [
+   {
+    "title": "Algorithmic Monocultures in Hiring",
+    "date": "2026-05-26",
+    "authors": "Rishi Bommasani, Sarah H. Bana, Kathleen A. Creel",
+    "summary": "Many employers screen job applicants with algorithms built by the same few algorithm vendors. We hypothesize that algorithmic monoculture leads to the same individuals and members of the same racial g",
+    "link": "https://arxiv.org/abs/2605.27371v1"
+   },
+   {
+    "title": "MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation",
+    "date": "2026-05-26",
+    "authors": "Huawei Lin, Peng Li, Jie Song",
+    "summary": "Large language model (LLM) agents rely on reusable skills to solve complex tasks. However, existing skill creation approaches treat skills as isolated and static artifacts, limiting their reusability,",
+    "link": "https://arxiv.org/abs/2605.27366v1"
+   },
+   {
+    "title": "LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding",
+    "date": "2026-05-26",
+    "authors": "Shihao Wang, Shilong Liu, Yuanguo Kuang",
+    "summary": "Vision-language models (VLMs) commonly formulate visual grounding and detection as a coordinate-token generation problem, serializing each 2D box into multiple 1D tokens that are learned and decoded l",
+    "link": "https://arxiv.org/abs/2605.27365v1"
+   },
+   {
+    "title": "Natural Language Query to Configuration for Retrieval Agents",
+    "date": "2026-05-26",
+    "authors": "Melissa Z. Pan, Negar Arabzadeh, Mathew Jacob",
+    "summary": "Modern retrieval agents expose many configuration choices -- LLM, retriever, number of documents, number of hops, and synthesis strategy -- each shaping both answer quality and serving cost. Today, th",
+    "link": "https://arxiv.org/abs/2605.27361v1"
+   },
+   {
+    "title": "GENESIS: Harnessing AI Agents for Autonomous 6G RAN Synthesis, Research, and Testing",
+    "date": "2026-05-26",
+    "authors": "Tamerlan Aghayev, Maxime Elkael, Michele Polese",
+    "summary": "Cellular research and development (R&D) is throttled by six structural processes that each consume months of manual engineering work per iteration: (i) synthesizing new features from standards or rese",
+    "link": "https://arxiv.org/abs/2605.27360v1"
+   },
+   {
+    "title": "MobileMoE: Scaling On-Device Mixture of Experts",
+    "date": "2026-05-26",
+    "authors": "Yanbei Chen, Hanxian Huang, Ernie Chang",
+    "summary": "Mixture-of-Experts (MoE) has become the de facto architecture for hundred-billion-parameter language models, yet its advantages at sub-billion scales for on-device deployment remain largely unexplored",
+    "link": "https://arxiv.org/abs/2605.27358v1"
+   },
+   {
+    "title": "Alignment Tampering: How Reinforcement Learning from Human Feedback Is Exploited to Optimize Misaligned Biases",
+    "date": "2026-05-26",
+    "authors": "Dongyoon Hahm, Dylan Hadfield-Menell, Kimin Lee",
+    "summary": "Reinforcement Learning from Human Feedback (RLHF) is the standard method to align Large Language Models (LLMs) with human preferences. In this work, we introduce alignment tampering, a potential vulne",
+    "link": "https://arxiv.org/abs/2605.27355v1"
+   },
+   {
+    "title": "Guiding LLM Post-training Data Engineering with Model Internals from Sparse Autoencoders",
+    "date": "2026-05-26",
+    "authors": "Yi Jing, Zao Dai, Jinwu Hu",
+    "summary": "Model internals encode rich information about how a large language model (LLM) processes its training data; however, post-training data engineering largely relies on external signals and ignores rich ",
+    "link": "https://arxiv.org/abs/2605.27354v1"
+   },
+   {
+    "title": "From Scores to Gibbs Correctors: Accelerating Uniform-Rate Discrete Diffusion Models",
+    "date": "2026-05-26",
+    "authors": "Yuchen Liang, Ness Shroff, Yingbin Liang",
+    "summary": "Discrete diffusion models have achieved strong empirical performance in text and other symbolic domains, but, especially for uniform-rate models, they often require many steps to generate a single sam",
+    "link": "https://arxiv.org/abs/2605.27352v1"
+   },
+   {
+    "title": "When Eyes Betray AI: Social Gaze Consistency as a Semantic Cue for AI-Generated Image Detection",
+    "date": "2026-05-26",
+    "authors": "Kim Jihyeon, Sohee Kim, Soosan Lee",
+    "summary": "Recent generative models have largely closed the gap on low-level artifacts - pixel fingerprints, frequency anomalies, upsampling traces - particularly in person-centric and partial-edit settings wher",
+    "link": "https://arxiv.org/abs/2605.27348v1"
+   },
+   {
+    "title": "MATCHA: Matching Text via Contrastive Semantic Alignment",
+    "date": "2026-05-26",
+    "authors": "Siran Li, Ece Sena Etoglu, Carsten Eickhoff",
+    "summary": "Reliable evaluation is essential for understanding large language model (LLM) performance, yet today's go-to metrics, namely token-overlap scores (e.g., ROUGE) and embedding-based measures (e.g., BERT",
+    "link": "https://arxiv.org/abs/2605.27345v1"
+   },
+   {
+    "title": "Towards Controllable Image Generation through Representation-Conditioned Diffusion Models",
+    "date": "2026-05-26",
+    "authors": "Nithesh Chandher Karthikeyan, Jonas Unger, Gabriel Eilertsen",
+    "summary": "Diffusion models have emerged as powerful tools for high-quality image generation and editing, but guiding these models to produce specific outputs remains a challenge. Conventional approaches rely on",
+    "link": "https://arxiv.org/abs/2605.27343v1"
+   }
+  ]
  },
  "pypi": {
-  "status": "ok:4/10",
+  "status": "ok:5/10",
   "libs": [
    {
     "pkg": "litellm",
-    "last_month": 474666045,
-    "last_week": 119634445
-   },
-   {
-    "pkg": "langgraph",
-    "last_month": 51907027,
-    "last_week": 13559660
-   },
-   {
-    "pkg": "crewai",
-    "last_month": 12552167,
-    "last_week": 4017880
-   },
-   {
-    "pkg": "llama-index",
-    "last_month": 12084111,
-    "last_week": 2853985
-   },
-   {
-    "pkg": "langchain",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+    "last_month": 478279451,
+    "last_week": 117897901
    },
    {
     "pkg": "openai",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+    "last_month": 313467196,
+    "last_week": 75784531
+   },
+   {
+    "pkg": "langchain",
+    "last_month": 268852775,
+    "last_week": 79799004
    },
    {
     "pkg": "anthropic",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+    "last_month": 126301740,
+    "last_week": 29865385
+   },
+   {
+    "pkg": "llama-index",
+    "last_month": 12280940,
+    "last_week": 2751312
    },
    {
     "pkg": "transformers",
@@ -45,6 +123,14 @@
    },
    {
     "pkg": "vllm",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "langgraph",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "crewai",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
