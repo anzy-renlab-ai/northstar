@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-27T02:43:57",
+ "collected_at": "2026-05-28T02:30:54",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,27 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "sqlite AGENTS.md",
+   "date": "2026-05-27",
+   "summary": "sqlite AGENTS.md SQLite gained an AGENTS.md file five days ago - but it's not intended for their own development, it's presumably aimed at people who are pointing agents at the SQLite codebase. It includes: SQLite does not accept pull requests without prior agreement and/or accompanying legal paperwork that places the pull request in the public domain. However, the human SQLite developers will review a concise and well-written pull request as a proof-of-concept prior to reimplementing the changes themselves. SQLite does not accept agentic code. However the project will accept agentic bug repor",
+   "link": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "I think Anthropic and OpenAI have found product-market fit",
+   "date": "2026-05-27",
+   "summary": "Anthropic are strongly rumored to be about to have their first profitable quarter. Stories are circulating of companies surprised at how expensive their LLM bills are becoming from usage by their staff. I think this is because OpenAI and Anthropic have both found product-market fit. Enterprise customers are now paying API prices I think they've found product-market fit And they're ramping up The AI-failure stories around this are pretty thin We also know the labs are spending a lot API revenue is becoming less important April is a new inflection point Enterprise customers are now paying API pr",
+   "link": "https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Kyle Ferrana",
+   "date": "2026-05-27",
+   "summary": "PICARD: Data, shields up DATA: Brilliant! Shields can reduce damage we sustain. Not immunity. Not hubris. Just prudence. It's not precaution—it's strategy. [camera shakes] WORF: HULL BREACHES ON NINE DECKS DATA: Here's what happened: you told me to raise shields, and I didn't &mdash; Kyle Ferrana , @KyleTrainEmoji Tags: ai-misuse , coding-agents , ai , llms",
+   "link": "https://simonwillison.net/2026/May/27/kyle-ferrana/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "The pressure",
@@ -53,27 +74,6 @@
    "link": "https://simonwillison.net/2026/May/25/encyclical-on-ai/#atom-everything"
   },
   {
-   "source": "Simon Willison",
-   "title": "California Brown Pelican, Snowy Egret, California Sea Lion, Harbor Seal",
-   "date": "2026-05-25",
-   "summary": "California Brown Pelican, Snowy Egret, California Sea Lion, Harbor Seal, in San Mateo County, CA, US We took our new folding kayak out in the harbor and saw sea lions and harbor seals chilling on the docks.",
-   "link": "https://simonwillison.net/2026/May/25/sighting-365297287/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette 1.0a30",
-   "date": "2026-05-24",
-   "summary": "Release: datasette 1.0a30 The big new feature in this alpha is a new customizable \"Jump to...\" menu, described in detail in The extensible \"Jump to\" menu in Datasette 1.0a30 on the Datasette blog. You can try it out by hitting / on latest.datasette.io - it looks like this: The new jump_items_sql() plugin hook allows plugins to add their own items to the set that's searched by the plugin. Tags: projects , datasette , annotated-release-notes",
-   "link": "https://simonwillison.net/2026/May/24/datasette/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette-agent 0.1a4",
-   "date": "2026-05-24",
-   "summary": "Release: datasette-agent 0.1a4 Taking advantage of the new makeJumpSections() JavaScript plugin hook added in Datasette 1.0a30 , datasette-agent now presents this \"Start a new agent chat\" interface as part of the Jump to menu, any time you hit / : You can try this out by signing into agent.datasette.io using your GitHub account. Tags: datasette , datasette-agent",
-   "link": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything"
-  },
-  {
    "source": "Sebastian Raschka",
    "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
    "date": "2026-05-16",
@@ -100,6 +100,27 @@
    "date": "2026-03-22",
    "summary": "From MHA and GQA to MLA, sparse attention, and hybrid architectures",
    "link": "https://magazine.sebastianraschka.com/p/visual-attention-variants"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+   "date": "2026-05-27",
+   "summary": "",
+   "link": "https://huggingface.co/blog/ibm-research/itbench-aa"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Reachy Mini goes fully local",
+   "date": "2026-05-27",
+   "summary": "",
+   "link": "https://huggingface.co/blog/local-reachy-mini-conversation"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+   "date": "2026-05-27",
+   "summary": "",
+   "link": "https://huggingface.co/blog/delta-weight-sync"
   },
   {
    "source": "HuggingFace Blog",
@@ -137,27 +158,6 @@
    "link": "https://huggingface.co/blog/ettin-reranker"
   },
   {
-   "source": "HuggingFace Blog",
-   "title": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
-   "date": "2026-05-18",
-   "summary": "",
-   "link": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers"
-  },
-  {
-   "source": "HuggingFace Blog",
-   "title": "The Open Agent Leaderboard",
-   "date": "2026-05-18",
-   "summary": "",
-   "link": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard"
-  },
-  {
-   "source": "HuggingFace Blog",
-   "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-   "date": "2026-05-14",
-   "summary": "",
-   "link": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
-  },
-  {
    "source": "Eugene Yan",
    "title": "How to Work and Compound with AI",
    "date": "2026-05-03",
@@ -184,6 +184,34 @@
    "date": "2026-03-13",
    "summary": "--> Understanding the behavior of complex machine learning systems, particularly Large Language Models (LLMs), is a critical challenge in modern artificial intelligence. Interpretability research aims to make the decision-making process more transparent to model builders and impacted humans, a step toward safer and more trustworthy AI. To gain a comprehensive understanding, we can analyze these systems through different lenses: feature attribution , which isolates the specific input features driving a prediction ( Lundberg &amp; Lee, 2017 ; Ribeiro et al., 2022 ); data attribution , which link",
    "link": "http://bair.berkeley.edu/blog/2026/03/13/spex/"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+   "date": "2026-05-27",
+   "summary": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
+   "link": "https://openai.com/index/cisco"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Building self-improving tax agents with Codex",
+   "date": "2026-05-27",
+   "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
+   "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Warp’s big bet on building open source with GPT-5.5",
+   "date": "2026-05-27",
+   "summary": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.",
+   "link": "https://openai.com/index/warp"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Election information and safeguards in 2026",
+   "date": "2026-05-27",
+   "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+   "link": "https://openai.com/index/election-safeguards-2026"
   },
   {
    "source": "OpenAI News",
@@ -214,32 +242,11 @@
    "link": "https://openai.com/index/adventhealth"
   },
   {
-   "source": "OpenAI News",
-   "title": "The next phase of OpenAI’s Education for Countries",
-   "date": "2026-05-20",
-   "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
-   "link": "https://openai.com/index/the-next-phase-of-education-for-countries"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
-   "date": "2026-05-20",
-   "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
-   "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "How Ramp engineers accelerate code review with Codex",
-   "date": "2026-05-20",
-   "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
-   "link": "https://openai.com/index/ramp"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "Introducing OpenAI for Singapore",
-   "date": "2026-05-19",
-   "summary": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
-   "link": "https://openai.com/index/introducing-openai-for-singapore"
+   "source": "Google Research",
+   "title": "Private analytics via zero-trust aggregation",
+   "date": "2026-05-27",
+   "summary": "Security, Privacy and Abuse Prevention",
+   "link": "https://research.google/blog/private-analytics-via-zero-trust-aggregation/"
   },
   {
    "source": "Google Research",
@@ -289,13 +296,6 @@
    "date": "2026-04-16",
    "summary": "General Science",
    "link": "https://research.google/blog/ai-generated-synthetic-neurons-speed-up-brain-mapping/"
-  },
-  {
-   "source": "Google Research",
-   "title": "Towards developing future-ready skills with generative AI",
-   "date": "2026-04-13",
-   "summary": "Education Innovation",
-   "link": "https://research.google/blog/towards-developing-future-ready-skills-with-generative-ai/"
   }
  ]
 }

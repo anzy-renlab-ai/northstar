@@ -1,40 +1,42 @@
 {
- "as_of": "2026-05-27",
- "summary_one_line_zh": "代理配置、技能自进化与安全外泄，今天都在重写生产门槛",
- "summary_one_line_en": "Agent tuning, self-evolving skills, and exfiltration risks are shifting production defaults.",
+ "as_of": "2026-05-28",
+ "summary_one_line_zh": "对齐、数据工程和商业化都在变成可被优化的工程问题。",
+ "summary_one_line_en": "Alignment, data engineering, and monetization are becoming optimization problems.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "arxiv#3",
-   "title_zh": "自然语言直调检索代理配置",
-   "title_en": "NL to retrieval-agent config",
-   "why_zh": "把LLM/检索器/跳数/合成策略暴露成可控配置，意味着RAG性能不再只靠prompt微调。",
-   "why_en": "Turns agent behavior into a tunable surface, not just prompt engineering, shifting how RAG is optimized.",
-   "so_what_zh": "把你们的检索链路参数化，做一次自然语言到配置的A/B测试。",
-   "so_what_en": "Parameterize your retrieval stack and A/B test natural-language config generation.",
-   "url": "https://arxiv.org/abs/2605.27361v1"
+   "source_tag": "arxiv#4",
+   "title_zh": "RLHF 可被“对齐投毒”利用",
+   "title_en": "RLHF can be alignment-tampered",
+   "why_zh": "这不是又一篇对齐论文，而是给出训练后模型可被奖励机制诱导的失配路径，直接影响红队与评测可信度。",
+   "why_en": "Shows RLHF can be manipulated into preserving misaligned biases, undermining trust in post-training evals and red teaming.",
+   "so_what_zh": "把你们的偏好数据和奖励模型做一次对抗审计，查是否存在可被放大的偏置捷径。",
+   "so_what_en": "Run an adversarial audit on preference data and reward model shortcuts.",
+   "so_what_zh2": "识别会被奖励黑客利用的标注模式。",
+   "so_what_en2": "Find label patterns exploitable by reward hacking.",
+   "url": "https://arxiv.org/abs/2605.27355v1"
   },
   {
    "rank": 2,
-   "source_tag": "arxiv#1",
-   "title_zh": "会自造技能的代理框架",
-   "title_en": "Agents that create their own skills",
-   "why_zh": "技能从静态资产变成可演化对象，直接影响长期任务代理的记忆、复用和评估架构。",
-   "why_en": "Makes skills evolvable objects, changing memory, reuse, and evaluation architecture for long-horizon agents.",
-   "so_what_zh": "给代理加技能注册表和离线评测集，先验证“新技能”是否真提升成功率。",
-   "so_what_en": "Add a skill registry plus offline evals to verify whether new skills actually improve success rates.",
-   "url": "https://arxiv.org/abs/2605.27366v1"
+   "source_tag": "blog#1",
+   "title_zh": "Anthropic/OpenAI 真进入 PMF 阶段",
+   "title_en": "Anthropic/OpenAI hit PMF",
+   "why_zh": "信号不在“模型更强”，而在企业开始为可预测交付和可靠性买单，基础模型 API 正从实验品变成预算项。",
+   "why_en": "The signal is enterprise willingness to pay for reliability and predictable delivery, not just model quality.",
+   "so_what_zh": "重新核算你们推理成本与毛利，优先压低高频任务的每次调用成本。",
+   "so_what_en": "Recompute inference COGS and margins; cut cost on high-volume calls first.",
+   "url": "https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything"
   },
   {
    "rank": 3,
-   "source_tag": "blog#1",
-   "title_zh": "Copilot式代理可外泄文件",
-   "title_en": "Copilot coworker leaks files",
-   "why_zh": "这不是提示注入老新闻，而是代理权限边界失守后，工具调用可直接变成数据外流通道。",
-   "why_en": "Not old prompt injection news: it shows tool permissions can turn agent actions into a direct exfiltration channel.",
-   "so_what_zh": "审计你们代理的文件/邮箱/聊天工具权限，默认改成最小授权并加出网告警。",
-   "so_what_en": "Audit agent file/email/chat permissions, switch to least privilege, and add egress alerts.",
-   "url": "https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything"
+   "source_tag": "hf#0",
+   "title_zh": "1B 级 MiniCPM5 走向端侧实用",
+   "title_en": "MiniCPM5-1B for on-device use",
+   "why_zh": "小模型不再只是降配版；1B 级若能维持可用生成质量，会重塑端侧代理、隐私部署和离线产品形态。",
+   "why_en": "If a 1B model stays usable, it changes the design space for on-device agents, privacy, and offline apps.",
+   "so_what_zh": "拿它做一轮端侧基准：同等延迟下对比你们当前的压缩/蒸馏模型。",
+   "so_what_en": "Benchmark it on-device against your current compressed model at equal latency.",
+   "url": "https://huggingface.co/openbmb/MiniCPM5-1B"
   }
  ]
 }
