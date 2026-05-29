@@ -1,42 +1,40 @@
 {
- "as_of": "2026-05-28",
- "summary_one_line_zh": "对齐、数据工程和商业化都在变成可被优化的工程问题。",
- "summary_one_line_en": "Alignment, data engineering, and monetization are becoming optimization problems.",
+ "as_of": "2026-05-29",
+ "summary_one_line_zh": "模型收入在放大，发布在变密，控制问题开始压到前台。",
+ "summary_one_line_en": "Revenue scales, releases speed up, and control becomes the bottleneck.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "arxiv#4",
-   "title_zh": "RLHF 可被“对齐投毒”利用",
-   "title_en": "RLHF can be alignment-tampered",
-   "why_zh": "这不是又一篇对齐论文，而是给出训练后模型可被奖励机制诱导的失配路径，直接影响红队与评测可信度。",
-   "why_en": "Shows RLHF can be manipulated into preserving misaligned biases, undermining trust in post-training evals and red teaming.",
-   "so_what_zh": "把你们的偏好数据和奖励模型做一次对抗审计，查是否存在可被放大的偏置捷径。",
-   "so_what_en": "Run an adversarial audit on preference data and reward model shortcuts.",
-   "so_what_zh2": "识别会被奖励黑客利用的标注模式。",
-   "so_what_en2": "Find label patterns exploitable by reward hacking.",
-   "url": "https://arxiv.org/abs/2605.27355v1"
+   "source_tag": "blog#0",
+   "title_zh": "Anthropic年化收入冲到470亿",
+   "title_en": "Anthropic run-rate hits $47B",
+   "why_zh": "付费需求已不只是试用，说明推理账单和企业采购正进入硬预算层。",
+   "why_en": "Demand is budget-line real now, not just experimentation.",
+   "so_what_zh": "重算你们LLM P&L：按真实推理量和毛利率做一次月度敏感性分析。",
+   "so_what_en": "Recompute LLM unit economics with actual traffic and margin assumptions.",
+   "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything"
   },
   {
    "rank": 2,
-   "source_tag": "blog#1",
-   "title_zh": "Anthropic/OpenAI 真进入 PMF 阶段",
-   "title_en": "Anthropic/OpenAI hit PMF",
-   "why_zh": "信号不在“模型更强”，而在企业开始为可预测交付和可靠性买单，基础模型 API 正从实验品变成预算项。",
-   "why_en": "The signal is enterprise willingness to pay for reliability and predictable delivery, not just model quality.",
-   "so_what_zh": "重新核算你们推理成本与毛利，优先压低高频任务的每次调用成本。",
-   "so_what_en": "Recompute inference COGS and margins; cut cost on high-volume calls first.",
-   "url": "https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything"
+   "source_tag": "arxiv#6",
+   "title_zh": "让监督系统学会保守",
+   "title_en": "Calibrating conservatism for oversight",
+   "why_zh": "代理越能长程规划，越需要可调保守度；这是上线前的控制参数，不是研究花活。",
+   "why_en": "As agents plan longer, tunable conservatism becomes an ops control knob.",
+   "so_what_zh": "给代理加一个‘保守模式’开关，先在高风险工具调用和长链路任务上灰度。",
+   "so_what_en": "Add a conservative mode for risky tool calls and long-horizon tasks.",
+   "url": "https://arxiv.org/abs/2605.28807v1"
   },
   {
    "rank": 3,
-   "source_tag": "hf#0",
-   "title_zh": "1B 级 MiniCPM5 走向端侧实用",
-   "title_en": "MiniCPM5-1B for on-device use",
-   "why_zh": "小模型不再只是降配版；1B 级若能维持可用生成质量，会重塑端侧代理、隐私部署和离线产品形态。",
-   "why_en": "If a 1B model stays usable, it changes the design space for on-device agents, privacy, and offline apps.",
-   "so_what_zh": "拿它做一轮端侧基准：同等延迟下对比你们当前的压缩/蒸馏模型。",
-   "so_what_en": "Benchmark it on-device against your current compressed model at equal latency.",
-   "url": "https://huggingface.co/openbmb/MiniCPM5-1B"
+   "source_tag": "blog#1",
+   "title_zh": "Opus 4.8只小幅升级",
+   "title_en": "Claude Opus 4.8 ships modest gains",
+   "why_zh": "顶级闭源模型进入“边际改进”阶段，差异化更依赖工作流、缓存和路由，而非单点模型分数。",
+   "why_en": "Frontier models are entering diminishing returns; workflow beats raw benchmark wins.",
+   "so_what_zh": "把最贵模型从默认路由里拿掉，先测‘中档模型+提示/检索/缓存’能否守住质量。",
+   "so_what_en": "Remove the top model from default routing and benchmark cheaper stacks first.",
+   "url": "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything"
   }
  ]
 }
