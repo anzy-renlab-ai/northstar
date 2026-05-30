@@ -1,40 +1,40 @@
 {
- "as_of": "2026-05-29",
- "summary_one_line_zh": "模型收入在放大，发布在变密，控制问题开始压到前台。",
- "summary_one_line_en": "Revenue scales, releases speed up, and control becomes the bottleneck.",
+ "as_of": "2026-05-30",
+ "summary_one_line_zh": "模型在变强，但真正的杠杆转向了训练配方、推理记忆和产品级模型更新。",
+ "summary_one_line_en": "The leverage is shifting to training mix, inference memory, and product-grade model releases.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "blog#0",
-   "title_zh": "Anthropic年化收入冲到470亿",
-   "title_en": "Anthropic run-rate hits $47B",
-   "why_zh": "付费需求已不只是试用，说明推理账单和企业采购正进入硬预算层。",
-   "why_en": "Demand is budget-line real now, not just experimentation.",
-   "so_what_zh": "重算你们LLM P&L：按真实推理量和毛利率做一次月度敏感性分析。",
-   "so_what_en": "Recompute LLM unit economics with actual traffic and margin assumptions.",
-   "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything"
+   "source_tag": "blog#1",
+   "title_zh": "Claude Opus 4.8 发布",
+   "title_en": "Claude Opus 4.8 release",
+   "why_zh": "一线可用的大模型迭代，直接影响你们的默认基座、评测门槛和成本/延迟权衡。",
+   "why_en": "A production-grade model bump that changes default baselines, eval thresholds, and cost/latency tradeoffs.",
+   "so_what_zh": "立刻跑你们的核心 eval 套件，对比现基座看是否该切换。",
+   "so_what_en": "Run your core eval suite against it and decide whether to switch baselines.",
+   "url": "https://simonwillison.net/2026/May/28/llm-anthropic/#atom-everything"
   },
   {
    "rank": 2,
-   "source_tag": "arxiv#6",
-   "title_zh": "让监督系统学会保守",
-   "title_en": "Calibrating conservatism for oversight",
-   "why_zh": "代理越能长程规划，越需要可调保守度；这是上线前的控制参数，不是研究花活。",
-   "why_en": "As agents plan longer, tunable conservatism becomes an ops control knob.",
-   "so_what_zh": "给代理加一个‘保守模式’开关，先在高风险工具调用和长链路任务上灰度。",
-   "so_what_en": "Add a conservative mode for risky tool calls and long-horizon tasks.",
-   "url": "https://arxiv.org/abs/2605.28807v1"
+   "source_tag": "arxiv#3",
+   "title_zh": "LLM 数据配方诊断",
+   "title_en": "Diagnosing LLM data mixtures",
+   "why_zh": "训练数据不再是黑盒：它开始变成可定位、可归因的性能和失效来源。",
+   "why_en": "Training data is becoming inspectable, making capability and failure modes traceable to mix choices.",
+   "so_what_zh": "把你们最近一次回归按错误类型回溯到数据桶，找出最值得补的 mixture。",
+   "so_what_en": "Map recent regressions to data buckets and find the highest-leverage mix fixes.",
+   "url": "https://arxiv.org/abs/2605.30348v1"
   },
   {
    "rank": 3,
-   "source_tag": "blog#1",
-   "title_zh": "Opus 4.8只小幅升级",
-   "title_en": "Claude Opus 4.8 ships modest gains",
-   "why_zh": "顶级闭源模型进入“边际改进”阶段，差异化更依赖工作流、缓存和路由，而非单点模型分数。",
-   "why_en": "Frontier models are entering diminishing returns; workflow beats raw benchmark wins.",
-   "so_what_zh": "把最贵模型从默认路由里拿掉，先测‘中档模型+提示/检索/缓存’能否守住质量。",
-   "so_what_en": "Remove the top model from default routing and benchmark cheaper stacks first.",
-   "url": "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything"
+   "source_tag": "arxiv#6",
+   "title_zh": "给 LLM 加可用工作记忆",
+   "title_en": "Working memory for latent reasoning",
+   "why_zh": "它瞄准的是测试时推理的真实瓶颈：token 预算之外，模型如何保留中间状态。",
+   "why_en": "It targets the real bottleneck in test-time reasoning: retaining state beyond token budgets.",
+   "so_what_zh": "在长链推理任务上试一个带显式状态缓存的原型，替换纯 token 堆叠。",
+   "so_what_en": "Prototype explicit state caching on long-horizon reasoning, not just longer chains.",
+   "url": "https://arxiv.org/abs/2605.30343v1"
   }
  ]
 }

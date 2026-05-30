@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-29T02:35:12",
+ "collected_at": "2026-05-30T02:29:19",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,13 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "datasette 1.0a31",
+   "date": "2026-05-29",
+   "summary": "Release: datasette 1.0a31 Another significant alpha release, with two new headline features. Datasette now offers users with the necessary permissions the ability to both execute write queries against their database and to save stored queries (renamed from \"canned queries\") both privately and for use by other members of their Datasette instance. There's more detail in SQL write queries and stored queries in Datasette 1.0a31 on the Datasette blog, which now has three posts introducing new features since the blog launched two weeks ago. Here's an animated demo from the blog post showing how the ",
+   "link": "https://simonwillison.net/2026/May/29/datasette/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "Anthropic's run-rate revenue hits $47 billion",
@@ -40,6 +47,13 @@
   },
   {
    "source": "Simon Willison",
+   "title": "markdown-svg-renderer",
+   "date": "2026-05-28",
+   "summary": "Tool: markdown-svg-renderer A slightly customized Markdown rendering tool with special treatment for fenced code SVG blocks - it both renders the image and provides a tab for switching to the code view. You can paste in Markdown or give it a URL to a CORS-enabled Markdown file or Gist. Here's an example where it loads a Markdown file full of LLM pelican logs for Opus 4.8 . Tags: svg , tools , markdown , cors",
+   "link": "https://simonwillison.net/2026/May/28/markdown-svg-renderer/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
    "title": "sqlite AGENTS.md",
    "date": "2026-05-27",
    "summary": "sqlite AGENTS.md SQLite gained an AGENTS.md file five days ago - but it's not intended for their own development, it's presumably aimed at people who are pointing agents at the SQLite codebase. It includes: SQLite does not accept pull requests without prior agreement and/or accompanying legal paperwork that places the pull request in the public domain. However, the human SQLite developers will review a concise and well-written pull request as a proof-of-concept prior to reimplementing the changes themselves. SQLite does not accept agentic code. However the project will accept agentic bug repor",
@@ -58,20 +72,6 @@
    "date": "2026-05-27",
    "summary": "PICARD: Data, shields up DATA: Brilliant! Shields can reduce damage we sustain. Not immunity. Not hubris. Just prudence. It's not precaution—it's strategy. [camera shakes] WORF: HULL BREACHES ON NINE DECKS DATA: Here's what happened: you told me to raise shields, and I didn't &mdash; Kyle Ferrana , @KyleTrainEmoji Tags: ai-misuse , coding-agents , ai , llms",
    "link": "https://simonwillison.net/2026/May/27/kyle-ferrana/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "The pressure",
-   "date": "2026-05-26",
-   "summary": "The pressure Daniel Stenberg on the unprecedented level of pressure the curl team are facing right now thanks to the deluge of (credible) AI-assisted security issues being reported. The rate of incoming security reports is 4-5 times higher than it was in 2024 and double the speed of 2025 -- meaning that on average we now get more than one report per day . The quality is way higher than ever before. The reports are typically very detailed and long. [...] For the first time in my life, my wife voiced concerns about my work hours and my imbalanced work/life situation. I work more than I’ve done b",
-   "link": "https://simonwillison.net/2026/May/26/the-pressure/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Microsoft Copilot Cowork Exfiltrates Files",
-   "date": "2026-05-26",
-   "summary": "Microsoft Copilot Cowork Exfiltrates Files The biggest challenge in designing agentic systems continues to be preventing them from enabling attackers to exfiltrate data. In this case Microsoft Copilot Cowork (yes, that's a real product name ) was allowing agents to send emails to the user's own inbox without approval... but those messages were then displayed in a way that could leak data to an attacker via rendered images: Because these messages can contain external images that trigger network requests to external websites, data can be exfiltrated when a user opens a compromised message sent b",
-   "link": "https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything"
   },
   {
    "source": "Sebastian Raschka",
@@ -100,6 +100,13 @@
    "date": "2026-03-22",
    "summary": "From MHA and GQA to MLA, sparse attention, and hybrid architectures",
    "link": "https://magazine.sebastianraschka.com/p/visual-attention-variants"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Profiling in PyTorch (Part 1): A Beginner's Guide to torch.profiler",
+   "date": "2026-05-29",
+   "summary": "",
+   "link": "https://huggingface.co/blog/torch-profiler"
   },
   {
    "source": "HuggingFace Blog",
@@ -151,13 +158,6 @@
    "link": "https://huggingface.co/blog/allenai/olmoearth-v1-1"
   },
   {
-   "source": "HuggingFace Blog",
-   "title": "Introducing the Ettin Reranker Family",
-   "date": "2026-05-19",
-   "summary": "",
-   "link": "https://huggingface.co/blog/ettin-reranker"
-  },
-  {
    "source": "Eugene Yan",
    "title": "How to Work and Compound with AI",
    "date": "2026-05-03",
@@ -187,6 +187,34 @@
   },
   {
    "source": "OpenAI News",
+   "title": "Boston Children’s uses AI to unlock new diagnoses",
+   "date": "2026-05-29",
+   "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
+   "link": "https://openai.com/index/boston-childrens-hospital"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "How Braintrust turns customer requests into code with Codex",
+   "date": "2026-05-29",
+   "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
+   "link": "https://openai.com/index/braintrust"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Strengthening societal resilience with Rosalind Biodefense",
+   "date": "2026-05-29",
+   "summary": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
+   "link": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "A shared playbook for trustworthy third party evaluations",
+   "date": "2026-05-29",
+   "summary": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.",
+   "link": "https://openai.com/index/trustworthy-third-party-evaluations-foundations"
+  },
+  {
+   "source": "OpenAI News",
    "title": "How Endava builds an agentic organization with Codex",
    "date": "2026-05-28",
    "summary": "Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours.",
@@ -201,45 +229,17 @@
   },
   {
    "source": "OpenAI News",
+   "title": "MUFG aims to become AI-native with OpenAI",
+   "date": "2026-05-28",
+   "summary": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale.",
+   "link": "https://openai.com/index/mufg"
+  },
+  {
+   "source": "OpenAI News",
    "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
    "date": "2026-05-27",
    "summary": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
    "link": "https://openai.com/index/cisco"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "Building self-improving tax agents with Codex",
-   "date": "2026-05-27",
-   "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
-   "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "Election information and safeguards in 2026",
-   "date": "2026-05-27",
-   "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
-   "link": "https://openai.com/index/election-safeguards-2026"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "Warp’s big bet on building open source with GPT-5.5",
-   "date": "2026-05-27",
-   "summary": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.",
-   "link": "https://openai.com/index/warp"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
-   "date": "2026-05-25",
-   "summary": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
-   "link": "https://openai.com/index/grupo-folha-grupo-uol-partnership"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "How Virgin Atlantic ships faster with Codex",
-   "date": "2026-05-22",
-   "summary": "How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.",
-   "link": "https://openai.com/index/virgin-atlantic"
   },
   {
    "source": "Google Research",
