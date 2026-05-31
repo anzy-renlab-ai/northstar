@@ -1,40 +1,40 @@
 {
- "as_of": "2026-05-30",
- "summary_one_line_zh": "模型在变强，但真正的杠杆转向了训练配方、推理记忆和产品级模型更新。",
- "summary_one_line_en": "The leverage is shifting to training mix, inference memory, and product-grade model releases.",
+ "as_of": "2026-05-31",
+ "summary_one_line_zh": "小模型更能打，视频头像更实用，LLM 也开始被“工程化关进笼子”了",
+ "summary_one_line_en": "Smaller models improve, avatar video gets practical, and LLM containment becomes an engineering discipline.",
  "items": [
   {
    "rank": 1,
    "source_tag": "blog#1",
-   "title_zh": "Claude Opus 4.8 发布",
-   "title_en": "Claude Opus 4.8 release",
-   "why_zh": "一线可用的大模型迭代，直接影响你们的默认基座、评测门槛和成本/延迟权衡。",
-   "why_en": "A production-grade model bump that changes default baselines, eval thresholds, and cost/latency tradeoffs.",
-   "so_what_zh": "立刻跑你们的核心 eval 套件，对比现基座看是否该切换。",
-   "so_what_en": "Run your core eval suite against it and decide whether to switch baselines.",
-   "url": "https://simonwillison.net/2026/May/28/llm-anthropic/#atom-everything"
+   "title_zh": "Claude 跨产品隔离方案",
+   "title_en": "How to contain Claude",
+   "why_zh": "把模型当不可信执行体来围栏，直接影响工具调用、权限边界和多产品复用架构。",
+   "why_en": "Treats the model as untrusted execution, reshaping tool access, permission boundaries, and reuse across products.",
+   "so_what_zh": "检查你们的 agent/tool 层，补上最小权限、输出过滤和跨产品隔离。",
+   "so_what_en": "Audit your agent layer for least privilege, output filters, and cross-product isolation.",
+   "url": "https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything"
   },
   {
    "rank": 2,
-   "source_tag": "arxiv#3",
-   "title_zh": "LLM 数据配方诊断",
-   "title_en": "Diagnosing LLM data mixtures",
-   "why_zh": "训练数据不再是黑盒：它开始变成可定位、可归因的性能和失效来源。",
-   "why_en": "Training data is becoming inspectable, making capability and failure modes traceable to mix choices.",
-   "so_what_zh": "把你们最近一次回归按错误类型回溯到数据桶，找出最值得补的 mixture。",
-   "so_what_en": "Map recent regressions to data buckets and find the highest-leverage mix fixes.",
-   "url": "https://arxiv.org/abs/2605.30348v1"
+   "source_tag": "hf#3",
+   "title_zh": "Liquid 的 8B 稀疏模型",
+   "title_en": "Liquid sparse 8B model",
+   "why_zh": "如果 8B 级模型能靠稀疏激活逼近更大模型，它会改写你们的吞吐、成本和部署边界。",
+   "why_en": "If sparse activation makes 8B models feel much larger, it changes throughput, cost, and deployment constraints.",
+   "so_what_zh": "拿它和你线上 7B/8B 基线做一次相同提示集的延迟、成本和质量对比。",
+   "so_what_en": "Benchmark it against your 7B/8B baseline on latency, cost, and quality.",
+   "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B"
   },
   {
    "rank": 3,
-   "source_tag": "arxiv#6",
-   "title_zh": "给 LLM 加可用工作记忆",
-   "title_en": "Working memory for latent reasoning",
-   "why_zh": "它瞄准的是测试时推理的真实瓶颈：token 预算之外，模型如何保留中间状态。",
-   "why_en": "It targets the real bottleneck in test-time reasoning: retaining state beyond token budgets.",
-   "so_what_zh": "在长链推理任务上试一个带显式状态缓存的原型，替换纯 token 堆叠。",
-   "so_what_en": "Prototype explicit state caching on long-horizon reasoning, not just longer chains.",
-   "url": "https://arxiv.org/abs/2605.30343v1"
+   "source_tag": "hf#2",
+   "title_zh": "长猫视频头像模型 1.5",
+   "title_en": "LongCat video avatar 1.5",
+   "why_zh": "视频驱动头像进入可产品化阶段，直接影响客服、陪伴、销售演示等前台交互形态。",
+   "why_en": "Video avatars are becoming product-ready, affecting support, companion, and sales-demo interfaces.",
+   "so_what_zh": "用你们现有脚本跑一版 avatar demo，评估延迟、口型同步和失败回退。",
+   "so_what_en": "Run your scripts through an avatar demo and measure latency, lip-sync, and fallback behavior.",
+   "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5"
   }
  ]
 }
