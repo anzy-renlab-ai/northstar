@@ -1,27 +1,27 @@
 {
- "collected_at": "2026-06-01T02:54:34",
+ "collected_at": "2026-06-01T04:26:31",
  "hf": {
   "status": "ok:30 sort=trendingScore",
   "tag_freq": {
-   "image-text-to-text": 9,
+   "image-text-to-text": 8,
    "text-generation": 7,
    "unknown": 3,
    "translation": 2,
    "text-to-speech": 2,
+   "text-to-image": 2,
    "image-to-image": 1,
    "any-to-any": 1,
    "video-text-to-text": 1,
    "text-to-video": 1,
    "image-to-text": 1,
-   "text-to-image": 1,
-   "token-classification": 1
+   "automatic-speech-recognition": 1
   },
   "trending": [
    {
     "id": "nvidia/LocateAnything-3B",
     "pipeline": "image-text-to-text",
     "downloads": 24586,
-    "likes": 619
+    "likes": 625
    },
    {
     "id": "openbmb/MiniCPM5-1B",
@@ -33,19 +33,19 @@
     "id": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
     "pipeline": "image-text-to-text",
     "downloads": 2439402,
-    "likes": 1161
+    "likes": 1168
    },
    {
     "id": "LiquidAI/LFM2.5-8B-A1B",
     "pipeline": "text-generation",
     "downloads": 27677,
-    "likes": 321
+    "likes": 325
    },
    {
     "id": "meituan-longcat/LongCat-Video-Avatar-1.5",
     "pipeline": "unknown",
     "downloads": 0,
-    "likes": 440
+    "likes": 441
    },
    {
     "id": "nvidia/PiD",
@@ -57,37 +57,37 @@
     "id": "bytedance-research/Lance",
     "pipeline": "any-to-any",
     "downloads": 2948,
-    "likes": 992
+    "likes": 994
    },
    {
     "id": "deepseek-ai/DeepSeek-V4-Pro",
     "pipeline": "text-generation",
     "downloads": 5886599,
-    "likes": 4503
+    "likes": 4506
    },
    {
     "id": "stepfun-ai/Step-3.7-Flash",
     "pipeline": "image-text-to-text",
     "downloads": 7638,
-    "likes": 162
+    "likes": 163
    },
    {
     "id": "sapientinc/HRM-Text-1B",
     "pipeline": "text-generation",
     "downloads": 143904,
-    "likes": 428
+    "likes": 430
    },
    {
     "id": "NemoStation/Marlin-2B",
     "pipeline": "video-text-to-text",
     "downloads": 16277,
-    "likes": 472
+    "likes": 473
    },
    {
     "id": "LiquidAI/LFM2.5-8B-A1B-GGUF",
     "pipeline": "text-generation",
     "downloads": 41828,
-    "likes": 133
+    "likes": 134
    },
    {
     "id": "tencent/Hy-MT2-30B-A3B",
@@ -99,7 +99,7 @@
     "id": "SulphurAI/Sulphur-2-base",
     "pipeline": "text-to-video",
     "downloads": 1590236,
-    "likes": 1471
+    "likes": 1473
    },
    {
     "id": "PaddlePaddle/PaddleOCR-VL-1.6",
@@ -123,7 +123,7 @@
     "id": "Qwen/Qwen3.6-27B",
     "pipeline": "image-text-to-text",
     "downloads": 5064096,
-    "likes": 1552
+    "likes": 1553
    },
    {
     "id": "Supertone/supertonic-3",
@@ -144,16 +144,16 @@
     "likes": 208
    },
    {
+    "id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+    "pipeline": "text-generation",
+    "downloads": 105608,
+    "likes": 95
+   },
+   {
     "id": "tencent/Hy-MT2-1.8B",
     "pipeline": "translation",
     "downloads": 17471,
     "likes": 1094
-   },
-   {
-    "id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
-    "pipeline": "text-generation",
-    "downloads": 105608,
-    "likes": 94
    },
    {
     "id": "deepseek-ai/DeepSeek-V4-Flash",
@@ -162,16 +162,16 @@
     "likes": 1323
    },
    {
-    "id": "froggeric/Qwen-Fixed-Chat-Templates",
-    "pipeline": "unknown",
-    "downloads": 0,
-    "likes": 469
-   },
-   {
     "id": "OpenMOSS-Team/MOSS-TTS-v1.5",
     "pipeline": "text-to-speech",
     "downloads": 14272,
     "likes": 83
+   },
+   {
+    "id": "froggeric/Qwen-Fixed-Chat-Templates",
+    "pipeline": "unknown",
+    "downloads": 0,
+    "likes": 469
    },
    {
     "id": "microsoft/Lens",
@@ -186,16 +186,16 @@
     "likes": 1610
    },
    {
-    "id": "openai/privacy-filter",
-    "pipeline": "token-classification",
-    "downloads": 306344,
-    "likes": 1573
+    "id": "pyannote/speaker-diarization-3.1",
+    "pipeline": "automatic-speech-recognition",
+    "downloads": 9695594,
+    "likes": 2089
    },
    {
-    "id": "Jackrong/Qwopus3.6-27B-v2-GGUF",
-    "pipeline": "image-text-to-text",
-    "downloads": 37241,
-    "likes": 190
+    "id": "prism-ml/bonsai-image-ternary-4B-gemlite-2bit",
+    "pipeline": "text-to-image",
+    "downloads": 0,
+    "likes": 74
    }
   ]
  },
