@@ -1,114 +1,119 @@
 {
- "collected_at": "2026-05-31T02:45:46",
+ "collected_at": "2026-06-01T02:54:36",
  "arxiv": {
   "status": "ok:12",
   "papers": [
    {
-    "title": "Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software",
-    "date": "2026-05-28",
-    "authors": "Nhat-Minh Nguyen",
-    "summary": "Are AI agents tools, co-authors, or researchers? We present a quantified case study ($N=1$): a physicist supervising an AI coding agent (Claude Code, Sonnet and Opus models) over 12 work days and 57 s",
-    "link": "https://arxiv.org/abs/2605.30353v1"
+    "title": "Lumos-Nexus: Efficient Frequency Bridging with Homogeneous Latent Space for Video Unified Models",
+    "date": "2026-05-29",
+    "authors": "Jiazheng Xing, Hangjie Yuan, Lingling Cai",
+    "summary": "Connector-based video unified models have demonstrated strong capability in instruction-grounded video synthesis, but integrating a large high-fidelity generator into the unified training loop is comp",
+    "link": "https://arxiv.org/abs/2605.31603v1"
    },
    {
-    "title": "VideoMLA: Low-Rank Latent KV Cache for Minute-Scale Autoregressive Video Diffusion",
-    "date": "2026-05-28",
-    "authors": "Hidir Yesiltepe, Jiazhen Hu, Tuna Han Salih Meral",
-    "summary": "Long-rollout causal video diffusion has converged on a fixed-size sliding-window KV cache, with recent progress innovating within this layout by changing which tokens occupy the window or how their po",
-    "link": "https://arxiv.org/abs/2605.30351v1"
+    "title": "KLIP: localized distribution shift detection via KL-divergence with diffusion priors in Inverse Problems",
+    "date": "2026-05-29",
+    "authors": "Alireza Kheirandish, Jihoon Hong, Sara Fridovich-Keil",
+    "summary": "Diffusion models have shown promising performance as data-driven priors for computational imaging, as well as some capacity to detect out-of-distribution (OOD) images. However, existing approaches to ",
+    "link": "https://arxiv.org/abs/2605.31596v1"
    },
    {
-    "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation",
-    "date": "2026-05-28",
-    "authors": "Jusuk Lee, Seungjae Lee, Jonghun Shin",
-    "summary": "Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recog",
-    "link": "https://arxiv.org/abs/2605.30350v1"
+    "title": "A Tight Theory of Error Feedback Algorithms in Distributed Optimization",
+    "date": "2026-05-29",
+    "authors": "Daniel Berg Thomsen, Adrien Taylor, Aymeric Dieuleveut",
+    "summary": "Communication costs are a major bottleneck in distributed learning and first-order optimization. A common approach to alleviate this issue is to compress the gradient information exchanged between age",
+    "link": "https://arxiv.org/abs/2605.31594v1"
    },
    {
-    "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
-    "date": "2026-05-28",
-    "authors": "Yaxin Luo, Jiacheng Cui, Xiaohan Zhao",
-    "summary": "The pretraining data mixture of Large Language Models (LLMs) constitutes their \"digital DNA\", shaping model behaviors, capabilities, and failure modes. Yet this composition is rarely disclosed, making",
-    "link": "https://arxiv.org/abs/2605.30348v1"
+    "title": "Stateful Online Monitoring Catches Distributed Agent Attacks",
+    "date": "2026-05-29",
+    "authors": "Davis Brown, Samarth Bhargav, Arav Santhanam",
+    "summary": "Language models can find thousands of severe software vulnerabilities, and agents are increasingly being misused for cyberattacks. To avoid detection, attackers frequently distribute their misuse, spl",
+    "link": "https://arxiv.org/abs/2605.31593v1"
    },
    {
-    "title": "SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations",
-    "date": "2026-05-28",
-    "authors": "Qinpei Luo, Ruichun Ma, Xinyu Zhang",
-    "summary": "Printed circuit board (PCB) schematic design defines nearly all electronic hardware, but it remains manual and expertise-intensive. While generative AI has advanced digital and analog IC design, PCB s",
-    "link": "https://arxiv.org/abs/2605.30345v1"
+    "title": "TunerDiT: Training-free Progressive Steering of Diffusion Transformer for Multi-Event Video Generation",
+    "date": "2026-05-29",
+    "authors": "Ruotong Liao, Guowen Huang, Qing Cheng",
+    "summary": "Text-to-video (T2V) generation faces challenging questions when generating videos with long horizons containing multiple events. Inspired by the intrinsics of the diffusion process, we probe video dif",
+    "link": "https://arxiv.org/abs/2605.31590v1"
    },
    {
-    "title": "Tiny but Trusted: Efficient Vision-Language Reasoning for Time-Series Anomaly Detection",
-    "date": "2026-05-28",
-    "authors": "Xiaona Zhou, Muntasir Wahed, Tianjiao Yu",
-    "summary": "Recent advances in Vision-Language Models (VLMs) have achieved impressive performance across many tasks, yet prior studies report unsatisfactory performance when applying large language or multimodal ",
-    "link": "https://arxiv.org/abs/2605.30344v1"
+    "title": "Language Models Learn Constructional Semantics, Not To Mention Syntax: Investigating LM Understanding of Paired-Focus Constructions",
+    "date": "2026-05-29",
+    "authors": "Wesley Scivetti, Ethan Wilcox, Nathan Schneider",
+    "summary": "Grasping the semantics of rare constructions (form-meaning pairings) has been shown to be a challenging problem that has currently only been solved by the largest LLMs. It remains an open question if ",
+    "link": "https://arxiv.org/abs/2605.31586v1"
    },
    {
-    "title": "Unlocking the Working Memory of Large Language Models for Latent Reasoning",
-    "date": "2026-05-28",
-    "authors": "Lukas Aichberger, Sepp Hochreiter",
-    "summary": "To improve the reasoning capabilities of large language models, test-time compute is typically scaled by generating intermediate tokens before the final answer. However, this couples reasoning to auto",
-    "link": "https://arxiv.org/abs/2605.30343v1"
+    "title": "LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards",
+    "date": "2026-05-29",
+    "authors": "Nianyi Lin, Jiajie Zhang, Lei Hou",
+    "summary": "Long-context reasoning remains a central challenge for large language models, which often fail to locate and integrate key information in extensive distracting content. Reinforcement learning with ver",
+    "link": "https://arxiv.org/abs/2605.31584v1"
    },
    {
-    "title": "GPIC: A Giant Permissive Image Corpus for Visual Generation",
-    "date": "2026-05-28",
-    "authors": "Keshigeyan Chandrasegaran, Kyle Sargent, Suchir Agarwal",
-    "summary": "Studying scalable methods for visual generative modeling requires large, accessible, and stable datasets. We introduce GPIC, a Giant Permissive Image Corpus of approximately 28 trillion pixels. GPIC c",
-    "link": "https://arxiv.org/abs/2605.30341v1"
+    "title": "Choosing the Lens: Strategic Perspective Activation in Context-Dependent Argumentation",
+    "date": "2026-05-29",
+    "authors": "Albert Sadowski, Jarosław A. Chudziak",
+    "summary": "The same arguments often need to be evaluated under different external regimes. An agent with influence over the regime has a strategic lever that standard formalisms do not directly capture. We intro",
+    "link": "https://arxiv.org/abs/2605.31581v1"
    },
    {
-    "title": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
-    "date": "2026-05-28",
-    "authors": "Alaa Khamis, Alaa Maalouf",
-    "summary": "Test-time finetuning (TTFT) is a rapidly evolving paradigm that adapts a language model to each prompt by retrieving related sequences, updating the model on them, and then evaluating the prompt. Howe",
-    "link": "https://arxiv.org/abs/2605.30337v1"
+    "title": "Giving Sensors a Voice: Multimodal JEPA for Semantic Time-Series Embeddings",
+    "date": "2026-05-29",
+    "authors": "Utsav Dutta, Gerardo Pastrana, Sina Khoshfetrat Pakazad",
+    "summary": "Transformer-based architectures have advanced sequence modeling in language and vision, yet general-purpose representation learning for heterogeneous multivariate time series remains underexplored. We",
+    "link": "https://arxiv.org/abs/2605.31580v1"
    },
    {
-    "title": "Fairness-Aware Federated Learning with Trajectory Shapley Value",
-    "date": "2026-05-28",
-    "authors": "Daniel Kuznetsov, Ziqi Wang",
-    "summary": "Federated learning is an emerging distributed paradigm that addresses the challenges posed by heterogeneous, privacy-sensitive data. It enables multiple clients to train a model collaboratively by agg",
-    "link": "https://arxiv.org/abs/2605.30336v1"
+    "title": "SPECTRA: Synthetic IR Test Collections with Relevance Oracles and Controlled Distractor Diagnostics",
+    "date": "2026-05-29",
+    "authors": "Eric Liang",
+    "summary": "Scalable information retrieval testing needs corpora that are large enough to stress index construction, ranking latency, query routing, and evaluation tooling, yet human-judged test collections remai",
+    "link": "https://arxiv.org/abs/2605.31575v1"
    },
    {
-    "title": "Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents",
-    "date": "2026-05-28",
-    "authors": "Anany Kotawala",
-    "summary": "Multi-component LLM agents assemble probabilistic claims from components that each see only part of a joint problem; the composition can violate basic probability axioms even when every component is l",
-    "link": "https://arxiv.org/abs/2605.30335v1"
+    "title": "What Gets Unmasked First? Trajectory Analysis of Diffusion Models for Graph-to-Text Generation",
+    "date": "2026-05-29",
+    "authors": "Qing Wang, Jacob Devasier, Chengkai Li",
+    "summary": "We present the first systematic study of masked diffusion language models (MDLMs) for graph-to-text generation. We analyze MDLM generation trajectories -- the order in which tokens are unmasked during",
+    "link": "https://arxiv.org/abs/2605.31564v1"
    },
    {
-    "title": "Demystifying Data Organization for Enhanced LLM Training",
-    "date": "2026-05-28",
-    "authors": "Yalun Dai, Yangyu Huang, Tongshen Yang",
-    "summary": "Large Language Models (LLMs) have revolutionized various fields, yet their training efficiency is heavily reliant on effective data curation. While data selection has been widely studied, the strategi",
-    "link": "https://arxiv.org/abs/2605.30334v1"
+    "title": "Disagreeing Rationales: Rethinking Classification and Explainability Evaluation in Hate Speech Detection",
+    "date": "2026-05-29",
+    "authors": "Benedetta Muscato, Beiduo Chen, Gizem Gezici",
+    "summary": "Human disagreement is ubiquitous and well-known in labeling. However, variation in explanations, captured through token-level human rationales, remains far less explored. At the same time, it is uncle",
+    "link": "https://arxiv.org/abs/2605.31563v1"
    }
   ]
  },
  "pypi": {
-  "status": "ok:3/10",
+  "status": "ok:4/10",
   "libs": [
    {
-    "pkg": "langchain",
-    "last_month": 279588358,
-    "last_week": 77194759
-   },
-   {
-    "pkg": "huggingface-hub",
-    "last_month": 256927350,
-    "last_week": 64305057
-   },
-   {
-    "pkg": "vllm",
-    "last_month": 6113263,
-    "last_week": 1283626
+    "pkg": "litellm",
+    "last_month": 494622892,
+    "last_week": 124000565
    },
    {
     "pkg": "openai",
+    "last_month": 307412513,
+    "last_week": 70953146
+   },
+   {
+    "pkg": "langgraph",
+    "last_month": 53318945,
+    "last_week": 13251406
+   },
+   {
+    "pkg": "crewai",
+    "last_month": 14160641,
+    "last_week": 3823848
+   },
+   {
+    "pkg": "langchain",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
@@ -120,19 +125,15 @@
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
+    "pkg": "vllm",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
     "pkg": "llama-index",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
-    "pkg": "langgraph",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
-    "pkg": "crewai",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
-    "pkg": "litellm",
+    "pkg": "huggingface-hub",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    }
   ]

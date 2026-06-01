@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-05-31T02:45:32",
+ "collected_at": "2026-06-01T02:54:25",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,20 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "datasette 1.0a32",
+   "date": "2026-05-31",
+   "summary": "Release: datasette 1.0a32 A minor bugfix release. Fixes a bug with INSERT ... RETURNING queries via the new /db/-/execute-write endpoint and a bunch of base_url issues which showed up when I was experimenting with Service Workers yesterday. Tags: datasette , annotated-release-notes",
+   "link": "https://simonwillison.net/2026/May/31/datasette/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "The solution might be cancelling my AI subscription",
+   "date": "2026-05-31",
+   "summary": "The solution might be cancelling my AI subscription I find this post by David Wilson very relatable. David lists 16+ projects he's spun up with AI tooling, and concludes: I didn't mean to build most of these things. Usually the Claude session started with something like \" write a quick script for X \", and one hour later the result is not a quick script for X , nor in the usual case is my problem solved, whatever the original itch happened to be. On that last point, this technology is horrific for attention. It's a thermonuclear ADHD amplifier and I have seen the same effect in every single one",
+   "link": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "Quoting Karen Kwok for Reuters Breakingviews",
@@ -58,20 +72,6 @@
    "date": "2026-05-29",
    "summary": "Release: datasette 1.0a31 Another significant alpha release, with two new headline features. Datasette now offers users with the necessary permissions the ability to both execute write queries against their database and to save stored queries (renamed from \"canned queries\") both privately and for use by other members of their Datasette instance. There's more detail in SQL write queries and stored queries in Datasette 1.0a31 on the Datasette blog, which now has three posts introducing new features since the blog launched two weeks ago. Here's an animated demo from the blog post showing how the ",
    "link": "https://simonwillison.net/2026/May/29/datasette/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Anthropic's run-rate revenue hits $47 billion",
-   "date": "2026-05-29",
-   "summary": "The most interesting thing about Anthropic's $65B Series H announcement is this line (emphasis mine): Since our Series G in February, adoption has continued to grow across global enterprise customers, and our run-rate revenue crossed $47 billion earlier this month. Anthropic have made a bit of a habit of sharing their \"run-rate revenue\" in this kind of announcement, which is an annualized projection of their current revenue - typically calculated by taking the most recent month and multiplying by 12. Earlier this year: Apr 6, 2026 in Anthropic expands partnership with Google and Broadcom : \"Ou",
-   "link": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Claude Opus 4.8: \"a modest but tangible improvement\"",
-   "date": "2026-05-28",
-   "summary": "Anthropic shipped Claude Opus 4.8 today. My favourite thing about it is this note in the release announcement: Users will find Opus 4.8 to be a modest but tangible improvement on its predecessor. There’s still more to be done: we’re working on developing and releasing models that provide many of the same capabilities as Opus at a lower cost. It's so refreshing to see an AI lab honestly describe a release as a minor incremental improvement over the previous model! Honesty seems to be a theme. Here's my other favorite note from that announcement: One of the most prominent improvements in Opus 4.",
-   "link": "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything"
   },
   {
    "source": "Sebastian Raschka",
