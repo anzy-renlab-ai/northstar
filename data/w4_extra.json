@@ -1,107 +1,38 @@
 {
- "collected_at": "2026-06-01T04:26:32",
+ "collected_at": "2026-06-02T02:51:31",
  "arxiv": {
-  "status": "ok:12",
-  "papers": [
-   {
-    "title": "Lumos-Nexus: Efficient Frequency Bridging with Homogeneous Latent Space for Video Unified Models",
-    "date": "2026-05-29",
-    "authors": "Jiazheng Xing, Hangjie Yuan, Lingling Cai",
-    "summary": "Connector-based video unified models have demonstrated strong capability in instruction-grounded video synthesis, but integrating a large high-fidelity generator into the unified training loop is comp",
-    "link": "https://arxiv.org/abs/2605.31603v1"
-   },
-   {
-    "title": "KLIP: localized distribution shift detection via KL-divergence with diffusion priors in Inverse Problems",
-    "date": "2026-05-29",
-    "authors": "Alireza Kheirandish, Jihoon Hong, Sara Fridovich-Keil",
-    "summary": "Diffusion models have shown promising performance as data-driven priors for computational imaging, as well as some capacity to detect out-of-distribution (OOD) images. However, existing approaches to ",
-    "link": "https://arxiv.org/abs/2605.31596v1"
-   },
-   {
-    "title": "A Tight Theory of Error Feedback Algorithms in Distributed Optimization",
-    "date": "2026-05-29",
-    "authors": "Daniel Berg Thomsen, Adrien Taylor, Aymeric Dieuleveut",
-    "summary": "Communication costs are a major bottleneck in distributed learning and first-order optimization. A common approach to alleviate this issue is to compress the gradient information exchanged between age",
-    "link": "https://arxiv.org/abs/2605.31594v1"
-   },
-   {
-    "title": "Stateful Online Monitoring Catches Distributed Agent Attacks",
-    "date": "2026-05-29",
-    "authors": "Davis Brown, Samarth Bhargav, Arav Santhanam",
-    "summary": "Language models can find thousands of severe software vulnerabilities, and agents are increasingly being misused for cyberattacks. To avoid detection, attackers frequently distribute their misuse, spl",
-    "link": "https://arxiv.org/abs/2605.31593v1"
-   },
-   {
-    "title": "TunerDiT: Training-free Progressive Steering of Diffusion Transformer for Multi-Event Video Generation",
-    "date": "2026-05-29",
-    "authors": "Ruotong Liao, Guowen Huang, Qing Cheng",
-    "summary": "Text-to-video (T2V) generation faces challenging questions when generating videos with long horizons containing multiple events. Inspired by the intrinsics of the diffusion process, we probe video dif",
-    "link": "https://arxiv.org/abs/2605.31590v1"
-   },
-   {
-    "title": "Language Models Learn Constructional Semantics, Not To Mention Syntax: Investigating LM Understanding of Paired-Focus Constructions",
-    "date": "2026-05-29",
-    "authors": "Wesley Scivetti, Ethan Wilcox, Nathan Schneider",
-    "summary": "Grasping the semantics of rare constructions (form-meaning pairings) has been shown to be a challenging problem that has currently only been solved by the largest LLMs. It remains an open question if ",
-    "link": "https://arxiv.org/abs/2605.31586v1"
-   },
-   {
-    "title": "LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards",
-    "date": "2026-05-29",
-    "authors": "Nianyi Lin, Jiajie Zhang, Lei Hou",
-    "summary": "Long-context reasoning remains a central challenge for large language models, which often fail to locate and integrate key information in extensive distracting content. Reinforcement learning with ver",
-    "link": "https://arxiv.org/abs/2605.31584v1"
-   },
-   {
-    "title": "Choosing the Lens: Strategic Perspective Activation in Context-Dependent Argumentation",
-    "date": "2026-05-29",
-    "authors": "Albert Sadowski, Jarosław A. Chudziak",
-    "summary": "The same arguments often need to be evaluated under different external regimes. An agent with influence over the regime has a strategic lever that standard formalisms do not directly capture. We intro",
-    "link": "https://arxiv.org/abs/2605.31581v1"
-   },
-   {
-    "title": "Giving Sensors a Voice: Multimodal JEPA for Semantic Time-Series Embeddings",
-    "date": "2026-05-29",
-    "authors": "Utsav Dutta, Gerardo Pastrana, Sina Khoshfetrat Pakazad",
-    "summary": "Transformer-based architectures have advanced sequence modeling in language and vision, yet general-purpose representation learning for heterogeneous multivariate time series remains underexplored. We",
-    "link": "https://arxiv.org/abs/2605.31580v1"
-   },
-   {
-    "title": "SPECTRA: Synthetic IR Test Collections with Relevance Oracles and Controlled Distractor Diagnostics",
-    "date": "2026-05-29",
-    "authors": "Eric Liang",
-    "summary": "Scalable information retrieval testing needs corpora that are large enough to stress index construction, ranking latency, query routing, and evaluation tooling, yet human-judged test collections remai",
-    "link": "https://arxiv.org/abs/2605.31575v1"
-   },
-   {
-    "title": "What Gets Unmasked First? Trajectory Analysis of Diffusion Models for Graph-to-Text Generation",
-    "date": "2026-05-29",
-    "authors": "Qing Wang, Jacob Devasier, Chengkai Li",
-    "summary": "We present the first systematic study of masked diffusion language models (MDLMs) for graph-to-text generation. We analyze MDLM generation trajectories -- the order in which tokens are unmasked during",
-    "link": "https://arxiv.org/abs/2605.31564v1"
-   },
-   {
-    "title": "Disagreeing Rationales: Rethinking Classification and Explainability Evaluation in Hate Speech Detection",
-    "date": "2026-05-29",
-    "authors": "Benedetta Muscato, Beiduo Chen, Gizem Gezici",
-    "summary": "Human disagreement is ubiquitous and well-known in labeling. However, variation in explanations, captured through token-level human rationales, remains far less explored. At the same time, it is uncle",
-    "link": "https://arxiv.org/abs/2605.31563v1"
-   }
-  ]
+  "status": "ok:0",
+  "papers": []
  },
  "pypi": {
-  "status": "ok:0/10",
+  "status": "ok:4/10",
   "libs": [
+   {
+    "pkg": "litellm",
+    "last_month": 497796058,
+    "last_week": 125348308
+   },
+   {
+    "pkg": "anthropic",
+    "last_month": 127699152,
+    "last_week": 31067238
+   },
+   {
+    "pkg": "langgraph",
+    "last_month": 54535960,
+    "last_week": 13656202
+   },
+   {
+    "pkg": "crewai",
+    "last_month": 14433563,
+    "last_week": 3644247
+   },
    {
     "pkg": "langchain",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
     "pkg": "openai",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
-    "pkg": "anthropic",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
@@ -117,19 +48,7 @@
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
-    "pkg": "langgraph",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
-    "pkg": "crewai",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
     "pkg": "huggingface-hub",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
-    "pkg": "litellm",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    }
   ]

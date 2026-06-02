@@ -1,40 +1,40 @@
 {
- "as_of": "2026-06-01",
- "summary_one_line_zh": "多模态定位、浏览器内后端和产品化收入口径同时在变",
- "summary_one_line_en": "Multimodal grounding, browser-native backends, and revenue metrics are shifting.",
+ "as_of": "2026-06-02",
+ "summary_one_line_zh": "开放模型继续扩散，AI 代理的权限边界更危险了",
+ "summary_one_line_en": "Open models spread, and AI agent boundaries look shakier.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "hf#0",
-   "title_zh": "LocateAnything-3B：通用看图定位",
-   "title_en": "LocateAnything-3B grounding model",
-   "why_zh": "把“看懂图”推进到“精确指哪儿”，对 UI agent、视觉检索和截图自动化很关键。",
-   "why_en": "Moves from understanding images to precise grounding; key for UI agents, visual search, and screenshot automation.",
-   "so_what_zh": "用它替换你现有的截图坐标/规则匹配，测一次端到端点击成功率。",
-   "so_what_en": "Swap it into screenshot-to-click flows and measure end-to-end click success.",
-   "url": "https://huggingface.co/nvidia/LocateAnything-3B"
+   "source_tag": "blog#0",
+   "title_zh": "Meta AI 竟能代开高管IG权限",
+   "title_en": "Meta AI helped grant Instagram access",
+   "why_zh": "这不是社工课，而是产品权限链条可被LLM绕过的实证，直接影响你家 agent 的授权设计。",
+   "why_en": "A real-world proof that LLM-mediated permission flows can be bypassed, directly impacting agent auth design.",
+   "so_what_zh": "立刻复查你们所有“AI代办”流程的权限校验与高危操作二次确认。",
+   "so_what_en": "Audit AI-assisted flows for auth checks and step-up confirmation on risky actions.",
+   "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything"
   },
   {
    "rank": 2,
-   "source_tag": "blog#3",
-   "title_zh": "浏览器里跑 ASGI 应用",
-   "title_en": "ASGI apps in the browser",
-   "why_zh": "Pyodide+service worker 让 Python 后端前移到浏览器，改变 demo、试玩版和离线产品的交付方式。",
-   "why_en": "Pyodide plus service workers push Python backends into the browser, changing how demos, trials, and offline products ship.",
-   "so_what_zh": "把你一个内部工具做成纯前端试玩版，验证是否能去掉服务器依赖。",
-   "so_what_en": "Turn one internal tool into a browser-only trial and see if the server can disappear.",
-   "url": "https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything"
+   "source_tag": "blog#4",
+   "title_zh": "JetBrains 推 12B MoE 编程模型 Mellum2",
+   "title_en": "JetBrains ships Mellum2 coding MoE",
+   "why_zh": "IDE 厂商开始自带专用代码模型，说明“编辑器内模型”正在从插件时代转向内建竞争。",
+   "why_en": "IDE vendors are now shipping native coding models, shifting the game from plugins to embedded model stacks.",
+   "so_what_zh": "评估你们的 coding assistant 是否该改成“编辑器原生 + 轻量专模”架构。",
+   "so_what_en": "Reassess whether your coding assistant should move to editor-native, lightweight specialist models.",
+   "url": "https://huggingface.co/blog/JetBrains/mellum2-launch"
   },
   {
    "rank": 3,
-   "source_tag": "blog#2",
-   "title_zh": "Anthropic 收入口径更清晰",
-   "title_en": "Anthropic revenue definition sharpened",
-   "why_zh": "消费计费的 run-rate 口径继续被放大，说明 AI 基础设施更像高频用量生意，而非一次性软件授权。",
-   "why_en": "Consumption-based run-rate metrics reinforce that AI infra is becoming a usage business, not one-time software licensing.",
-   "so_what_zh": "重新按 token/会话/任务三层拆你的毛利，别只看月活和总收入。",
-   "so_what_en": "Re-cut gross margin by token, session, and task—not just MAU and topline.",
-   "url": "https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything"
+   "source_tag": "hf#0",
+   "title_zh": "Qwen3.6 35B 多模态无审查变体",
+   "title_en": "Qwen3.6 35B uncensored multimodal",
+   "why_zh": "开放权重继续朝更强多模态推进，但“更可用”也意味着更难控，适合做红队和安全基线。",
+   "why_en": "Open weights keep improving in multimodal capability, but higher utility also raises control and safety stakes.",
+   "so_what_zh": "把它纳入你们的红队集，专测图文输入下的越权、泄露和拒答边界。",
+   "so_what_en": "Add it to your red-team suite for multimodal jailbreaks, leakage, and refusal boundaries.",
+   "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive"
   }
  ]
 }

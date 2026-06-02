@@ -1,201 +1,201 @@
 {
- "collected_at": "2026-06-01T04:26:31",
+ "collected_at": "2026-06-02T02:51:30",
  "hf": {
   "status": "ok:30 sort=trendingScore",
   "tag_freq": {
-   "image-text-to-text": 8,
+   "image-text-to-text": 10,
    "text-generation": 7,
-   "unknown": 3,
+   "unknown": 2,
    "translation": 2,
    "text-to-speech": 2,
-   "text-to-image": 2,
    "image-to-image": 1,
    "any-to-any": 1,
    "video-text-to-text": 1,
    "text-to-video": 1,
-   "image-to-text": 1,
+   "text-to-image": 1,
+   "token-classification": 1,
    "automatic-speech-recognition": 1
   },
   "trending": [
    {
     "id": "nvidia/LocateAnything-3B",
     "pipeline": "image-text-to-text",
-    "downloads": 24586,
-    "likes": 625
+    "downloads": 35783,
+    "likes": 810
    },
    {
     "id": "openbmb/MiniCPM5-1B",
     "pipeline": "text-generation",
-    "downloads": 36730,
-    "likes": 661
-   },
-   {
-    "id": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-    "pipeline": "image-text-to-text",
-    "downloads": 2439402,
-    "likes": 1168
+    "downloads": 45698,
+    "likes": 692
    },
    {
     "id": "LiquidAI/LFM2.5-8B-A1B",
     "pipeline": "text-generation",
-    "downloads": 27677,
-    "likes": 325
+    "downloads": 37893,
+    "likes": 397
+   },
+   {
+    "id": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "pipeline": "image-text-to-text",
+    "downloads": 2533393,
+    "likes": 1225
    },
    {
     "id": "meituan-longcat/LongCat-Video-Avatar-1.5",
     "pipeline": "unknown",
     "downloads": 0,
-    "likes": 441
-   },
-   {
-    "id": "nvidia/PiD",
-    "pipeline": "image-to-image",
-    "downloads": 498,
-    "likes": 220
-   },
-   {
-    "id": "bytedance-research/Lance",
-    "pipeline": "any-to-any",
-    "downloads": 2948,
-    "likes": 994
-   },
-   {
-    "id": "deepseek-ai/DeepSeek-V4-Pro",
-    "pipeline": "text-generation",
-    "downloads": 5886599,
-    "likes": 4506
+    "likes": 468
    },
    {
     "id": "stepfun-ai/Step-3.7-Flash",
     "pipeline": "image-text-to-text",
-    "downloads": 7638,
-    "likes": 163
+    "downloads": 9256,
+    "likes": 195
    },
    {
-    "id": "sapientinc/HRM-Text-1B",
+    "id": "deepseek-ai/DeepSeek-V4-Pro",
     "pipeline": "text-generation",
-    "downloads": 143904,
-    "likes": 430
+    "downloads": 5851826,
+    "likes": 4534
    },
    {
-    "id": "NemoStation/Marlin-2B",
-    "pipeline": "video-text-to-text",
-    "downloads": 16277,
-    "likes": 473
+    "id": "nvidia/PiD",
+    "pipeline": "image-to-image",
+    "downloads": 577,
+    "likes": 239
    },
    {
-    "id": "LiquidAI/LFM2.5-8B-A1B-GGUF",
-    "pipeline": "text-generation",
-    "downloads": 41828,
-    "likes": 134
-   },
-   {
-    "id": "tencent/Hy-MT2-30B-A3B",
-    "pipeline": "translation",
-    "downloads": 4226,
-    "likes": 440
-   },
-   {
-    "id": "SulphurAI/Sulphur-2-base",
-    "pipeline": "text-to-video",
-    "downloads": 1590236,
-    "likes": 1473
+    "id": "bytedance-research/Lance",
+    "pipeline": "any-to-any",
+    "downloads": 3041,
+    "likes": 1002
    },
    {
     "id": "PaddlePaddle/PaddleOCR-VL-1.6",
     "pipeline": "image-text-to-text",
-    "downloads": 2731,
-    "likes": 118
-   },
-   {
-    "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
-    "pipeline": "image-text-to-text",
-    "downloads": 926440,
-    "likes": 578
-   },
-   {
-    "id": "openbmb/MiniCPM-V-4.6",
-    "pipeline": "image-text-to-text",
-    "downloads": 444679,
-    "likes": 1084
-   },
-   {
-    "id": "Qwen/Qwen3.6-27B",
-    "pipeline": "image-text-to-text",
-    "downloads": 5064096,
-    "likes": 1553
-   },
-   {
-    "id": "Supertone/supertonic-3",
-    "pipeline": "text-to-speech",
-    "downloads": 56472,
-    "likes": 754
-   },
-   {
-    "id": "Jackrong/Qwopus3.6-27B-v2-MTP-GGUF",
-    "pipeline": "image-text-to-text",
-    "downloads": 124807,
-    "likes": 178
-   },
-   {
-    "id": "numind/NuExtract3",
-    "pipeline": "image-to-text",
-    "downloads": 57248,
-    "likes": 208
-   },
-   {
-    "id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
-    "pipeline": "text-generation",
-    "downloads": 105608,
-    "likes": 95
+    "downloads": 3190,
+    "likes": 156
    },
    {
     "id": "tencent/Hy-MT2-1.8B",
     "pipeline": "translation",
-    "downloads": 17471,
-    "likes": 1094
+    "downloads": 18131,
+    "likes": 1100
    },
    {
-    "id": "deepseek-ai/DeepSeek-V4-Flash",
+    "id": "LiquidAI/LFM2.5-8B-A1B-GGUF",
     "pipeline": "text-generation",
-    "downloads": 3483641,
-    "likes": 1323
+    "downloads": 55212,
+    "likes": 145
+   },
+   {
+    "id": "NemoStation/Marlin-2B",
+    "pipeline": "video-text-to-text",
+    "downloads": 17012,
+    "likes": 482
+   },
+   {
+    "id": "sapientinc/HRM-Text-1B",
+    "pipeline": "text-generation",
+    "downloads": 149543,
+    "likes": 439
+   },
+   {
+    "id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+    "pipeline": "text-generation",
+    "downloads": 171588,
+    "likes": 121
+   },
+   {
+    "id": "SulphurAI/Sulphur-2-base",
+    "pipeline": "text-to-video",
+    "downloads": 1656520,
+    "likes": 1490
+   },
+   {
+    "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 952188,
+    "likes": 595
+   },
+   {
+    "id": "Supertone/supertonic-3",
+    "pipeline": "text-to-speech",
+    "downloads": 57627,
+    "likes": 771
    },
    {
     "id": "OpenMOSS-Team/MOSS-TTS-v1.5",
     "pipeline": "text-to-speech",
-    "downloads": 14272,
-    "likes": 83
+    "downloads": 18564,
+    "likes": 94
    },
    {
-    "id": "froggeric/Qwen-Fixed-Chat-Templates",
-    "pipeline": "unknown",
-    "downloads": 0,
-    "likes": 469
+    "id": "tencent/Hy-MT2-30B-A3B",
+    "pipeline": "translation",
+    "downloads": 4458,
+    "likes": 444
    },
    {
-    "id": "microsoft/Lens",
-    "pipeline": "text-to-image",
-    "downloads": 1959,
-    "likes": 149
+    "id": "Jackrong/Qwopus3.6-27B-v2-MTP-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 139952,
+    "likes": 184
    },
    {
-    "id": "circlestone-labs/Anima",
-    "pipeline": "unknown",
-    "downloads": 756861,
-    "likes": 1610
-   },
-   {
-    "id": "pyannote/speaker-diarization-3.1",
-    "pipeline": "automatic-speech-recognition",
-    "downloads": 9695594,
-    "likes": 2089
+    "id": "Qwen/Qwen3.6-27B",
+    "pipeline": "image-text-to-text",
+    "downloads": 5154729,
+    "likes": 1568
    },
    {
     "id": "prism-ml/bonsai-image-ternary-4B-gemlite-2bit",
     "pipeline": "text-to-image",
     "downloads": 0,
-    "likes": 74
+    "likes": 91
+   },
+   {
+    "id": "openbmb/MiniCPM-V-4.6",
+    "pipeline": "image-text-to-text",
+    "downloads": 459188,
+    "likes": 1088
+   },
+   {
+    "id": "deepseek-ai/DeepSeek-V4-Flash",
+    "pipeline": "text-generation",
+    "downloads": 3511636,
+    "likes": 1342
+   },
+   {
+    "id": "Kwai-Keye/Keye-VL-2.0-30B-A3B",
+    "pipeline": "image-text-to-text",
+    "downloads": 784,
+    "likes": 88
+   },
+   {
+    "id": "stepfun-ai/Step-3.7-Flash-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 37533,
+    "likes": 86
+   },
+   {
+    "id": "openai/privacy-filter",
+    "pipeline": "token-classification",
+    "downloads": 316092,
+    "likes": 1579
+   },
+   {
+    "id": "pyannote/speaker-diarization-3.1",
+    "pipeline": "automatic-speech-recognition",
+    "downloads": 9591005,
+    "likes": 2107
+   },
+   {
+    "id": "nvidia/Cosmos3-Nano",
+    "pipeline": "unknown",
+    "downloads": 6261,
+    "likes": 77
    }
   ]
  },
@@ -217,7 +217,7 @@
   "hot_ai_stories": [
    {
     "title": "Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue",
-    "points": 382,
+    "points": 385,
     "url": "https://llmgame.scalex.dev"
    },
    {
