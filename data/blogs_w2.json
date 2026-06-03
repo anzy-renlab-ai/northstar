@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-06-02T02:51:20",
+ "collected_at": "2026-06-03T03:26:23",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -13,10 +13,52 @@
   "DeepLearning.AI Batch": "empty (bozo:1)",
   "OpenAI News": "ok:8",
   "Google Research": "ok:8",
-  "Anthropic News": "empty (bozo:1)",
+  "Anthropic News": "empty (bozo:True)",
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "Microsoft's new MAI models",
+   "date": "2026-06-02",
+   "summary": "Microsoft announced two new text LLMs this morning - MAI-Thinking-1 (reasoning, 1T parameters, 35B active, available to \"select early partners\") and MAI-Code-1-Flash (137B Parameters, 5B active, \"purpose-built for GitHub Copilot and VS Code to deliver high performance and lower cost [...] rolling out to GitHub Copilot individual users in Visual Studio Code\"). I've not been able to try either of them just yet. It's very interesting to see Microsoft releasing models with such low parameter counts, especially given how expensive larger models are to access right now. They claim MAI-Thinking-1 \"is",
+   "link": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "datasette-agent-micropython 0.1a0",
+   "date": "2026-06-02",
+   "summary": "Release: datasette-agent-micropython 0.1a0 I want Datasette Agent to be able to generate and execute Python code safely. This alpha is looking promising so far. GPT-5.5 has so far failed to break out of the sandbox! Tags: python , sandboxing , datasette , webassembly , datasette-agent",
+   "link": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "micropython-wasm 0.1a1",
+   "date": "2026-06-02",
+   "summary": "Release: micropython-wasm 0.1a1 Fixes for some limitations that emerged while I was trying to use this to build datasette-agent-micropython . Tags: python , sandboxing , webassembly",
+   "link": "https://simonwillison.net/2026/Jun/2/micropython-wasm/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "California Brown Pelican",
+   "date": "2026-06-02",
+   "summary": "California Brown Pelican, in Fort Mason, CA, US I'm at the Microsoft Build conference today, held at Fort Mason in San Francisco. There are California Brown Pelicans diving into the water directly behind venue! Tags: microsoft , ai , generative-ai , llms , llm-release",
+   "link": "https://simonwillison.net/2026/Jun/2/sighting-367841339/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Pasted File Editor",
+   "date": "2026-06-02",
+   "summary": "Tool: Pasted File Editor I really like how you can paste a large volume of text into claude.ai (or the Claude desktop/mobile apps) and it will detect it as a large paste and turn it into a file attachment instead. I decided to have Codex desktop build me a version of that as a prototype. You can also open files directly - including images which will be shown as thumbnails - or drag files onto the textarea. Tags: javascript , tools , ai-assisted-programming , claude , codex",
+   "link": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "micropython-wasm 0.1a0",
+   "date": "2026-06-02",
+   "summary": "Release: micropython-wasm 0.1a0 My latest sandboxing experiment: This alpha package bundles a lightly customized WASM build of MicroPython with a wrapper to execute code in it via wasmtime . Tags: python , sandboxing , webassembly",
+   "link": "https://simonwillison.net/2026/Jun/2/micropython-wasm-2/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
@@ -30,48 +72,6 @@
    "date": "2026-06-01",
    "summary": "I just sent out the May edition of my sponsors-only monthly newsletter . If you are a sponsor (or if you start a sponsorship now) you can access it here . This month: Al got expensive, and Anthropic had a really good month The model releases were a little disappointing Conferences and podcasts I launched Datasette Agent and made a lot of progress on Datasette What I'm using, May 2026 edition Miscellaneous extras Here's a copy of the April newsletter as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy! Tags: newsletter",
    "link": "https://simonwillison.net/2026/Jun/1/may-newsletter/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette 1.0a32",
-   "date": "2026-05-31",
-   "summary": "Release: datasette 1.0a32 A minor bugfix release. Fixes a bug with INSERT ... RETURNING queries via the new /db/-/execute-write endpoint and a bunch of base_url issues which showed up when I was experimenting with Service Workers yesterday. Tags: datasette , annotated-release-notes",
-   "link": "https://simonwillison.net/2026/May/31/datasette/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "The solution might be cancelling my AI subscription",
-   "date": "2026-05-31",
-   "summary": "The solution might be cancelling my AI subscription I find this post by David Wilson very relatable. David lists 16+ projects he's spun up with AI tooling, and concludes: I didn't mean to build most of these things. Usually the Claude session started with something like \" write a quick script for X \", and one hour later the result is not a quick script for X , nor in the usual case is my problem solved, whatever the original itch happened to be. On that last point, this technology is horrific for attention. It's a thermonuclear ADHD amplifier and I have seen the same effect in every single one",
-   "link": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Karen Kwok for Reuters Breakingviews",
-   "date": "2026-05-31",
-   "summary": "Anthropic defines “run-rate revenue” in two parts. Use the last 28 days of sales ⁠from customers charged on a consumption basis and multiply it by 13. Then, multiply the monthly subscription take by 12, ​and add the two together. &mdash; Karen Kwok for Reuters Breakingviews , citing \"a person familiar with the matter\" Tags: anthropic , ai",
-   "link": "https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "How we contain Claude across products",
-   "date": "2026-05-30",
-   "summary": "How we contain Claude across products A complaint I often have about sandboxing products is that they are rarely thoroughly documented , and in the absence of detailed documentation it's hard to know how much I can trust them. Anthropic just published a fantastic overview of how their various sandbox techniques work across Claude.ai , Claude Code, and Cowork. We constrain where and how an agent can act with process sandboxes, VMs, filesystem boundaries, and egress controls. The goal is to set a hard boundary on what an agent can reach. For example, if credentials never enter the sandbox, they ",
-   "link": "https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Running Python ASGI apps in the browser via Pyodide + a service worker",
-   "date": "2026-05-30",
-   "summary": "Research: Running Python ASGI apps in the browser via Pyodide + a service worker Datasette Lite is my version of Datasette that runs entirely in the browser using Pyodide in WebAssembly. When I first built it four years ago I used Web Workers and code that intercepts navigation operations and fetches the generated HTML by running the Python app. This worked, but had the disadvantage that any JavaScript in &lt;script&gt; tags would not be executed - breaking some Datasette functionality and a whole lot of Datasette plugins. This morning I set Claude Opus 4.8 the task (in Claude Code for web) of",
-   "link": "https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "I Am Retiring from Tech to Live Offline",
-   "date": "2026-05-30",
-   "summary": "I Am Retiring from Tech to Live Offline I've seen a lot of posts on forums from people threatening to quit their careers over AI. This is not one of those: Chad Whitacre is taking concrete steps, starting with this typewritten, scanned letter I'm retiring from tech. Well, \"retiring\" is euphemistic. I'm stepping away from tech, and that includes Open Source. [...] AI was the last straw. Have you heard of that island off India where the indigenous population kills any outsiders fool-hardy enough to land? They are doing the rest of us a favor by preserving a way of life we may need again someday,",
-   "link": "https://simonwillison.net/2026/May/30/retiring-from-tech-to-live-offline/#atom-everything"
   },
   {
    "source": "Sebastian Raschka",
@@ -100,6 +100,13 @@
    "date": "2026-03-22",
    "summary": "From MHA and GQA to MLA, sparse attention, and hybrid architectures",
    "link": "https://magazine.sebastianraschka.com/p/visual-attention-variants"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Holo3.1: Fast & Local Computer Use Agents",
+   "date": "2026-06-02",
+   "summary": "",
+   "link": "https://huggingface.co/blog/Hcompany/holo31"
   },
   {
    "source": "HuggingFace Blog",
@@ -151,13 +158,6 @@
    "link": "https://huggingface.co/blog/agent-glossary"
   },
   {
-   "source": "HuggingFace Blog",
-   "title": "Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook",
-   "date": "2026-05-22",
-   "summary": "",
-   "link": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale"
-  },
-  {
    "source": "Eugene Yan",
    "title": "How to Work and Compound with AI",
    "date": "2026-05-03",
@@ -187,6 +187,34 @@
   },
   {
    "source": "OpenAI News",
+   "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+   "date": "2026-06-02",
+   "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
+   "link": "https://openai.com/index/travelers"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Codex for every role, tool, and workflow",
+   "date": "2026-06-02",
+   "summary": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI.",
+   "link": "https://openai.com/index/codex-for-every-role-tool-workflow"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Advancing youth safety and opportunity through global leadership",
+   "date": "2026-06-02",
+   "summary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people.",
+   "link": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Codex is becoming a productivity tool for everyone",
+   "date": "2026-06-02",
+   "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+   "link": "https://openai.com/index/codex-for-knowledge-work"
+  },
+  {
+   "source": "OpenAI News",
    "title": "Our views on AI policy and political advocacy",
    "date": "2026-06-01",
    "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
@@ -212,34 +240,6 @@
    "date": "2026-05-29",
    "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
    "link": "https://openai.com/index/boston-childrens-hospital"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "How Braintrust turns customer requests into code with Codex",
-   "date": "2026-05-29",
-   "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
-   "link": "https://openai.com/index/braintrust"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "Strengthening societal resilience with Rosalind Biodefense",
-   "date": "2026-05-29",
-   "summary": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
-   "link": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "A shared playbook for trustworthy third party evaluations",
-   "date": "2026-05-29",
-   "summary": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.",
-   "link": "https://openai.com/index/trustworthy-third-party-evaluations-foundations"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "How Endava builds an agentic organization with Codex",
-   "date": "2026-05-28",
-   "summary": "Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours.",
-   "link": "https://openai.com/index/endava"
   },
   {
    "source": "Google Research",

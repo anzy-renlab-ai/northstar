@@ -1,201 +1,200 @@
 {
- "collected_at": "2026-06-02T02:51:30",
+ "collected_at": "2026-06-03T03:26:34",
  "hf": {
   "status": "ok:30 sort=trendingScore",
   "tag_freq": {
-   "image-text-to-text": 10,
-   "text-generation": 7,
-   "unknown": 2,
-   "translation": 2,
+   "image-text-to-text": 9,
+   "text-generation": 8,
+   "unknown": 3,
    "text-to-speech": 2,
+   "text-to-image": 2,
    "image-to-image": 1,
    "any-to-any": 1,
    "video-text-to-text": 1,
    "text-to-video": 1,
-   "text-to-image": 1,
    "token-classification": 1,
-   "automatic-speech-recognition": 1
+   "image-to-video": 1
   },
   "trending": [
    {
     "id": "nvidia/LocateAnything-3B",
     "pipeline": "image-text-to-text",
-    "downloads": 35783,
-    "likes": 810
-   },
-   {
-    "id": "openbmb/MiniCPM5-1B",
-    "pipeline": "text-generation",
-    "downloads": 45698,
-    "likes": 692
+    "downloads": 61604,
+    "likes": 999
    },
    {
     "id": "LiquidAI/LFM2.5-8B-A1B",
     "pipeline": "text-generation",
-    "downloads": 37893,
-    "likes": 397
+    "downloads": 47742,
+    "likes": 444
+   },
+   {
+    "id": "openbmb/MiniCPM5-1B",
+    "pipeline": "text-generation",
+    "downloads": 57683,
+    "likes": 737
    },
    {
     "id": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
     "pipeline": "image-text-to-text",
-    "downloads": 2533393,
-    "likes": 1225
-   },
-   {
-    "id": "meituan-longcat/LongCat-Video-Avatar-1.5",
-    "pipeline": "unknown",
-    "downloads": 0,
-    "likes": 468
+    "downloads": 2573320,
+    "likes": 1284
    },
    {
     "id": "stepfun-ai/Step-3.7-Flash",
     "pipeline": "image-text-to-text",
-    "downloads": 9256,
-    "likes": 195
+    "downloads": 12932,
+    "likes": 217
+   },
+   {
+    "id": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "pipeline": "unknown",
+    "downloads": 174,
+    "likes": 492
    },
    {
     "id": "deepseek-ai/DeepSeek-V4-Pro",
     "pipeline": "text-generation",
-    "downloads": 5851826,
-    "likes": 4534
-   },
-   {
-    "id": "nvidia/PiD",
-    "pipeline": "image-to-image",
-    "downloads": 577,
-    "likes": 239
-   },
-   {
-    "id": "bytedance-research/Lance",
-    "pipeline": "any-to-any",
-    "downloads": 3041,
-    "likes": 1002
+    "downloads": 5829042,
+    "likes": 4577
    },
    {
     "id": "PaddlePaddle/PaddleOCR-VL-1.6",
     "pipeline": "image-text-to-text",
-    "downloads": 3190,
-    "likes": 156
-   },
-   {
-    "id": "tencent/Hy-MT2-1.8B",
-    "pipeline": "translation",
-    "downloads": 18131,
-    "likes": 1100
+    "downloads": 4003,
+    "likes": 190
    },
    {
     "id": "LiquidAI/LFM2.5-8B-A1B-GGUF",
     "pipeline": "text-generation",
-    "downloads": 55212,
-    "likes": 145
+    "downloads": 70865,
+    "likes": 162
    },
    {
-    "id": "NemoStation/Marlin-2B",
-    "pipeline": "video-text-to-text",
-    "downloads": 17012,
-    "likes": 482
+    "id": "nvidia/PiD",
+    "pipeline": "image-to-image",
+    "downloads": 646,
+    "likes": 268
    },
    {
-    "id": "sapientinc/HRM-Text-1B",
+    "id": "JetBrains/Mellum2-12B-A2.5B-Thinking",
     "pipeline": "text-generation",
-    "downloads": 149543,
-    "likes": 439
+    "downloads": 799,
+    "likes": 142
    },
    {
     "id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
     "pipeline": "text-generation",
-    "downloads": 171588,
-    "likes": 121
+    "downloads": 313480,
+    "likes": 139
    },
    {
-    "id": "SulphurAI/Sulphur-2-base",
-    "pipeline": "text-to-video",
-    "downloads": 1656520,
-    "likes": 1490
+    "id": "bytedance-research/Lance",
+    "pipeline": "any-to-any",
+    "downloads": 3192,
+    "likes": 1012
    },
    {
-    "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
-    "pipeline": "image-text-to-text",
-    "downloads": 952188,
-    "likes": 595
-   },
-   {
-    "id": "Supertone/supertonic-3",
-    "pipeline": "text-to-speech",
-    "downloads": 57627,
-    "likes": 771
-   },
-   {
-    "id": "OpenMOSS-Team/MOSS-TTS-v1.5",
-    "pipeline": "text-to-speech",
-    "downloads": 18564,
-    "likes": 94
-   },
-   {
-    "id": "tencent/Hy-MT2-30B-A3B",
-    "pipeline": "translation",
-    "downloads": 4458,
-    "likes": 444
-   },
-   {
-    "id": "Jackrong/Qwopus3.6-27B-v2-MTP-GGUF",
-    "pipeline": "image-text-to-text",
-    "downloads": 139952,
-    "likes": 184
-   },
-   {
-    "id": "Qwen/Qwen3.6-27B",
-    "pipeline": "image-text-to-text",
-    "downloads": 5154729,
-    "likes": 1568
-   },
-   {
-    "id": "prism-ml/bonsai-image-ternary-4B-gemlite-2bit",
-    "pipeline": "text-to-image",
-    "downloads": 0,
-    "likes": 91
-   },
-   {
-    "id": "openbmb/MiniCPM-V-4.6",
-    "pipeline": "image-text-to-text",
-    "downloads": 459188,
-    "likes": 1088
-   },
-   {
-    "id": "deepseek-ai/DeepSeek-V4-Flash",
-    "pipeline": "text-generation",
-    "downloads": 3511636,
-    "likes": 1342
-   },
-   {
-    "id": "Kwai-Keye/Keye-VL-2.0-30B-A3B",
-    "pipeline": "image-text-to-text",
-    "downloads": 784,
-    "likes": 88
-   },
-   {
-    "id": "stepfun-ai/Step-3.7-Flash-GGUF",
-    "pipeline": "image-text-to-text",
-    "downloads": 37533,
-    "likes": 86
-   },
-   {
-    "id": "openai/privacy-filter",
-    "pipeline": "token-classification",
-    "downloads": 316092,
-    "likes": 1579
-   },
-   {
-    "id": "pyannote/speaker-diarization-3.1",
-    "pipeline": "automatic-speech-recognition",
-    "downloads": 9591005,
-    "likes": 2107
+    "id": "NemoStation/Marlin-2B",
+    "pipeline": "video-text-to-text",
+    "downloads": 17616,
+    "likes": 498
    },
    {
     "id": "nvidia/Cosmos3-Nano",
     "pipeline": "unknown",
-    "downloads": 6261,
-    "likes": 77
+    "downloads": 9071,
+    "likes": 115
+   },
+   {
+    "id": "SulphurAI/Sulphur-2-base",
+    "pipeline": "text-to-video",
+    "downloads": 1663826,
+    "likes": 1512
+   },
+   {
+    "id": "deepseek-ai/DeepSeek-V4-Flash",
+    "pipeline": "text-generation",
+    "downloads": 3525218,
+    "likes": 1367
+   },
+   {
+    "id": "nvidia/Cosmos3-Super",
+    "pipeline": "unknown",
+    "downloads": 2830,
+    "likes": 100
+   },
+   {
+    "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 982631,
+    "likes": 610
+   },
+   {
+    "id": "sapientinc/HRM-Text-1B",
+    "pipeline": "text-generation",
+    "downloads": 153029,
+    "likes": 476
+   },
+   {
+    "id": "stepfun-ai/Step-3.7-Flash-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 39258,
+    "likes": 95
+   },
+   {
+    "id": "OpenMOSS-Team/MOSS-TTS-v1.5",
+    "pipeline": "text-to-speech",
+    "downloads": 20615,
+    "likes": 123
+   },
+   {
+    "id": "openai/privacy-filter",
+    "pipeline": "token-classification",
+    "downloads": 300247,
+    "likes": 1595
+   },
+   {
+    "id": "nvidia/Cosmos3-Super-Image2Video",
+    "pipeline": "image-to-video",
+    "downloads": 536,
+    "likes": 84
+   },
+   {
+    "id": "Qwen/Qwen3.6-27B",
+    "pipeline": "image-text-to-text",
+    "downloads": 5243648,
+    "likes": 1579
+   },
+   {
+    "id": "nvidia/Cosmos3-Super-Text2Image",
+    "pipeline": "text-to-image",
+    "downloads": 517,
+    "likes": 79
+   },
+   {
+    "id": "Supertone/supertonic-3",
+    "pipeline": "text-to-speech",
+    "downloads": 59026,
+    "likes": 782
+   },
+   {
+    "id": "prism-ml/bonsai-image-ternary-4B-gemlite-2bit",
+    "pipeline": "text-to-image",
+    "downloads": 41,
+    "likes": 101
+   },
+   {
+    "id": "Jackrong/Qwopus3.6-27B-v2-MTP-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 155959,
+    "likes": 197
+   },
+   {
+    "id": "Kwai-Keye/Keye-VL-2.0-30B-A3B",
+    "pipeline": "image-text-to-text",
+    "downloads": 964,
+    "likes": 100
    }
   ]
  },
@@ -217,7 +216,7 @@
   "hot_ai_stories": [
    {
     "title": "Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue",
-    "points": 385,
+    "points": 386,
     "url": "https://llmgame.scalex.dev"
    },
    {
@@ -229,6 +228,11 @@
     "title": "Show HN: Agent-desktop – Native desktop automation CLI for AI agents",
     "points": 99,
     "url": "https://github.com/lahfir/agent-desktop"
+   },
+   {
+    "title": "Launch HN: Expanse (YC P26) – Unlock Wasted GPU Capacity",
+    "points": 97,
+    "url": null
    },
    {
     "title": "Show HN: OpenGravity – A zero-install, BYOK vanilla JS clone of Antigravity",
