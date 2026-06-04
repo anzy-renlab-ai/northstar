@@ -1,40 +1,29 @@
 {
- "as_of": "2026-06-03",
- "summary_one_line_zh": "大模型竞争转向：推理、置信度与安全执行同时变重要",
- "summary_one_line_en": "LLM competition is shifting toward reasoning, confidence, and safe execution.",
+ "as_of": "2026-06-04",
+ "summary_one_line_zh": "多智能体开始补通信与调试，企业同时收紧 AI 成本。",
+ "summary_one_line_en": "Agents get cheaper to run, easier to debug, and harder to overspend.",
  "items": [
   {
-   "rank": 1,
-   "source_tag": "blog#0",
-   "title_zh": "微软押注推理/代码双旗舰",
-   "title_en": "Microsoft bets on reasoning and code models",
-   "why_zh": "MAI-Thinking/Code 直指主战场：推理与编程，不再只靠通用聊天模型。",
-   "why_en": "MAI targets the two highest-value workloads: reasoning and coding, signaling tougher platform competition.",
-   "so_what_zh": "评估你们的评测集：单独拆出推理、代码、工具调用三条线。",
-   "so_what_en": "Split evals into reasoning, coding, and tool-use tracks.",
-   "url": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything"
-  },
-  {
    "rank": 2,
-   "source_tag": "arxiv#7",
-   "title_zh": "大模型的自信表达不等于可靠",
-   "title_en": "Faithful confidence in reasoning models",
-   "why_zh": "它把“会不会说不准”拆成可测问题，直接影响产品级拒答、风险提示和路由。",
-   "why_en": "It turns confidence into a measurable product signal, affecting refusal, risk UX, and routing.",
-   "so_what_zh": "把置信度输出接入日志，和最终正确率做分桶对照。",
-   "so_what_en": "Log confidence and bucket it against outcome accuracy.",
-   "url": "https://arxiv.org/abs/2606.03969v1"
+   "source_tag": "arxiv#6",
+   "title_zh": "失败推理轨迹可定位可修问题",
+   "title_en": "Failed traces reveal fixable errors",
+   "why_zh": "不用读完整失败链也能判断哪类错可修，适合做自动分流、重试和训练数据筛选。",
+   "why_en": "Failed traces help triage fixable errors without hand-inspecting long reasoning paths.",
+   "so_what_zh": "把最近失败样本按可修/不可修分桶，重算你的重试策略。",
+   "so_what_en": "Bucket recent failures into fixable vs non-fixable and retune retries.",
+   "url": "https://arxiv.org/abs/2606.05145v1"
   },
   {
    "rank": 3,
-   "source_tag": "blog#1",
-   "title_zh": "Agent 终于开始安全跑代码了",
-   "title_en": "Agents finally get safer code execution",
-   "why_zh": "安全执行沙箱是 agent 落地门槛；MicroPython/WASM 这类方案会影响你们的工具链设计。",
-   "why_en": "Safe execution sandboxes are a deployment gate for agents; WASM/MicroPython changes toolchain choices.",
-   "so_what_zh": "把你们的代码执行器改成可替换后端：本地解释器、WASM、隔离容器三选一。",
-   "so_what_en": "Make your code runner backend-swappable: local, WASM, or isolated container.",
-   "url": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/#atom-everything"
+   "source_tag": "blog#0",
+   "title_zh": "AI 工具用量开始被硬控预算",
+   "title_en": "AI tool usage gets budget caps",
+   "why_zh": "头部公司已把 agent/代码工具当可计量成本项管理，说明“无限调用”时代结束了。",
+   "why_en": "Leading companies are capping AI tool usage, signaling cost discipline is now a product constraint.",
+   "so_what_zh": "给内部 agent 加用量上限、配额告警和每任务成本看板。",
+   "so_what_en": "Add quotas, spend alerts, and per-task cost dashboards for agents.",
+   "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything"
   }
  ]
 }
