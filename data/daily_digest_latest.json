@@ -1,29 +1,40 @@
 {
- "as_of": "2026-06-04",
- "summary_one_line_zh": "多智能体开始补通信与调试，企业同时收紧 AI 成本。",
- "summary_one_line_en": "Agents get cheaper to run, easier to debug, and harder to overspend.",
+ "as_of": "2026-06-05",
+ "summary_one_line_zh": "AI 从“功能”转向“记忆、流程与风险边界”的系统化落地。",
+ "summary_one_line_en": "AI shifts toward memory, workflows, and risk boundaries.",
  "items": [
   {
+   "rank": 1,
+   "source_tag": "blog#3",
+   "title_zh": "ChatGPT 记忆系统升级",
+   "title_en": "ChatGPT memory upgrade",
+   "why_zh": "记忆从会话附属变成产品层能力，影响个性化、上下文控制和隐私隔离设计。",
+   "why_en": "Memory becomes a product primitive, changing personalization, context control, and privacy boundaries.",
+   "so_what_zh": "检查你产品的长期记忆策略：分层存储、可删改、可解释三件事补齐。",
+   "so_what_en": "Audit long-term memory: tiering, editability, and deletion.",
+   "url": "https://openai.com/index/chatgpt-memory-dreaming"
+  },
+  {
    "rank": 2,
-   "source_tag": "arxiv#6",
-   "title_zh": "失败推理轨迹可定位可修问题",
-   "title_en": "Failed traces reveal fixable errors",
-   "why_zh": "不用读完整失败链也能判断哪类错可修，适合做自动分流、重试和训练数据筛选。",
-   "why_en": "Failed traces help triage fixable errors without hand-inspecting long reasoning paths.",
-   "so_what_zh": "把最近失败样本按可修/不可修分桶，重算你的重试策略。",
-   "so_what_en": "Bucket recent failures into fixable vs non-fixable and retune retries.",
-   "url": "https://arxiv.org/abs/2606.05145v1"
+   "source_tag": "blog#2",
+   "title_zh": "软件交付改为 Agent 流程",
+   "title_en": "Agentic software delivery",
+   "why_zh": "这是从“用 AI 辅助开发”走向“让代理接管流程”的组织级信号，直接影响 CI/CD、权限和评审边界。",
+   "why_en": "Signals a shift from AI-assisted dev to agent-run workflows, affecting CI/CD, permissions, and review boundaries.",
+   "so_what_zh": "把一条内部流水线改成 agent 先跑：从工单分流或测试归因开始。",
+   "so_what_en": "Pilot one pipeline with an agent first: triage tickets or test attribution.",
+   "url": "https://openai.com/index/endava-frontiers"
   },
   {
    "rank": 3,
-   "source_tag": "blog#0",
-   "title_zh": "AI 工具用量开始被硬控预算",
-   "title_en": "AI tool usage gets budget caps",
-   "why_zh": "头部公司已把 agent/代码工具当可计量成本项管理，说明“无限调用”时代结束了。",
-   "why_en": "Leading companies are capping AI tool usage, signaling cost discipline is now a product constraint.",
-   "so_what_zh": "给内部 agent 加用量上限、配额告警和每任务成本看板。",
-   "so_what_en": "Add quotas, spend alerts, and per-task cost dashboards for agents.",
-   "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything"
+   "source_tag": "blog#4",
+   "title_zh": "AI 生物防御行动计划",
+   "title_en": "AI biodefense plan",
+   "why_zh": "AI 风险开始进入可执行治理层，意味着模型能力、滥用监测和组织安全要联动设计。",
+   "why_en": "AI risk is moving into operational governance, linking model capability, abuse monitoring, and org security.",
+   "so_what_zh": "复查高风险能力的发布门禁：红队、滥用检测、审计日志三项并行。",
+   "so_what_en": "Recheck release gates for risky capabilities: red-team, abuse detection, audit logs.",
+   "url": "https://openai.com/index/biodefense-in-the-intelligence-age"
   }
  ]
 }

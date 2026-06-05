@@ -1,54 +1,57 @@
 {
- "collected_at": "2026-06-04T02:55:58",
+ "collected_at": "2026-06-05T02:43:22",
  "arxiv": {
   "status": "ok:0",
   "papers": []
  },
  "pypi": {
-  "status": "ok:4/10",
+  "status": "ok:7/10",
   "libs": [
    {
     "pkg": "litellm",
-    "last_month": 518490610,
-    "last_week": 135122245
-   },
-   {
-    "pkg": "openai",
-    "last_month": 320354019,
-    "last_week": 75750420
+    "last_month": 526158273,
+    "last_week": 136795793
    },
    {
     "pkg": "langchain",
-    "last_month": 293574383,
-    "last_week": 76836193
+    "last_month": 296849361,
+    "last_week": 76927500
+   },
+   {
+    "pkg": "huggingface-hub",
+    "last_month": 270080016,
+    "last_week": 71615114
+   },
+   {
+    "pkg": "transformers",
+    "last_month": 145345864,
+    "last_week": 37674732
+   },
+   {
+    "pkg": "crewai",
+    "last_month": 14703714,
+    "last_week": 2915184
    },
    {
     "pkg": "llama-index",
-    "last_month": 12537303,
-    "last_week": 2737693
+    "last_month": 12472914,
+    "last_week": 2596016
+   },
+   {
+    "pkg": "vllm",
+    "last_month": 6175780,
+    "last_week": 1359798
+   },
+   {
+    "pkg": "openai",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
     "pkg": "anthropic",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
-    "pkg": "transformers",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
-    "pkg": "vllm",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
     "pkg": "langgraph",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
-    "pkg": "crewai",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
-   },
-   {
-    "pkg": "huggingface-hub",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    }
   ]
