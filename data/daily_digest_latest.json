@@ -1,40 +1,40 @@
 {
- "as_of": "2026-06-05",
- "summary_one_line_zh": "AI 从“功能”转向“记忆、流程与风险边界”的系统化落地。",
- "summary_one_line_en": "AI shifts toward memory, workflows, and risk boundaries.",
+ "as_of": "2026-06-06",
+ "summary_one_line_zh": "安全加固、轻量多模态与代码适配正在同时落地。",
+ "summary_one_line_en": "Security hardening, lightweight multimodal, and code adaptation are landing together.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "blog#3",
-   "title_zh": "ChatGPT 记忆系统升级",
-   "title_en": "ChatGPT memory upgrade",
-   "why_zh": "记忆从会话附属变成产品层能力，影响个性化、上下文控制和隐私隔离设计。",
-   "why_en": "Memory becomes a product primitive, changing personalization, context control, and privacy boundaries.",
-   "so_what_zh": "检查你产品的长期记忆策略：分层存储、可删改、可解释三件事补齐。",
-   "so_what_en": "Audit long-term memory: tiering, editability, and deletion.",
-   "url": "https://openai.com/index/chatgpt-memory-dreaming"
+   "source_tag": "blog#0",
+   "title_zh": "OpenAI 上线 Lockdown 安全模式",
+   "title_en": "OpenAI Lockdown Mode",
+   "why_zh": "个人账户级高风险防护开始产品化，提示面向 prompt injection/账号接管的默认安全边界在上移。",
+   "why_en": "Consumer-account hardening is productized; baseline defenses against prompt injection and account takeover are moving up-stack.",
+   "so_what_zh": "审查你们的高权限 Agent 入口，补一层显式确认/降权开关。",
+   "so_what_en": "Audit high-privilege agent entrypoints; add explicit confirmation and privilege-reduction toggles.",
+   "url": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything"
   },
   {
    "rank": 2,
-   "source_tag": "blog#2",
-   "title_zh": "软件交付改为 Agent 流程",
-   "title_en": "Agentic software delivery",
-   "why_zh": "这是从“用 AI 辅助开发”走向“让代理接管流程”的组织级信号，直接影响 CI/CD、权限和评审边界。",
-   "why_en": "Signals a shift from AI-assisted dev to agent-run workflows, affecting CI/CD, permissions, and review boundaries.",
-   "so_what_zh": "把一条内部流水线改成 agent 先跑：从工单分流或测试归因开始。",
-   "so_what_en": "Pilot one pipeline with an agent first: triage tickets or test attribution.",
-   "url": "https://openai.com/index/endava-frontiers"
+   "source_tag": "hf#0",
+   "title_zh": "Gemma 4 12B 多模态可用",
+   "title_en": "Gemma 4 12B Multimodal",
+   "why_zh": "12B 级 any-to-any 模型继续下探，说明中端成本带的多模态部署门槛又降了一档。",
+   "why_en": "A 12B any-to-any model lowers the deployment bar again for mid-cost multimodal workloads.",
+   "so_what_zh": "拿一条真实多模态链路做 A/B，评估是否能把现有大模型下放到 12B。",
+   "so_what_en": "A/B one real multimodal flow and test whether you can downshift from your current larger model.",
+   "url": "https://huggingface.co/google/gemma-4-12B-it"
   },
   {
    "rank": 3,
-   "source_tag": "blog#4",
-   "title_zh": "AI 生物防御行动计划",
-   "title_en": "AI biodefense plan",
-   "why_zh": "AI 风险开始进入可执行治理层，意味着模型能力、滥用监测和组织安全要联动设计。",
-   "why_en": "AI risk is moving into operational governance, linking model capability, abuse monitoring, and org security.",
-   "so_what_zh": "复查高风险能力的发布门禁：红队、滥用检测、审计日志三项并行。",
-   "so_what_en": "Recheck release gates for risky capabilities: red-team, abuse detection, audit logs.",
-   "url": "https://openai.com/index/biodefense-in-the-intelligence-age"
+   "source_tag": "arxiv#2",
+   "title_zh": "Code2LoRA：repo 演化下的适配器",
+   "title_en": "Code2LoRA for evolving repos",
+   "why_zh": "把仓库级上下文压进超网络生成 LoRA，直接对应代码模型在版本演化中的适配成本。",
+   "why_en": "Hypernetwork-generated LoRA targets the real cost center: adapting code models as repositories evolve.",
+   "so_what_zh": "把你们的代码助手切到按仓库/分支生成适配器，别再只靠长上下文。",
+   "so_what_en": "Prototype repo- or branch-specific adapters instead of relying only on longer context.",
+   "url": "https://arxiv.org/abs/2606.06492v1"
   }
  ]
 }

@@ -1,46 +1,131 @@
 {
- "collected_at": "2026-06-05T02:43:22",
+ "collected_at": "2026-06-06T02:31:24",
  "arxiv": {
-  "status": "ok:0",
-  "papers": []
+  "status": "ok:12",
+  "papers": [
+   {
+    "title": "TailLoR: Protecting Principal Components in Parameter-Efficient Continual Learning",
+    "date": "2026-06-04",
+    "authors": "Marius Dragoi, Ioana Pintilie, Alexandra Dragomir",
+    "summary": "Parameter-efficient finetuning methods based on spectral decomposition have enabled progress in Continual Learning. In this paper we introduce TailLoR, which utilizes the singular bases U and V of the",
+    "link": "https://arxiv.org/abs/2606.06494v1"
+   },
+   {
+    "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+    "date": "2026-06-04",
+    "authors": "Lizhi Yang, Junheng Li, Nehar Poddar",
+    "summary": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typica",
+    "link": "https://arxiv.org/abs/2606.06493v1"
+   },
+   {
+    "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
+    "date": "2026-06-04",
+    "authors": "Liliana Hotsko, Yinxi Li, Yuntian Deng",
+    "summary": "Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysi",
+    "link": "https://arxiv.org/abs/2606.06492v1"
+   },
+   {
+    "title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies",
+    "date": "2026-06-04",
+    "authors": "Dong Jing, Jingchen Nie, Tianqi Zhang",
+    "summary": "Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VL",
+    "link": "https://arxiv.org/abs/2606.06491v1"
+   },
+   {
+    "title": "Regret Minimization with Adaptive Opponents in Repeated Games",
+    "date": "2026-06-04",
+    "authors": "Mingyang Liu, Asuman Ozdaglar, Tiancheng Yu",
+    "summary": "In this paper, we study regret minimization in repeated games with \\emph{adaptive} opponents who can respond based on histories of play. The standard metric of \\emph{external regret} in online learnin",
+    "link": "https://arxiv.org/abs/2606.06486v1"
+   },
+   {
+    "title": "Operation-Guided Progressive Human-to-AI Text Transformation Benchmark for Multi-Granularity AI-Text Detection",
+    "date": "2026-06-04",
+    "authors": "Sondos Mahmoud Bsharat, Jiacheng Liu, Xiaohan Zhao",
+    "summary": "As AI writing assistants become increasingly integrated into real-world drafting and revision workflows, many documents are no longer purely human-written or AI-generated, but instead result from prog",
+    "link": "https://arxiv.org/abs/2606.06481v1"
+   },
+   {
+    "title": "DNQ: Deep Nash Q-Network for Partially Observable n-Player Games",
+    "date": "2026-06-04",
+    "authors": "Qintong Xie, Edward Koh, Xavier Cadet",
+    "summary": "Many real-world competitive systems require multiple decision-makers to act simultaneously under shared constraints, limited information, and repeated interaction, as in auctions, resource allocation,",
+    "link": "https://arxiv.org/abs/2606.06480v1"
+   },
+   {
+    "title": "Pretraining Recurrent Networks without Recurrence",
+    "date": "2026-06-04",
+    "authors": "Akarsh Kumar, Phillip Isola",
+    "summary": "Training recurrent neural networks (RNNs) requires assigning credit across long sequences of computations. Standard backpropagation through time (BPTT) addresses this problem poorly: it is sequential ",
+    "link": "https://arxiv.org/abs/2606.06479v1"
+   },
+   {
+    "title": "RREDCoT: Segment-Level Reward Redistribution for Reasoning Models",
+    "date": "2026-06-04",
+    "authors": "Mykyta Ielanskyi, Kajetan Schweighofer, Lukas Aichberger",
+    "summary": "Recent advancements in reasoning language models have been driven by Reinforcement Learning (RL) fine-tuning. Most often, these rely on the Group Relative Policy Optimization (GRPO) algorithm or modif",
+    "link": "https://arxiv.org/abs/2606.06475v1"
+   },
+   {
+    "title": "Self-Augmenting Retrieval for Diffusion Language Models",
+    "date": "2026-06-04",
+    "authors": "Paul Jünger, Justin Lovelace, Linxi Zhao",
+    "summary": "Discrete diffusion language models generate text by iteratively denoising an entire response in parallel. At each step, they predict tentative tokens for every masked position, committing the confiden",
+    "link": "https://arxiv.org/abs/2606.06474v1"
+   },
+   {
+    "title": "MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery",
+    "date": "2026-06-04",
+    "authors": "Shangheng Du, Xiangchao Yan, Jinxin Shi",
+    "summary": "Large language model (LLM) agents are increasingly applied to long-horizon tasks such as scientific discovery and machine learning engineering (MLE), where sustained self-evolution becomes a key capab",
+    "link": "https://arxiv.org/abs/2606.06473v1"
+   },
+   {
+    "title": "PC Layer: Polynomial Weight Preconditioning for Improving LLM Pre-Training",
+    "date": "2026-06-04",
+    "authors": "Senmiao Wang, Tiantian Fang, Haoran Zhang",
+    "summary": "We propose a preconditioning (PC) layer, a weight parameterization via polynomial preconditioner that ensures stable weight conditioning throughout LLM training. The PC module reshapes the singular-va",
+    "link": "https://arxiv.org/abs/2606.06470v1"
+   }
+  ]
  },
  "pypi": {
   "status": "ok:7/10",
   "libs": [
    {
     "pkg": "litellm",
-    "last_month": 526158273,
-    "last_week": 136795793
+    "last_month": 529155030,
+    "last_week": 138875394
    },
    {
     "pkg": "langchain",
-    "last_month": 296849361,
-    "last_week": 76927500
+    "last_month": 299690769,
+    "last_week": 76893039
    },
    {
     "pkg": "huggingface-hub",
-    "last_month": 270080016,
-    "last_week": 71615114
+    "last_month": 272929677,
+    "last_week": 74920634
    },
    {
     "pkg": "transformers",
-    "last_month": 145345864,
-    "last_week": 37674732
+    "last_month": 145623846,
+    "last_week": 38369070
+   },
+   {
+    "pkg": "langgraph",
+    "last_month": 57415201,
+    "last_week": 14195523
    },
    {
     "pkg": "crewai",
-    "last_month": 14703714,
-    "last_week": 2915184
-   },
-   {
-    "pkg": "llama-index",
-    "last_month": 12472914,
-    "last_week": 2596016
+    "last_month": 14821573,
+    "last_week": 2888218
    },
    {
     "pkg": "vllm",
-    "last_month": 6175780,
-    "last_week": 1359798
+    "last_month": 6186996,
+    "last_week": 1438664
    },
    {
     "pkg": "openai",
@@ -51,7 +136,7 @@
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
-    "pkg": "langgraph",
+    "pkg": "llama-index",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    }
   ]
