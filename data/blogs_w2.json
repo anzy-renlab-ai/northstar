@@ -1,9 +1,9 @@
 {
- "collected_at": "2026-06-06T02:31:06",
+ "collected_at": "2026-06-07T02:49:41",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
-  "Sebastian Raschka": "ok:4",
+  "Sebastian Raschka": "ok:5",
   "HuggingFace Blog": "ok:8",
   "Chip Huyen": "ok:0",
   "Eugene Yan": "ok:1",
@@ -17,6 +17,20 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "micropython-wasm 0.1a2",
+   "date": "2026-06-06",
+   "summary": "Release: micropython-wasm 0.1a2 I added a CLI to micropython-wasm ( issue #7 ), inspired by the first draft of the blog entry when I realized it would be a great way to illustrate the Try it yourself section. Tags: python , sandboxing , webassembly , micropython",
+   "link": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Running Python code in a sandbox with MicroPython and WASM",
+   "date": "2026-06-06",
+   "summary": "I've been experimenting with different approaches to running code in a sandbox for several years now, but my latest attempt feels like it might finally have all of the characteristics I've been looking for. I've released it as an alpha package called micropython-wasm , and I'm using it for a code execution sandbox plugin for Datasette Agent called datasette-agent-micropython . Why do I want a sandbox? What I want from a sandbox WebAssembly looks really promising here MicroPython in WebAssembly Building the first version Try it yourself Should you trust my vibe-coded sandbox? Why do I want a sa",
+   "link": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "OpenAI Help: Lockdown Mode",
@@ -60,18 +74,11 @@
    "link": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything"
   },
   {
-   "source": "Simon Willison",
-   "title": "datasette-agent-micropython 0.1a0",
-   "date": "2026-06-02",
-   "summary": "Release: datasette-agent-micropython 0.1a0 I want Datasette Agent to be able to generate and execute Python code safely. This alpha is looking promising so far. GPT-5.5 has so far failed to break out of the sandbox! Tags: python , sandboxing , datasette , webassembly , datasette-agent",
-   "link": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "micropython-wasm 0.1a1",
-   "date": "2026-06-02",
-   "summary": "Release: micropython-wasm 0.1a1 Fixes for some limitations that emerged while I was trying to use this to build datasette-agent-micropython . Tags: python , sandboxing , webassembly",
-   "link": "https://simonwillison.net/2026/Jun/2/micropython-wasm/#atom-everything"
+   "source": "Sebastian Raschka",
+   "title": "LLM Research Papers: The 2026 List (January to May)",
+   "date": "2026-06-06",
+   "summary": "A curated roundup of notable LLM research papers that came out this year",
+   "link": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1"
   },
   {
    "source": "Sebastian Raschka",
@@ -103,10 +110,10 @@
   },
   {
    "source": "HuggingFace Blog",
-   "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
-   "date": "2026-06-05",
+   "title": "Five labs, five minds: building a multi-model finance drama on small models",
+   "date": "2026-06-06",
    "summary": "",
-   "link": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim"
+   "link": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2"
   },
   {
    "source": "HuggingFace Blog",
@@ -222,17 +229,17 @@
   },
   {
    "source": "OpenAI News",
-   "title": "OpenAI public policy agenda",
-   "date": "2026-06-03",
-   "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
-   "link": "https://openai.com/index/public-policy-agenda"
-  },
-  {
-   "source": "OpenAI News",
    "title": "A blueprint for democratic governance of frontier AI",
    "date": "2026-06-03",
    "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
    "link": "https://openai.com/index/frontier-safety-blueprint"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "OpenAI public policy agenda",
+   "date": "2026-06-03",
+   "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
+   "link": "https://openai.com/index/public-policy-agenda"
   },
   {
    "source": "OpenAI News",

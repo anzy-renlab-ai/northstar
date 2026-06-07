@@ -1,40 +1,29 @@
 {
- "as_of": "2026-06-06",
- "summary_one_line_zh": "安全加固、轻量多模态与代码适配正在同时落地。",
- "summary_one_line_en": "Security hardening, lightweight multimodal, and code adaptation are landing together.",
+ "as_of": "2026-06-07",
+ "summary_one_line_zh": "多模态模型、沙箱执行和小模型编排一起在落地侧加速",
+ "summary_one_line_en": "Multimodal models, sandboxed execution, and small-model orchestration are all accelerating.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "blog#0",
-   "title_zh": "OpenAI 上线 Lockdown 安全模式",
-   "title_en": "OpenAI Lockdown Mode",
-   "why_zh": "个人账户级高风险防护开始产品化，提示面向 prompt injection/账号接管的默认安全边界在上移。",
-   "why_en": "Consumer-account hardening is productized; baseline defenses against prompt injection and account takeover are moving up-stack.",
-   "so_what_zh": "审查你们的高权限 Agent 入口，补一层显式确认/降权开关。",
-   "so_what_en": "Audit high-privilege agent entrypoints; add explicit confirmation and privilege-reduction toggles.",
-   "url": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything"
-  },
-  {
-   "rank": 2,
-   "source_tag": "hf#0",
-   "title_zh": "Gemma 4 12B 多模态可用",
-   "title_en": "Gemma 4 12B Multimodal",
-   "why_zh": "12B 级 any-to-any 模型继续下探，说明中端成本带的多模态部署门槛又降了一档。",
-   "why_en": "A 12B any-to-any model lowers the deployment bar again for mid-cost multimodal workloads.",
-   "so_what_zh": "拿一条真实多模态链路做 A/B，评估是否能把现有大模型下放到 12B。",
-   "so_what_en": "A/B one real multimodal flow and test whether you can downshift from your current larger model.",
-   "url": "https://huggingface.co/google/gemma-4-12B-it"
+   "source_tag": "blog#1",
+   "title_zh": "MicroPython+WASM 沙箱可跑代码",
+   "title_en": "MicroPython-WASM sandboxed code",
+   "why_zh": "说明 agent 代码执行正从容器/VM 走向更轻隔离层，成本和冷启动会变得可控",
+   "why_en": "Code execution is moving toward lighter isolation, changing cost and cold-start economics.",
+   "so_what_zh": "把你们的代码执行面板换成 WASM 沙箱原型，压测冷启动和权限边界",
+   "so_what_en": "Prototype a WASM sandbox for code execution and benchmark startup plus permission boundaries.",
+   "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything"
   },
   {
    "rank": 3,
-   "source_tag": "arxiv#2",
-   "title_zh": "Code2LoRA：repo 演化下的适配器",
-   "title_en": "Code2LoRA for evolving repos",
-   "why_zh": "把仓库级上下文压进超网络生成 LoRA，直接对应代码模型在版本演化中的适配成本。",
-   "why_en": "Hypernetwork-generated LoRA targets the real cost center: adapting code models as repositories evolve.",
-   "so_what_zh": "把你们的代码助手切到按仓库/分支生成适配器，别再只靠长上下文。",
-   "so_what_en": "Prototype repo- or branch-specific adapters instead of relying only on longer context.",
-   "url": "https://arxiv.org/abs/2606.06492v1"
+   "source_tag": "blog#4",
+   "title_zh": "小模型多模型编排打金融战",
+   "title_en": "Small-model multi-agent finance",
+   "why_zh": "多模型协作不再只拼成本，开始拼角色分工、路由和一致性，适合做生产级编排参考",
+   "why_en": "Multi-model systems are now about role design, routing, and consistency—not just lower cost.",
+   "so_what_zh": "把你们最贵的链路拆成角色分工图，找出能被小模型接管的两个节点",
+   "so_what_en": "Map your expensive chain into roles and identify two nodes small models can take over.",
+   "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2"
   }
  ]
 }
