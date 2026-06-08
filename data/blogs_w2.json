@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-06-07T02:49:41",
+ "collected_at": "2026-06-08T02:52:33",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,13 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "datasette-agent-edit 0.1a0",
+   "date": "2026-06-07",
+   "summary": "Release: datasette-agent-edit 0.1a0 I'm planning several plugins for Datasette Agent which can make edits to existing pieces of text - things like collaborative Markdown editing, updating large SQL queries, and editing SVG files. Agentic editing of text is a little tricky to get right. My favorite published design for this is for the Claude text editor , which implements the following tools: view - view sections of a file, with line numbers added to every line. str_replace - find an exact old_str and replace it with new_str - fail if the original string is not unique insert - insert the specif",
+   "link": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "micropython-wasm 0.1a2",
@@ -67,13 +74,6 @@
    "link": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything"
   },
   {
-   "source": "Simon Willison",
-   "title": "Microsoft's new MAI models",
-   "date": "2026-06-02",
-   "summary": "Microsoft announced two new text LLMs this morning - MAI-Thinking-1 (reasoning, 1T parameters, 35B active, available to \"select early partners\") and MAI-Code-1-Flash (137B Parameters, 5B active, \"purpose-built for GitHub Copilot and VS Code to deliver high performance and lower cost [...] rolling out to GitHub Copilot individual users in Visual Studio Code\"). I've not been able to try either of them just yet. It's very interesting to see Microsoft releasing models with such low parameter counts, especially given how expensive larger models are to access right now. They claim MAI-Thinking-1 \"is",
-   "link": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything"
-  },
-  {
    "source": "Sebastian Raschka",
    "title": "LLM Research Papers: The 2026 List (January to May)",
    "date": "2026-06-06",
@@ -110,10 +110,10 @@
   },
   {
    "source": "HuggingFace Blog",
-   "title": "Five labs, five minds: building a multi-model finance drama on small models",
-   "date": "2026-06-06",
+   "title": "Amazing Digital Dentures (a failed project)",
+   "date": "2026-06-07",
    "summary": "",
-   "link": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2"
+   "link": "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures"
   },
   {
    "source": "HuggingFace Blog",

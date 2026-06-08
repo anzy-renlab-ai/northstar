@@ -1,29 +1,40 @@
 {
- "as_of": "2026-06-07",
- "summary_one_line_zh": "多模态模型、沙箱执行和小模型编排一起在落地侧加速",
- "summary_one_line_en": "Multimodal models, sandboxed execution, and small-model orchestration are all accelerating.",
+ "as_of": "2026-06-08",
+ "summary_one_line_zh": "多模态基础模型与生成工作流继续下沉到可部署、可编辑、可集成。",
+ "summary_one_line_en": "Multimodal models and editable generation workflows are getting deployable.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "blog#1",
-   "title_zh": "MicroPython+WASM 沙箱可跑代码",
-   "title_en": "MicroPython-WASM sandboxed code",
-   "why_zh": "说明 agent 代码执行正从容器/VM 走向更轻隔离层，成本和冷启动会变得可控",
-   "why_en": "Code execution is moving toward lighter isolation, changing cost and cold-start economics.",
-   "so_what_zh": "把你们的代码执行面板换成 WASM 沙箱原型，压测冷启动和权限边界",
-   "so_what_en": "Prototype a WASM sandbox for code execution and benchmark startup plus permission boundaries.",
-   "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything"
+   "source_tag": "hf#1",
+   "title_zh": "Gemma 4 开放多模态底座",
+   "title_en": "Gemma 4 any-to-any",
+   "why_zh": "any-to-any 说明输入/输出模态边界继续收敛，适合做统一编排层和多模态代理。",
+   "why_en": "Any-to-any implies collapsing modality boundaries for unified orchestration and multimodal agents.",
+   "so_what_zh": "评估你们的多模态路由：是否能用单一模型替代图文分流。",
+   "so_what_en": "Benchmark a single-model router against your current image/text split.",
+   "url": "https://huggingface.co/google/gemma-4-12B"
+  },
+  {
+   "rank": 2,
+   "source_tag": "hf#2",
+   "title_zh": "Ideogram 4 以 FP8 发布",
+   "title_en": "Ideogram 4 FP8",
+   "why_zh": "FP8 版本直接指向更低推理成本，适合把生图从“实验”推到“默认产品能力”。",
+   "why_en": "FP8 points to materially lower serving cost for production-grade image generation.",
+   "so_what_zh": "算一遍你们生图链路的单位成本，看看能否上生产默认档。",
+   "so_what_en": "Recompute per-image serving cost and see if it can be a default feature.",
+   "url": "https://huggingface.co/ideogram-ai/ideogram-4-fp8"
   },
   {
    "rank": 3,
-   "source_tag": "blog#4",
-   "title_zh": "小模型多模型编排打金融战",
-   "title_en": "Small-model multi-agent finance",
-   "why_zh": "多模型协作不再只拼成本，开始拼角色分工、路由和一致性，适合做生产级编排参考",
-   "why_en": "Multi-model systems are now about role design, routing, and consistency—not just lower cost.",
-   "so_what_zh": "把你们最贵的链路拆成角色分工图，找出能被小模型接管的两个节点",
-   "so_what_en": "Map your expensive chain into roles and identify two nodes small models can take over.",
-   "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2"
+   "source_tag": "blog#0",
+   "title_zh": "Datasette Agent 开始支持编辑",
+   "title_en": "Datasette Agent edit plugins",
+   "why_zh": "从读到改是代理产品分水岭；编辑插件化意味着可审计、可回滚的 agent 工作流。",
+   "why_en": "Read-to-write is the agent product boundary; plugins enable auditable, rollback-friendly edits.",
+   "so_what_zh": "把一个只读 agent 流程改成可编辑闭环，补上审批和回滚。",
+   "so_what_en": "Turn one read-only agent flow into an editable loop with approval and rollback.",
+   "url": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything"
   }
  ]
 }
