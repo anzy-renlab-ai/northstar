@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-06-08T02:52:46",
+ "collected_at": "2026-06-08T04:22:04",
  "arxiv": {
   "status": "ok:12",
   "papers": [
@@ -90,7 +90,7 @@
   ]
  },
  "pypi": {
-  "status": "ok:10/10",
+  "status": "ok:8/10",
   "libs": [
    {
     "pkg": "litellm",
@@ -101,11 +101,6 @@
     "pkg": "openai",
     "last_month": 316063810,
     "last_week": 81539856
-   },
-   {
-    "pkg": "langchain",
-    "last_month": 301642615,
-    "last_week": 76271191
    },
    {
     "pkg": "huggingface-hub",
@@ -133,14 +128,17 @@
     "last_week": 2741166
    },
    {
-    "pkg": "llama-index",
-    "last_month": 11836494,
-    "last_week": 2265747
-   },
-   {
     "pkg": "vllm",
     "last_month": 6064628,
     "last_week": 1519686
+   },
+   {
+    "pkg": "langchain",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "llama-index",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
    }
   ]
  }
