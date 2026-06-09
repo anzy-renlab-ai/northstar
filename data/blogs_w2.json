@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-06-08T04:21:54",
+ "collected_at": "2026-06-09T02:29:52",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,13 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "Siri AI at WWDC 2026",
+   "date": "2026-06-08",
+   "summary": "Given how badly burned anyone who took Apple's 2024 WWDC Apple Intelligence announcements at face value was, I'm holding to a strict \"I'll believe it when I see it\" policy for everything they announced today . The new Siri AI features do at least look feasible with today's technology, especially since Apple are licensing a custom Gemini-derived model that they can run on their own Private Cloud Compute . It sounds like they'll be taking advantage of vision LLMs to extract information from the user's screen, which neatly sidesteps the need for every existing application to ship custom code in o",
+   "link": "https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "datasette-agent-edit 0.1a0",
@@ -67,13 +74,6 @@
    "link": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything"
   },
   {
-   "source": "Simon Willison",
-   "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
-   "date": "2026-06-03",
-   "summary": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs I wrote the other day about Uber blowing its 2026 AI budget in four months, and how that wasn't particularly surprising given they would have set that budget in 2025, before anyone could have predicted how popular token-burning coding agents were about to become. Natalie Lung for Bloomberg: The rideshare giant is limiting all employees to $1,500 in monthly token spending per AI coding tool, an Uber spokesperson said in response to a Bloomberg News inquiry. That means spending on one tool doesn’t have a bearing on the budget for anoth",
-   "link": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything"
-  },
-  {
    "source": "Sebastian Raschka",
    "title": "LLM Research Papers: The 2026 List (January to May)",
    "date": "2026-06-06",
@@ -110,10 +110,10 @@
   },
   {
    "source": "HuggingFace Blog",
-   "title": "Amazing Digital Dentures (a failed project)",
-   "date": "2026-06-07",
+   "title": "The Open Source Community is backing OpenEnv for Agentic RL",
+   "date": "2026-06-08",
    "summary": "",
-   "link": "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures"
+   "link": "https://huggingface.co/blog/openenv-agentic-rl"
   },
   {
    "source": "HuggingFace Blog",
@@ -194,6 +194,27 @@
   },
   {
    "source": "OpenAI News",
+   "title": "Confidential submission of draft S-1 to the SEC",
+   "date": "2026-06-08",
+   "summary": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
+   "link": "https://openai.com/index/openai-submits-confidential-s-1"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Built to benefit everyone: our plan",
+   "date": "2026-06-08",
+   "summary": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
+   "link": "https://openai.com/index/built-to-benefit-everyone-our-plan"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Introducing the OpenAI Economic Research Exchange",
+   "date": "2026-06-08",
+   "summary": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
+   "link": "https://openai.com/index/economic-research-exchange"
+  },
+  {
+   "source": "OpenAI News",
    "title": "How Endava is redesigning software delivery around AI agents",
    "date": "2026-06-04",
    "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
@@ -226,27 +247,6 @@
    "date": "2026-06-03",
    "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
    "link": "https://openai.com/index/wasmer"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "A blueprint for democratic governance of frontier AI",
-   "date": "2026-06-03",
-   "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
-   "link": "https://openai.com/index/frontier-safety-blueprint"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "OpenAI public policy agenda",
-   "date": "2026-06-03",
-   "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
-   "link": "https://openai.com/index/public-policy-agenda"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
-   "date": "2026-06-02",
-   "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
-   "link": "https://openai.com/index/travelers"
   },
   {
    "source": "Google Research",

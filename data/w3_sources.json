@@ -1,200 +1,199 @@
 {
- "collected_at": "2026-06-08T04:22:02",
+ "collected_at": "2026-06-09T02:29:58",
  "hf": {
   "status": "ok:30 sort=trendingScore",
   "tag_freq": {
-   "text-generation": 9,
-   "image-text-to-text": 6,
-   "any-to-any": 3,
-   "text-to-image": 3,
+   "text-generation": 8,
+   "image-text-to-text": 7,
+   "any-to-any": 4,
+   "text-to-image": 2,
    "text-to-speech": 2,
    "unknown": 2,
+   "text-to-video": 2,
    "automatic-speech-recognition": 1,
-   "image-text-to-video": 1,
    "text-to-audio": 1,
-   "image-to-video": 1,
-   "text-to-video": 1
+   "image-text-to-video": 1
   },
   "trending": [
    {
     "id": "nvidia/LocateAnything-3B",
     "pipeline": "image-text-to-text",
-    "downloads": 115556,
-    "likes": 1536
+    "downloads": 121594,
+    "likes": 1626
    },
    {
     "id": "google/gemma-4-12B-it",
     "pipeline": "any-to-any",
-    "downloads": 434969,
-    "likes": 700
+    "downloads": 554173,
+    "likes": 753
    },
    {
     "id": "unsloth/gemma-4-12b-it-GGUF",
     "pipeline": "image-text-to-text",
-    "downloads": 568158,
-    "likes": 459
+    "downloads": 645263,
+    "likes": 504
    },
    {
     "id": "google/gemma-4-12B",
     "pipeline": "any-to-any",
-    "downloads": 99655,
-    "likes": 415
+    "downloads": 117509,
+    "likes": 452
    },
    {
     "id": "ideogram-ai/ideogram-4-fp8",
     "pipeline": "text-to-image",
-    "downloads": 4377,
-    "likes": 356
+    "downloads": 5495,
+    "likes": 394
    },
    {
     "id": "sapientinc/HRM-Text-1B",
     "pipeline": "text-generation",
-    "downloads": 162822,
-    "likes": 720
+    "downloads": 163953,
+    "likes": 728
    },
    {
     "id": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
     "pipeline": "image-text-to-text",
-    "downloads": 2923564,
-    "likes": 1523
-   },
-   {
-    "id": "JetBrains/Mellum2-12B-A2.5B-Thinking",
-    "pipeline": "text-generation",
-    "downloads": 16924,
-    "likes": 252
+    "downloads": 3036465,
+    "likes": 1554
    },
    {
     "id": "ideogram-ai/ideogram-4-nf4",
     "pipeline": "text-to-image",
-    "downloads": 3844,
-    "likes": 238
-   },
-   {
-    "id": "nvidia/nemotron-3.5-asr-streaming-0.6b",
-    "pipeline": "automatic-speech-recognition",
-    "downloads": 3439,
+    "downloads": 4963,
     "likes": 262
-   },
-   {
-    "id": "LiquidAI/LFM2.5-8B-A1B",
-    "pipeline": "text-generation",
-    "downloads": 118326,
-    "likes": 541
    },
    {
     "id": "bosonai/higgs-audio-v3-tts-4b",
     "pipeline": "text-to-speech",
-    "downloads": 7557,
-    "likes": 200
+    "downloads": 15005,
+    "likes": 249
    },
    {
-    "id": "nvidia/Cosmos3-Nano",
-    "pipeline": "unknown",
-    "downloads": 29697,
-    "likes": 197
+    "id": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "pipeline": "automatic-speech-recognition",
+    "downloads": 3957,
+    "likes": 292
    },
    {
-    "id": "stepfun-ai/Step-3.7-Flash",
-    "pipeline": "image-text-to-text",
-    "downloads": 43196,
-    "likes": 349
-   },
-   {
-    "id": "ByteDance/Bernini-R",
-    "pipeline": "image-text-to-video",
-    "downloads": 246,
-    "likes": 170
+    "id": "JetBrains/Mellum2-12B-A2.5B-Thinking",
+    "pipeline": "text-generation",
+    "downloads": 17448,
+    "likes": 260
    },
    {
     "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
     "pipeline": "text-generation",
-    "downloads": 49784,
-    "likes": 157
-   },
-   {
-    "id": "nvidia/Cosmos3-Super",
-    "pipeline": "unknown",
-    "downloads": 24002,
-    "likes": 153
-   },
-   {
-    "id": "PaddlePaddle/PaddleOCR-VL-1.6",
-    "pipeline": "image-text-to-text",
-    "downloads": 9084,
-    "likes": 269
+    "downloads": 55910,
+    "likes": 167
    },
    {
     "id": "MisoLabs/MisoTTS",
     "pipeline": "text-to-speech",
     "downloads": 0,
-    "likes": 144
+    "likes": 156
    },
    {
-    "id": "deepseek-ai/DeepSeek-V4-Pro",
+    "id": "stepfun-ai/Step-3.7-Flash",
+    "pipeline": "image-text-to-text",
+    "downloads": 45535,
+    "likes": 352
+   },
+   {
+    "id": "LiquidAI/LFM2.5-8B-A1B",
     "pipeline": "text-generation",
-    "downloads": 5515325,
-    "likes": 4700
+    "downloads": 135131,
+    "likes": 551
    },
    {
     "id": "google/magenta-realtime-2",
     "pipeline": "text-to-audio",
-    "downloads": 13338,
-    "likes": 134
+    "downloads": 17531,
+    "likes": 152
    },
    {
-    "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
-    "pipeline": "text-generation",
-    "downloads": 39864,
-    "likes": 133
+    "id": "ByteDance/Bernini-R",
+    "pipeline": "image-text-to-video",
+    "downloads": 278,
+    "likes": 185
    },
    {
     "id": "unsloth/gemma-4-12B-it-qat-GGUF",
     "pipeline": "any-to-any",
-    "downloads": 85842,
-    "likes": 125
+    "downloads": 121399,
+    "likes": 147
    },
    {
-    "id": "nvidia/Cosmos3-Super-Text2Image",
-    "pipeline": "text-to-image",
-    "downloads": 5075,
+    "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+    "pipeline": "text-generation",
+    "downloads": 66219,
+    "likes": 145
+   },
+   {
+    "id": "deepseek-ai/DeepSeek-V4-Pro",
+    "pipeline": "text-generation",
+    "downloads": 5399597,
+    "likes": 4722
+   },
+   {
+    "id": "nvidia/Cosmos3-Nano",
+    "pipeline": "unknown",
+    "downloads": 34104,
+    "likes": 206
+   },
+   {
+    "id": "nex-agi/Nex-N2-Pro",
+    "pipeline": "text-generation",
+    "downloads": 716,
     "likes": 124
    },
    {
-    "id": "openbmb/MiniCPM5-1B",
-    "pipeline": "text-generation",
-    "downloads": 114329,
-    "likes": 779
-   },
-   {
-    "id": "nvidia/Cosmos3-Super-Image2Video",
-    "pipeline": "image-to-video",
-    "downloads": 4515,
-    "likes": 115
-   },
-   {
-    "id": "SulphurAI/Sulphur-2-base",
-    "pipeline": "text-to-video",
-    "downloads": 1715710,
-    "likes": 1588
-   },
-   {
-    "id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
-    "pipeline": "text-generation",
-    "downloads": 1185362,
-    "likes": 201
-   },
-   {
-    "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
+    "id": "PaddlePaddle/PaddleOCR-VL-1.6",
     "pipeline": "image-text-to-text",
-    "downloads": 1150295,
-    "likes": 687
+    "downloads": 9924,
+    "likes": 277
+   },
+   {
+    "id": "jdopensource/JoyAI-Echo",
+    "pipeline": "text-to-video",
+    "downloads": 4053,
+    "likes": 103
+   },
+   {
+    "id": "unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 87455,
+    "likes": 104
    },
    {
     "id": "deepseek-ai/DeepSeek-V4-Flash",
     "pipeline": "text-generation",
-    "downloads": 3347429,
-    "likes": 1435
+    "downloads": 3262529,
+    "likes": 1449
+   },
+   {
+    "id": "SulphurAI/Sulphur-2-base",
+    "pipeline": "text-to-video",
+    "downloads": 1707062,
+    "likes": 1601
+   },
+   {
+    "id": "google/gemma-4-12B-it-qat-q4_0-gguf",
+    "pipeline": "any-to-any",
+    "downloads": 52386,
+    "likes": 100
+   },
+   {
+    "id": "nvidia/Cosmos3-Super",
+    "pipeline": "unknown",
+    "downloads": 27548,
+    "likes": 158
+   },
+   {
+    "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
+    "pipeline": "image-text-to-text",
+    "downloads": 1186648,
+    "likes": 696
    }
   ]
  },
@@ -226,17 +225,17 @@
    },
    {
     "title": "Ask HN: What is your (AI) dev tech stack / workflow?",
-    "points": 159,
+    "points": 162,
     "url": null
    },
    {
     "title": "Show HN: Formally verified polygon intersection – Opus 4.8 oneshots, prev failed",
-    "points": 89,
+    "points": 92,
     "url": "https://github.com/schildep/verified-polygon-intersection"
    },
    {
     "title": "Launch HN: Expanse (YC P26) – Unlock Wasted GPU Capacity",
-    "points": 101,
+    "points": 102,
     "url": null
    },
    {

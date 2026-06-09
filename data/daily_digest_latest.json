@@ -1,40 +1,40 @@
 {
- "as_of": "2026-06-08",
- "summary_one_line_zh": "多模态基础模型与生成工作流继续下沉到可部署、可编辑、可集成。",
- "summary_one_line_en": "Multimodal models and editable generation workflows are getting deployable.",
+ "as_of": "2026-06-09",
+ "summary_one_line_zh": "代理评测在标准化，视觉定位模型继续下沉，OpenAI 资本动作升温",
+ "summary_one_line_en": "Agent evals standardize, vision grounding gets smaller, OpenAI's market move heats up",
  "items": [
   {
    "rank": 1,
-   "source_tag": "hf#1",
-   "title_zh": "Gemma 4 开放多模态底座",
-   "title_en": "Gemma 4 any-to-any",
-   "why_zh": "any-to-any 说明输入/输出模态边界继续收敛，适合做统一编排层和多模态代理。",
-   "why_en": "Any-to-any implies collapsing modality boundaries for unified orchestration and multimodal agents.",
-   "so_what_zh": "评估你们的多模态路由：是否能用单一模型替代图文分流。",
-   "so_what_en": "Benchmark a single-model router against your current image/text split.",
-   "url": "https://huggingface.co/google/gemma-4-12B"
+   "source_tag": "blog#1",
+   "title_zh": "OpenEnv 成为代理RL公共底座",
+   "title_en": "OpenEnv becomes RL substrate",
+   "why_zh": "社区合力押注统一环境层，意味着代理训练/评测开始向可复用基建收敛。",
+   "why_en": "Signals a shared environment layer for agent training and evaluation, converging the stack into reusable infrastructure.",
+   "so_what_zh": "把你们的代理评测先接到 OpenEnv/同类接口，减少自定义 harness 绑定。",
+   "so_what_en": "Port agent evals to OpenEnv-compatible interfaces and reduce bespoke harness lock-in.",
+   "url": "https://huggingface.co/blog/openenv-agentic-rl"
   },
   {
    "rank": 2,
-   "source_tag": "hf#2",
-   "title_zh": "Ideogram 4 以 FP8 发布",
-   "title_en": "Ideogram 4 FP8",
-   "why_zh": "FP8 版本直接指向更低推理成本，适合把生图从“实验”推到“默认产品能力”。",
-   "why_en": "FP8 points to materially lower serving cost for production-grade image generation.",
-   "so_what_zh": "算一遍你们生图链路的单位成本，看看能否上生产默认档。",
-   "so_what_en": "Recompute per-image serving cost and see if it can be a default feature.",
-   "url": "https://huggingface.co/ideogram-ai/ideogram-4-fp8"
+   "source_tag": "hf#0",
+   "title_zh": "NVIDIA 发布可定位的 3B 视觉模型",
+   "title_en": "NVIDIA ships a 3B locator",
+   "why_zh": "小型多模态模型若真能做图文定位，会直接影响 UI agent、文档理解和边缘部署选型。",
+   "why_en": "A small multimodal locator can reshape UI agents, document understanding, and edge deployment choices.",
+   "so_what_zh": "拿你的截图/文档定位集做一次替换测试，看 3B 能否替掉更贵的视觉模型。",
+   "so_what_en": "Benchmark it on your screenshot/document localization set against your current vision model.",
+   "url": "https://huggingface.co/nvidia/LocateAnything-3B"
   },
   {
    "rank": 3,
-   "source_tag": "blog#0",
-   "title_zh": "Datasette Agent 开始支持编辑",
-   "title_en": "Datasette Agent edit plugins",
-   "why_zh": "从读到改是代理产品分水岭；编辑插件化意味着可审计、可回滚的 agent 工作流。",
-   "why_en": "Read-to-write is the agent product boundary; plugins enable auditable, rollback-friendly edits.",
-   "so_what_zh": "把一个只读 agent 流程改成可编辑闭环，补上审批和回滚。",
-   "so_what_en": "Turn one read-only agent flow into an editable loop with approval and rollback.",
-   "url": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything"
+   "source_tag": "blog#2",
+   "title_zh": "OpenAI 递交保密版 S-1",
+   "title_en": "OpenAI files confidential S-1",
+   "why_zh": "这不是产品更新，而是公司结构与资本市场路径的明确转向，会影响竞品节奏和人才预期。",
+   "why_en": "A capital-structure signal, not a product release; it can shift competitive cadence and talent expectations.",
+   "so_what_zh": "把 OpenAI 未来 IPO/治理变化纳入竞对监控与薪酬留才假设。",
+   "so_what_en": "Update competitor watchlists and retention assumptions for a potential OpenAI IPO path.",
+   "url": "https://openai.com/index/openai-submits-confidential-s-1"
   }
  ]
 }
