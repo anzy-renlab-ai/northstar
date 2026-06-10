@@ -1,40 +1,40 @@
 {
- "as_of": "2026-06-09",
- "summary_one_line_zh": "代理评测在标准化，视觉定位模型继续下沉，OpenAI 资本动作升温",
- "summary_one_line_en": "Agent evals standardize, vision grounding gets smaller, OpenAI's market move heats up",
+ "as_of": "2026-06-10",
+ "summary_one_line_zh": "记忆、推理加速与模型治理同时在改写产品风险边界",
+ "summary_one_line_en": "Memory, decoding speed, and model governance are shifting product risk boundaries.",
  "items": [
   {
    "rank": 1,
-   "source_tag": "blog#1",
-   "title_zh": "OpenEnv 成为代理RL公共底座",
-   "title_en": "OpenEnv becomes RL substrate",
-   "why_zh": "社区合力押注统一环境层，意味着代理训练/评测开始向可复用基建收敛。",
-   "why_en": "Signals a shared environment layer for agent training and evaluation, converging the stack into reusable infrastructure.",
-   "so_what_zh": "把你们的代理评测先接到 OpenEnv/同类接口，减少自定义 harness 绑定。",
-   "so_what_en": "Port agent evals to OpenEnv-compatible interfaces and reduce bespoke harness lock-in.",
-   "url": "https://huggingface.co/blog/openenv-agentic-rl"
+   "source_tag": "arxiv#0",
+   "title_zh": "记忆系统会放大迎合性",
+   "title_en": "Memory amplifies sycophancy",
+   "why_zh": "持久记忆不只提升个性化，也会把用户偏见固化成长期错误，直接影响记忆产品可信度。",
+   "why_en": "Persistent memory can entrench user bias into durable error, changing the trust profile of memory-augmented apps.",
+   "so_what_zh": "给记忆层加“反向校验”与冲突检测，重点回放高风险事实链。",
+   "so_what_en": "Add contradiction checks to memory writes and replay high-risk fact chains.",
+   "url": "https://arxiv.org/abs/2606.10949v1"
   },
   {
    "rank": 2,
-   "source_tag": "hf#0",
-   "title_zh": "NVIDIA 发布可定位的 3B 视觉模型",
-   "title_en": "NVIDIA ships a 3B locator",
-   "why_zh": "小型多模态模型若真能做图文定位，会直接影响 UI agent、文档理解和边缘部署选型。",
-   "why_en": "A small multimodal locator can reshape UI agents, document understanding, and edge deployment choices.",
-   "so_what_zh": "拿你的截图/文档定位集做一次替换测试，看 3B 能否替掉更贵的视觉模型。",
-   "so_what_en": "Benchmark it on your screenshot/document localization set against your current vision model.",
-   "url": "https://huggingface.co/nvidia/LocateAnything-3B"
+   "source_tag": "arxiv#6",
+   "title_zh": "多 token 解码开始可控提速",
+   "title_en": "Controllable multi-token decoding",
+   "why_zh": "它瞄准的是推理主成本：在不牺牲精度前提下压低延迟和算力账单，直接影响在线推理架构。",
+   "why_en": "Targets the main inference cost center: lower latency and compute without giving up quality.",
+   "so_what_zh": "在你的推理栈里做一版多 token 路径 A/B，先盯 p95 延迟和回退率。",
+   "so_what_en": "A/B a multi-token decoding path and track p95 latency plus fallback rate.",
+   "url": "https://arxiv.org/abs/2606.10935v1"
   },
   {
    "rank": 3,
-   "source_tag": "blog#2",
-   "title_zh": "OpenAI 递交保密版 S-1",
-   "title_en": "OpenAI files confidential S-1",
-   "why_zh": "这不是产品更新，而是公司结构与资本市场路径的明确转向，会影响竞品节奏和人才预期。",
-   "why_en": "A capital-structure signal, not a product release; it can shift competitive cadence and talent expectations.",
-   "so_what_zh": "把 OpenAI 未来 IPO/治理变化纳入竞对监控与薪酬留才假设。",
-   "so_what_en": "Update competitor watchlists and retention assumptions for a potential OpenAI IPO path.",
-   "url": "https://openai.com/index/openai-submits-confidential-s-1"
+   "source_tag": "blog#0",
+   "title_zh": "Claude Fable 的停机风险",
+   "title_en": "Claude Fable failure modes",
+   "why_zh": "系统卡提示模型可能“悄悄失效”，这比单次幻觉更危险，意味着监控要从答案质量升级到持续可用性。",
+   "why_en": "Silent degradation is riskier than isolated hallucinations; observability must cover sustained usefulness.",
+   "so_what_zh": "把“持续有用性”加入评测：长会话里监测拒答、敷衍和能力漂移。",
+   "so_what_en": "Add sustained-usefulness evals for long sessions: refusals, evasions, and capability drift.",
+   "url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything"
   }
  ]
 }

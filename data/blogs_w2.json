@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-06-09T02:29:52",
+ "collected_at": "2026-06-10T02:43:23",
  "source_status": {
   "Simon Willison": "ok:8",
   "Lilian Weng": "ok:0",
@@ -17,6 +17,41 @@
   "Sebastian Ruder": "ok:0"
  },
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "If Claude Fable stops helping you, you'll never know",
+   "date": "2026-06-10",
+   "summary": "If Claude Fable stops helping you, you&#x27;ll never know Jonathon Ready highlights one of the more eyebrow-raising details from the 319 page system card for Fable 5 and Mythos 5. Here's a longer excerpt, highlights mine: In light of the ability of recent models to accelerate their own development , we’ve implemented new interventions that limit Claude’s effectiveness for requests targeting frontier LLM development (for example, on building pretraining pipelines, distributed training infrastructure, or ML accelerator design ). Using Claude to develop competing models already violates our Terms",
+   "link": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Initial impressions of Claude Fable 5",
+   "date": "2026-06-09",
+   "summary": "I didn't have early access to today's Claude Fable 5 release, but I've spent the past ~5.5 hours putting it through its paces. My initial impressions are that this is something of a beast . It's slow, expensive and has been quite happily churning through everything I've thrown at it so far. As is frequently the case with current frontier models the challenge is finding tasks that it can't do. First, let's review the key characteristics. Anthropic claim that Claude Fable 5 offers the same performance as Claude Mythos 5, except with much more strict guardrails in place to prevent it being used f",
+   "link": "https://simonwillison.net/2026/Jun/9/claude-fable-5/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "llm 0.32a3",
+   "date": "2026-06-09",
+   "summary": "Release: llm 0.32a3 Almost entirely written by the new Claude Fable 5, see my write-up for more details . Tags: projects , ai , generative-ai , llms , llm , claude-mythos",
+   "link": "https://simonwillison.net/2026/Jun/9/llm/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Setting a custom price for a model in AgentsView",
+   "date": "2026-06-09",
+   "summary": "TIL: Setting a custom price for a model in AgentsView I've been really enjoying AgentsView by Wes McKinney as a tool for exploring my token usage across different coding agents running on my laptop. Claude Fable 5 came out today and wasn't yet included in the pricing database AgentsView uses. I used Fable to reverse-engineer AgentsView and figured out this recipe for setting custom prices. Here's my Claude Fable 5 usage for today so far, plotted by AgentsView as a treemap across my different local projects: Tags: ai , generative-ai , llms , llm-pricing , claude-mythos",
+   "link": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price/#atom-everything"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Andrej Karpathy",
+   "date": "2026-06-09",
+   "summary": "I feel a lot of things changing as working software increasingly comes out on a tap. The Jevon's paradox kicks in and I feel my own demand for software growing substantially. You can ask for anything - explainers, visualizers, dashboards, bespoke single-use apps (e.g. a full wandb that is hyper-specific just for your project), you can 10X your test suite, auto-optimize code, run giant research projects with custom HTML for the results, anything! \"Free your mind\" (Matrix ref). &mdash; Andrej Karpathy , on Claude Fable 5 Tags: andrej-karpathy , jevons-paradox , anthropic , generative-ai , ai , l",
+   "link": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/#atom-everything"
+  },
   {
    "source": "Simon Willison",
    "title": "Siri AI at WWDC 2026",
@@ -37,41 +72,6 @@
    "date": "2026-06-06",
    "summary": "Release: micropython-wasm 0.1a2 I added a CLI to micropython-wasm ( issue #7 ), inspired by the first draft of the blog entry when I realized it would be a great way to illustrate the Try it yourself section. Tags: python , sandboxing , webassembly , micropython",
    "link": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Running Python code in a sandbox with MicroPython and WASM",
-   "date": "2026-06-06",
-   "summary": "I've been experimenting with different approaches to running code in a sandbox for several years now, but my latest attempt feels like it might finally have all of the characteristics I've been looking for. I've released it as an alpha package called micropython-wasm , and I'm using it for a code execution sandbox plugin for Datasette Agent called datasette-agent-micropython . Why do I want a sandbox? What I want from a sandbox WebAssembly looks really promising here MicroPython in WebAssembly Building the first version Try it yourself Should you trust my vibe-coded sandbox? Why do I want a sa",
-   "link": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "OpenAI Help: Lockdown Mode",
-   "date": "2026-06-05",
-   "summary": "OpenAI Help: Lockdown Mode OpenAI first teased this in February , but now it's live and \"rolling out to eligible personal accounts, including Free, Go, Plus, and Pro, and self-serve ChatGPT Business accounts\": Lockdown Mode is designed to help prevent the final stage of data exfiltration from a prompt injection attack by limiting outbound network requests that could transfer sensitive data to an attacker. Lockdown Mode does not prevent prompt injections from appearing in the content ChatGPT processes. For example, a prompt injection could appear in cached web content or in an uploaded file, an",
-   "link": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Andreas Kling",
-   "date": "2026-06-05",
-   "summary": "We will no longer accept public pull requests. [...] A substantial patch used to imply substantial effort, and that effort was a reasonable proxy for good faith. That assumption no longer holds. [...] Whether code was typed by hand is beside the point. What matters is who is responsible for it once it enters the browser. Ladybird is becoming a browser for real users. The people introducing changes to it must be the people who decide those changes belong in the project, and who will answer for the consequences. &mdash; Andreas Kling , Changing How We Develop Ladybird Tags: ladybird , ai-ethics ",
-   "link": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
-   "date": "2026-06-04",
-   "summary": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy Charity Majors neatly captures the dynamic between AI enthusiasts and AI skeptics, both of whom are trying to build great software, often in the same teams: The enthusiasts are not wrong . We are starting to see real, non-imaginary, discontinuous leaps in capabilities from teams that lean in hard to working with AI. And this does not feel like a normal technology cycle where you can wait for the dust to settle; teams that sit this out while competitors are hustling could be out of business before the dust sett",
-   "link": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/#atom-everything"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Emanuel Maiberg, 404 Media",
-   "date": "2026-06-04",
-   "summary": "After this story was published Google's spokesperson reached out and asked us to publish a slightly different version of that statement. The new statement no longer stated that \"it's critical that we maintain humans in the loop.\" &mdash; Emanuel Maiberg, 404 Media , Google Employees Internally Share Memes About How Its AI Sucks Tags: ai-ethics , journalism , ai , google",
-   "link": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything"
   },
   {
    "source": "Sebastian Raschka",
@@ -110,6 +110,34 @@
   },
   {
    "source": "HuggingFace Blog",
+   "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
+   "date": "2026-06-09",
+   "summary": "",
+   "link": "https://huggingface.co/blog/ServiceNow-AI/code-switching"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Introducing North Mini Code: Cohere’s First Model For Developers",
+   "date": "2026-06-09",
+   "summary": "",
+   "link": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
+   "date": "2026-06-09",
+   "summary": "",
+   "link": "https://huggingface.co/blog/mishig/spaces-agents-md"
+  },
+  {
+   "source": "HuggingFace Blog",
+   "title": "Migrating Your GitHub CI to Hugging Face Jobs",
+   "date": "2026-06-09",
+   "summary": "",
+   "link": "https://huggingface.co/blog/github-ci-hf-jobs"
+  },
+  {
+   "source": "HuggingFace Blog",
    "title": "The Open Source Community is backing OpenEnv for Agentic RL",
    "date": "2026-06-08",
    "summary": "",
@@ -124,13 +152,6 @@
   },
   {
    "source": "HuggingFace Blog",
-   "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
-   "date": "2026-06-04",
-   "summary": "",
-   "link": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data"
-  },
-  {
-   "source": "HuggingFace Blog",
    "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
    "date": "2026-06-04",
    "summary": "",
@@ -142,27 +163,6 @@
    "date": "2026-06-03",
    "summary": "",
    "link": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots"
-  },
-  {
-   "source": "HuggingFace Blog",
-   "title": "Adding MCP Tools to Reachy Mini",
-   "date": "2026-06-03",
-   "summary": "",
-   "link": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini"
-  },
-  {
-   "source": "HuggingFace Blog",
-   "title": "Holo3.1: Fast & Local Computer Use Agents",
-   "date": "2026-06-02",
-   "summary": "",
-   "link": "https://huggingface.co/blog/Hcompany/holo31"
-  },
-  {
-   "source": "HuggingFace Blog",
-   "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
-   "date": "2026-06-01",
-   "summary": "",
-   "link": "https://huggingface.co/blog/JetBrains/mellum2-launch"
   },
   {
    "source": "Eugene Yan",
@@ -191,6 +191,27 @@
    "date": "2026-03-13",
    "summary": "--> Understanding the behavior of complex machine learning systems, particularly Large Language Models (LLMs), is a critical challenge in modern artificial intelligence. Interpretability research aims to make the decision-making process more transparent to model builders and impacted humans, a step toward safer and more trustworthy AI. To gain a comprehensive understanding, we can analyze these systems through different lenses: feature attribution , which isolates the specific input features driving a prediction ( Lundberg &amp; Lee, 2017 ; Ribeiro et al., 2022 ); data attribution , which link",
    "link": "http://bair.berkeley.edu/blog/2026/03/13/spex/"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "How engineers at Nextdoor use Codex to build without limits",
+   "date": "2026-06-09",
+   "summary": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.",
+   "link": "https://openai.com/index/nextdoor"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "What Codex unlocks for Notion",
+   "date": "2026-06-09",
+   "summary": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams.",
+   "link": "https://openai.com/index/notion"
+  },
+  {
+   "source": "OpenAI News",
+   "title": "Industrial policy for the Intelligence Age",
+   "date": "2026-06-09",
+   "summary": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.",
+   "link": "https://openai.com/index/industrial-policy-for-the-intelligence-age"
   },
   {
    "source": "OpenAI News",
@@ -226,27 +247,6 @@
    "date": "2026-06-04",
    "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
    "link": "https://openai.com/index/chatgpt-memory-dreaming"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "Biodefense in the Intelligence Age",
-   "date": "2026-06-04",
-   "summary": "An action plan for AI-powered biological resilience",
-   "link": "https://openai.com/index/biodefense-in-the-intelligence-age"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "Introducing new capabilities to GPT-Rosalind",
-   "date": "2026-06-03",
-   "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
-   "link": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind"
-  },
-  {
-   "source": "OpenAI News",
-   "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
-   "date": "2026-06-03",
-   "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
-   "link": "https://openai.com/index/wasmer"
   },
   {
    "source": "Google Research",

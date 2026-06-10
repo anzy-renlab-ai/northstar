@@ -1,144 +1,146 @@
 {
- "collected_at": "2026-06-09T02:30:00",
+ "collected_at": "2026-06-10T02:43:31",
  "arxiv": {
   "status": "ok:12",
   "papers": [
    {
-    "title": "MeCo: One-Step MeanFlow-based Corrector for Multi-Channel Speech Separation",
-    "date": "2026-06-08",
-    "authors": "Dohwan Kim, Jung-Woo Choi",
-    "summary": "While discriminative models for multi-channel speech separation excel in reference-based metrics, they often exhibit suboptimal human listening quality. To address this, we propose a novel MeanFlow-ba",
-    "link": "https://arxiv.org/abs/2606.09677v1"
+    "title": "When to Align, When to Predict: A Phase Diagram for Multimodal Learning",
+    "date": "2026-06-09",
+    "authors": "Ilay Kamai, Hugues Van Assel, Aviv Regev",
+    "summary": "Cross-modal alignment (CA) and cross-modal prediction (CP) are the dominant paradigms for multimodal representation learning, yet there is no systematic understanding of when each succeeds, when each ",
+    "link": "https://arxiv.org/abs/2606.11190v1"
    },
    {
-    "title": "(Auto)formalization is supposed to be easy: Trellis process semantics for spelling out rigorous proofs",
-    "date": "2026-06-08",
-    "authors": "Wesley Pegden",
-    "summary": "We present Trellis: an autoformalization system that leverages LLM agents in a deterministically constrained workflow to enforce incremental progress in Lean autoformalization tasks through iterative ",
-    "link": "https://arxiv.org/abs/2606.09674v1"
+    "title": "A Unifying Lens on Supervised Fine-Tuning Through Target Distribution Design",
+    "date": "2026-06-09",
+    "authors": "Tong Xie, Yuanhao Ban, Yunqi Hong",
+    "summary": "Supervised fine-tuning (SFT) typically maximizes the likelihood of every token in a demonstrated trajectory. However, an observed token can be non-unique, noisy, or misaligned with the model prior. St",
+    "link": "https://arxiv.org/abs/2606.11189v1"
    },
    {
-    "title": "Correlation Is Not Enough: Embedding Human Metadata for Individual Causal Discovery",
-    "date": "2026-06-08",
-    "authors": "Suraj Biswas, Saurabh Gupta, Pritam Mukherjee",
-    "summary": "Ask a pretrained biomedical language model whether \"cortisol 28 ug/dL\" and \"stock-market volatility\" are related, and it returns a cosine similarity of 0.83 on a scale where 1.0 means identical. The t",
-    "link": "https://arxiv.org/abs/2606.09672v1"
+    "title": "EEVEE: Towards Test-time Prompt Learning in the Real World for Self-Improving Agents",
+    "date": "2026-06-09",
+    "authors": "Weixian Xu, Shilong Liu, Mengdi Wang",
+    "summary": "In this paper, we propose EEVEE, the first multi-dataset test-time prompt learning framework for LLM agents, enabling test-time prompt learning under real-world task streams. Existing methods are larg",
+    "link": "https://arxiv.org/abs/2606.11182v1"
    },
    {
-    "title": "Transition-Based Digital Twin Modelling for Alzheimer's Disease under Sparse Longitudinal Data",
-    "date": "2026-06-08",
-    "authors": "Yinyu Huang, Yilin Zhang, Sofia Michopoulou",
-    "summary": "Alzheimer's disease (AD) progression is highly heterogeneous and is typically observed through sparse and irregular longitudinal data, posing challenges for prediction and personalised monitoring. Exi",
-    "link": "https://arxiv.org/abs/2606.09671v1"
+    "title": "Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
+    "date": "2026-06-09",
+    "authors": "Kevin Qinghong Lin, Batu EI, Yuhong Shi",
+    "summary": "Data tells stories that shape society; the data journalist's job is to turn raw information into stories non-experts can trust. A high-quality news feature takes a newsroom team weeks: hunting for con",
+    "link": "https://arxiv.org/abs/2606.11176v1"
    },
    {
-    "title": "Visual Prompting Meets Feature Reconstruction-Based Anomaly Detection with Dual-Teacher Supervision",
-    "date": "2026-06-08",
-    "authors": "Mateo Diaz-Bone, Daniel Caraballo, Florian Scheidegger",
-    "summary": "Recent Anomaly Detection methods achieve perfect detection and segmentation scores on well-established datasets, such as MVTec. However, many of these methods face challenges when foundational assumpt",
-    "link": "https://arxiv.org/abs/2606.09670v1"
+    "title": "The Role of Feedback Alignment in Self-Distillation",
+    "date": "2026-06-09",
+    "authors": "Semih Kara, Oğuzhan Ersoy",
+    "summary": "Conditioning a language model on additional context, such as feedback on a previous attempt, typically improves its response. Self-distillation trains the model to retain this improvement when the con",
+    "link": "https://arxiv.org/abs/2606.11173v1"
    },
    {
-    "title": "SpatialWorld: Benchmarking Interactive Spatial Reasoning of Multimodal Agents in Real-World Tasks",
-    "date": "2026-06-08",
-    "authors": "Hongcheng Gao, Hailong Qu, Jingyi Tang",
-    "summary": "Spatial reasoning is a foundational capability for multimodal large language models (MLLMs) to perceive and operate within the physical world. However, existing benchmarks predominantly rely on passiv",
-    "link": "https://arxiv.org/abs/2606.09669v1"
+    "title": "Predicting Future Behaviors in Reasoning Models Enables Better Steering",
+    "date": "2026-06-09",
+    "authors": "Evgenii Kortukov, Piotr Komorowski, Florian Klein",
+    "summary": "Deployed large reasoning models (LRMs) often behave unexpectedly. Test-time steering controls LRM outputs by intervening on their hidden representations, but it can degrade output quality. We argue th",
+    "link": "https://arxiv.org/abs/2606.11172v1"
    },
    {
-    "title": "Algorithm for Contextual Queueing Bandits with Rate-Optimal Queue Length Regret",
-    "date": "2026-06-08",
-    "authors": "Seoungbin Bae, Dabeen Lee",
-    "summary": "Contextual queueing bandits provide a framework for learning to schedule heterogeneous jobs under unknown context-dependent service rates. Under stochastic contexts, existing algorithms achieve $\\wide",
-    "link": "https://arxiv.org/abs/2606.09668v1"
+    "title": "Algorithmic and Minimax Complexities in Kernel Bandits",
+    "date": "2026-06-09",
+    "authors": "Yunbei Xu",
+    "summary": "Gaussian-process upper confidence bound (GP-UCB) and decision-estimation-coefficient (DEC) methods may appear, at first sight, to belong to different theories. This paper places the two viewpoints in ",
+    "link": "https://arxiv.org/abs/2606.11171v1"
    },
    {
-    "title": "Cross-Modal Masking for Robust Silent Speech Synthesis Using sEMG and Lipreading",
-    "date": "2026-06-08",
-    "authors": "Eder del Blanco, David Gimeno-Gómez, Eva Navas",
-    "summary": "Speech restoration through silent speech interfaces (SSIs) has emerged as a promising assistive technology for individuals with impaired or absent laryngeal voice production. Among non-invasive SSI mo",
-    "link": "https://arxiv.org/abs/2606.09667v1"
+    "title": "Piper: A Programmable Distributed Training System",
+    "date": "2026-06-09",
+    "authors": "Megan Frisella, Shubham Tiwari, Andy Ruan",
+    "summary": "Large-scale model training increasingly relies on composing multiple parallelism strategies, such as data, pipeline, and expert parallelism, together with memory-saving optimizations like ZeRO. Deploy",
+    "link": "https://arxiv.org/abs/2606.11169v1"
    },
    {
-    "title": "Frequency-based Constrained Sampling for Interval Patterns",
-    "date": "2026-06-08",
-    "authors": "Djawad Bekkoucha, Abdelkader Ouali, Bruno Crémilleux",
-    "summary": "Output space pattern sampling is a powerful alternative to exhaustive pattern mining for exploring large pattern spaces, as it enables users to focus on representative patterns drawn according to a ch",
-    "link": "https://arxiv.org/abs/2606.09666v1"
+    "title": "Multi-Faceted Interactivity Alignment in Full-Duplex Speech Models",
+    "date": "2026-06-09",
+    "authors": "Atsumoto Ohashi, Neil Zeghidour, Alexandre Défossez",
+    "summary": "Full-duplex spoken dialogue models can listen and speak simultaneously, making them a promising architecture for natural conversation. However, current models are trained solely with supervised learni",
+    "link": "https://arxiv.org/abs/2606.11167v1"
    },
    {
-    "title": "In-Context Learning for Latent Space Bayesian Optimization",
-    "date": "2026-06-08",
-    "authors": "Tuan A. Vu, Harri Lähdesmäki, Julien Martinelli",
-    "summary": "Bayesian optimization (BO) is a central tool for sample-efficient design, and latent-space Bayesian optimization (LSBO) extends it to structured objects such as molecules and proteins. In parallel, ta",
-    "link": "https://arxiv.org/abs/2606.09664v1"
+    "title": "Flaws in the LLM Automation Narrative",
+    "date": "2026-06-09",
+    "authors": "George Perrett, Javae Elliott, Jennifer Hill",
+    "summary": "Large Language Models (LLMs) are increasingly described as performing at the level of human experts on knowledge economy tasks. These claims are primarily based on how LLMs perform on benchmarking tas",
+    "link": "https://arxiv.org/abs/2606.11166v1"
    },
    {
-    "title": "From 0-to-1 to 1-to-N: Reproducible Engineering Evidence for MetaAI Recursive Self-Design",
-    "date": "2026-06-08",
-    "authors": "Dun Li, Jiatao Li, Hongzhi Li",
-    "summary": "Recursive self-design refers to AI-assisted modification of the mechanisms by which an AI system is built, evaluated, and improved. This paper treats MetaAI not as a mature paradigm, but as a working ",
-    "link": "https://arxiv.org/abs/2606.09663v1"
+    "title": "ReasonAlloc: Hierarchical Decoding-Time KV Cache Budget Allocation for Reasoning Models",
+    "date": "2026-06-09",
+    "authors": "Wenhao Liu, Hao Shi, Yunhe Li",
+    "summary": "Long chain-of-thought (CoT) trajectories in large language model (LLM) reasoning cause severe inference bottlenecks due to rapid key-value (KV) cache growth. Current decoding-time compression methods ",
+    "link": "https://arxiv.org/abs/2606.11164v1"
    },
    {
-    "title": "When Built-in Thinking Helps and Hurts: Constraint-Level Error Shifts in Instruction Following",
-    "date": "2026-06-08",
-    "authors": "Sai Adith Senthil Kumar",
-    "summary": "Large reasoning models (LRMs) often improve math and coding performance, but their effect on instruction following is unclear. We study IFEval with Qwen3 models (1.7B-32B), using same-weights Thinking",
-    "link": "https://arxiv.org/abs/2606.09662v1"
+    "title": "COGENT: Continuous Graph Emulators with Neural Ordinary Differential Equations for Long-Term Physical Forecasting",
+    "date": "2026-06-09",
+    "authors": "Zesheng Liu, Maryam Rahnemoonfar",
+    "summary": "In this work, we present COGENT, a continuous graph emulator with Neural Ordinary Differential Equations for long-term physical forecasting on irregular geospatial meshes. COGENT encodes a finite hist",
+    "link": "https://arxiv.org/abs/2606.11162v1"
    }
   ]
  },
  "pypi": {
-  "status": "ok:8/10",
+  "status": "ok:10/10",
   "libs": [
    {
     "pkg": "litellm",
-    "last_month": 553717286,
-    "last_week": 164359150
+    "last_month": 568284095,
+    "last_week": 171372860
    },
    {
     "pkg": "openai",
-    "last_month": 321552829,
-    "last_week": 83120183
+    "last_month": 327949980,
+    "last_week": 83169477
    },
    {
     "pkg": "langchain",
-    "last_month": 305385551,
-    "last_week": 76248584
-   },
-   {
-    "pkg": "anthropic",
-    "last_month": 133648076,
-    "last_week": 34825460
-   },
-   {
-    "pkg": "langgraph",
-    "last_month": 57241834,
-    "last_week": 14314946
-   },
-   {
-    "pkg": "crewai",
-    "last_month": 15085479,
-    "last_week": 2656168
-   },
-   {
-    "pkg": "llama-index",
-    "last_month": 11844997,
-    "last_week": 2175565
-   },
-   {
-    "pkg": "vllm",
-    "last_month": 6145533,
-    "last_week": 1564992
-   },
-   {
-    "pkg": "transformers",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+    "last_month": 309491804,
+    "last_week": 76110395
    },
    {
     "pkg": "huggingface-hub",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+    "last_month": 288342572,
+    "last_week": 84189443
+   },
+   {
+    "pkg": "transformers",
+    "last_month": 148963868,
+    "last_week": 37643801
+   },
+   {
+    "pkg": "anthropic",
+    "last_month": 136741567,
+    "last_week": 35302133
+   },
+   {
+    "pkg": "langgraph",
+    "last_month": 58600972,
+    "last_week": 14159486
+   },
+   {
+    "pkg": "crewai",
+    "last_month": 15164510,
+    "last_week": 2662468
+   },
+   {
+    "pkg": "llama-index",
+    "last_month": 11866161,
+    "last_week": 2043516
+   },
+   {
+    "pkg": "vllm",
+    "last_month": 6241928,
+    "last_week": 1612051
    }
   ]
  }
