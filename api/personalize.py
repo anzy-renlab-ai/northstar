@@ -1,10 +1,11 @@
-"""POST /api/personalize — 用户输入背景，LLM (gpt-5.4-mini) 输出个人差距+学习顺序。
+"""POST /api/personalize — 用户输入背景，LLM (deepseek-chat) 输出个人差距+学习顺序。
 真实数据 anchor 来自 data/personalize_inputs.json (CI 每周更新)。
-环境变量：UYILINK_API_KEY + UYILINK_BASE_URL (Vercel project env)。"""
+环境变量：DEEPSEEK_API_KEY (Vercel project env)。"""
 import json, os, urllib.request, urllib.error
 from http.server import BaseHTTPRequestHandler
 
-MODEL = "gpt-5.4-mini"
+MODEL = "deepseek-chat"
+BASE_URL = "https://api.deepseek.com/v1"
 TIMEOUT = 45     # LLM 单次最长 45s（Vercel hobby maxDuration 60s）
 MAX_RESUME = 4000
 MAX_SKILLS = 800
@@ -66,17 +67,16 @@ RULES:
 - All resource_hint must be free/open-source.
 - Output the JSON object ONLY, no surrounding text."""
 
-def call_llm(api_key, base_url, prompt):
+def call_llm(api_key, prompt):
     body = json.dumps({
         "model": MODEL,
         "messages": [
             {"role":"system","content":"You output strict JSON only. No markdown, no commentary."},
             {"role":"user","content":prompt}
-        ],
-        "response_format":{"type":"json_object"}
+        ]
     }).encode()
     req = urllib.request.Request(
-        f"{base_url.rstrip('/')}/chat/completions",
+        f"{BASE_URL}/chat/completions",
         method="POST", data=body,
         headers={"Authorization":f"Bearer {api_key}", "Content-Type":"application/json"})
     with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
@@ -113,12 +113,11 @@ class handler(BaseHTTPRequestHandler):
             n = int(self.headers.get("Content-Length","0"))
             user = json.loads(self.rfile.read(n).decode("utf-8") or "{}")
             data = load_inputs()
-            api_key = os.environ.get("UYILINK_API_KEY")
-            base_url = os.environ.get("UYILINK_BASE_URL")
-            if not api_key or not base_url:
-                self._send(500, {"error":"LLM env not configured (UYILINK_API_KEY/UYILINK_BASE_URL missing)"}); return
+            api_key = os.environ.get("DEEPSEEK_API_KEY")
+            if not api_key:
+                self._send(500, {"error":"LLM env not configured (DEEPSEEK_API_KEY missing)"}); return
             prompt = build_prompt(user, data)
-            resp = call_llm(api_key, base_url, prompt)
+            resp = call_llm(api_key, prompt)
             content = resp["choices"][0]["message"]["content"]
             try:
                 result = json.loads(content)

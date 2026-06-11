@@ -1,5 +1,5 @@
 """W3-W4 欠账清理：用 LLM 真做 ① ENT 战略抽取 ② BLOG 主题聚类 ③ 主题归一(ALIAS map)。
-读 ~/.uyilink_key_tmp 或 UYILINK_API_KEY env；CI 用 env，本地用 tmp。
+读 DEEPSEEK_API_KEY env。
 
 替换：
   - add_llm_signals.py 里硬编码的 ENT 4 家一句话 + BLOG 三大焦点
@@ -9,36 +9,32 @@
 """
 import json, os, sys, sqlite3, datetime, urllib.request, urllib.error, hashlib
 
-MODEL = "gpt-5.4-mini"
+MODEL = "deepseek-chat"
+BASE_URL = "https://api.deepseek.com/v1"
 TIMEOUT = 60
 DRY = "--dry-run" in sys.argv
 
-def get_key_base():
-    key = os.environ.get("UYILINK_API_KEY")
-    base = os.environ.get("UYILINK_BASE_URL")
-    if key and base: return key, base
-    p = os.path.expanduser("~/.uyilink_key_tmp")
-    if os.path.exists(p):
-        return open(p).read().strip(), "https://sz.uyilink.com/v1"
-    return None, None
+def get_key():
+    key = os.environ.get("DEEPSEEK_API_KEY")
+    if key: return key
+    return None
 
-KEY, BASE = get_key_base()
+KEY = get_key()
 if not KEY:
     # CI 没配 secret 时 graceful skip，不让 workflow 整个 fail
-    print("⚠ UYILINK_API_KEY not configured (env or ~/.uyilink_key_tmp) — skip llm_extract")
+    print("⚠ DEEPSEEK_API_KEY not configured — skip llm_extract")
     print("  signals.db.enterprise/blog/alias_map 保留上次跑的结果，theme_ontology.py 会 fallback 到 hardcoded ALIAS")
     sys.exit(0)
 
 import time, subprocess
 def llm(prompt, schema_hint="", max_retry=3):
-    """通过 subprocess curl 调 LLM（urllib 在本地代理下 SSL EOF；curl OpenSSL 上下文稳）"""
+    """通过 subprocess curl 调 LLM"""
     body = json.dumps({
         "model": MODEL,
         "messages": [
             {"role":"system","content":"You output strict JSON only. No markdown, no prose."+(f"\nExpected: {schema_hint}" if schema_hint else "")},
             {"role":"user","content":prompt}
-        ],
-        "response_format": {"type":"json_object"}
+        ]
     }, ensure_ascii=False)
     last_err = None
     for attempt in range(max_retry):
@@ -48,7 +44,7 @@ def llm(prompt, schema_hint="", max_retry=3):
                  "-H",f"Authorization: Bearer {KEY}",
                  "-H","Content-Type: application/json",
                  "-X","POST",
-                 f"{BASE.rstrip('/')}/chat/completions",
+                 f"{BASE_URL}/chat/completions",
                  "--data-binary","@-"],
                 input=body, capture_output=True, text=True, timeout=TIMEOUT+5)
             if r.returncode != 0 or not r.stdout.strip():

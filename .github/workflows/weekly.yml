@@ -55,8 +55,7 @@ jobs:
       - name: LLM extract (覆盖 enterprise/blog signals + 写 alias_map 表) — 无 LLM key 时 graceful skip
         continue-on-error: true
         env:
-          UYILINK_API_KEY: ${{ secrets.UYILINK_API_KEY }}
-          UYILINK_BASE_URL: ${{ secrets.UYILINK_BASE_URL }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python3 llm_extract.py
 
       - name: Build canonical ontology (uses LLM alias_map if present, else hardcoded fallback)
