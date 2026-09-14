@@ -1,6 +1,10 @@
 {
- "collected_at": "2026-09-07T03:43:42",
+ "collected_at": "2026-09-14T04:07:59",
  "by_url": {
+  "https://github.com/godot-pty/gpty": {
+   "sum": "Godot-based Rust multi-PTY emulator desktop application - godot-pty/gpty",
+   "status": "ok"
+  },
   "https://github.com/onecli/onecli": {
    "sum": "Open-source sandboxed agent harness for teams. Giving every employee a secured personal agent. - onecli/onecli",
    "status": "ok"

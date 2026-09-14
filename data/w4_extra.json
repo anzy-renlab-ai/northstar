@@ -1,128 +1,29 @@
 {
- "collected_at": "2026-09-07T03:43:36",
+ "collected_at": "2026-09-14T04:07:54",
  "arxiv": {
-  "status": "ok:12",
-  "papers": [
-   {
-    "title": "UniMate: One Unified Model to Animate Diverse Skeletons",
-    "date": "2026-09-04",
-    "authors": "Linzhan Mou, Jiahui Lei, Zhiyang Dou",
-    "summary": "Recent advances in automatic rigging now deliver animation-ready 3D assets at scale, yet generating the motion to drive them remains a bottleneck. Existing learned animators are topology-constrained: ",
-    "link": "https://arxiv.org/abs/2609.05415v1"
-   },
-   {
-    "title": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
-    "date": "2026-09-04",
-    "authors": "Ji Soo Lee, Xilun Chen, Pierce Chuang",
-    "summary": "Recent advances in wearable sensing enable continuous monitoring of physiological and behavioral signals, yet existing benchmarks rarely evaluate whether AI systems can reason over a real user's longi",
-    "link": "https://arxiv.org/abs/2609.05405v1"
-   },
-   {
-    "title": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
-    "date": "2026-09-04",
-    "authors": "Sihwa Park",
-    "summary": "Diffusion TV is an interactive AI art installation that offers a tangible and embodied experience of diffusion models through a modified CRT TV. By physically manipulating the TV's antenna, audiences ",
-    "link": "https://arxiv.org/abs/2609.05404v1"
-   },
-   {
-    "title": "RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments",
-    "date": "2026-09-04",
-    "authors": "Quoc H. Nguyen, Ali Lafzi, Abhijeet Phatak",
-    "summary": "Retail search systems serve diverse geographic regions with distinct query patterns, vocabularies, and product preferences, creating significant data heterogeneity that challenges both privacy-preserv",
-    "link": "https://arxiv.org/abs/2609.05403v1"
-   },
-   {
-    "title": "Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models",
-    "date": "2026-09-04",
-    "authors": "Wonje Jeung, Sangyeon Yoon, Hyesoo Hong",
-    "summary": "Vision-language models are increasingly used as reward functions for robotic learning, but this role requires paraphrase invariance: the same trajectory should receive the same reward under semantical",
-    "link": "https://arxiv.org/abs/2609.05401v1"
-   },
-   {
-    "title": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
-    "date": "2026-09-04",
-    "authors": "Yuxiao Li, Keke Hu, Santiago Mazuelas",
-    "summary": "Wireless signals with position-related labels are pivotal for both performance evaluation and model training in the realm of wireless sensing. However, acquiring real-world datasets is often challenge",
-    "link": "https://arxiv.org/abs/2609.05396v1"
-   },
-   {
-    "title": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
-    "date": "2026-09-04",
-    "authors": "Dain Kim, Eungi Cho, Kyumin Kim",
-    "summary": "Data-sovereignty regulations increasingly require public institutions to deploy open-source, on-premise LLM agents that chain multiple tool-calls across live government APIs. However, open-source mode",
-    "link": "https://arxiv.org/abs/2609.05395v1"
-   },
-   {
-    "title": "Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence",
-    "date": "2026-09-04",
-    "authors": "Urja Pawar, Rajitha Ramanayake, Nabeel Kemal",
-    "summary": "LLM decision components that can operate within agent workflows often produce action-relevant recommendations or judgements together with explanations. Operators may use the named factors to monitor a",
-    "link": "https://arxiv.org/abs/2609.05385v1"
-   },
-   {
-    "title": "Reflection-aware Generative Novel View Synthesis",
-    "date": "2026-09-04",
-    "authors": "GeonU Kim, Shin Dong-Yeon, Tae-Hyun Oh",
-    "summary": "We propose Ref-GeNVS, a training-free, reflection-aware method for generative novel view synthesis (NVS) in mirror scenes. Existing multi-view diffusion models often fail to recognize the mirror in th",
-    "link": "https://arxiv.org/abs/2609.05382v1"
-   },
-   {
-    "title": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
-    "date": "2026-09-04",
-    "authors": "Matthias Busch, Marius Tacke, Sviatlana V. Lamaka",
-    "summary": "Large language models (LLMs) are increasingly evaluated on molecular property benchmarks, but accuracy cannot distinguish a model that predicts a property from one that retrieves a published number. W",
-    "link": "https://arxiv.org/abs/2609.05381v1"
-   },
-   {
-    "title": "What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies",
-    "date": "2026-09-04",
-    "authors": "Vivek Chavan, Pengtao Xie, Yahuan Shi",
-    "summary": "Visuomotor imitation policies can achieve high performance under in-distribution visual conditions yet fail when visually similar objects or receptacles are introduced. We study this behavior as a pro",
-    "link": "https://arxiv.org/abs/2609.05376v1"
-   },
-   {
-    "title": "CUA-Universe: A Scalable and Dynamic Environment for Hybrid GUI+CLI Agents",
-    "date": "2026-09-04",
-    "authors": "Haoting Shi, Wenhao Wang, Weicheng Fang",
-    "summary": "Computer-use agents have advanced on benchmarks like OSWorld and AndroidWorld, but still act mostly through the GUI, often producing inefficient trajectories. Real-world computer work is hybrid, combi",
-    "link": "https://arxiv.org/abs/2609.05374v1"
-   }
-  ]
+  "status": "ok:0",
+  "papers": []
  },
  "pypi": {
-  "status": "ok:5/10",
+  "status": "ok:3/10",
   "libs": [
    {
-    "pkg": "litellm",
-    "last_month": 475712406,
-    "last_week": 19205331
-   },
-   {
     "pkg": "openai",
-    "last_month": 367460454,
-    "last_week": 63257948
-   },
-   {
-    "pkg": "transformers",
-    "last_month": 151407244,
-    "last_week": 21648536
-   },
-   {
-    "pkg": "langgraph",
-    "last_month": 58130375,
-    "last_week": 10130555
-   },
-   {
-    "pkg": "crewai",
-    "last_month": 23564361,
-    "last_week": 566555
+    "last_month": 326617280,
+    "last_week": 65486419
    },
    {
     "pkg": "langchain",
-    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+    "last_month": 194456906,
+    "last_week": 39682593
    },
    {
     "pkg": "anthropic",
+    "last_month": 155977417,
+    "last_week": 31800410
+   },
+   {
+    "pkg": "transformers",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
@@ -134,7 +35,19 @@
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    },
    {
+    "pkg": "langgraph",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "crewai",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
     "pkg": "huggingface-hub",
+    "error": "HTTPError:HTTP Error 429: Too Many Requests"
+   },
+   {
+    "pkg": "litellm",
     "error": "HTTPError:HTTP Error 429: Too Many Requests"
    }
   ]
