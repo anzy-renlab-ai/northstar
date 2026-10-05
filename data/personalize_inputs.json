@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-28",
+ "as_of": "2026-10-05",
  "foresight": [
   {
    "theme": "AI Agents/编排",
@@ -60,21 +60,19 @@
   "source": "W1 (2026-05-19, 63 岗样本中 22 个有 yearly salary)"
  },
  "salary_this_week_snapshot": {
-  "median_k": 162,
-  "n": 5,
+  "median_k": 185,
+  "n": 6,
   "note": "本周样本量不稳，仅辅助参考；以 salary baseline 为准"
  },
  "top_employers": [
-  "Slalom Consulting",
+  "Akina, Inc.",
+  "Thomson Reuters",
   "Booz Allen Hamilton",
-  "Optum",
   "Northrop Grumman",
-  "Qualcomm"
+  "La Familia Medical Center"
  ],
  "target_roles": [
   "AI Engineer",
-  "Data Engineer",
-  "Data Scientist",
   "ML Engineer",
   "Machine Learning Engineer"
  ],

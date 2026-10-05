@@ -1,8 +1,12 @@
 {
- "collected_at": "2026-09-28T04:29:43",
+ "collected_at": "2026-10-05T04:48:17",
  "by_url": {
   "https://github.com/godot-pty/gpty": {
    "sum": "Godot-based Rust multi-PTY emulator desktop application - godot-pty/gpty",
+   "status": "ok"
+  },
+  "https://hn.watch/": {
+   "sum": "The Hacker News front page, with a short video explainer for every story.",
    "status": "ok"
   },
   "https://github.com/devdotfast/whiteboard": {
