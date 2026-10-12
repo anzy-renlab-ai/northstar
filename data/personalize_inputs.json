@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-05",
+ "as_of": "2026-10-12",
  "foresight": [
   {
    "theme": "AI Agents/编排",
@@ -60,21 +60,22 @@
   "source": "W1 (2026-05-19, 63 岗样本中 22 个有 yearly salary)"
  },
  "salary_this_week_snapshot": {
-  "median_k": 185,
-  "n": 6,
+  "median_k": 160,
+  "n": 21,
   "note": "本周样本量不稳，仅辅助参考；以 salary baseline 为准"
  },
  "top_employers": [
-  "Akina, Inc.",
+  "Serasaya",
+  "Autonomize AI",
   "Thomson Reuters",
   "Booz Allen Hamilton",
-  "Northrop Grumman",
-  "La Familia Medical Center"
+  "Northrop Grumman"
  ],
  "target_roles": [
   "AI Engineer",
   "ML Engineer",
-  "Machine Learning Engineer"
+  "Machine Learning Engineer",
+  "Prompt Engineer"
  ],
- "ai_jobs_total": 40
+ "ai_jobs_total": 67
 }
