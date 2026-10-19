@@ -1,91 +1,91 @@
 {
- "collected_at": "2026-10-12T05:06:47",
+ "collected_at": "2026-10-19T03:53:51",
  "arxiv": {
   "status": "ok:12",
   "papers": [
    {
-    "title": "Can Language Models Play the Wikipedia Game?",
-    "date": "2026-10-09",
-    "authors": "Alexander Hickey, Joanna Knight, James Bishop",
-    "summary": "Language models increasingly support or automate information retrieval from document collections too large to index. This task is difficult when it requires specialist linguistic or scientific knowled",
-    "link": "https://arxiv.org/abs/2610.13948v1"
+    "title": "Rethinking the design space of Vanilla Pixel Diffusion Transformers",
+    "date": "2026-10-16",
+    "authors": "Soumik Mukhopadhyay, Long Mai, Abhinav Shrivastava",
+    "summary": "Pixel-space diffusion models have recently re-emerged as a compelling alternative to latent diffusion, avoiding the lossy latent bottleneck and separately trained autoencoder. JiT shows that a vanilla",
+    "link": "https://arxiv.org/abs/2610.23854v1"
    },
    {
-    "title": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
-    "date": "2026-10-09",
-    "authors": "Bhanu Tokas, Rahul Nair, Rockwell Jackson",
-    "summary": "Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods interpret models using human-understandable concepts",
-    "link": "https://arxiv.org/abs/2610.13935v1"
+    "title": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
+    "date": "2026-10-16",
+    "authors": "Dongyoon Hahm, Woogyeol Jin, Dennis Wei",
+    "summary": "Fine-tuning large language models (LLMs) can induce behaviors beyond those explicitly targeted. For example, training a model to respond more warmly can make it more sycophantic, and training it to wr",
+    "link": "https://arxiv.org/abs/2610.23847v1"
    },
    {
-    "title": "Constructive Bounds for the Topological Expressivity of Neural Networks",
-    "date": "2026-10-09",
-    "authors": "Kosio Beshkov",
-    "summary": "The expressivity of a neural network $Φ$ describes the class of functions that a network can express. The term topological expressivity refers to a family of measures particularly suited to understand",
-    "link": "https://arxiv.org/abs/2610.13931v1"
+    "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+    "date": "2026-10-16",
+    "authors": "Shicheng Liu, Krista Opsahl-Ong, Andrew Drozdov",
+    "summary": "Reproducible and analytically robust research findings are essential to scientific progress, but evaluating these properties typically requires costly manual effort. We investigate whether LLM agents ",
+    "link": "https://arxiv.org/abs/2610.23845v1"
    },
    {
-    "title": "AI Models Can Provably Hide Arbitrary Capabilities",
-    "date": "2026-10-09",
-    "authors": "Andis Draguns, Sumeet Ramesh Motwani, Raymond Douglas",
-    "summary": "Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption doe",
-    "link": "https://arxiv.org/abs/2610.13928v1"
+    "title": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses",
+    "date": "2026-10-16",
+    "authors": "Jianyuan Zhong, Chenwei Wu, Zhaochen Yu",
+    "summary": "Scientific discovery requires developing worthwhile hypotheses into practical investigations, yet learning from this evolving research process remains challenging. We introduce an operational definiti",
+    "link": "https://arxiv.org/abs/2610.23839v1"
    },
    {
-    "title": "KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling",
-    "date": "2026-10-09",
-    "authors": "Tianyi Wu",
-    "summary": "A parallel sampler can choose at random which coordinates to generate together. For a target $p$ and the output law $q_U$ of a schedule $U$ drawn afresh for each output, we compare the schedule-averag",
-    "link": "https://arxiv.org/abs/2610.13924v1"
+    "title": "Task-aligned spectral inductive biases in parameterized quantum circuits",
+    "date": "2026-10-16",
+    "authors": "Felix Frohnert, Adrián Pérez-Salinas, Sebastian Lange",
+    "summary": "Parameterized quantum circuits are widely investigated in quantum machine learning, yet how their architecture can provide task-aligned inductive biases remains poorly understood. We study data reuplo",
+    "link": "https://arxiv.org/abs/2610.23834v1"
    },
    {
-    "title": "Goal-Oriented Bundle Management and Flow Control for Deep-Space Communications via Reinforcement Learning",
-    "date": "2026-10-09",
-    "authors": "Sajjad Baghaeea, Aimin Lib, Shanmugarajan Balasubramanian",
-    "summary": "Deep-space communications operate under intermittent connectivity, long propagation delays, and relay storage constraints. In such networks, the Bundle Protocol enables store-carry-forward communicati",
-    "link": "https://arxiv.org/abs/2610.13923v1"
+    "title": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
+    "date": "2026-10-16",
+    "authors": "Shaoang Li, Yanhang Shi, Yufei Li",
+    "summary": "A reasoning trace can accompany a correct answer without providing effective supervision for a particular student. We study how to construct traces that improve learning beyond answer-only supervision",
+    "link": "https://arxiv.org/abs/2610.23831v1"
    },
    {
-    "title": "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness",
-    "date": "2026-10-09",
-    "authors": "Daniel Szelogowski",
-    "summary": "Clinical sleep medicine repeatedly documents profound divergences between objective sleep duration and subjective daytime impairment, notably exemplified by sleep state misperception in paradoxical in",
-    "link": "https://arxiv.org/abs/2610.13918v1"
+    "title": "Waiting Buys Exactly Two Moments: Endogenous Identification in Prediction-Driven Allocation",
+    "date": "2026-10-16",
+    "authors": "Rama AlHamidi, Rasul Khanbayov, Erchin Serpedin",
+    "summary": "A planner with a fixed budget of preventive help must decide whom to help and when. Waiting reveals risk but removes intervention opportunities as higher-risk individuals leave first. We characterize ",
+    "link": "https://arxiv.org/abs/2610.23830v1"
    },
    {
-    "title": "Designing Protein Structures from Natural Language",
-    "date": "2026-10-09",
-    "authors": "Joseph Lee, Yanjing Li, Bo Qiang",
-    "summary": "A central challenge in de novo protein design is generating proteins with desired structural and functional properties. Existing design models typically require a dedicated input representation for ea",
-    "link": "https://arxiv.org/abs/2610.13917v1"
+    "title": "Quality-of-Transmission Estimation in Quantum Networks: Compute, Simulate, or Learn?",
+    "date": "2026-10-16",
+    "authors": "Anis Bekri, Amar Abane, Van Sy Mai",
+    "summary": "Future quantum networks will rely on control-plane decisions such as routing, scheduling, entanglement provisioning, purification, and memory allocation. Each decision depends on a timely and reliable",
+    "link": "https://arxiv.org/abs/2610.23827v1"
    },
    {
-    "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
-    "date": "2026-10-09",
-    "authors": "Taoyong Cui, Pinxian Zeng, Wanghan Xu",
-    "summary": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies ev",
-    "link": "https://arxiv.org/abs/2610.13912v1"
+    "title": "Self-Building Labs",
+    "date": "2026-10-16",
+    "authors": "Jiaru Bai, Yuchi Zhao, Han Hao",
+    "summary": "Self-driving laboratories (SDLs) accelerate scientific discovery by automating experimental execution and optimization. AI agents can increasingly propose new experiments, but existing SDLs can only r",
+    "link": "https://arxiv.org/abs/2610.23826v1"
    },
    {
-    "title": "When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors",
-    "date": "2026-10-09",
-    "authors": "Shubh Garg, Chen Shani",
-    "summary": "Vision-Language Models (VLMs) increasingly analyze and reason about images, yet it remains unclear whether their internal representations faithfully encode the structured relations required for such r",
-    "link": "https://arxiv.org/abs/2610.13910v1"
+    "title": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
+    "date": "2026-10-16",
+    "authors": "Kai Lehman, Jameson Dong, Carolina Cuesta-Lazaro",
+    "summary": "The evidence, $\\mathcal{Z} = p(x | \\mathcal{M})$, of a data-generating model $\\mathcal{M}$ is a powerful tool in Bayesian frameworks: it enables model inference, model misspecification tests, and good",
+    "link": "https://arxiv.org/abs/2610.23825v1"
    },
    {
-    "title": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
-    "date": "2026-10-09",
-    "authors": "Danil Rudenko, Georgii Bulgakov, Nikolay Kartashev",
-    "summary": "While deep learning models for tabular data have recently received significant research attention, the choice of objective functions for regression tasks remains an understudied degree of freedom. Sev",
-    "link": "https://arxiv.org/abs/2610.13909v1"
+    "title": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere",
+    "date": "2026-10-16",
+    "authors": "Joshua Williamson, Niall Jeffrey, Lorne Whiteway",
+    "summary": "Many of the most important datasets in the physical sciences live natively on the sphere, and these data often carry no preferred position or orientation. Using methods that do not reflect this symmet",
+    "link": "https://arxiv.org/abs/2610.23821v1"
    },
    {
-    "title": "Hitting-Time Bounds for Asynchronous Q-Learning",
-    "date": "2026-10-09",
-    "authors": "Yang Peng",
-    "summary": "We study the last iterate of standard asynchronous Q-learning from a single trajectory of a finite Markov decision process. The trajectory follows a fixed behavior policy whose state--action chain is ",
-    "link": "https://arxiv.org/abs/2610.13901v1"
+    "title": "CocoRNA: Collective RNA Design with Cooperative Multi-agent Reinforcement Learning",
+    "date": "2026-10-16",
+    "authors": "Tianmeng Hu, Biao Luo, Ke Li",
+    "summary": "Designing RNA sequences that reliably fold into specific secondary structures is essential for understanding their biological functions but remains a challenging computational problem. We propose Coco",
+    "link": "https://arxiv.org/abs/2610.23820v1"
    }
   ]
  },
@@ -95,52 +95,52 @@
    {
     "pkg": "openai",
     "last_month": 295856631,
-    "last_week": 76138589
+    "last_week": 81286857
    },
    {
     "pkg": "huggingface-hub",
     "last_month": 232552563,
-    "last_week": 59498455
+    "last_week": 62578174
    },
    {
     "pkg": "langchain",
     "last_month": 170457766,
-    "last_week": 36001937
+    "last_week": 37227452
    },
    {
     "pkg": "anthropic",
     "last_month": 150199657,
-    "last_week": 41718558
+    "last_week": 42327300
    },
    {
     "pkg": "transformers",
     "last_month": 96323619,
-    "last_week": 24289038
+    "last_week": 24852055
    },
    {
     "pkg": "litellm",
     "last_month": 92239101,
-    "last_week": 21592037
+    "last_week": 22855757
    },
    {
     "pkg": "langgraph",
     "last_month": 44769952,
-    "last_week": 12201110
+    "last_week": 12265808
    },
    {
     "pkg": "llama-index",
     "last_month": 2937852,
-    "last_week": 664217
+    "last_week": 648361
    },
    {
     "pkg": "crewai",
     "last_month": 2442764,
-    "last_week": 633544
+    "last_week": 668642
    },
    {
     "pkg": "vllm",
     "last_month": 1857414,
-    "last_week": 465993
+    "last_week": 423782
    }
   ]
  }
