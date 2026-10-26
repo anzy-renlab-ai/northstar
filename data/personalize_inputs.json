@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-19",
+ "as_of": "2026-10-26",
  "foresight": [
   {
    "theme": "AI Agents/编排",
@@ -60,20 +60,19 @@
   "source": "W1 (2026-05-19, 63 岗样本中 22 个有 yearly salary)"
  },
  "salary_this_week_snapshot": {
-  "median_k": 191,
-  "n": 21,
+  "median_k": 180,
+  "n": 24,
   "note": "本周样本量不稳，仅辅助参考；以 salary baseline 为准"
  },
  "top_employers": [
-  "Akina, Inc.",
-  "Optum",
-  "American Express",
+  "Thomson Reuters",
+  "Deloitte",
+  "Booz Allen Hamilton",
   "Qualcomm",
-  "Autonomize AI"
+  "American Express"
  ],
  "target_roles": [
   "AI Engineer",
-  "AI Native Engineer",
   "ML Engineer",
   "Machine Learning Engineer"
  ],
