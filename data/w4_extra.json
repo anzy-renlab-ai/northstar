@@ -1,91 +1,91 @@
 {
- "collected_at": "2026-11-02T05:07:59",
+ "collected_at": "2026-11-09T05:24:23",
  "arxiv": {
   "status": "ok:12",
   "papers": [
    {
-    "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
-    "date": "2026-10-30",
-    "authors": "Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee",
-    "summary": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought re",
-    "link": "https://arxiv.org/abs/2610.42149v1"
+    "title": "On Agentic Manipulation Policies",
+    "date": "2026-11-06",
+    "authors": "Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji",
+    "summary": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such a",
+    "link": "https://arxiv.org/abs/2611.09892v1"
    },
    {
-    "title": "Flide: Accelerating Decision Inference with Exact State Forking",
-    "date": "2026-10-30",
-    "authors": "Bobo Li, Jiajia Song, Hao Fei",
-    "summary": "Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapid System One execution. However, existin",
-    "link": "https://arxiv.org/abs/2610.42148v1"
+    "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+    "date": "2026-11-06",
+    "authors": "Peter Belcak, Greg Heinrich, Saurav Muralidharan",
+    "summary": "Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem from scratch. We show that once a task h",
+    "link": "https://arxiv.org/abs/2611.09891v1"
    },
    {
-    "title": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
-    "date": "2026-10-30",
-    "authors": "Ales Kubicek, Andrea Caciolai, Liangzu Peng",
-    "summary": "Agentic workflows are increasingly shifting towards long-horizon tasks, such as open-ended scientific work, where models benefit from long context windows. However, at ultra-long context (above 1M tok",
-    "link": "https://arxiv.org/abs/2610.42147v1"
+    "title": "On the (non-)closedness of the set of ReLU networks",
+    "date": "2026-11-06",
+    "authors": "Eloi Martinet, Leon Bungert",
+    "summary": "We prove that the set $\\mathcal{N}_N$ of ReLU networks with one hidden layer and at most $N\\in\\mathbb N$ neurons is weakly closed in $W^{1,p}(Ω)$, for a bounded connected open set $Ω\\subset\\mathbb R^d",
+    "link": "https://arxiv.org/abs/2611.09887v1"
    },
    {
-    "title": "Hierarchical World Models with Implicit Dynamics",
-    "date": "2026-10-30",
-    "authors": "Gaoyue Zhou, Yvonne Wu, Zichen Jeff Cui",
-    "summary": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon tasks remain hindered by cumulative err",
-    "link": "https://arxiv.org/abs/2610.42146v1"
+    "title": "FlowMoP: Stochastic Multi-Person Motion Prediction",
+    "date": "2026-11-06",
+    "authors": "Aadya Agrawal, Ho Kei Cheng, Alexander Schwing",
+    "summary": "Predicting the future motion of multiple people is inherently stochastic: the same observed history admits many plausible continuations depending on intent, coordination, and social context. Yet the d",
+    "link": "https://arxiv.org/abs/2611.09882v1"
    },
    {
-    "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
-    "date": "2026-10-30",
-    "authors": "Shengguang Wu, Suning Huang, Cherie Ho",
-    "summary": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet to",
-    "link": "https://arxiv.org/abs/2610.42141v1"
+    "title": "Graded convolutional networks: scale invariance without the scale and robustness to unknown blur",
+    "date": "2026-11-06",
+    "authors": "Tanush Shaska",
+    "summary": "The Gaussian jet of an image is a graded vector space: a dilation by $λ$ multiplies derivatives of order $k$ by $λ^{-k}$. Local graded convolutions are exactly homogeneous differential operators, and ",
+    "link": "https://arxiv.org/abs/2611.09878v1"
    },
    {
-    "title": "Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches",
-    "date": "2026-10-30",
-    "authors": "Vitaly Feldman, Audra McMillan, Kunal Talwar",
-    "summary": "In many practical deployments of Differentially Private Stochastic Gradient Descent (DP-SGD), the server processes data in batches. Randomly sampling these batches allows for better privacy bounds via",
-    "link": "https://arxiv.org/abs/2610.42139v1"
+    "title": "On the Reliability of Majority-Vote Pseudo-Labels in Test-Time Reinforcement Learning",
+    "date": "2026-11-06",
+    "authors": "Haoyu Wang, Ru Wang, Yuanyuan Wang",
+    "summary": "Test-time reinforcement learning (TTRL) adapts pretrained language models to unlabeled target-domain data using self-generated pseudo-labels, whose reliability remains poorly understood. We analyze ma",
+    "link": "https://arxiv.org/abs/2611.09872v1"
    },
    {
-    "title": "A Better Critic Matters for Distribution Matching Distillation",
-    "date": "2026-10-30",
-    "authors": "Zongze Wu, Xianbang Wang, Zhengyang Geng",
-    "summary": "Distribution Matching Distillation (DMD) trains a few-step student using the difference between a teacher's score and an online critic's estimate of the student distribution's score. We investigate wh",
-    "link": "https://arxiv.org/abs/2610.42135v1"
+    "title": "CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs",
+    "date": "2026-11-06",
+    "authors": "Xingyu Liu, Xiangyang Yin, Tianhua Xia",
+    "summary": "Large reasoning models (LRMs) improve task performance by generating longer intermediate reasoning traces, but this substantially increases inference costs and makes low-precision quantization increas",
+    "link": "https://arxiv.org/abs/2611.09868v1"
    },
    {
-    "title": "Instance-dependent sequential limits as an exact information ledger",
-    "date": "2026-10-30",
-    "authors": "Akshay Balsubramani",
-    "summary": "Instance-dependent limits for bandit regret, sequential tests, best-arm identification and Markov decision processes are proved by one chain. It runs from a divergence decomposition through data proce",
-    "link": "https://arxiv.org/abs/2610.42133v1"
+    "title": "GRAC: Graph-Based Retrieval-Augmented Captioning for Surgical Scene Description",
+    "date": "2026-11-06",
+    "authors": "Rochak Dhakal, Chen Zhao, Soup Cobb",
+    "summary": "Purpose: Surgical operative reports support procedural documentation, surgical training, performance assessment, and workflow review. However, extracting meaningful information often requires extensiv",
+    "link": "https://arxiv.org/abs/2611.09866v1"
    },
    {
-    "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
-    "date": "2026-10-30",
-    "authors": "Yanran Wu, Dian Yu, Chongyang Bai",
-    "summary": "Decision models target structured tasks by directly predicting choices or scores, avoiding autoregressive decoding latency. However, transferring a generative LLM's ranking knowledge to a decision mod",
-    "link": "https://arxiv.org/abs/2610.42128v1"
+    "title": "Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation",
+    "date": "2026-11-06",
+    "authors": "Xun Tu, Minghao Zou, Karthik Desingh",
+    "summary": "Loco-manipulation, which requires mobile manipulators to coordinate locomotion and manipulation over long horizons, is a key capability for large-object rearrangement in applications such as service r",
+    "link": "https://arxiv.org/abs/2611.09864v1"
    },
    {
-    "title": "Physiological Trajectories and Observation Patterns in ICU Mortality Prediction: Transportability Under Changing Measurement Conditions",
-    "date": "2026-10-30",
-    "authors": "Benjamin T. Pike",
-    "summary": "Objective: To distinguish the transferable predictive value of physiological trajectories from that of observation patterns in ICU mortality prediction, and to assess whether measurement timing affect",
-    "link": "https://arxiv.org/abs/2610.42126v1"
+    "title": "Flow-Guided Target-Space Alignment via Path Consistency",
+    "date": "2026-11-06",
+    "authors": "Ruizhi Yuan, Zeqiu Yu, Wei Gao",
+    "summary": "Many multimodal alignment problems require mapping a source modality into a fixed space defined by a target modality, where the target space is not merely an intermediate embedding but is used directl",
+    "link": "https://arxiv.org/abs/2611.09863v1"
    },
    {
-    "title": "Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics",
-    "date": "2026-10-30",
-    "authors": "Binghua Li, Mengzhe Li, Denny Wu",
-    "summary": "Understanding how gradient descent learns features remains a central challenge in neural network theory. We study this question in a minimal multi-index setting that already exhibits rich multi-phase ",
-    "link": "https://arxiv.org/abs/2610.42118v1"
+    "title": "How far does a hash-only sender go? A pre-registered map of sender memory versus bits for short text messages",
+    "date": "2026-11-06",
+    "authors": "Marcelo Samoilenko",
+    "summary": "Can a sender that only computes hashes, with a language model only at the receiver, transmit short human text more cheaply than a classical sender trained on the same domain? We answer with one pre-re",
+    "link": "https://arxiv.org/abs/2611.09848v1"
    },
    {
-    "title": "Fast Privacy Loss Accounting for Random Allocation via Multiscale FFT",
-    "date": "2026-10-30",
-    "authors": "Vitaly Feldman, Moshe Shenfeld",
-    "summary": "In the random allocation sampling scheme each user's data is used in $k$ steps chosen randomly and uniformly from a sequence of $t$ steps. This scheme is known to improve on Poisson sampling in privat",
-    "link": "https://arxiv.org/abs/2610.42117v1"
+    "title": "Computer-Use Agents Are Embodied Generalists",
+    "date": "2026-11-06",
+    "authors": "Pranjal Aggarwal, Sean Welleck",
+    "summary": "In many areas of AI, general-purpose models have increasingly replaced handcrafted methods and specialized architectures. We argue that embodied AI is poised for a similar shift. Our key claim is that",
+    "link": "https://arxiv.org/abs/2611.09847v1"
    }
   ]
  },
@@ -95,52 +95,52 @@
    {
     "pkg": "openai",
     "last_month": 295856631,
-    "last_week": 85437895
+    "last_week": 92006831
    },
    {
     "pkg": "huggingface-hub",
     "last_month": 232552563,
-    "last_week": 67522446
+    "last_week": 69521123
    },
    {
     "pkg": "langchain",
     "last_month": 170457766,
-    "last_week": 37058402
+    "last_week": 35271689
    },
    {
     "pkg": "anthropic",
     "last_month": 150199657,
-    "last_week": 46914523
+    "last_week": 50413636
    },
    {
     "pkg": "transformers",
     "last_month": 96323619,
-    "last_week": 27785926
+    "last_week": 28673463
    },
    {
     "pkg": "litellm",
     "last_month": 92239101,
-    "last_week": 23076594
+    "last_week": 22284719
    },
    {
     "pkg": "langgraph",
     "last_month": 44769952,
-    "last_week": 13602612
+    "last_week": 13876217
    },
    {
     "pkg": "llama-index",
     "last_month": 2937852,
-    "last_week": 415045
+    "last_week": 411755
    },
    {
     "pkg": "crewai",
     "last_month": 2442764,
-    "last_week": 589367
+    "last_week": 590729
    },
    {
     "pkg": "vllm",
     "last_month": 1857414,
-    "last_week": 677190
+    "last_week": 657930
    }
   ]
  }

@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-02",
+ "as_of": "2026-11-09",
  "foresight": [
   {
    "theme": "AI Agents/编排",
@@ -60,21 +60,21 @@
   "source": "W1 (2026-05-19, 63 岗样本中 22 个有 yearly salary)"
  },
  "salary_this_week_snapshot": {
-  "median_k": 154,
-  "n": 12,
+  "median_k": 156,
+  "n": 18,
   "note": "本周样本量不稳，仅辅助参考；以 salary baseline 为准"
  },
  "top_employers": [
-  "Thomson Reuters",
+  "Atlassian",
   "Booz Allen Hamilton",
   "Optum",
-  "Insight Consulting Group",
-  "All Cares"
+  "Qualcomm",
+  "TikTok USDS Joint Venture"
  ],
  "target_roles": [
   "AI Engineer",
   "ML Engineer",
   "Machine Learning Engineer"
  ],
- "ai_jobs_total": 44
+ "ai_jobs_total": 68
 }
