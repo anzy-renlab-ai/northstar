@@ -1,91 +1,91 @@
 {
- "collected_at": "2026-11-09T05:24:23",
+ "collected_at": "2026-11-16T05:33:59",
  "arxiv": {
   "status": "ok:12",
   "papers": [
    {
-    "title": "On Agentic Manipulation Policies",
-    "date": "2026-11-06",
-    "authors": "Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji",
-    "summary": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such a",
-    "link": "https://arxiv.org/abs/2611.09892v1"
+    "title": "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion",
+    "date": "2026-11-13",
+    "authors": "Daniel Grimm, Kyra Jongman, Renato Cordeiro Ferreira",
+    "summary": "Monitoring maritime activities is important for safety and security, particularly for detecting illegal activities, but remains challenging due to the size and complexity of the maritime domain. The A",
+    "link": "https://arxiv.org/abs/2611.18563v1"
    },
    {
-    "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
-    "date": "2026-11-06",
-    "authors": "Peter Belcak, Greg Heinrich, Saurav Muralidharan",
-    "summary": "Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem from scratch. We show that once a task h",
-    "link": "https://arxiv.org/abs/2611.09891v1"
+    "title": "FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices",
+    "date": "2026-11-13",
+    "authors": "Jonathan D. McCart, Pranav I. Deevi, Mehdi Azabou",
+    "summary": "Recent advances in speech neuroprostheses have enabled new communication avenues for people who have lost the ability to speak due to neurological illness or injury. These systems can decode neural ac",
+    "link": "https://arxiv.org/abs/2611.18561v1"
    },
    {
-    "title": "On the (non-)closedness of the set of ReLU networks",
-    "date": "2026-11-06",
-    "authors": "Eloi Martinet, Leon Bungert",
-    "summary": "We prove that the set $\\mathcal{N}_N$ of ReLU networks with one hidden layer and at most $N\\in\\mathbb N$ neurons is weakly closed in $W^{1,p}(Ω)$, for a bounded connected open set $Ω\\subset\\mathbb R^d",
-    "link": "https://arxiv.org/abs/2611.09887v1"
+    "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
+    "date": "2026-11-13",
+    "authors": "Jiaming Tang, Zhuoyang Zhang, Junxian Guo",
+    "summary": "Robot-use agents (RUAs) have emerged as a promising approach to general-purpose robot control. However, strong performance has so far been achieved only by frontier proprietary models such as GPT-6 As",
+    "link": "https://arxiv.org/abs/2611.18562v1"
    },
    {
-    "title": "FlowMoP: Stochastic Multi-Person Motion Prediction",
-    "date": "2026-11-06",
-    "authors": "Aadya Agrawal, Ho Kei Cheng, Alexander Schwing",
-    "summary": "Predicting the future motion of multiple people is inherently stochastic: the same observed history admits many plausible continuations depending on intent, coordination, and social context. Yet the d",
-    "link": "https://arxiv.org/abs/2611.09882v1"
+    "title": "BAL: Bidirectional Autoregression in Latent Space for Learning Human Movement Representations",
+    "date": "2026-11-13",
+    "authors": "Genki Kinoshita, Ko Nishino",
+    "summary": "Learning semantically meaningful human movement representations from 3D pose sequences is essential for human behavior modeling. Existing self-supervised methods derive supervision from artificial ass",
+    "link": "https://arxiv.org/abs/2611.18559v1"
    },
    {
-    "title": "Graded convolutional networks: scale invariance without the scale and robustness to unknown blur",
-    "date": "2026-11-06",
-    "authors": "Tanush Shaska",
-    "summary": "The Gaussian jet of an image is a graded vector space: a dilation by $λ$ multiplies derivatives of order $k$ by $λ^{-k}$. Local graded convolutions are exactly homogeneous differential operators, and ",
-    "link": "https://arxiv.org/abs/2611.09878v1"
+    "title": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
+    "date": "2026-11-13",
+    "authors": "Aayush Marasini, Barsat Khadka, Nick Rahimi",
+    "summary": "Recent work shows that large language models (LLMs) can operate directly on the parameters of other neural networks. They can read what a network was trained to do, fix a network that fails, and write",
+    "link": "https://arxiv.org/abs/2611.18553v1"
    },
    {
-    "title": "On the Reliability of Majority-Vote Pseudo-Labels in Test-Time Reinforcement Learning",
-    "date": "2026-11-06",
-    "authors": "Haoyu Wang, Ru Wang, Yuanyuan Wang",
-    "summary": "Test-time reinforcement learning (TTRL) adapts pretrained language models to unlabeled target-domain data using self-generated pseudo-labels, whose reliability remains poorly understood. We analyze ma",
-    "link": "https://arxiv.org/abs/2611.09872v1"
+    "title": "Imitation Bootstrapped Multi-Agent Reinforcement Learning",
+    "date": "2026-11-13",
+    "authors": "Tony H. Zhang, Connor Mattson, Daniel S. Brown",
+    "summary": "Demonstrations are an effective way to accelerate single-agent reinforcement learning (RL), but extending this idea to multi-agent reinforcement learning (MARL) is non-trivial as it is difficult and o",
+    "link": "https://arxiv.org/abs/2611.18543v1"
    },
    {
-    "title": "CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs",
-    "date": "2026-11-06",
-    "authors": "Xingyu Liu, Xiangyang Yin, Tianhua Xia",
-    "summary": "Large reasoning models (LRMs) improve task performance by generating longer intermediate reasoning traces, but this substantially increases inference costs and makes low-precision quantization increas",
-    "link": "https://arxiv.org/abs/2611.09868v1"
+    "title": "Elliptic Sampling: Optimal Interpolant Schedules for Gaussians and Beyond",
+    "date": "2026-11-13",
+    "authors": "Cole Becker, Taylan Kargin, Kimia Hassibi",
+    "summary": "Generative modeling based on stochastic interpolants requires specifying two key choices: an interpolant schedule bridging the initial and target distributions, and an efficient discretization of the ",
+    "link": "https://arxiv.org/abs/2611.18542v1"
    },
    {
-    "title": "GRAC: Graph-Based Retrieval-Augmented Captioning for Surgical Scene Description",
-    "date": "2026-11-06",
-    "authors": "Rochak Dhakal, Chen Zhao, Soup Cobb",
-    "summary": "Purpose: Surgical operative reports support procedural documentation, surgical training, performance assessment, and workflow review. However, extracting meaningful information often requires extensiv",
-    "link": "https://arxiv.org/abs/2611.09866v1"
+    "title": "Why Finite Intelligence Works in an Infinite World: A Mathematical Theory",
+    "date": "2026-11-13",
+    "authors": "Mojtaba Soltanalian",
+    "summary": "An information system often has to learn before it knows what it will be asked. A finite representation can succeed without recording an infinite environment in full when those asks share collective s",
+    "link": "https://arxiv.org/abs/2611.18538v1"
    },
    {
-    "title": "Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation",
-    "date": "2026-11-06",
-    "authors": "Xun Tu, Minghao Zou, Karthik Desingh",
-    "summary": "Loco-manipulation, which requires mobile manipulators to coordinate locomotion and manipulation over long horizons, is a key capability for large-object rearrangement in applications such as service r",
-    "link": "https://arxiv.org/abs/2611.09864v1"
+    "title": "ModHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL",
+    "date": "2026-11-13",
+    "authors": "Zelin He, Siyu Zhu, Jacob Helwig",
+    "summary": "Agentic reinforcement learning (RL) increasingly relies on a harness, the scaffold around the model that decides what it sees of its own interaction and what guidance it receives. Most existing approa",
+    "link": "https://arxiv.org/abs/2611.18533v1"
    },
    {
-    "title": "Flow-Guided Target-Space Alignment via Path Consistency",
-    "date": "2026-11-06",
-    "authors": "Ruizhi Yuan, Zeqiu Yu, Wei Gao",
-    "summary": "Many multimodal alignment problems require mapping a source modality into a fixed space defined by a target modality, where the target space is not merely an intermediate embedding but is used directl",
-    "link": "https://arxiv.org/abs/2611.09863v1"
+    "title": "Alignment by Socialization: Learning Tradeoffs Under Selection",
+    "date": "2026-11-13",
+    "authors": "Thomas Brennan, Andrew W. Lo, Chaoyi Zhao",
+    "summary": "Artificial intelligence (AI) agents are expected to complete tasks while following rules of conduct, but these objectives can conflict. We study how evolutionary selection shapes an agent's choices be",
+    "link": "https://arxiv.org/abs/2611.18531v1"
    },
    {
-    "title": "How far does a hash-only sender go? A pre-registered map of sender memory versus bits for short text messages",
-    "date": "2026-11-06",
-    "authors": "Marcelo Samoilenko",
-    "summary": "Can a sender that only computes hashes, with a language model only at the receiver, transmit short human text more cheaply than a classical sender trained on the same domain? We answer with one pre-re",
-    "link": "https://arxiv.org/abs/2611.09848v1"
+    "title": "Understanding Contextual Bias in Agricultural CNNs Through Hidden-Neuron Concept Induction",
+    "date": "2026-11-13",
+    "authors": "Abhilekha Dalal, Avishek Das, Samatha Ereshi Akkamahadevi",
+    "summary": "Convolutional Neural Networks (CNNs) can classify images using background-dominated patches that contain little or none of the target object, showing that they exploit contextual information. Previous",
+    "link": "https://arxiv.org/abs/2611.18530v1"
    },
    {
-    "title": "Computer-Use Agents Are Embodied Generalists",
-    "date": "2026-11-06",
-    "authors": "Pranjal Aggarwal, Sean Welleck",
-    "summary": "In many areas of AI, general-purpose models have increasingly replaced handcrafted methods and specialized architectures. We argue that embodied AI is poised for a similar shift. Our key claim is that",
-    "link": "https://arxiv.org/abs/2611.09847v1"
+    "title": "WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators",
+    "date": "2026-11-13",
+    "authors": "Dayou Du, Congjie He, Andrew Boutros",
+    "summary": "Wafer-scale accelerators offer massive compute capacity through hundreds of thousands of processing elements (PEs) interconnected across a single wafer, but realizing this potential requires efficient",
+    "link": "https://arxiv.org/abs/2611.18527v1"
    }
   ]
  },
@@ -94,53 +94,53 @@
   "libs": [
    {
     "pkg": "openai",
-    "last_month": 295856631,
-    "last_week": 92006831
+    "last_month": 368259005,
+    "last_week": 88891531
    },
    {
     "pkg": "huggingface-hub",
-    "last_month": 232552563,
-    "last_week": 69521123
-   },
-   {
-    "pkg": "langchain",
-    "last_month": 170457766,
-    "last_week": 35271689
+    "last_month": 284045066,
+    "last_week": 69585258
    },
    {
     "pkg": "anthropic",
-    "last_month": 150199657,
-    "last_week": 50413636
+    "last_month": 200100466,
+    "last_week": 49439655
+   },
+   {
+    "pkg": "langchain",
+    "last_month": 155200445,
+    "last_week": 35953584
    },
    {
     "pkg": "transformers",
-    "last_month": 96323619,
-    "last_week": 28673463
+    "last_month": 116710173,
+    "last_week": 27730890
    },
    {
     "pkg": "litellm",
-    "last_month": 92239101,
-    "last_week": 22284719
+    "last_month": 95144147,
+    "last_week": 23634409
    },
    {
     "pkg": "langgraph",
-    "last_month": 44769952,
-    "last_week": 13876217
-   },
-   {
-    "pkg": "llama-index",
-    "last_month": 2937852,
-    "last_week": 411755
+    "last_month": 57279201,
+    "last_week": 14389308
    },
    {
     "pkg": "crewai",
-    "last_month": 2442764,
-    "last_week": 590729
+    "last_month": 2572191,
+    "last_week": 604974
    },
    {
     "pkg": "vllm",
-    "last_month": 1857414,
-    "last_week": 657930
+    "last_month": 2549788,
+    "last_week": 582017
+   },
+   {
+    "pkg": "llama-index",
+    "last_month": 1793236,
+    "last_week": 404070
    }
   ]
  }
