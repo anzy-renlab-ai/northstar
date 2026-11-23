@@ -1,91 +1,91 @@
 {
- "collected_at": "2026-11-16T05:33:59",
+ "collected_at": "2026-11-23T06:35:38",
  "arxiv": {
   "status": "ok:12",
   "papers": [
    {
-    "title": "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion",
-    "date": "2026-11-13",
-    "authors": "Daniel Grimm, Kyra Jongman, Renato Cordeiro Ferreira",
-    "summary": "Monitoring maritime activities is important for safety and security, particularly for detecting illegal activities, but remains challenging due to the size and complexity of the maritime domain. The A",
-    "link": "https://arxiv.org/abs/2611.18563v1"
+    "title": "Optimal Linear Regression Without a Variance",
+    "date": "2026-11-20",
+    "authors": "Artin Tajdini, Jasper C. H. Lee, Jonathan Scarlett",
+    "summary": "We study high-probability linear regression in the infinite variance regime, wherecthe regression noise has only a finite conditional $α$-moment $ν$ for some unknown $α\\in(1,2)$, and the covariates ma",
+    "link": "https://arxiv.org/abs/2611.27983v1"
    },
    {
-    "title": "FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices",
-    "date": "2026-11-13",
-    "authors": "Jonathan D. McCart, Pranav I. Deevi, Mehdi Azabou",
-    "summary": "Recent advances in speech neuroprostheses have enabled new communication avenues for people who have lost the ability to speak due to neurological illness or injury. These systems can decode neural ac",
-    "link": "https://arxiv.org/abs/2611.18561v1"
+    "title": "A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning",
+    "date": "2026-11-20",
+    "authors": "Hari Sitaula, Joseph Opitz",
+    "summary": "This study examines one-day-ahead forecasting of the S&P 500 closing level using a 2006-2025 dataset that includes fundamental price data, macroeconomic indicators, and engineered technical features. ",
+    "link": "https://arxiv.org/abs/2611.27978v1"
    },
    {
-    "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
-    "date": "2026-11-13",
-    "authors": "Jiaming Tang, Zhuoyang Zhang, Junxian Guo",
-    "summary": "Robot-use agents (RUAs) have emerged as a promising approach to general-purpose robot control. However, strong performance has so far been achieved only by frontier proprietary models such as GPT-6 As",
-    "link": "https://arxiv.org/abs/2611.18562v1"
+    "title": "MemOnce: A Scalable Memory Architecture for Large Language Models",
+    "date": "2026-11-20",
+    "authors": "Chang Nie, Chaoyou Fu, Songlin Liu",
+    "summary": "Deploying large language models (LLMs) in long-horizon and continual interactions requires maintaining reusable memory states for future inference, posing challenges for existing architectures. Standa",
+    "link": "https://arxiv.org/abs/2611.27973v1"
    },
    {
-    "title": "BAL: Bidirectional Autoregression in Latent Space for Learning Human Movement Representations",
-    "date": "2026-11-13",
-    "authors": "Genki Kinoshita, Ko Nishino",
-    "summary": "Learning semantically meaningful human movement representations from 3D pose sequences is essential for human behavior modeling. Existing self-supervised methods derive supervision from artificial ass",
-    "link": "https://arxiv.org/abs/2611.18559v1"
+    "title": "On the Complete Feature Set for ADHD Classification in Children and Adolescents Based on EEG Signals",
+    "date": "2026-11-20",
+    "authors": "Javier Sanchis, Álvaro Navarro, Jorge García-Carrasco",
+    "summary": "Attention-deficit/hyperactivity disorder is a neurodevelopmental condition that can affect attention, activity and impulse control. Electroencephalography (EEG) records brain activity as children and ",
+    "link": "https://arxiv.org/abs/2611.27970v1"
    },
    {
-    "title": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
-    "date": "2026-11-13",
-    "authors": "Aayush Marasini, Barsat Khadka, Nick Rahimi",
-    "summary": "Recent work shows that large language models (LLMs) can operate directly on the parameters of other neural networks. They can read what a network was trained to do, fix a network that fails, and write",
-    "link": "https://arxiv.org/abs/2611.18553v1"
+    "title": "Non-penetrating World Models",
+    "date": "2026-11-20",
+    "authors": "Yuhang Dai, Yinwei Wu, Ziyue Lin",
+    "summary": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world m",
+    "link": "https://arxiv.org/abs/2611.27963v1"
    },
    {
-    "title": "Imitation Bootstrapped Multi-Agent Reinforcement Learning",
-    "date": "2026-11-13",
-    "authors": "Tony H. Zhang, Connor Mattson, Daniel S. Brown",
-    "summary": "Demonstrations are an effective way to accelerate single-agent reinforcement learning (RL), but extending this idea to multi-agent reinforcement learning (MARL) is non-trivial as it is difficult and o",
-    "link": "https://arxiv.org/abs/2611.18543v1"
+    "title": "Model Carving: Training Transformers That Optimize Their Own Topology",
+    "date": "2026-11-20",
+    "authors": "Kaden Zheng, Pratyusha Sharma",
+    "summary": "Machine learning has largely kept separate the choice of architecture and the process of training. A classic Transformer, for instance, trains a fixed set of attention and MLP sublayers at every layer",
+    "link": "https://arxiv.org/abs/2611.27962v1"
    },
    {
-    "title": "Elliptic Sampling: Optimal Interpolant Schedules for Gaussians and Beyond",
-    "date": "2026-11-13",
-    "authors": "Cole Becker, Taylan Kargin, Kimia Hassibi",
-    "summary": "Generative modeling based on stochastic interpolants requires specifying two key choices: an interpolant schedule bridging the initial and target distributions, and an efficient discretization of the ",
-    "link": "https://arxiv.org/abs/2611.18542v1"
+    "title": "Ranking-Preserving Coreset Selection for Efficient Evolutionary Hyperparameter Optimization",
+    "date": "2026-11-20",
+    "authors": "Mamoona Tasadduq, Maryam Bashir",
+    "summary": "Hyperparameter optimization (HPO) is essential for high predictive performance, but its computational cost becomes prohibitive when candidate configurations require repeated training on large datasets",
+    "link": "https://arxiv.org/abs/2611.27959v1"
    },
    {
-    "title": "Why Finite Intelligence Works in an Infinite World: A Mathematical Theory",
-    "date": "2026-11-13",
-    "authors": "Mojtaba Soltanalian",
-    "summary": "An information system often has to learn before it knows what it will be asked. A finite representation can succeed without recording an infinite environment in full when those asks share collective s",
-    "link": "https://arxiv.org/abs/2611.18538v1"
+    "title": "Topology Hub Optimal Transport: Eliminating Long Context Dilution at Flash Speed",
+    "date": "2026-11-20",
+    "authors": "Dylan Forde",
+    "summary": "Long-context models use sparse or structured attention to avoid quadratic cost, yet retrieving a small set of relevant facts embedded among hundreds of thousands of distractors degrades as normalizati",
+    "link": "https://arxiv.org/abs/2611.27951v1"
    },
    {
-    "title": "ModHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL",
-    "date": "2026-11-13",
-    "authors": "Zelin He, Siyu Zhu, Jacob Helwig",
-    "summary": "Agentic reinforcement learning (RL) increasingly relies on a harness, the scaffold around the model that decides what it sees of its own interaction and what guidance it receives. Most existing approa",
-    "link": "https://arxiv.org/abs/2611.18533v1"
+    "title": "The Optimal Sample Complexity of Agnostic PAC Learning for Partial Concept Classes",
+    "date": "2026-11-20",
+    "authors": "Liang-Yu Zou",
+    "summary": "Let $\\mathcal H\\subseteq\\{-1,+1,\\star\\}^{\\mathcal X}$ be a partial concept class of finite VC dimension $d$. We construct a deterministic agnostic PAC learner that, for every $\\varepsilon,δ\\in(0,1)$, ",
+    "link": "https://arxiv.org/abs/2611.27946v1"
    },
    {
-    "title": "Alignment by Socialization: Learning Tradeoffs Under Selection",
-    "date": "2026-11-13",
-    "authors": "Thomas Brennan, Andrew W. Lo, Chaoyi Zhao",
-    "summary": "Artificial intelligence (AI) agents are expected to complete tasks while following rules of conduct, but these objectives can conflict. We study how evolutionary selection shapes an agent's choices be",
-    "link": "https://arxiv.org/abs/2611.18531v1"
+    "title": "BioEmu2: Scalable Emulation of Biomolecular Dynamics",
+    "date": "2026-11-20",
+    "authors": "Michael Gastegger, Adam E. Foster, José Jiménez-Luna",
+    "summary": "Despite major advances in structure prediction, modelling the motions and interactions that drive biomolecular function at scale remains a central challenge. We introduce BioEmu2, a generative model f",
+    "link": "https://arxiv.org/abs/2611.27924v1"
    },
    {
-    "title": "Understanding Contextual Bias in Agricultural CNNs Through Hidden-Neuron Concept Induction",
-    "date": "2026-11-13",
-    "authors": "Abhilekha Dalal, Avishek Das, Samatha Ereshi Akkamahadevi",
-    "summary": "Convolutional Neural Networks (CNNs) can classify images using background-dominated patches that contain little or none of the target object, showing that they exploit contextual information. Previous",
-    "link": "https://arxiv.org/abs/2611.18530v1"
+    "title": "SUAF: Spectral Universal Advantage Features for Zero-Shot Policy Improvement",
+    "date": "2026-11-20",
+    "authors": "Huaze Tang, Runqing Miao, Tianren Peng",
+    "summary": "Reward-independent representations enable reinforcement learning agents to reuse knowledge across tasks, but limited representation capacity raises three fundamental questions: what statistical depend",
+    "link": "https://arxiv.org/abs/2611.27919v1"
    },
    {
-    "title": "WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators",
-    "date": "2026-11-13",
-    "authors": "Dayou Du, Congjie He, Andrew Boutros",
-    "summary": "Wafer-scale accelerators offer massive compute capacity through hundreds of thousands of processing elements (PEs) interconnected across a single wafer, but realizing this potential requires efficient",
-    "link": "https://arxiv.org/abs/2611.18527v1"
+    "title": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
+    "date": "2026-11-20",
+    "authors": "Chi Yan, Guoyang Zhao, Wentao Yuan",
+    "summary": "Vision-language models (VLMs) exhibit strong semantic understanding but remain limited in their ability to reason about metric 3D space in the physical world. Existing VLMs typically infer 3D scene st",
+    "link": "https://arxiv.org/abs/2611.27915v1"
    }
   ]
  },
@@ -94,53 +94,53 @@
   "libs": [
    {
     "pkg": "openai",
-    "last_month": 368259005,
-    "last_week": 88891531
+    "last_month": 377514585,
+    "last_week": 93708497
    },
    {
     "pkg": "huggingface-hub",
-    "last_month": 284045066,
-    "last_week": 69585258
+    "last_month": 291624832,
+    "last_week": 70806669
    },
    {
     "pkg": "anthropic",
-    "last_month": 200100466,
-    "last_week": 49439655
+    "last_month": 206731828,
+    "last_week": 50961455
    },
    {
     "pkg": "langchain",
-    "last_month": 155200445,
-    "last_week": 35953584
+    "last_month": 155351819,
+    "last_week": 37486084
    },
    {
     "pkg": "transformers",
-    "last_month": 116710173,
-    "last_week": 27730890
+    "last_month": 118650590,
+    "last_week": 27568516
    },
    {
     "pkg": "litellm",
-    "last_month": 95144147,
-    "last_week": 23634409
+    "last_month": 100197330,
+    "last_week": 26483355
    },
    {
     "pkg": "langgraph",
-    "last_month": 57279201,
-    "last_week": 14389308
-   },
-   {
-    "pkg": "crewai",
-    "last_month": 2572191,
-    "last_week": 604974
+    "last_month": 59421141,
+    "last_week": 15256371
    },
    {
     "pkg": "vllm",
-    "last_month": 2549788,
-    "last_week": 582017
+    "last_month": 2763317,
+    "last_week": 681792
+   },
+   {
+    "pkg": "crewai",
+    "last_month": 2501213,
+    "last_week": 573619
    },
    {
     "pkg": "llama-index",
-    "last_month": 1793236,
-    "last_week": 404070
+    "last_month": 1690913,
+    "last_week": 403864
    }
   ]
  }
